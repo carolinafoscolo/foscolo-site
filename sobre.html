@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sobre | Fóscolo & Company Editora</title>
+<link rel="icon" href="favicon.png">
+
+<style>
+:root{
+  --preto:#111111;
+  --marfim:#F5F2EB;
+  --branco:#FFFDF8;
+  --dourado:#D9A441;
+  --cinza:#7A7A7A;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family: Georgia, "Times New Roman", serif;
+  background:var(--marfim);
+  color:var(--preto);
+  line-height:1.75;
+}
+
+a{text-decoration:none;color:inherit}
+
+header{
+  background:var(--branco);
+  border-bottom:1px solid rgba(17,17,17,.12);
+}
+
+.topbar{
+  max-width:1200px;
+  margin:auto;
+  padding:22px 28px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.logo{
+  max-width:330px;
+  width:75%;
+}
+
+nav{
+  display:flex;
+  gap:22px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+
+nav a{
+  font-size:.86rem;
+  text-transform:uppercase;
+  letter-spacing:.09em;
+}
+
+nav a:hover{color:var(--dourado)}
+
+.page-hero{
+  max-width:1100px;
+  margin:auto;
+  padding:90px 28px 80px;
+}
+
+.kicker{
+  color:var(--dourado);
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  font-size:.82rem;
+  margin-bottom:22px;
+}
+
+h1{
+  font-size:4rem;
+  line-height:1.08;
+  margin-bottom:24px;
+}
+
+.lead{
+  max-width:850px;
+  font-size:1.2rem;
+  color:#433c35;
+}
+
+section{
+  padding:80px 28px;
+}
+
+.container{
+  max-width:1050px;
+  margin:auto;
+}
+
+.text-block{
+  background:var(--branco);
+  border:1px solid rgba(17,17,17,.12);
+  border-radius:28px;
+  padding:44px;
+}
+
+.text-block p{
+  margin-bottom:22px;
+  font-size:1.08rem;
+}
+
+h2{
+  font-size:2.45rem;
+  line-height:1.15;
+  margin-bottom:18px;
+}
+
+.divider{
+  width:90px;
+  height:2px;
+  background:var(--dourado);
+  margin:22px 0 34px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+  margin-top:36px;
+}
+
+.card{
+  background:var(--branco);
+  border:1px solid rgba(17,17,17,.12);
+  border-radius:22px;
+  padding:30px;
+}
+
+.card h3{
+  color:var(--dourado);
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-size:.9rem;
+  margin-bottom:12px;
+}
+
+.card p{
+  color:#443d36;
+}
+
+.dark{
+  background:var(--preto);
+  color:var(--marfim);
+}
+
+.dark p{
+  color:#d8d0c4;
+}
+
+.values{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+  margin-top:36px;
+}
+
+.value{
+  background:#1b1b1b;
+  border:1px solid #333;
+  border-radius:22px;
+  padding:28px;
+}
+
+.value strong{
+  display:block;
+  color:var(--dourado);
+  margin-bottom:8px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-size:.86rem;
+}
+
+.closing{
+  text-align:center;
+  background:var(--branco);
+}
+
+.closing p{
+  max-width:820px;
+  margin:0 auto 18px;
+  font-size:1.25rem;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:22px;
+  padding:14px 25px;
+  border-radius:999px;
+  border:1px solid var(--preto);
+}
+
+.btn.primary{
+  background:var(--preto);
+  color:var(--marfim);
+}
+
+footer{
+  background:#0b0b0b;
+  color:#d8d0c4;
+  text-align:center;
+  padding:48px 28px;
+}
+
+footer img{
+  width:105px;
+  margin-bottom:18px;
+}
+
+footer strong{
+  display:block;
+  color:var(--marfim);
+  margin-bottom:8px;
+}
+
+@media(max-width:900px){
+  .topbar{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  nav{
+    justify-content:flex-start;
+  }
+
+  h1{
+    font-size:2.75rem;
+  }
+
+  .grid,
+  .values{
+    grid-template-columns:1fr;
+  }
+
+  .text-block{
+    padding:30px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="topbar">
+    <a href="index.html">
+      <img src="logo-horizontal.png" alt="Fóscolo & Company Editora" class="logo">
+    </a>
+
+    <nav>
+      <a href="sobre.html">Sobre</a>
+      <a href="publicacoes.html">Publicações</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="manifesto.html">Manifesto</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
+
+  <div class="page-hero">
+    <div class="kicker">Sobre a editora</div>
+    <h1>Uma casa editorial dedicada à memória, à pesquisa e à permanência.</h1>
+    <p class="lead">
+      A Fóscolo & Company Editora nasce do encontro entre história, cultura,
+      escrita e compromisso público com a circulação do conhecimento.
+    </p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="text-block">
+      <p>
+        A Fóscolo & Company Editora é uma casa editorial independente dedicada à publicação
+        de obras que preservam experiências, ampliam debates e contribuem para a construção
+        de conhecimento público.
+      </p>
+
+      <p>
+        Fundada em Belo Horizonte, a editora nasce do encontro entre pesquisa, memória,
+        cultura e escrita. Seu trabalho parte da convicção de que livros são mais do que
+        objetos: são formas de permanência. Cada publicação representa uma oportunidade de
+        registrar trajetórias, organizar saberes, preservar experiências e ampliar o diálogo
+        entre diferentes comunidades de leitores.
+      </p>
+
+      <p>
+        Vivemos em uma época marcada pela abundância de informações e pela fragilidade da
+        memória. Pesquisas permanecem restritas a círculos especializados. Arquivos acumulam
+        histórias pouco conhecidas. Instituições produzem conhecimentos que raramente alcançam
+        o público para além de seus próprios limites. Ao mesmo tempo, experiências individuais
+        e coletivas correm o risco de desaparecer sem registro ou reconhecimento.
+      </p>
+
+      <p>
+        A Fóscolo & Company Editora foi criada para atuar nesse espaço.
+      </p>
+
+      <p>
+        Nos dedicamos à publicação de obras relacionadas à história, à memória, ao patrimônio
+        cultural, à saúde, às humanidades e às múltiplas formas pelas quais indivíduos,
+        comunidades e instituições produzem significado para suas experiências. Valorizamos
+        projetos que combinem rigor intelectual, clareza de comunicação e relevância social,
+        aproximando pesquisa e vida pública sem abrir mão da complexidade dos temas abordados.
+      </p>
+
+      <p>
+        Entendemos o trabalho editorial como uma prática de cuidado. Cuidado com os autores,
+        com as fontes, com a escrita, com os leitores e com as histórias que nos são confiadas.
+        Por isso, cada projeto é desenvolvido com atenção à qualidade editorial, ao compromisso
+        ético e à responsabilidade na circulação do conhecimento.
+      </p>
+
+      <p>
+        Mais do que publicar livros, buscamos construir pontes: entre passado e presente,
+        entre memória e futuro, entre pesquisa e sociedade.
+      </p>
+
+      <p>
+        Acreditamos que algumas ideias merecem permanecer.
+      </p>
+
+      <p>
+        É para elas que trabalhamos.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Missão e visão</h2>
+    <div class="divider"></div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Nossa missão</h3>
+        <p>
+          Preservar, organizar e ampliar a circulação de conhecimentos, memórias e experiências
+          por meio de projetos editoriais comprometidos com o rigor intelectual, a qualidade da
+          escrita e o diálogo com a sociedade.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Nossa visão</h3>
+        <p>
+          Ser reconhecida como uma referência na publicação de obras dedicadas à memória, à
+          história, às humanidades e à circulação pública do conhecimento, aproximando pesquisa,
+          cultura e sociedade.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>O que buscamos</h3>
+        <p>
+          Transformar pesquisas, trajetórias e patrimônios culturais em obras capazes de
+          permanecer, contribuir para o debate público e fortalecer a construção coletiva
+          do conhecimento.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="container">
+    <h2>Nossos valores</h2>
+    <div class="divider"></div>
+
+    <div class="values">
+      <div class="value">
+        <strong>Permanência</strong>
+        <p>Publicar é preservar experiências, conhecimentos e reflexões para além do tempo imediato.</p>
+      </div>
+
+      <div class="value">
+        <strong>Rigor</strong>
+        <p>Valorizamos qualidade intelectual, compromisso com as fontes, responsabilidade editorial e cuidado na construção de cada obra.</p>
+      </div>
+
+      <div class="value">
+        <strong>Acesso</strong>
+        <p>Defendemos a ampla circulação do conhecimento e a aproximação entre produção intelectual, instituições culturais e sociedade.</p>
+      </div>
+
+      <div class="value">
+        <strong>Diálogo</strong>
+        <p>Reconhecemos o valor do encontro entre diferentes áreas do conhecimento, experiências de vida e perspectivas de interpretação do mundo.</p>
+      </div>
+
+      <div class="value">
+        <strong>Memória</strong>
+        <p>Entendemos a memória como patrimônio coletivo, fundamental para compreender o passado, refletir sobre o presente e construir o futuro.</p>
+      </div>
+
+      <div class="value">
+        <strong>Cuidado</strong>
+        <p>Editamos com atenção aos autores, aos leitores, às fontes e às histórias que nos são confiadas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="container">
+    <h2>O que nos move</h2>
+    <div class="divider" style="margin-left:auto;margin-right:auto;"></div>
+
+    <p>Publicamos porque algumas experiências não devem desaparecer.</p>
+    <p>Publicamos porque determinadas pesquisas merecem alcançar novos públicos.</p>
+    <p>Publicamos porque memória, conhecimento e cultura são bens públicos fundamentais.</p>
+    <p><strong>Publicamos porque algumas ideias merecem permanecer.</strong></p>
+
+    <a href="manifesto.html" class="btn primary">Ler manifesto editorial</a>
+  </div>
+</section>
+
+<footer>
+  <img src="selo-editorial.png" alt="Selo Fóscolo & Company">
+  <strong>Fóscolo & Company Editora</strong>
+  <p>Ideias acendem. Histórias permanecem.</p>
+  <p>© 2026 Fóscolo & Company Editora. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
