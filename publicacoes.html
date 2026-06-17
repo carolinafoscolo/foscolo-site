@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Publicações | Fóscolo & Company Editora</title>
+<link rel="icon" href="favicon.png">
+
+<style>
+:root{
+--preto:#111111;
+--marfim:#F5F2EB;
+--branco:#FFFDF8;
+--dourado:#D9A441;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+font-family:Georgia,serif;
+background:var(--marfim);
+color:var(--preto);
+line-height:1.7;
+}
+
+a{text-decoration:none;color:inherit}
+
+header{
+background:var(--branco);
+border-bottom:1px solid rgba(17,17,17,.12);
+}
+
+.topbar{
+max-width:1200px;
+margin:auto;
+padding:22px 28px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+}
+
+.logo{
+max-width:330px;
+width:75%;
+}
+
+nav{
+display:flex;
+gap:22px;
+flex-wrap:wrap;
+}
+
+nav a{
+font-size:.86rem;
+text-transform:uppercase;
+letter-spacing:.08em;
+}
+
+nav a:hover{
+color:var(--dourado);
+}
+
+.hero{
+max-width:1100px;
+margin:auto;
+padding:90px 28px;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:20px;
+line-height:1.1;
+}
+
+.hero p{
+font-size:1.2rem;
+max-width:850px;
+color:#433c35;
+}
+
+section{
+padding:80px 28px;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+}
+
+h2{
+font-size:2.4rem;
+margin-bottom:18px;
+}
+
+.divider{
+width:90px;
+height:2px;
+background:var(--dourado);
+margin:20px 0 35px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:24px;
+margin-top:35px;
+}
+
+.card{
+background:var(--branco);
+border:1px solid rgba(17,17,17,.12);
+border-radius:24px;
+padding:32px;
+}
+
+.card h3{
+margin-bottom:12px;
+color:var(--dourado);
+}
+
+.card p{
+color:#433c35;
+}
+
+.catalogo{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+margin-top:35px;
+}
+
+.book{
+background:white;
+border:1px solid rgba(17,17,17,.12);
+padding:22px;
+border-radius:18px;
+}
+
+.book span{
+display:block;
+font-size:.75rem;
+text-transform:uppercase;
+letter-spacing:.08em;
+color:var(--dourado);
+margin-bottom:8px;
+}
+
+.highlight{
+background:var(--preto);
+color:var(--marfim);
+text-align:center;
+}
+
+.highlight p{
+max-width:850px;
+margin:auto;
+font-size:1.2rem;
+color:#d8d0c4;
+}
+
+footer{
+background:#0b0b0b;
+color:#d8d0c4;
+text-align:center;
+padding:50px 28px;
+}
+
+footer img{
+width:105px;
+margin-bottom:18px;
+}
+
+@media(max-width:900px){
+
+.topbar{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.hero h1{
+font-size:2.7rem;
+}
+
+.grid,
+.catalogo{
+grid-template-columns:1fr;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="topbar">
+
+<a href="index.html">
+<img src="logo-horizontal.png" class="logo">
+</a>
+
+<nav>
+<a href="sobre.html">Sobre</a>
+<a href="publicacoes.html">Publicações</a>
+<a href="projetos.html">Projetos</a>
+<a href="manifesto.html">Manifesto</a>
+<a href="contato.html">Contato</a>
+</nav>
+
+</div>
+
+<div class="hero">
+
+<h1>Publicações</h1>
+
+<p>
+Nosso catálogo reúne obras dedicadas à memória, à história,
+ao patrimônio cultural, à saúde, às humanidades e à circulação
+pública do conhecimento.
+</p>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="container">
+
+<h2>Linhas editoriais</h2>
+
+<div class="divider"></div>
+
+<div class="grid">
+
+<div class="card">
+<h3>História e Memória</h3>
+<p>
+Livros, pesquisas e projetos dedicados à preservação de experiências,
+trajetórias e processos históricos.
+</p>
+</div>
+
+<div class="card">
+<h3>Patrimônio Cultural</h3>
+<p>
+Publicações relacionadas a museus, arquivos, arquitetura,
+paisagens culturais e memória coletiva.
+</p>
+</div>
+
+<div class="card">
+<h3>Saúde e Sociedade</h3>
+<p>
+Obras voltadas à história da saúde, instituições, políticas públicas,
+práticas de cuidado e experiências sociais.
+</p>
+</div>
+
+<div class="card">
+<h3>Humanidades</h3>
+<p>
+Ensaios, pesquisas e reflexões sobre cultura, educação,
+sociedade e vida pública.
+</p>
+</div>
+
+<div class="card">
+<h3>História Oral</h3>
+<p>
+Narrativas de experiência, entrevistas, testemunhos e
+projetos de memória institucional.
+</p>
+</div>
+
+<div class="card">
+<h3>Divulgação Científica</h3>
+<p>
+Conhecimento acadêmico transformado em linguagem acessível,
+sem abrir mão do rigor intelectual.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="highlight">
+
+<div class="container">
+
+<h2>Por que publicamos?</h2>
+
+<div class="divider" style="margin-left:auto;margin-right:auto;"></div>
+
+<p>
+Acreditamos que o conhecimento produz maior impacto quando circula.
+Publicar é ampliar diálogos, preservar experiências e tornar acessíveis
+saberes que ajudam a compreender o mundo.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>Coleções em desenvolvimento</h2>
+
+<div class="divider"></div>
+
+<div class="catalogo">
+
+<div class="book">
+<span>Em desenvolvimento</span>
+Coleção História e Saúde
+</div>
+
+<div class="book">
+<span>Em desenvolvimento</span>
+Coleção Memória Institucional
+</div>
+
+<div class="book">
+<span>Em desenvolvimento</span>
+Coleção Patrimônio e Cidade
+</div>
+
+<div class="book">
+<span>Em desenvolvimento</span>
+Coleção História Oral
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>Catálogo em construção</h2>
+
+<div class="divider"></div>
+
+<p>
+Estamos desenvolvendo nossas primeiras publicações e consolidando
+parcerias com pesquisadores, instituições culturais, museus,
+arquivos e centros de memória.
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<img src="selo-editorial.png">
+
+<p><strong>Fóscolo & Company Editora</strong></p>
+
+<p>Ideias acendem. Histórias permanecem.</p>
+
+<p>© 2026 Fóscolo & Company Editora</p>
+
+</footer>
+
+</body>
+</html>
