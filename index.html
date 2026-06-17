@@ -3,79 +3,192 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fóscolo & Company</title>
+
+<title>Fóscolo & Company Editora</title>
 
 <style>
-body{
+
+*{
     margin:0;
-    font-family: Georgia, serif;
-    background:#f7f4ef;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Georgia, "Times New Roman", serif;
+    background:#f8f5f0;
     color:#222;
+    line-height:1.7;
 }
 
-header{
-    padding:100px 20px;
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 10%;
+    border-bottom:1px solid #ddd;
+    background:white;
+}
+
+.logo{
+    font-size:1.3rem;
+    font-weight:bold;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#444;
+    margin-left:20px;
+}
+
+.hero{
+    min-height:70vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     text-align:center;
-    background:#faf7f2;
+    padding:40px;
 }
 
-h1{
-    font-size:3rem;
-    margin-bottom:10px;
+.hero h1{
+    font-size:4rem;
+    max-width:900px;
+    margin-bottom:20px;
 }
 
-.slogan{
+.hero p{
     font-size:1.2rem;
     color:#666;
     font-style:italic;
 }
 
-section{
-    max-width:900px;
+.container{
+    max-width:1000px;
     margin:auto;
-    padding:60px 20px;
+    padding:80px 25px;
 }
 
-h2{
-    border-bottom:1px solid #ddd;
-    padding-bottom:10px;
+.section-title{
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:10px;
+    margin-top:25px;
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+.cta{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:90px 30px;
+}
+
+.cta h2{
+    margin-bottom:15px;
+    font-size:2rem;
+}
+
+.cta p{
+    max-width:700px;
+    margin:auto;
 }
 
 footer{
     text-align:center;
     padding:40px;
-    background:#ece7df;
+    background:#111;
+    color:#ddd;
 }
-</style>
 
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.3rem;
+}
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+}
+
+</style>
 </head>
+
 <body>
 
-<header>
-    <h1>Fóscolo & Company</h1>
-    <p class="slogan">Ideias acendem. Histórias permanecem.</p>
-</header>
+<nav>
+    <div class="logo">Fóscolo & Company Editora</div>
 
-<section>
-    <h2>Quem Somos</h2>
+    <div class="menu">
+        <a href="#sobre">Sobre</a>
+        <a href="#publicacoes">Publicações</a>
+        <a href="#contato">Contato</a>
+    </div>
+</nav>
+
+<section class="hero">
+
+    <h1>Ideias acendem. Histórias permanecem.</h1>
+
     <p>
-        A Fóscolo & Company é um projeto editorial dedicado à publicação,
-        preservação e circulação de conhecimento, pesquisa e memória.
+        Editora dedicada à publicação, preservação e circulação de conhecimento,
+        pesquisa, memória e história.
     </p>
+
 </section>
 
-<section>
-    <h2>Publicações</h2>
-    <p>
-        Em breve, livros, e-books e projetos editoriais estarão disponíveis neste espaço.
-    </p>
+<section id="sobre" class="container">
+
+    <h2 class="section-title">Quem Somos</h2>
+
+    <div class="card">
+        A Fóscolo & Company Editora é um projeto editorial voltado para a
+        publicação e difusão de conhecimento acadêmico, histórico e cultural.
+        Nosso objetivo é transformar pesquisa em diálogo público, aproximando
+        autores, leitores e instituições por meio de obras que permanecem.
+    </div>
+
 </section>
 
-<section>
-    <h2>Contato</h2>
+<section id="publicacoes" class="container">
+
+    <h2 class="section-title">Publicações</h2>
+
+    <div class="card">
+        O catálogo da editora está em desenvolvimento.
+        Em breve serão disponibilizados livros, e-books, projetos editoriais,
+        coletâneas e iniciativas de divulgação científica.
+    </div>
+
+</section>
+
+<section class="cta">
+
+    <h2>Construindo uma editora independente</h2>
+
     <p>
+        Acreditamos que conhecimento não deve permanecer restrito às prateleiras.
+        Publicar é criar pontes entre pesquisa, memória e sociedade.
+    </p>
+
+</section>
+
+<section id="contato" class="container">
+
+    <h2 class="section-title">Contato</h2>
+
+    <div class="card">
         contato@foscolo.com.br
-    </p>
+    </div>
+
 </section>
 
 <footer>
