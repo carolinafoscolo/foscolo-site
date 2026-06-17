@@ -5,342 +5,539 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Fóscolo & Company Editora</title>
-
 <link rel="icon" href="favicon.png">
 
 <style>
-
 :root{
---preto:#111111;
---marfim:#F5F2EB;
---dourado:#D9A441;
---cinza:#7A7A7A;
+  --preto:#111111;
+  --marfim:#F5F2EB;
+  --branco:#FFFDF8;
+  --dourado:#D9A441;
+  --cinza:#7A7A7A;
 }
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
 }
 
 body{
-font-family: Georgia, serif;
-background:var(--marfim);
-color:var(--preto);
-line-height:1.7;
+  font-family: Georgia, "Times New Roman", serif;
+  background:var(--marfim);
+  color:var(--preto);
+  line-height:1.7;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
 }
 
 header{
-padding:80px 20px;
-text-align:center;
-background:white;
-border-bottom:1px solid #e5e5e5;
+  background:var(--branco);
+  border-bottom:1px solid rgba(17,17,17,.12);
+}
+
+.topbar{
+  max-width:1200px;
+  margin:auto;
+  padding:22px 28px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
 }
 
 .logo{
-max-width:420px;
-width:90%;
-margin-bottom:25px;
-}
-
-h1{
-font-size:3rem;
-margin-bottom:10px;
-}
-
-.slogan{
-font-style:italic;
-font-size:1.2rem;
-color:var(--cinza);
+  max-width:330px;
+  width:75%;
 }
 
 nav{
-background:var(--preto);
-padding:18px;
-text-align:center;
-position:sticky;
-top:0;
-z-index:1000;
+  display:flex;
+  gap:22px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-margin:0 18px;
-font-size:0.95rem;
-letter-spacing:1px;
-text-transform:uppercase;
+  font-size:.86rem;
+  text-transform:uppercase;
+  letter-spacing:.09em;
 }
 
 nav a:hover{
-color:var(--dourado);
-}
-
-section{
-max-width:1100px;
-margin:auto;
-padding:90px 25px;
-}
-
-.section-title{
-font-size:2.2rem;
-margin-bottom:25px;
-border-left:5px solid var(--dourado);
-padding-left:15px;
+  color:var(--dourado);
 }
 
 .hero{
-text-align:center;
+  max-width:1200px;
+  margin:auto;
+  padding:95px 28px 110px;
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:60px;
+  align-items:center;
+}
+
+.kicker{
+  color:var(--dourado);
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  font-size:.82rem;
+  margin-bottom:24px;
+}
+
+.hero h1{
+  font-size:4.4rem;
+  line-height:1.03;
+  margin-bottom:28px;
 }
 
 .hero p{
-max-width:850px;
-margin:auto;
-font-size:1.15rem;
+  font-size:1.22rem;
+  color:#423b34;
+  max-width:750px;
 }
 
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-margin-top:40px;
+.buttons{
+  margin-top:36px;
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 25px;
+  border-radius:999px;
+  border:1px solid var(--preto);
+  font-size:.95rem;
+  transition:.2s;
+}
+
+.btn.primary{
+  background:var(--preto);
+  color:var(--marfim);
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+  border-color:var(--dourado);
+}
+
+.seal-card{
+  background:var(--marfim);
+  border:1px solid rgba(17,17,17,.12);
+  border-radius:30px;
+  padding:38px;
+  text-align:center;
+  box-shadow:0 18px 55px rgba(0,0,0,.08);
+}
+
+.seal-card img{
+  width:100%;
+  max-width:360px;
+}
+
+section{
+  padding:85px 28px;
+}
+
+.container{
+  max-width:1120px;
+  margin:auto;
+}
+
+h2{
+  font-size:2.65rem;
+  line-height:1.15;
+  margin-bottom:20px;
+}
+
+.divider{
+  width:90px;
+  height:2px;
+  background:var(--dourado);
+  margin:22px 0 32px;
+}
+
+.lead{
+  font-size:1.14rem;
+  color:#4a433c;
+  max-width:880px;
+}
+
+.split{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:44px;
+  align-items:start;
+}
+
+.panel{
+  background:var(--branco);
+  border:1px solid rgba(17,17,17,.12);
+  border-radius:24px;
+  padding:34px;
+}
+
+.panel.gold{
+  border-left:6px solid var(--dourado);
+}
+
+.dark{
+  background:var(--preto);
+  color:var(--marfim);
+}
+
+.dark p,
+.dark .lead{
+  color:#d8d0c4;
+}
+
+.grid{
+  margin-top:38px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
 }
 
 .card{
-background:white;
-padding:30px;
-border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-transition:.3s;
+  background:var(--branco);
+  border:1px solid rgba(17,17,17,.12);
+  border-radius:22px;
+  padding:28px;
+  min-height:220px;
+  transition:.2s;
+}
+
+.dark .card{
+  background:#1b1b1b;
+  border-color:#333;
+  color:var(--marfim);
 }
 
 .card:hover{
-transform:translateY(-6px);
+  transform:translateY(-5px);
+  box-shadow:0 14px 40px rgba(0,0,0,.09);
 }
 
 .card h3{
-margin-bottom:10px;
+  font-size:1.25rem;
+  margin-bottom:12px;
+}
+
+.card p{
+  color:#4a433c;
+}
+
+.dark .card p{
+  color:#d8d0c4;
+}
+
+.manifesto{
+  background:var(--branco);
+  text-align:center;
+  border-top:1px solid rgba(17,17,17,.12);
+  border-bottom:1px solid rgba(17,17,17,.12);
+}
+
+.manifesto p{
+  max-width:850px;
+  margin:0 auto 18px;
+  font-size:1.25rem;
 }
 
 .catalogo{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-margin-top:40px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+  margin-top:34px;
 }
 
-.livro{
-background:white;
-padding:25px;
-border-radius:10px;
-border-top:4px solid var(--dourado);
+.book{
+  background:var(--branco);
+  border:1px solid rgba(17,17,17,.12);
+  padding:24px;
+  border-radius:18px;
 }
 
-.livro h3{
-margin-bottom:10px;
+.book span{
+  display:block;
+  font-size:.78rem;
+  color:var(--dourado);
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin-bottom:8px;
 }
 
-.galeria{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:40px;
+.contact{
+  background:var(--preto);
+  color:var(--marfim);
 }
 
-.galeria img{
-width:100%;
-border-radius:12px;
-background:white;
-padding:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
+.contact-box{
+  background:#1b1b1b;
+  border:1px solid #333;
+  border-radius:26px;
+  padding:38px;
 }
 
-.contato{
-text-align:center;
-}
-
-.botao{
-display:inline-block;
-margin-top:20px;
-padding:14px 28px;
-background:var(--dourado);
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-}
-
-.botao:hover{
-opacity:.9;
+.contact-box a{
+  color:var(--dourado);
+  font-size:1.1rem;
 }
 
 footer{
-background:var(--preto);
-color:white;
-text-align:center;
-padding:50px 20px;
-margin-top:60px;
+  background:#0b0b0b;
+  color:#d8d0c4;
+  text-align:center;
+  padding:48px 28px;
 }
 
-footer p{
-margin:8px 0;
+footer img{
+  width:105px;
+  margin-bottom:18px;
 }
 
+footer strong{
+  display:block;
+  color:var(--marfim);
+  margin-bottom:8px;
+}
+
+@media(max-width:900px){
+  .topbar{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  nav{
+    justify-content:flex-start;
+  }
+
+  .hero,
+  .split{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    padding-top:65px;
+  }
+
+  .hero h1{
+    font-size:2.75rem;
+  }
+
+  .grid,
+  .catalogo{
+    grid-template-columns:1fr;
+  }
+
+  h2{
+    font-size:2.15rem;
+  }
+}
 </style>
 </head>
 
 <body>
 
 <header>
+  <div class="topbar">
+    <a href="index.html">
+      <img src="logo-horizontal.png" alt="Fóscolo & Company Editora" class="logo">
+    </a>
 
-<img src="logo-horizontal.png" alt="Fóscolo & Company" class="logo">
+    <nav>
+      <a href="sobre.html">Sobre</a>
+      <a href="publicacoes.html">Publicações</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="manifesto.html">Manifesto</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
 
-<p class="slogan">
-Ideias acendem. Histórias permanecem.
-</p>
+  <div class="hero">
+    <div>
+      <div class="kicker">Editora independente · Belo Horizonte</div>
 
+      <h1>Ideias acendem. Histórias permanecem.</h1>
+
+      <p>
+        Publicamos obras dedicadas à preservação da memória, à circulação do conhecimento
+        e à construção de diálogos entre pesquisa, cultura e sociedade.
+      </p>
+
+      <div class="buttons">
+        <a class="btn primary" href="sobre.html">Conheça a editora</a>
+        <a class="btn" href="contato.html">Entre em contato</a>
+      </div>
+    </div>
+
+    <div class="seal-card">
+      <img src="selo-editorial.png" alt="Selo editorial Fóscolo & Company">
+    </div>
+  </div>
 </header>
 
-<nav>
-<a href="#sobre">Sobre</a>
-<a href="#editora">Editora</a>
-<a href="#catalogo">Catálogo</a>
-<a href="#marca">Marca</a>
-<a href="#contato">Contato</a>
-</nav>
+<section>
+  <div class="container split">
+    <div>
+      <h2>Publicar é criar permanência</h2>
+      <div class="divider"></div>
+      <p class="lead">
+        A Fóscolo & Company Editora é uma casa editorial independente dedicada à publicação,
+        preservação e circulação de conhecimento.
+      </p>
+    </div>
 
-<section class="hero" id="sobre">
-
-<h2 class="section-title">Quem Somos</h2>
-
-<p>
-A Fóscolo & Company Editora é um projeto editorial independente dedicado à publicação,
-preservação e circulação de conhecimento acadêmico, histórico e cultural.
-Fundada em Belo Horizonte, a editora nasce do compromisso com a pesquisa, a memória,
-a formação intelectual e a democratização do acesso ao conhecimento.
-</p>
-
-<br>
-
-<p>
-Atuamos na edição de livros, e-books, materiais educativos, projetos de história pública,
-catálogos culturais e publicações de divulgação científica, buscando conectar universidade,
-instituições culturais e sociedade.
-</p>
-
+    <div class="panel gold">
+      <p>
+        Nascemos da convicção de que livros, pesquisas, memórias e experiências humanas
+        adquirem novas possibilidades de existência quando encontram formas duradouras
+        de registro, organização e compartilhamento.
+      </p>
+      <br>
+      <p>
+        Atuamos na interseção entre história, memória, patrimônio, saúde, cultura e
+        divulgação do conhecimento, desenvolvendo projetos editoriais comprometidos
+        com rigor intelectual, relevância pública e permanência cultural.
+      </p>
+    </div>
+  </div>
 </section>
 
-<section id="editora">
+<section class="dark">
+  <div class="container">
+    <h2>O que publicamos</h2>
+    <div class="divider"></div>
+    <p class="lead">
+      Nosso catálogo é dedicado a projetos que combinam rigor intelectual,
+      relevância social e compromisso com a construção de conhecimento público.
+    </p>
 
-<h2 class="section-title">Nossos Compromissos</h2>
+    <div class="grid">
+      <a class="card" href="publicacoes.html">
+        <h3>História e Memória</h3>
+        <p>Pesquisas, narrativas e documentos dedicados à preservação da experiência humana.</p>
+      </a>
 
-<div class="cards">
+      <a class="card" href="publicacoes.html">
+        <h3>Patrimônio Cultural</h3>
+        <p>Projetos relacionados a museus, cidades, arquitetura e memória coletiva.</p>
+      </a>
 
-<div class="card">
-<h3>Pesquisa</h3>
-<p>
-Valorizar a produção intelectual rigorosa e o diálogo entre diferentes áreas do conhecimento.
-</p>
-</div>
-
-<div class="card">
-<h3>Memória</h3>
-<p>
-Preservar histórias, experiências e patrimônios que ajudam a compreender o passado e o presente.
-</p>
-</div>
-
-<div class="card">
-<h3>Acesso</h3>
-<p>
-Ampliar a circulação de conhecimento por meio de formatos impressos e digitais.
-</p>
-</div>
-
-<div class="card">
-<h3>Qualidade Editorial</h3>
-<p>
-Produzir obras visualmente cuidadas, historicamente consistentes e intelectualmente relevantes.
-</p>
-</div>
-
-</div>
-
+      <a class="card" href="publicacoes.html">
+        <h3>Saúde e Sociedade</h3>
+        <p>Obras que investigam instituições, práticas de cuidado e políticas públicas.</p>
+      </a>
+    </div>
+  </div>
 </section>
 
-<section id="catalogo">
+<section>
+  <div class="container split">
+    <div>
+      <h2>Projetos editoriais</h2>
+      <div class="divider"></div>
+      <p class="lead">
+        Desenvolvemos iniciativas de publicação, história oral, memória institucional,
+        organização de acervos, edição de obras acadêmicas, e-books e divulgação científica.
+      </p>
+    </div>
 
-<h2 class="section-title">Catálogo Editorial</h2>
-
-<div class="catalogo">
-
-<div class="livro">
-<h3>História</h3>
-<p>
-Livros, coletâneas e estudos sobre história, memória, patrimônio e cultura.
-</p>
-</div>
-
-<div class="livro">
-<h3>Ciências Humanas</h3>
-<p>
-Publicações voltadas para educação, sociologia, gestão, saúde e políticas públicas.
-</p>
-</div>
-
-<div class="livro">
-<h3>Divulgação Científica</h3>
-<p>
-Obras destinadas à aproximação entre produção acadêmica e público geral.
-</p>
-</div>
-
-</div>
-
+    <div class="panel">
+      <p>
+        A Fóscolo & Company atua com projetos que transformam pesquisa, documentação
+        e memória em publicações cuidadas, acessíveis e duradouras.
+      </p>
+      <br>
+      <a class="btn" href="projetos.html">Ver projetos</a>
+    </div>
+  </div>
 </section>
 
-<section id="marca">
-
-<h2 class="section-title">Identidade Visual</h2>
-
-<div class="galeria">
-
-<img src="selo-editorial.png" alt="Selo Editorial">
-
-<img src="ex-libris.png" alt="Ex Libris">
-
-<img src="marca-lombada.png" alt="Marca de Lombada">
-
-</div>
-
+<section class="manifesto">
+  <div class="container">
+    <h2>Algumas histórias não devem desaparecer</h2>
+    <div class="divider" style="margin-left:auto;margin-right:auto;"></div>
+    <p>
+      Nem toda experiência se transforma em memória. Nem toda memória encontra um arquivo.
+      Nem todo arquivo encontra leitores.
+    </p>
+    <p>
+      Acreditamos que o trabalho editorial existe para construir essas pontes.
+    </p>
+    <br>
+    <a class="btn primary" href="manifesto.html">Ler manifesto</a>
+  </div>
 </section>
 
-<section class="contato" id="contato">
+<section>
+  <div class="container">
+    <h2>Catálogo em construção</h2>
+    <div class="divider"></div>
+    <p class="lead">
+      Estamos desenvolvendo nossas primeiras publicações e consolidando parcerias com
+      pesquisadores, instituições culturais, museus, arquivos e centros de memória.
+    </p>
 
-<h2 class="section-title">Contato</h2>
+    <div class="catalogo">
+      <div class="book">
+        <span>Em desenvolvimento</span>
+        Coleção História e Saúde
+      </div>
 
-<p>
-Belo Horizonte • Minas Gerais • Brasil
-</p>
+      <div class="book">
+        <span>Em desenvolvimento</span>
+        Coleção Memória Institucional
+      </div>
 
-<p>
-contato@foscolo.com.br
-</p>
+      <div class="book">
+        <span>Em desenvolvimento</span>
+        Coleção Patrimônio e Cidade
+      </div>
 
-<a href="mailto:contato@foscolo.com.br" class="botao">
-Entrar em contato
-</a>
+      <div class="book">
+        <span>Em desenvolvimento</span>
+        Coleção História Oral
+      </div>
+    </div>
+  </div>
+</section>
 
+<section class="contact">
+  <div class="container split">
+    <div>
+      <h2>Vamos conversar</h2>
+      <div class="divider"></div>
+      <p class="lead">
+        Para propostas editoriais, parcerias institucionais, projetos de memória,
+        publicações e informações gerais.
+      </p>
+    </div>
+
+    <div class="contact-box">
+      <p><strong>Fóscolo & Company Editora</strong></p>
+      <p>Belo Horizonte · Minas Gerais · Brasil</p>
+      <br>
+      <p><a href="mailto:contato@foscolo.com.br">contato@foscolo.com.br</a></p>
+    </div>
+  </div>
 </section>
 
 <footer>
-
-<p><strong>Fóscolo & Company Editora</strong></p>
-
-<p>Ideias acendem. Histórias permanecem.</p>
-
-<p>© 2026 Todos os direitos reservados.</p>
-
+  <img src="selo-editorial.png" alt="Selo Fóscolo & Company">
+  <strong>Fóscolo & Company Editora</strong>
+  <p>Ideias acendem. Histórias permanecem.</p>
+  <p>© 2026 Fóscolo & Company Editora. Todos os direitos reservados.</p>
 </footer>
 
 </body>
