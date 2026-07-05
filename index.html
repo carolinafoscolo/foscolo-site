@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Fóscolo & Company Editora</title>
+<meta name="description" content="Editora independente dedicada à memória, à história, ao patrimônio cultural e à circulação pública do conhecimento.">
+
 <link rel="icon" href="favicon.png">
 
 <style>
@@ -13,30 +15,21 @@
   --marfim:#F5F2EB;
   --branco:#FFFDF8;
   --dourado:#D9A441;
-  --cinza:#7A7A7A;
+  --cinza:#6f665d;
 }
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box}
 
-html{
-  scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth}
 
 body{
-  font-family: Georgia, "Times New Roman", serif;
+  font-family:Georgia,"Times New Roman",serif;
   background:var(--marfim);
   color:var(--preto);
   line-height:1.7;
 }
 
-a{
-  color:inherit;
-  text-decoration:none;
-}
+a{text-decoration:none;color:inherit}
 
 header{
   background:var(--branco);
@@ -60,19 +53,66 @@ header{
 
 nav{
   display:flex;
+  align-items:center;
   gap:22px;
   flex-wrap:wrap;
   justify-content:flex-end;
 }
 
 nav a{
-  font-size:.86rem;
+  font-size:.84rem;
   text-transform:uppercase;
   letter-spacing:.09em;
 }
 
-nav a:hover{
+nav a:hover{color:var(--dourado)}
+
+.language-selector{
+  position:relative;
+}
+
+.language-button{
+  background:none;
+  border:1px solid rgba(17,17,17,.22);
+  border-radius:999px;
+  font-size:18px;
+  cursor:pointer;
+  padding:7px 10px;
+}
+
+.language-button:hover{
+  border-color:var(--dourado);
+}
+
+.language-menu{
+  display:none;
+  position:absolute;
+  right:0;
+  top:44px;
+  background:var(--branco);
+  border:1px solid rgba(17,17,17,.12);
+  border-radius:16px;
+  box-shadow:0 15px 40px rgba(0,0,0,.14);
+  min-width:190px;
+  overflow:hidden;
+  z-index:999;
+}
+
+.language-menu a{
+  display:block;
+  padding:13px 18px;
+  font-size:.92rem;
+  text-transform:none;
+  letter-spacing:0;
+}
+
+.language-menu a:hover{
+  background:var(--marfim);
   color:var(--dourado);
+}
+
+.language-menu.show{
+  display:block;
 }
 
 .hero{
@@ -315,11 +355,30 @@ footer strong{
 @media(max-width:900px){
   .topbar{
     flex-direction:column;
-    align-items:flex-start;
+    align-items:center;
+    text-align:center;
+  }
+
+  .logo{
+    max-width:260px;
   }
 
   nav{
-    justify-content:flex-start;
+    justify-content:center;
+    gap:14px;
+  }
+
+  nav a{
+    font-size:.74rem;
+  }
+
+  .language-selector{
+    margin-top:4px;
+  }
+
+  .language-menu{
+    right:50%;
+    transform:translateX(50%);
   }
 
   .hero,
@@ -328,16 +387,29 @@ footer strong{
   }
 
   .hero{
-    padding-top:65px;
+    padding:65px 24px 80px;
+    text-align:center;
   }
 
   .hero h1{
     font-size:2.75rem;
   }
 
+  .hero p{
+    font-size:1.1rem;
+  }
+
+  .buttons{
+    justify-content:center;
+  }
+
   .grid,
   .catalogo{
     grid-template-columns:1fr;
+  }
+
+  section{
+    padding:65px 24px;
   }
 
   h2{
@@ -361,6 +433,18 @@ footer strong{
       <a href="projetos.html">Projetos</a>
       <a href="manifesto.html">Manifesto</a>
       <a href="contato.html">Contato</a>
+
+      <div class="language-selector">
+        <button class="language-button" onclick="toggleLanguageMenu()" aria-label="Selecionar idioma">🌐</button>
+
+        <div class="language-menu" id="languageMenu">
+          <a href="index.html">Português</a>
+          <a href="en/index.html">English</a>
+          <a href="es/index.html">Español</a>
+          <a href="fr/index.html">Français</a>
+          <a href="zh/index.html">简体中文</a>
+        </div>
+      </div>
     </nav>
   </div>
 
@@ -539,6 +623,20 @@ footer strong{
   <p>Ideias acendem. Histórias permanecem.</p>
   <p>© 2026 Fóscolo & Company Editora. Todos os direitos reservados.</p>
 </footer>
+
+<script>
+function toggleLanguageMenu(){
+  document.getElementById("languageMenu").classList.toggle("show");
+}
+
+window.addEventListener("click", function(event){
+  const selector = document.querySelector(".language-selector");
+
+  if(!selector.contains(event.target)){
+    document.getElementById("languageMenu").classList.remove("show");
+  }
+});
+</script>
 
 </body>
 </html>
