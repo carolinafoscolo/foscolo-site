@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>About | Fóscolo & Company Press</title>
-
 <meta name="description" content="About Fóscolo & Company Press, an independent publishing house dedicated to memory, history, cultural heritage and public knowledge.">
 
 <link rel="icon" href="../favicon.png">
 <link rel="stylesheet" href="style.css">
 
+<style>
+.language-selector{position:relative}
+.language-button{background:none;border:1px solid rgba(17,17,17,.22);border-radius:999px;font-size:18px;cursor:pointer;padding:7px 10px}
+.language-button:hover{border-color:#D9A441}
+.language-menu{display:none;position:absolute;right:0;top:44px;background:#FFFDF8;border:1px solid rgba(17,17,17,.12);border-radius:16px;box-shadow:0 15px 40px rgba(0,0,0,.14);min-width:190px;overflow:hidden;z-index:999}
+.language-menu a{display:block;padding:13px 18px;font-size:.92rem;text-transform:none;letter-spacing:0}
+.language-menu a:hover{background:#F5F2EB;color:#D9A441}
+.language-menu.show{display:block}
+@media(max-width:900px){.language-menu{right:50%;transform:translateX(50%)}}
+</style>
 </head>
 
 <body>
 
 <header>
-
 <div class="topbar">
-
 <a href="index.html">
 <img src="../logo-horizontal.png" class="logo" alt="Fóscolo & Company Press">
 </a>
@@ -31,35 +36,36 @@
 <a href="projects.html">Projects</a>
 <a href="manifesto.html">Manifesto</a>
 <a href="contact.html">Contact</a>
-<a href="../sobre.html"><strong>PT</strong></a>
-</nav>
 
+<div class="language-selector">
+<button class="language-button" onclick="toggleLanguageMenu()" aria-label="Select language">🌐</button>
+
+<div class="language-menu" id="languageMenu">
+<a href="../sobre.html">Português</a>
+<a href="about.html">English</a>
+<a href="../es/sobre.html">Español</a>
+<a href="../fr/a-propos.html">Français</a>
+<a href="../zh/about.html">简体中文</a>
+</div>
+</div>
+</nav>
 </div>
 
 <div class="hero">
+<div class="kicker">About the Press</div>
 
-<div class="kicker">
-About the Press
-</div>
-
-<h1>
-A publishing house dedicated to memory, research and permanence.
-</h1>
+<h1>A publishing house dedicated to memory, research and permanence.</h1>
 
 <p>
 Fóscolo & Company Press was founded in Belo Horizonte, Brazil, at the intersection of history, culture, writing and the public circulation of knowledge.
 </p>
-
 </div>
-
 </header>
 
 <section>
-
 <div class="container">
 
 <h2>About Fóscolo & Company Press</h2>
-
 <div class="divider"></div>
 
 <p>
@@ -121,31 +127,22 @@ More than publishing books, we seek to build bridges: between past and present, 
 </p>
 
 </div>
-
 </section>
 
 <section class="highlight">
-
 <div class="container">
-
 <h2>Mission</h2>
-
 <div class="divider"></div>
 
 <p>
 To preserve, organize and expand the circulation of knowledge, memory and experience through editorial projects committed to intellectual rigor, writing quality and dialogue with society.
 </p>
-
 </div>
-
 </section>
 
 <section>
-
 <div class="container">
-
 <h2>Vision</h2>
-
 <div class="divider"></div>
 
 <p>
@@ -157,127 +154,92 @@ To become a reference in the publication of works dedicated to memory, history, 
 <p>
 We believe publishing can connect different times, experiences and communities of readers, expanding access to forms of knowledge that help us understand the world and imagine more conscious futures.
 </p>
-
 </div>
-
 </section>
 
 <section class="highlight">
-
 <div class="container">
-
 <h2>Values</h2>
-
 <div class="divider"></div>
 
 <div class="grid">
 
 <div class="card">
 <h3>Permanence</h3>
-<p>
-Publishing preserves experiences, knowledge and reflections beyond their immediate moment.
-</p>
+<p>Publishing preserves experiences, knowledge and reflections beyond their immediate moment.</p>
 </div>
 
 <div class="card">
 <h3>Rigor</h3>
-<p>
-We value intellectual quality, attention to sources, editorial responsibility and care in the construction of each work.
-</p>
+<p>We value intellectual quality, attention to sources, editorial responsibility and care in the construction of each work.</p>
 </div>
 
 <div class="card">
 <h3>Access</h3>
-<p>
-We support the broad circulation of knowledge and stronger connections between intellectual production, cultural institutions and society.
-</p>
+<p>We support the broad circulation of knowledge and stronger connections between intellectual production, cultural institutions and society.</p>
 </div>
 
 <div class="card">
 <h3>Dialogue</h3>
-<p>
-We recognize the value of encounters among different fields of knowledge, life experiences and ways of interpreting the world.
-</p>
+<p>We recognize the value of encounters among different fields of knowledge, life experiences and ways of interpreting the world.</p>
 </div>
 
 <div class="card">
 <h3>Memory</h3>
-<p>
-We understand memory as a collective heritage, essential to understanding the past, reflecting on the present and building the future.
-</p>
+<p>We understand memory as a collective heritage, essential to understanding the past, reflecting on the present and building the future.</p>
 </div>
 
 <div class="card">
 <h3>Care</h3>
-<p>
-We edit with attention to authors, readers, sources and the stories entrusted to us.
-</p>
+<p>We edit with attention to authors, readers, sources and the stories entrusted to us.</p>
 </div>
 
 </div>
-
 </div>
-
 </section>
 
 <section>
-
 <div class="container">
 
 <h2>What moves us</h2>
-
 <div class="divider"></div>
 
-<p>
-We publish because some experiences should not disappear.
-</p>
+<p>We publish because some experiences should not disappear.</p>
+<br>
+<p>We publish because certain research deserves to reach new publics.</p>
+<br>
+<p>We publish because memory, knowledge and culture are fundamental public goods.</p>
+<br>
+<p><strong>We publish because some ideas deserve to remain.</strong></p>
 
 <br>
 
-<p>
-We publish because certain research deserves to reach new publics.
-</p>
-
-<br>
-
-<p>
-We publish because memory, knowledge and culture are fundamental public goods.
-</p>
-
-<br>
-
-<p>
-<strong>We publish because some ideas deserve to remain.</strong>
-</p>
-
-<br>
-
-<a class="btn primary" href="manifesto.html">
-Read the Manifesto
-</a>
+<a class="btn primary" href="manifesto.html">Read the Manifesto</a>
 
 </div>
-
 </section>
 
 <footer>
-
 <img src="../selo-editorial.png" alt="Fóscolo & Company Editorial Seal">
 
-<p>
-<strong>Fóscolo & Company Press</strong>
-</p>
-
-<p>
-Ideas ignite. Stories remain.
-</p>
-
-<p>
-© 2026 Fóscolo & Company Press. All rights reserved.
-</p>
-
+<p><strong>Fóscolo & Company Press</strong></p>
+<p>Ideas ignite. Stories remain.</p>
+<p>© 2026 Fóscolo & Company Press. All rights reserved.</p>
 </footer>
 
-</body>
+<script>
+function toggleLanguageMenu(){
+document.getElementById("languageMenu").classList.toggle("show");
+}
 
+window.addEventListener("click", function(event){
+const selector = document.querySelector(".language-selector");
+
+if(!selector.contains(event.target)){
+document.getElementById("languageMenu").classList.remove("show");
+}
+});
+</script>
+
+</body>
 </html>
