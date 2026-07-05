@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Manifeste | Fóscolo & Company</title>
+
+<meta name="description" content="Manifeste éditorial de Fóscolo & Company, maison d'édition indépendante consacrée à la mémoire, à la recherche et à la permanence.">
+
+<link rel="icon" href="../favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="topbar">
+
+<a href="index.html">
+<img src="../logo-horizontal.png" class="logo" alt="Fóscolo & Company">
+</a>
+
+<nav>
+<a href="a-propos.html">À propos</a>
+<a href="publications.html">Publications</a>
+<a href="projets.html">Projets</a>
+<a href="manifeste.html">Manifeste</a>
+<a href="contact.html">Contact</a>
+
+<div class="language-selector">
+<button class="language-button" onclick="toggleLanguageMenu()" aria-label="Choisir la langue">🌐</button>
+
+<div class="language-menu" id="languageMenu">
+<a href="../manifesto.html">Português</a>
+<a href="../en/manifesto.html">English</a>
+<a href="../es/manifiesto.html">Español</a>
+<a href="manifeste.html">Français</a>
+<a href="../zh/manifesto.html">简体中文</a>
+</div>
+</div>
+</nav>
+
+</div>
+
+<div class="hero">
+<div class="kicker">Manifeste éditorial</div>
+
+<h1>Certaines idées méritent de demeurer.</h1>
+
+<p>
+À une époque marquée par la vitesse, l'excès et l'oubli,
+nous choisissons la mémoire, le soin et la permanence.
+</p>
+</div>
+
+</header>
+
+<section>
+<div class="container">
+
+<p>Nous vivons entourés d'informations.</p>
+
+<br>
+
+<p>
+Nous produisons des textes, des images, des recherches, des archives et des opinions
+à une vitesse sans précédent. Il n'a jamais été aussi facile de publier.
+Il n'a jamais été aussi difficile de demeurer.
+</p>
+
+<br>
+
+<p>
+Chaque jour, de nouveaux contenus apparaissent et disparaissent. Des archives sont oubliées.
+Des recherches deviennent inaccessibles. Des expériences accumulées pendant des décennies
+ne laissent que peu de traces. Les institutions changent. Les personnes partent.
+Les histoires se dispersent.
+</p>
+
+<br>
+
+<p>Tout ne peut pas être préservé.</p>
+
+<br>
+
+<p>Mais certaines choses doivent l'être.</p>
+
+<br>
+
+<p>
+<strong>
+Fóscolo & Company est née de la conviction que publier demeure l'une des formes
+les plus puissantes de permanence que l'humanité ait inventées.
+</strong>
+</p>
+
+<br>
+
+<p>Publier, ce n'est pas seulement produire des livres.</p>
+
+<br>
+
+<p>Publier, c'est reconnaître une valeur.</p>
+
+<br>
+
+<p>
+C'est affirmer qu'une expérience mérite d'être enregistrée.
+Qu'une recherche mérite d'être partagée.
+Qu'une mémoire mérite de continuer à produire du sens au-delà de son temps immédiat.
+</p>
+
+<br>
+
+<p>
+Nous nous intéressons aux histoires qui aident à comprendre le monde.
+Aux recherches qui élargissent les horizons.
+Aux témoignages qui préservent les expériences.
+Aux archives qui conservent des trajectoires.
+Aux questions qui restent pertinentes même lorsque les réponses changent.
+</p>
+
+<br>
+
+<p>Nous croyons que le savoir ne doit pas rester confiné.</p>
+
+<br>
+
+<p>Nous croyons que la mémoire est un patrimoine collectif.</p>
+
+<br>
+
+<p>Nous croyons que la culture se renforce lorsqu'elle circule.</p>
+
+<br>
+
+<p>Nous croyons que les bonnes idées méritent de rencontrer des lecteurs.</p>
+
+</div>
+</section>
+
+<section class="highlight">
+<div class="container">
+
+<h2>Pourquoi publier ?</h2>
+
+<div class="divider" style="margin-left:auto;margin-right:auto;"></div>
+
+<p>
+Pour préserver.
+<br>
+Pour transmettre.
+<br>
+Pour construire des passages.
+<br>
+Pour élargir le dialogue.
+<br>
+Pour transformer le savoir en héritage.
+</p>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2>Notre choix</h2>
+
+<div class="divider"></div>
+
+<p>À une époque marquée par la vitesse, nous choisissons la permanence.</p>
+
+<br>
+
+<p>À une époque marquée par l'excès, nous choisissons le soin.</p>
+
+<br>
+
+<p>À une époque marquée par l'oubli, nous choisissons la mémoire.</p>
+
+<br>
+
+<p>Ce choix guide chaque projet que nous développons.</p>
+
+<br>
+
+<p>
+<strong>
+Parce que certaines histoires ne doivent pas disparaître.
+<br>
+Parce que certaines idées méritent de demeurer.
+</strong>
+</p>
+
+</div>
+</section>
+
+<footer>
+
+<img src="../selo-editorial.png" alt="Sceau éditorial Fóscolo & Company">
+
+<p><strong>Fóscolo & Company</strong></p>
+<p>Maison d'édition indépendante · Belo Horizonte · Brésil</p>
+<p>Les idées s'allument. Les histoires demeurent.</p>
+<p>© 2026 Fóscolo & Company. Tous droits réservés.</p>
+
+</footer>
+
+<script>
+function toggleLanguageMenu(){
+document.getElementById("languageMenu").classList.toggle("show");
+}
+
+window.addEventListener("click", function(event){
+const selector=document.querySelector(".language-selector");
+if(!selector.contains(event.target)){
+document.getElementById("languageMenu").classList.remove("show");
+}
+});
+</script>
+
+</body>
+</html>
