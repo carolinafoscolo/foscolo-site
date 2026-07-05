@@ -8,10 +8,75 @@
 
 <title>Publications | Fóscolo & Company Press</title>
 
-<meta name="description" content="Editorial collections and publications by Fóscolo & Company Press.">
+<meta name="description" content="Publications and editorial collections by Fóscolo & Company Press, an independent publishing house dedicated to memory, history, cultural heritage and public knowledge.">
 
 <link rel="icon" href="../favicon.png">
 <link rel="stylesheet" href="style.css">
+
+<style>
+.language-selector{position:relative}
+.language-button{background:none;border:1px solid rgba(17,17,17,.22);border-radius:999px;font-size:18px;cursor:pointer;padding:7px 10px}
+.language-button:hover{border-color:#D9A441}
+.language-menu{display:none;position:absolute;right:0;top:44px;background:#FFFDF8;border:1px solid rgba(17,17,17,.12);border-radius:16px;box-shadow:0 15px 40px rgba(0,0,0,.14);min-width:190px;overflow:hidden;z-index:999}
+.language-menu a{display:block;padding:13px 18px;font-size:.92rem;text-transform:none;letter-spacing:0}
+.language-menu a:hover{background:#F5F2EB;color:#D9A441}
+.language-menu.show{display:block}
+
+.featured{
+background:#FFFDF8;
+border:1px solid rgba(17,17,17,.12);
+border-radius:30px;
+padding:42px;
+display:grid;
+grid-template-columns:1fr 1.2fr;
+gap:38px;
+align-items:center;
+}
+
+.book-mark{
+background:#111111;
+color:#F5F2EB;
+border-radius:24px;
+padding:42px 28px;
+text-align:center;
+min-height:320px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.book-mark span{
+color:#D9A441;
+text-transform:uppercase;
+letter-spacing:.12em;
+font-size:.78rem;
+margin-bottom:18px;
+}
+
+.book-mark h3{
+font-size:2rem;
+line-height:1.2;
+}
+
+.book-info p{
+color:#433c35;
+margin-bottom:18px;
+}
+
+.buttons{
+display:flex;
+gap:14px;
+flex-wrap:wrap;
+margin-top:25px;
+}
+
+@media(max-width:900px){
+.language-menu{right:50%;transform:translateX(50%)}
+.featured{grid-template-columns:1fr;padding:30px}
+.book-mark{min-height:250px}
+.buttons{justify-content:center}
+}
+</style>
 
 </head>
 
@@ -31,7 +96,18 @@
 <a href="projects.html">Projects</a>
 <a href="manifesto.html">Manifesto</a>
 <a href="contact.html">Contact</a>
-<a href="../publicacoes.html"><strong>PT</strong></a>
+
+<div class="language-selector">
+<button class="language-button" onclick="toggleLanguageMenu()" aria-label="Select language">🌐</button>
+
+<div class="language-menu" id="languageMenu">
+<a href="../publicacoes.html">Português</a>
+<a href="publications.html">English</a>
+<a href="../es/publicaciones.html">Español</a>
+<a href="../fr/publications.html">Français</a>
+<a href="../zh/publications.html">简体中文</a>
+</div>
+</div>
 </nav>
 
 </div>
@@ -47,12 +123,55 @@ Publications
 </h1>
 
 <p>
-Our catalogue is dedicated to works that preserve memory, encourage critical thinking and expand the public circulation of knowledge.
+Our catalogue is dedicated to works that preserve memory, encourage critical thinking
+and expand the public circulation of knowledge.
 </p>
 
 </div>
 
 </header>
+
+<section>
+
+<div class="container">
+
+<h2>First published title</h2>
+
+<div class="divider"></div>
+
+<div class="featured">
+
+<div class="book-mark">
+<span>Available on Amazon</span>
+<h3>Notes on Care, Risk and Knowledge</h3>
+</div>
+
+<div class="book-info">
+
+<p>
+The first title published by Fóscolo & Company Press marks the beginning of an editorial catalogue dedicated to memory, research, public knowledge and independent publishing.
+</p>
+
+<p>
+The book brings together intellectual experience, travel, observation and writing, opening a line of work committed to preserving records, images and reflections that emerge from research in motion.
+</p>
+
+<p>
+Available on Amazon in digital and print editions.
+</p>
+
+<div class="buttons">
+<a class="btn primary" href="https://a.co/d/0g4XbuEA" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+<a class="btn" href="https://a.co/d/0g1sZhSJ" target="_blank" rel="noopener noreferrer">Other edition</a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
 
 <section>
 
@@ -77,7 +196,6 @@ Books and editorial projects devoted to historical research, collective memory a
 Works related to museums, archives, architecture, cultural landscapes and heritage preservation.
 </p>
 </div>
-
 <div class="card">
 <h3>Health & Society</h3>
 <p>
@@ -121,10 +239,8 @@ Academic research translated into accessible publications without compromising i
 <div class="divider"></div>
 
 <p>
-
 Every publication reflects our commitment to intellectual rigor,
-editorial excellence and the long-term preservation of knowledge.
-
+editorial care and the long-term preservation of knowledge.
 </p>
 
 </div>
@@ -142,43 +258,31 @@ editorial excellence and the long-term preservation of knowledge.
 <div class="grid">
 
 <div class="card">
-
 <h3>History & Health</h3>
-
 <p>
 Research on healthcare institutions, epidemics, public policy and medical history.
 </p>
-
 </div>
 
 <div class="card">
-
 <h3>Institutional Memory</h3>
-
 <p>
 Projects documenting organizations, communities and collective trajectories.
 </p>
-
 </div>
 
 <div class="card">
-
 <h3>Heritage & Cities</h3>
-
 <p>
 Books dedicated to architecture, urban history, museums and cultural heritage.
 </p>
-
 </div>
 
 <div class="card">
-
 <h3>Oral History</h3>
-
 <p>
 Collections centered on interviews, testimonies and historical experience.
 </p>
-
 </div>
 
 </div>
@@ -196,11 +300,13 @@ Collections centered on interviews, testimonies and historical experience.
 <div class="divider"></div>
 
 <p>
+Fóscolo & Company Press begins its catalogue with <em>Notes on Care, Risk and Knowledge</em>, an inaugural publication that reflects the press’s commitment to research, memory and public intellectual work.
+</p>
 
-Our first publications are currently being prepared.
+<br>
 
-New titles will be announced soon through our website and official communication channels.
-
+<p>
+New titles and editorial collections will be announced through our website and official communication channels.
 </p>
 
 </div>
@@ -218,6 +324,20 @@ New titles will be announced soon through our website and official communication
 <p>© 2026 Fóscolo & Company Press. All rights reserved.</p>
 
 </footer>
+
+<script>
+function toggleLanguageMenu(){
+document.getElementById("languageMenu").classList.toggle("show");
+}
+
+window.addEventListener("click", function(event){
+const selector = document.querySelector(".language-selector");
+
+if(!selector.contains(event.target)){
+document.getElementById("languageMenu").classList.remove("show");
+}
+});
+</script>
 
 </body>
 
