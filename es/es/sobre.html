@@ -5,12 +5,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sobre | Fóscolo & Company Editorial</title>
+<title>Acerca de | Fóscolo & Company Editorial</title>
 
-<meta name="description" content="Sobre Fóscolo & Company Editorial, una editorial independiente dedicada a la memoria, la historia, el patrimonio cultural y el conocimiento público.">
+<meta name="description" content="Acerca de Fóscolo & Company Editorial, una editorial independiente dedicada a la memoria, la historia, el patrimonio cultural y la circulación pública del conocimiento.">
 
 <link rel="icon" href="../favicon.png">
 <link rel="stylesheet" href="style.css">
+
+<style>
+.language-selector{position:relative}
+.language-button{background:none;border:1px solid rgba(17,17,17,.22);border-radius:999px;font-size:18px;cursor:pointer;padding:7px 10px}
+.language-button:hover{border-color:#D9A441}
+.language-menu{display:none;position:absolute;right:0;top:44px;background:#FFFDF8;border:1px solid rgba(17,17,17,.12);border-radius:16px;box-shadow:0 15px 40px rgba(0,0,0,.14);min-width:190px;overflow:hidden;z-index:999}
+.language-menu a{display:block;padding:13px 18px;font-size:.92rem;text-transform:none;letter-spacing:0}
+.language-menu a:hover{background:#F5F2EB;color:#D9A441}
+.language-menu.show{display:block}
+@media(max-width:900px){.language-menu{right:50%;transform:translateX(50%)}}
+</style>
 </head>
 
 <body>
@@ -22,22 +33,33 @@
 </a>
 
 <nav>
-<a href="sobre.html">Sobre</a>
+<a href="sobre.html">Acerca de</a>
 <a href="publicaciones.html">Publicaciones</a>
 <a href="proyectos.html">Proyectos</a>
 <a href="manifiesto.html">Manifiesto</a>
 <a href="contacto.html">Contacto</a>
-<a href="../index.html"><strong>PT</strong></a>
+
+<div class="language-selector">
+<button class="language-button" onclick="toggleLanguageMenu()" aria-label="Seleccionar idioma">🌐</button>
+
+<div class="language-menu" id="languageMenu">
+<a href="../sobre.html">Português</a>
+<a href="../en/about.html">English</a>
+<a href="sobre.html">Español</a>
+<a href="../fr/a-propos.html">Français</a>
+<a href="../zh/about.html">简体中文</a>
+</div>
+</div>
 </nav>
 </div>
 
 <div class="hero">
-<div class="kicker">Sobre la editorial</div>
+<div class="kicker">Acerca de la editorial</div>
 
 <h1>Una casa editorial dedicada a la memoria, la investigación y la permanencia.</h1>
 
 <p>
-Fóscolo & Company Editorial nació en Belo Horizonte, Brasil, en la intersección entre historia, cultura, escritura y circulación pública del conocimiento.
+Fóscolo & Company Editorial nace en Belo Horizonte, Brasil, en la intersección entre historia, cultura, escritura y circulación pública del conocimiento.
 </p>
 </div>
 </header>
@@ -45,7 +67,7 @@ Fóscolo & Company Editorial nació en Belo Horizonte, Brasil, en la intersecci�
 <section>
 <div class="container">
 
-<h2>Sobre Fóscolo & Company Editorial</h2>
+<h2>Acerca de Fóscolo & Company Editorial</h2>
 <div class="divider"></div>
 
 <p>
@@ -209,6 +231,19 @@ Creemos en una actividad editorial capaz de conectar distintos tiempos, experien
 <p>Las ideas encienden. Las historias permanecen.</p>
 <p>© 2026 Fóscolo & Company Editorial. Todos los derechos reservados.</p>
 </footer>
+
+<script>
+function toggleLanguageMenu(){
+document.getElementById("languageMenu").classList.toggle("show");
+}
+
+window.addEventListener("click", function(event){
+const selector=document.querySelector(".language-selector");
+if(!selector.contains(event.target)){
+document.getElementById("languageMenu").classList.remove("show");
+}
+});
+</script>
 
 </body>
 </html>
