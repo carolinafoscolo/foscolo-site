@@ -3,35 +3,123 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fóscolo & Company</title>
 
-<script>
-(function(){
-  const saved = localStorage.getItem("foscolo_language");
+<title>Fóscolo & Company Editora</title>
+<meta name="description" content="Editora independente dedicada à memória, à história, ao patrimônio cultural e à circulação pública do conhecimento.">
 
-  if(saved){
-    window.location.href = saved + "/";
-    return;
-  }
+<link rel="icon" href="../assets/images/favicon.png">
+<link rel="stylesheet" href="../assets/css/style.css">
 
-  const lang = navigator.language || navigator.userLanguage || "pt";
-
-  if(lang.startsWith("pt")){
-    window.location.href = "pt/";
-  } else if(lang.startsWith("es")){
-    window.location.href = "es/";
-  } else if(lang.startsWith("fr")){
-    window.location.href = "fr/";
-  } else if(lang.startsWith("zh")){
-    window.location.href = "zh/";
-  } else {
-    window.location.href = "en/";
-  }
-})();
-</script>
+<script src="../assets/js/language.js" defer></script>
+<script src="../assets/js/menu.js" defer></script>
+<script src="../assets/js/footer.js" defer></script>
 </head>
 
 <body>
-<p>Redirecting...</p>
+
+<div id="site-header"></div>
+
+<main>
+
+<section class="hero">
+  <div class="kicker">Editora independente · Belo Horizonte · Brasil</div>
+
+  <h1>Ideias acendem.<br>Histórias permanecem.</h1>
+
+  <p>
+    A Fóscolo & Company Editora é uma casa editorial independente dedicada
+    à preservação da memória, à publicação de pesquisas e à construção de
+    diálogos entre universidade, cultura e sociedade.
+  </p>
+
+  <div class="buttons">
+    <a class="btn" href="sobre.html">Conheça a editora</a>
+    <a class="btn" href="contato.html">Entre em contato</a>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Publicar é criar permanência</h2>
+    <div class="divider"></div>
+
+    <p>
+      Livros não preservam apenas informações. Preservam experiências,
+      organizam ideias, conectam gerações e constroem pontes entre
+      pesquisa e sociedade.
+    </p>
+
+    <br>
+
+    <p>
+      Na Fóscolo & Company, publicar significa transformar conhecimento
+      em legado público duradouro.
+    </p>
+  </div>
+</section>
+
+<section class="highlight">
+  <div class="container">
+    <h2>Linhas editoriais</h2>
+    <div class="divider"></div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>História e Memória</h3>
+        <p>Pesquisas, narrativas e documentos dedicados à preservação da experiência humana.</p>
+      </div>
+
+      <div class="card">
+        <h3>Patrimônio Cultural</h3>
+        <p>Museus, arquivos, arquitetura, cidades e preservação cultural.</p>
+      </div>
+
+      <div class="card">
+        <h3>Saúde e Sociedade</h3>
+        <p>Obras sobre instituições, cuidado, políticas públicas e história da saúde.</p>
+      </div>
+
+      <div class="card">
+        <h3>Humanidades</h3>
+        <p>Ensaios e pesquisas sobre cultura, educação, sociedade e vida pública.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Catálogo em construção</h2>
+    <div class="divider"></div>
+
+    <p>
+      Estamos desenvolvendo nossas primeiras publicações e consolidando
+      parcerias com pesquisadores, instituições culturais, museus,
+      arquivos e centros de memória.
+    </p>
+
+    <a class="btn" href="publicacoes.html">Ver publicações</a>
+  </div>
+</section>
+
+<section class="highlight">
+  <div class="container">
+    <h2>Algumas histórias não devem desaparecer.</h2>
+    <div class="divider"></div>
+
+    <p>
+      Em uma época marcada pela velocidade e pelo excesso de informação,
+      acreditamos que publicar continua sendo uma das formas mais poderosas
+      de permanência.
+    </p>
+
+    <a class="btn" href="manifesto.html">Ler manifesto</a>
+  </div>
+</section>
+
+</main>
+
+<div id="site-footer"></div>
+
 </body>
 </html>
