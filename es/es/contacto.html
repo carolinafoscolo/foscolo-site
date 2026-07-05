@@ -8,10 +8,22 @@
 
 <title>Contacto | Fóscolo & Company Editorial</title>
 
-<meta name="description" content="Póngase en contacto con Fóscolo & Company Editorial para propuestas editoriales, colaboraciones y proyectos de investigación.">
+<meta name="description" content="Contacto de Fóscolo & Company Editorial para propuestas editoriales, colaboraciones institucionales, proyectos de memoria, investigación y publicaciones.">
 
 <link rel="icon" href="../favicon.png">
 <link rel="stylesheet" href="style.css">
+
+<style>
+.language-selector{position:relative}
+.language-button{background:none;border:1px solid rgba(17,17,17,.22);border-radius:999px;font-size:18px;cursor:pointer;padding:7px 10px}
+.language-button:hover{border-color:#D9A441}
+.language-menu{display:none;position:absolute;right:0;top:44px;background:#FFFDF8;border:1px solid rgba(17,17,17,.12);border-radius:16px;box-shadow:0 15px 40px rgba(0,0,0,.14);min-width:190px;overflow:hidden;z-index:999}
+.language-menu a{display:block;padding:13px 18px;font-size:.92rem;text-transform:none;letter-spacing:0}
+.language-menu a:hover{background:#F5F2EB;color:#D9A441}
+.language-menu.show{display:block}
+.email-link{font-size:1.25rem;color:#D9A441;word-break:break-word}
+@media(max-width:900px){.language-menu{right:50%;transform:translateX(50%)}}
+</style>
 
 </head>
 
@@ -26,36 +38,37 @@
 </a>
 
 <nav>
-<a href="sobre.html">Sobre</a>
+<a href="sobre.html">Acerca de</a>
 <a href="publicaciones.html">Publicaciones</a>
 <a href="proyectos.html">Proyectos</a>
 <a href="manifiesto.html">Manifiesto</a>
 <a href="contacto.html">Contacto</a>
-<a href="../contato.html"><strong>PT</strong></a>
+
+<div class="language-selector">
+<button class="language-button" onclick="toggleLanguageMenu()" aria-label="Seleccionar idioma">🌐</button>
+
+<div class="language-menu" id="languageMenu">
+<a href="../contato.html">Português</a>
+<a href="../en/contact.html">English</a>
+<a href="contacto.html">Español</a>
+<a href="../fr/contact.html">Français</a>
+<a href="../zh/contact.html">简体中文</a>
+</div>
+</div>
 </nav>
 
 </div>
 
 <div class="hero">
 
-<div class="kicker">
+<div class="kicker">Contacto institucional</div>
 
-Póngase en contacto
-
-</div>
-
-<h1>
-
-Construyamos juntos proyectos con impacto duradero.
-
-</h1>
+<h1>Construyamos juntos proyectos con impacto duradero.</h1>
 
 <p>
-
 Recibimos propuestas editoriales, colaboraciones institucionales,
 proyectos de investigación e iniciativas relacionadas con la memoria,
 la historia, el patrimonio cultural y la circulación pública del conocimiento.
-
 </p>
 
 </div>
@@ -77,26 +90,22 @@ la historia, el patrimonio cultural y la circulación pública del conocimiento.
 <h3>Correo electrónico</h3>
 
 <p>
-
-Para propuestas editoriales, colaboraciones y consultas generales:
-
+Para propuestas editoriales, colaboraciones institucionales y consultas generales:
 </p>
 
 <br>
 
-<p>
-
+<p class="email-link">
 <strong>
-
-<a href="mailto:contato@foscolo.com.br">
-
-contato@foscolo.com.br
-
-</a>
-
+<a href="mailto:contato@foscolo.com.br">contato@foscolo.com.br</a>
 </strong>
-
 </p>
+
+<br>
+
+<a class="btn primary" href="mailto:contato@foscolo.com.br">
+Enviar correo
+</a>
 
 </div>
 
@@ -105,13 +114,15 @@ contato@foscolo.com.br
 <h3>Ubicación</h3>
 
 <p>
-
-Belo Horizonte<br>
-
+<strong>Belo Horizonte</strong><br>
 Minas Gerais<br>
-
 Brasil
+</p>
 
+<br>
+
+<p>
+Desarrollamos proyectos editoriales, académicos y culturales en formatos presenciales, remotos o híbridos.
 </p>
 
 </div>
@@ -133,54 +144,31 @@ Brasil
 <div class="grid">
 
 <div class="card">
-
 <h3>Proyectos Editoriales</h3>
-
 <p>
-
-Libros, ensayos, catálogos y publicaciones académicas.
-
+Libros, ensayos, catálogos, e-books y publicaciones académicas.
 </p>
-
 </div>
 
 <div class="card">
-
 <h3>Colaboraciones Institucionales</h3>
-
 <p>
-
-Universidades, museos, archivos,
-centros de investigación e instituciones culturales.
-
+Universidades, museos, archivos, centros de investigación e instituciones culturales.
 </p>
-
 </div>
 
 <div class="card">
-
 <h3>Investigación</h3>
-
 <p>
-
-Historia, memoria,
-patrimonio cultural,
-salud pública y humanidades.
-
+Historia, memoria, patrimonio cultural, salud pública, humanidades e historia oral.
 </p>
-
 </div>
 
 <div class="card">
-
 <h3>Divulgación Científica</h3>
-
 <p>
-
-Proyectos destinados a ampliar el acceso público al conocimiento.
-
+Iniciativas destinadas a ampliar el acceso público al conocimiento académico.
 </p>
-
 </div>
 
 </div>
@@ -198,26 +186,17 @@ Proyectos destinados a ampliar el acceso público al conocimiento.
 <div class="divider"></div>
 
 <p>
-
-Para ayudarnos a comprender mejor su propuesta,
-le recomendamos incluir:
-
+Para ayudarnos a comprender mejor su propuesta, recomendamos incluir:
 </p>
 
 <br>
 
 <ul style="padding-left:25px;line-height:2;">
-
-<li>Una breve presentación del proyecto;</li>
-
-<li>El tema principal o área de investigación;</li>
-
-<li>El estado actual del trabajo;</li>
-
-<li>Los objetivos de la publicación o colaboración;</li>
-
-<li>Fechas relevantes, si las hubiera.</li>
-
+<li>una breve presentación del proyecto;</li>
+<li>el tema principal o área de investigación;</li>
+<li>el estado actual del trabajo;</li>
+<li>los objetivos de la publicación o colaboración;</li>
+<li>fechas relevantes, si las hubiera.</li>
 </ul>
 
 </div>
@@ -233,12 +212,8 @@ le recomendamos incluir:
 <div class="divider"></div>
 
 <p>
-
-Fóscolo & Company Editorial está comprometida con la publicación
-de obras que preservan la memoria,
-promueven el diálogo
-y contribuyen a la circulación del conocimiento a largo plazo.
-
+Fóscolo & Company Editorial está comprometida con la publicación de obras que preservan la memoria,
+promueven el diálogo y contribuyen a la circulación del conocimiento a largo plazo.
 </p>
 
 </div>
@@ -251,19 +226,24 @@ y contribuyen a la circulación del conocimiento a largo plazo.
 
 <p><strong>Fóscolo & Company Editorial</strong></p>
 
-<p>
+<p>Las ideas encienden. Las historias permanecen.</p>
 
-Las ideas encienden. Las historias permanecen.
-
-</p>
-
-<p>
-
-© 2026 Fóscolo & Company Editorial. Todos los derechos reservados.
-
-</p>
+<p>© 2026 Fóscolo & Company Editorial. Todos los derechos reservados.</p>
 
 </footer>
+
+<script>
+function toggleLanguageMenu(){
+document.getElementById("languageMenu").classList.toggle("show");
+}
+
+window.addEventListener("click", function(event){
+const selector=document.querySelector(".language-selector");
+if(!selector.contains(event.target)){
+document.getElementById("languageMenu").classList.remove("show");
+}
+});
+</script>
 
 </body>
 
