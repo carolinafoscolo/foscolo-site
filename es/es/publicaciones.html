@@ -8,10 +8,129 @@
 
 <title>Publicaciones | Fóscolo & Company Editorial</title>
 
-<meta name="description" content="Catálogo editorial y publicaciones de Fóscolo & Company Editorial.">
+<meta name="description" content="Publicaciones y colecciones editoriales de Fóscolo & Company Editorial.">
 
 <link rel="icon" href="../favicon.png">
 <link rel="stylesheet" href="style.css">
+
+<style>
+
+.language-selector{position:relative}
+.language-button{
+background:none;
+border:1px solid rgba(17,17,17,.22);
+border-radius:999px;
+font-size:18px;
+cursor:pointer;
+padding:7px 10px;
+}
+
+.language-button:hover{
+border-color:#D9A441;
+}
+
+.language-menu{
+display:none;
+position:absolute;
+right:0;
+top:44px;
+background:#FFFDF8;
+border:1px solid rgba(17,17,17,.12);
+border-radius:16px;
+box-shadow:0 15px 40px rgba(0,0,0,.14);
+min-width:190px;
+overflow:hidden;
+z-index:999;
+}
+
+.language-menu a{
+display:block;
+padding:13px 18px;
+font-size:.92rem;
+text-transform:none;
+letter-spacing:0;
+}
+
+.language-menu a:hover{
+background:#F5F2EB;
+color:#D9A441;
+}
+
+.language-menu.show{
+display:block;
+}
+
+.featured{
+background:#FFFDF8;
+border:1px solid rgba(17,17,17,.12);
+border-radius:30px;
+padding:42px;
+display:grid;
+grid-template-columns:1fr 1.2fr;
+gap:40px;
+align-items:center;
+}
+
+.book-mark{
+background:#111111;
+color:#F5F2EB;
+border-radius:24px;
+padding:42px 30px;
+text-align:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+min-height:320px;
+}
+
+.book-mark span{
+color:#D9A441;
+text-transform:uppercase;
+letter-spacing:.12em;
+font-size:.78rem;
+margin-bottom:18px;
+}
+
+.book-mark h3{
+font-size:2rem;
+line-height:1.2;
+}
+
+.book-info p{
+margin-bottom:18px;
+color:#433c35;
+}
+
+.buttons{
+display:flex;
+gap:14px;
+flex-wrap:wrap;
+margin-top:24px;
+}
+
+@media(max-width:900px){
+
+.language-menu{
+right:50%;
+transform:translateX(50%);
+}
+
+.featured{
+grid-template-columns:1fr;
+padding:30px;
+}
+
+.book-mark{
+min-height:240px;
+}
+
+.buttons{
+justify-content:center;
+}
+
+}
+
+</style>
 
 </head>
 
@@ -27,7 +146,7 @@
 
 <nav>
 
-<a href="sobre.html">Sobre</a>
+<a href="sobre.html">Acerca de</a>
 
 <a href="publicaciones.html">Publicaciones</a>
 
@@ -37,7 +156,30 @@
 
 <a href="contacto.html">Contacto</a>
 
-<a href="../publicacoes.html"><strong>PT</strong></a>
+<div class="language-selector">
+
+<button class="language-button"
+onclick="toggleLanguageMenu()">
+
+🌐
+
+</button>
+
+<div class="language-menu" id="languageMenu">
+
+<a href="../publicacoes.html">Português</a>
+
+<a href="../en/publications.html">English</a>
+
+<a href="publicaciones.html">Español</a>
+
+<a href="../fr/publications.html">Français</a>
+
+<a href="../zh/publications.html">简体中文</a>
+
+</div>
+
+</div>
 
 </nav>
 
@@ -59,13 +201,84 @@ Publicaciones
 
 <p>
 
-Nuestro catálogo reúne obras dedicadas a la memoria, la historia, el patrimonio cultural, la salud, las humanidades y la circulación pública del conocimiento.
+Nuestro catálogo reúne obras dedicadas a la memoria, la historia,
+el patrimonio cultural, la salud, las humanidades y la circulación pública del conocimiento.
 
 </p>
 
 </div>
 
 </header>
+
+<section>
+
+<div class="container">
+
+<h2>Primer libro publicado</h2>
+
+<div class="divider"></div>
+
+<div class="featured">
+
+<div class="book-mark">
+
+<span>Disponible en Amazon</span>
+
+<h3>
+
+Notes on Care, Risk and Knowledge
+
+</h3>
+
+</div>
+
+<div class="book-info">
+
+<p>
+
+El primer título publicado por Fóscolo & Company Editorial inaugura un catálogo comprometido con la memoria, la investigación, la cultura y la circulación pública del conocimiento.
+
+</p>
+
+<p>
+
+La obra reúne experiencias de investigación, viajes, observación y escritura, proponiendo un diálogo entre cuidado, riesgo y producción intelectual desde una perspectiva histórica y humanística.
+
+</p>
+
+<p>
+
+Disponible en Amazon en formato digital y en edición impresa.
+
+</p>
+
+<div class="buttons">
+
+<a class="btn primary"
+href="https://a.co/d/0g4XbuEA"
+target="_blank">
+
+Ver en Amazon
+
+</a>
+
+<a class="btn"
+href="https://a.co/d/0g1sZhSJ"
+target="_blank">
+
+Otra edición
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
 
 <section>
 
@@ -83,7 +296,8 @@ Nuestro catálogo reúne obras dedicadas a la memoria, la historia, el patrimoni
 
 <p>
 
-Libros y proyectos dedicados a la investigación histórica, la memoria colectiva y la historia pública.
+Libros y proyectos dedicados a la investigación histórica,
+la memoria colectiva y la historia pública.
 
 </p>
 
@@ -95,7 +309,9 @@ Libros y proyectos dedicados a la investigación histórica, la memoria colectiv
 
 <p>
 
-Publicaciones relacionadas con museos, archivos, arquitectura, ciudades y preservación del patrimonio cultural.
+Publicaciones relacionadas con museos,
+archivos, arquitectura, ciudades
+y preservación del patrimonio cultural.
 
 </p>
 
@@ -107,68 +323,290 @@ Publicaciones relacionadas con museos, archivos, arquitectura, ciudades y preser
 
 <p>
 
-Obras dedicadas a la historia de la salud, instituciones sanitarias, políticas públicas y prácticas de cuidado.
+Obras dedicadas a la historia de la salud,
+instituciones sanitarias,
+políticas públicas y prácticas de cuidado.
 
 </p>
 
 </div>
+<!DOCTYPE html>
+<html lang="es">
 
-<div class="card">
+<head>
 
-<h3>Humanidades</h3>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Publicaciones | Fóscolo & Company Editorial</title>
+
+<meta name="description" content="Publicaciones y colecciones editoriales de Fóscolo & Company Editorial.">
+
+<link rel="icon" href="../favicon.png">
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.language-selector{position:relative}
+.language-button{
+background:none;
+border:1px solid rgba(17,17,17,.22);
+border-radius:999px;
+font-size:18px;
+cursor:pointer;
+padding:7px 10px;
+}
+
+.language-button:hover{
+border-color:#D9A441;
+}
+
+.language-menu{
+display:none;
+position:absolute;
+right:0;
+top:44px;
+background:#FFFDF8;
+border:1px solid rgba(17,17,17,.12);
+border-radius:16px;
+box-shadow:0 15px 40px rgba(0,0,0,.14);
+min-width:190px;
+overflow:hidden;
+z-index:999;
+}
+
+.language-menu a{
+display:block;
+padding:13px 18px;
+font-size:.92rem;
+text-transform:none;
+letter-spacing:0;
+}
+
+.language-menu a:hover{
+background:#F5F2EB;
+color:#D9A441;
+}
+
+.language-menu.show{
+display:block;
+}
+
+.featured{
+background:#FFFDF8;
+border:1px solid rgba(17,17,17,.12);
+border-radius:30px;
+padding:42px;
+display:grid;
+grid-template-columns:1fr 1.2fr;
+gap:40px;
+align-items:center;
+}
+
+.book-mark{
+background:#111111;
+color:#F5F2EB;
+border-radius:24px;
+padding:42px 30px;
+text-align:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+min-height:320px;
+}
+
+.book-mark span{
+color:#D9A441;
+text-transform:uppercase;
+letter-spacing:.12em;
+font-size:.78rem;
+margin-bottom:18px;
+}
+
+.book-mark h3{
+font-size:2rem;
+line-height:1.2;
+}
+
+.book-info p{
+margin-bottom:18px;
+color:#433c35;
+}
+
+.buttons{
+display:flex;
+gap:14px;
+flex-wrap:wrap;
+margin-top:24px;
+}
+
+@media(max-width:900px){
+
+.language-menu{
+right:50%;
+transform:translateX(50%);
+}
+
+.featured{
+grid-template-columns:1fr;
+padding:30px;
+}
+
+.book-mark{
+min-height:240px;
+}
+
+.buttons{
+justify-content:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="topbar">
+
+<a href="index.html">
+<img src="../logo-horizontal.png" class="logo" alt="Fóscolo & Company Editorial">
+</a>
+
+<nav>
+
+<a href="sobre.html">Acerca de</a>
+
+<a href="publicaciones.html">Publicaciones</a>
+
+<a href="proyectos.html">Proyectos</a>
+
+<a href="manifiesto.html">Manifiesto</a>
+
+<a href="contacto.html">Contacto</a>
+
+<div class="language-selector">
+
+<button class="language-button"
+onclick="toggleLanguageMenu()">
+
+🌐
+
+</button>
+
+<div class="language-menu" id="languageMenu">
+
+<a href="../publicacoes.html">Português</a>
+
+<a href="../en/publications.html">English</a>
+
+<a href="publicaciones.html">Español</a>
+
+<a href="../fr/publications.html">Français</a>
+
+<a href="../zh/publications.html">简体中文</a>
+
+</div>
+
+</div>
+
+</nav>
+
+</div>
+
+<div class="hero">
+
+<div class="kicker">
+
+Catálogo Editorial
+
+</div>
+
+<h1>
+
+Publicaciones
+
+</h1>
 
 <p>
 
-Ensayos, investigaciones y trabajos académicos sobre cultura, educación y sociedad.
+Nuestro catálogo reúne obras dedicadas a la memoria, la historia,
+el patrimonio cultural, la salud, las humanidades y la circulación pública del conocimiento.
 
 </p>
 
 </div>
 
-<div class="card">
+</header>
 
-<h3>Historia Oral</h3>
-
-<p>
-
-Entrevistas, testimonios y proyectos de memoria institucional y comunitaria.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Divulgación Científica</h3>
-
-<p>
-
-Conocimiento académico presentado de forma accesible sin renunciar al rigor intelectual.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="highlight">
+<section>
 
 <div class="container">
 
-<h2>Publicar con propósito</h2>
+<h2>Primer libro publicado</h2>
 
 <div class="divider"></div>
 
+<div class="featured">
+
+<div class="book-mark">
+
+<span>Disponible en Amazon</span>
+
+<h3>
+
+Notes on Care, Risk and Knowledge
+
+</h3>
+
+</div>
+
+<div class="book-info">
+
 <p>
 
-Cada publicación refleja nuestro compromiso con el rigor intelectual,
-la excelencia editorial y la preservación del conocimiento para las futuras generaciones.
+El primer título publicado por Fóscolo & Company Editorial inaugura un catálogo comprometido con la memoria, la investigación, la cultura y la circulación pública del conocimiento.
 
 </p>
+
+<p>
+
+La obra reúne experiencias de investigación, viajes, observación y escritura, proponiendo un diálogo entre cuidado, riesgo y producción intelectual desde una perspectiva histórica y humanística.
+
+</p>
+
+<p>
+
+Disponible en Amazon en formato digital y en edición impresa.
+
+</p>
+
+<div class="buttons">
+
+<a class="btn primary"
+href="https://a.co/d/0g4XbuEA"
+target="_blank">
+
+Ver en Amazon
+
+</a>
+
+<a class="btn"
+href="https://a.co/d/0g1sZhSJ"
+target="_blank">
+
+Otra edición
+
+</a>
+
+</div>
+
+</div>
+
+</div>
 
 </div>
 
@@ -178,7 +616,7 @@ la excelencia editorial y la preservación del conocimiento para las futuras gen
 
 <div class="container">
 
-<h2>Colecciones en desarrollo</h2>
+<h2>Líneas editoriales</h2>
 
 <div class="divider"></div>
 
@@ -186,11 +624,12 @@ la excelencia editorial y la preservación del conocimiento para las futuras gen
 
 <div class="card">
 
-<h3>Historia y Salud</h3>
+<h3>Historia y Memoria</h3>
 
 <p>
 
-Investigaciones sobre instituciones sanitarias, epidemias, políticas públicas e historia de la medicina.
+Libros y proyectos dedicados a la investigación histórica,
+la memoria colectiva y la historia pública.
 
 </p>
 
@@ -198,11 +637,13 @@ Investigaciones sobre instituciones sanitarias, epidemias, políticas públicas 
 
 <div class="card">
 
-<h3>Memoria Institucional</h3>
+<h3>Patrimonio Cultural</h3>
 
 <p>
 
-Proyectos dedicados a organizaciones, comunidades y trayectorias colectivas.
+Publicaciones relacionadas con museos,
+archivos, arquitectura, ciudades
+y preservación del patrimonio cultural.
 
 </p>
 
@@ -210,66 +651,14 @@ Proyectos dedicados a organizaciones, comunidades y trayectorias colectivas.
 
 <div class="card">
 
-<h3>Patrimonio y Ciudad</h3>
+<h3>Salud y Sociedad</h3>
 
 <p>
 
-Libros sobre arquitectura, urbanismo, museos y patrimonio cultural.
+Obras dedicadas a la historia de la salud,
+instituciones sanitarias,
+políticas públicas y prácticas de cuidado.
 
 </p>
 
 </div>
-
-<div class="card">
-
-<h3>Historia Oral</h3>
-
-<p>
-
-Colecciones dedicadas a entrevistas, testimonios y experiencias históricas.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2>Catálogo en construcción</h2>
-
-<div class="divider"></div>
-
-<p>
-
-Nuestras primeras publicaciones se encuentran actualmente en preparación.
-
-Nuevos títulos serán anunciados próximamente a través de nuestro sitio web y nuestros canales oficiales.
-
-</p>
-
-</div>
-
-</section>
-
-<footer>
-
-<img src="../selo-editorial.png" alt="Sello Editorial">
-
-<p><strong>Fóscolo & Company Editorial</strong></p>
-
-<p>Las ideas encienden. Las historias permanecen.</p>
-
-<p>© 2026 Fóscolo & Company Editorial. Todos los derechos reservados.</p>
-
-</footer>
-
-</body>
-
-</html>
