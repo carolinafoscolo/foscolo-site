@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fóscolo & Company Editora</title>
+
+<script>
+(function(){
+  const saved = localStorage.getItem("foscolo_language");
+
+  if(saved){
+    window.location.href = saved + "/";
+    return;
+  }
+
+  const lang = navigator.language || navigator.userLanguage;
+
+  if(lang.startsWith("pt")){
+    window.location.href = "pt/";
+  } else if(lang.startsWith("es")){
+    window.location.href = "es/";
+  } else if(lang.startsWith("fr")){
+    window.location.href = "fr/";
+  } else if(lang.startsWith("zh")){
+    window.location.href = "zh/";
+  } else {
+    window.location.href = "en/";
+  }
+})();
+</script>
+</head>
+
+<body>
+<p>Redirecting...</p>
+</body>
+</html>
