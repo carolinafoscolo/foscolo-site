@@ -13,6 +13,124 @@
 <link rel="icon" href="../favicon.png">
 <link rel="stylesheet" href="style.css">
 
+<style>
+.language-selector{position:relative}
+
+.language-button{
+background:none;
+border:1px solid rgba(17,17,17,.22);
+border-radius:999px;
+font-size:18px;
+cursor:pointer;
+padding:7px 10px;
+}
+
+.language-button:hover{
+border-color:#D9A441;
+}
+
+.language-menu{
+display:none;
+position:absolute;
+right:0;
+top:44px;
+background:#FFFDF8;
+border:1px solid rgba(17,17,17,.12);
+border-radius:16px;
+box-shadow:0 15px 40px rgba(0,0,0,.14);
+min-width:190px;
+overflow:hidden;
+z-index:999;
+}
+
+.language-menu a{
+display:block;
+padding:13px 18px;
+font-size:.92rem;
+text-transform:none;
+letter-spacing:0;
+}
+
+.language-menu a:hover{
+background:#F5F2EB;
+color:#D9A441;
+}
+
+.language-menu.show{
+display:block;
+}
+
+.featured{
+background:#FFFDF8;
+border:1px solid rgba(17,17,17,.12);
+border-radius:30px;
+padding:42px;
+display:grid;
+grid-template-columns:1fr 1.2fr;
+gap:40px;
+align-items:center;
+}
+
+.book-mark{
+background:#111111;
+color:#F5F2EB;
+border-radius:24px;
+padding:42px 30px;
+text-align:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+min-height:320px;
+}
+
+.book-mark span{
+color:#D9A441;
+text-transform:uppercase;
+letter-spacing:.12em;
+font-size:.78rem;
+margin-bottom:18px;
+}
+
+.book-mark h3{
+font-size:2rem;
+line-height:1.2;
+}
+
+.book-info p{
+margin-bottom:18px;
+color:#433c35;
+}
+
+.buttons{
+display:flex;
+gap:14px;
+flex-wrap:wrap;
+margin-top:24px;
+}
+
+@media(max-width:900px){
+
+.language-menu{
+right:50%;
+transform:translateX(50%);
+}
+
+.featured{
+grid-template-columns:1fr;
+padding:30px;
+}
+
+.book-mark{
+min-height:240px;
+}
+
+.buttons{
+justify-content:center;
+}
+
+}
+</style>
+
 </head>
 
 <body>
@@ -27,12 +145,29 @@
 
 <nav>
 
-<a href="sobre.html">Sobre</a>
+<a href="sobre.html">Acerca de</a>
 <a href="publicaciones.html">Publicaciones</a>
 <a href="proyectos.html">Proyectos</a>
 <a href="manifiesto.html">Manifiesto</a>
 <a href="contacto.html">Contacto</a>
-<a href="../projetos.html"><strong>PT</strong></a>
+
+<div class="language-selector">
+
+<button class="language-button" onclick="toggleLanguageMenu()" aria-label="Seleccionar idioma">
+🌐
+</button>
+
+<div class="language-menu" id="languageMenu">
+
+<a href="../projetos.html">Português</a>
+<a href="../en/projects.html">English</a>
+<a href="proyectos.html">Español</a>
+<a href="../fr/projets.html">Français</a>
+<a href="../zh/projects.html">简体中文</a>
+
+</div>
+
+</div>
 
 </nav>
 
@@ -41,26 +176,74 @@
 <div class="hero">
 
 <div class="kicker">
-
 Proyectos Editoriales
-
 </div>
 
 <h1>
-
 Construyendo puentes entre investigación, memoria y sociedad.
-
 </h1>
 
 <p>
-
 Nuestros proyectos integran investigación histórica, edición y preservación cultural para transformar el conocimiento en obras capaces de permanecer en el tiempo.
-
 </p>
 
 </div>
 
 </header>
+
+<section>
+
+<div class="container">
+
+<h2>Proyecto inaugural publicado</h2>
+
+<div class="divider"></div>
+
+<div class="featured">
+
+<div class="book-mark">
+
+<span>Libro publicado</span>
+
+<h3>
+Notes on Care, Risk and Knowledge
+</h3>
+
+</div>
+
+<div class="book-info">
+
+<p>
+El primer proyecto publicado por Fóscolo & Company Editorial marca el inicio de un catálogo dedicado a la circulación pública de ideas, registros, imágenes y experiencias de investigación.
+</p>
+
+<p>
+La obra surge de la relación entre desplazamiento, observación, escritura y producción intelectual, articulando memoria, cuidado, riesgo y conocimiento en un proyecto editorial independiente.
+</p>
+
+<p>
+Más que un título aislado, inaugura una forma de trabajo: publicaciones independientes, cuidadas y orientadas a la permanencia.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary" href="https://a.co/d/0g4XbuEA" target="_blank" rel="noopener noreferrer">
+Ver en Amazon
+</a>
+
+<a class="btn" href="https://a.co/d/0g1sZhSJ" target="_blank" rel="noopener noreferrer">
+Otra edición
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
 
 <section>
 
@@ -77,9 +260,7 @@ Nuestros proyectos integran investigación histórica, edición y preservación 
 <h3>Edición de Libros</h3>
 
 <p>
-
 Desarrollo editorial de libros impresos, libros digitales, ensayos, catálogos y publicaciones académicas.
-
 </p>
 
 </div>
@@ -89,21 +270,16 @@ Desarrollo editorial de libros impresos, libros digitales, ensayos, catálogos y
 <h3>Historia Oral</h3>
 
 <p>
-
 Entrevistas, relatos de vida y proyectos de memoria destinados a preservar experiencias individuales e institucionales.
-
 </p>
 
 </div>
-
 <div class="card">
 
 <h3>Memoria Institucional</h3>
 
 <p>
-
 Proyectos para documentar la historia, la identidad y el legado de organizaciones e instituciones.
-
 </p>
 
 </div>
@@ -113,9 +289,7 @@ Proyectos para documentar la historia, la identidad y el legado de organizacione
 <h3>Archivos y Documentación</h3>
 
 <p>
-
 Organización, interpretación y difusión de fondos documentales y archivos históricos.
-
 </p>
 
 </div>
@@ -125,9 +299,7 @@ Organización, interpretación y difusión de fondos documentales y archivos his
 <h3>Patrimonio Cultural</h3>
 
 <p>
-
 Iniciativas relacionadas con museos, arquitectura, ciudades, patrimonio y paisajes culturales.
-
 </p>
 
 </div>
@@ -137,9 +309,7 @@ Iniciativas relacionadas con museos, arquitectura, ciudades, patrimonio y paisaj
 <h3>Divulgación Científica</h3>
 
 <p>
-
 Transformación de investigaciones académicas en publicaciones accesibles para diferentes públicos.
-
 </p>
 
 </div>
@@ -159,9 +329,7 @@ Transformación de investigaciones académicas en publicaciones accesibles para 
 <div class="divider"></div>
 
 <p>
-
 El trabajo editorial también implica escuchar, investigar, organizar información, preservar memorias y construir narrativas que acerquen el conocimiento a la sociedad.
-
 </p>
 
 </div>
@@ -183,9 +351,7 @@ El trabajo editorial también implica escuchar, investigar, organizar informaci�
 <h3>Investigación</h3>
 
 <p>
-
 Comprensión del contexto histórico, las fuentes y los objetivos de cada proyecto.
-
 </p>
 
 </div>
@@ -195,9 +361,7 @@ Comprensión del contexto histórico, las fuentes y los objetivos de cada proyec
 <h3>Desarrollo Editorial</h3>
 
 <p>
-
 Edición, revisión, organización narrativa y preparación editorial.
-
 </p>
 
 </div>
@@ -207,9 +371,7 @@ Edición, revisión, organización narrativa y preparación editorial.
 <h3>Diseño</h3>
 
 <p>
-
 Proyecto gráfico e identidad visual orientados a la lectura y la preservación a largo plazo.
-
 </p>
 
 </div>
@@ -219,9 +381,7 @@ Proyecto gráfico e identidad visual orientados a la lectura y la preservación 
 <h3>Publicación</h3>
 
 <p>
-
 Producción de ediciones impresas y digitales destinadas a una amplia circulación.
-
 </p>
 
 </div>
@@ -231,9 +391,7 @@ Producción de ediciones impresas y digitales destinadas a una amplia circulaci�
 <h3>Difusión</h3>
 
 <p>
-
 Estrategias para conectar publicaciones con lectores, investigadores e instituciones culturales.
-
 </p>
 
 </div>
@@ -243,9 +401,7 @@ Estrategias para conectar publicaciones con lectores, investigadores e instituci
 <h3>Impacto Duradero</h3>
 
 <p>
-
 Proyectos concebidos para seguir siendo consultados y relevantes con el paso del tiempo.
-
 </p>
 
 </div>
@@ -265,11 +421,13 @@ Proyectos concebidos para seguir siendo consultados y relevantes con el paso del
 <div class="divider"></div>
 
 <p>
-
 Nuestros primeros proyectos editoriales se centran en historia, historia oral, salud pública, memoria institucional, patrimonio cultural y divulgación científica.
+</p>
 
+<br>
+
+<p>
 Con el crecimiento del catálogo, estas iniciativas formarán parte de un programa editorial comprometido con la preservación del conocimiento para las futuras generaciones.
-
 </p>
 
 </div>
@@ -283,18 +441,36 @@ Con el crecimiento del catálogo, estas iniciativas formarán parte de un progra
 <p><strong>Fóscolo & Company Editorial</strong></p>
 
 <p>
-
 Las ideas encienden. Las historias permanecen.
-
 </p>
 
 <p>
-
 © 2026 Fóscolo & Company Editorial. Todos los derechos reservados.
-
 </p>
 
 </footer>
+
+<script>
+
+function toggleLanguageMenu(){
+
+document.getElementById("languageMenu").classList.toggle("show");
+
+}
+
+window.addEventListener("click", function(event){
+
+const selector=document.querySelector(".language-selector");
+
+if(!selector.contains(event.target)){
+
+document.getElementById("languageMenu").classList.remove("show");
+
+}
+
+});
+
+</script>
 
 </body>
 
