@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Projetos | Fóscolo & Company Editora</title>
+
 <meta name="description" content="Projetos editoriais da Fóscolo & Company Editora: publicação, história oral, memória institucional, acervos, patrimônio cultural e divulgação científica.">
-<link rel="icon" href="favicon.png">
+
+<link rel="icon" href="../favicon.png">
 
 <style>
 :root{
@@ -18,6 +22,7 @@
 }
 
 *{margin:0;padding:0;box-sizing:border-box}
+
 html{scroll-behavior:smooth}
 
 body{
@@ -65,47 +70,27 @@ letter-spacing:.09em;
 
 nav a:hover{color:var(--dourado)}
 
-.language-selector{position:relative}
-
-.language-button{
-background:none;
-border:1px solid rgba(17,17,17,.22);
-border-radius:999px;
-font-size:18px;
-cursor:pointer;
-padding:7px 10px;
+.languages{
+display:flex;
+align-items:center;
+gap:8px;
+font-size:.82rem;
+letter-spacing:.08em;
+text-transform:uppercase;
 }
 
-.language-button:hover{border-color:var(--dourado)}
-
-.language-menu{
-display:none;
-position:absolute;
-right:0;
-top:44px;
-background:var(--branco);
-border:1px solid rgba(17,17,17,.12);
-border-radius:16px;
-box-shadow:0 15px 40px rgba(0,0,0,.14);
-min-width:190px;
-overflow:hidden;
-z-index:999;
+.languages a{
+color:#555;
+transition:.2s;
 }
 
-.language-menu a{
-display:block;
-padding:13px 18px;
-font-size:.92rem;
-text-transform:none;
-letter-spacing:0;
-}
-
-.language-menu a:hover{
-background:var(--marfim);
+.languages a:hover{
 color:var(--dourado);
 }
 
-.language-menu.show{display:block}
+.languages strong{
+color:var(--preto);
+}
 
 .hero{
 max-width:1100px;
@@ -267,7 +252,7 @@ gap:20px;
 }
 
 .step{
-background:white;
+background:var(--branco);
 border-left:5px solid var(--dourado);
 padding:25px;
 border-radius:0 15px 15px 0;
@@ -307,9 +292,10 @@ gap:14px;
 
 nav a{font-size:.74rem}
 
-.language-menu{
-right:50%;
-transform:translateX(50%);
+.languages{
+justify-content:center;
+width:100%;
+font-size:.76rem;
 }
 
 .hero{
@@ -318,6 +304,7 @@ text-align:center;
 }
 
 .hero h1{font-size:2.7rem}
+
 .hero p{font-size:1.08rem}
 
 section{padding:65px 24px}
@@ -336,40 +323,45 @@ h2{font-size:2.05rem}
 .buttons{justify-content:center}
 }
 </style>
+
 </head>
 
 <body>
 
 <header>
+
 <div class="topbar">
 
 <a href="index.html">
-<img src="logo-horizontal.png" class="logo" alt="Fóscolo & Company Editora">
+<img src="../logo-horizontal.png" class="logo" alt="Fóscolo & Company Editora">
 </a>
 
 <nav>
+
 <a href="sobre.html">Sobre</a>
 <a href="publicacoes.html">Publicações</a>
 <a href="projetos.html">Projetos</a>
 <a href="manifesto.html">Manifesto</a>
 <a href="contato.html">Contato</a>
 
-<div class="language-selector">
-<button class="language-button" onclick="toggleLanguageMenu()" aria-label="Selecionar idioma">🌐</button>
+<div class="languages" aria-label="Selecionar idioma">
+<a href="projetos.html"><strong>PT</strong></a>
+<span>|</span>
+<a href="../en/projects.html">EN</a>
+<span>|</span>
+<a href="../es/proyectos.html">ES</a>
+<span>|</span>
+<a href="../fr/projets.html">FR</a>
+<span>|</span>
+<a href="../zh/projects.html">中文</a>
+</div>
 
-<div class="language-menu" id="languageMenu">
-<a href="projetos.html">Português</a>
-<a href="en/projects.html">English</a>
-<a href="es/proyectos.html">Español</a>
-<a href="fr/projets.html">Français</a>
-<a href="zh/projects.html">简体中文</a>
-</div>
-</div>
 </nav>
 
 </div>
 
 <div class="hero">
+
 <div class="kicker">Projetos editoriais</div>
 
 <h1>Projetos Editoriais</h1>
@@ -379,13 +371,17 @@ Desenvolvemos iniciativas voltadas à preservação da memória,
 à circulação do conhecimento e à construção de projetos editoriais
 capazes de transformar experiências, pesquisas e acervos em obras duradouras.
 </p>
+
 </div>
+
 </header>
 
 <section>
+
 <div class="container">
 
 <h2>Projeto inaugural publicado</h2>
+
 <div class="divider"></div>
 
 <div class="featured">
@@ -396,6 +392,7 @@ capazes de transformar experiências, pesquisas e acervos em obras duradouras.
 </div>
 
 <div class="book-info">
+
 <p>
 O primeiro projeto publicado pela Fóscolo & Company Editora marca o início
 de um catálogo dedicado à circulação pública de ideias, registros, imagens
@@ -417,17 +414,21 @@ publicações independentes, cuidadas e voltadas à permanência.
 <a class="btn primary" href="https://a.co/d/0g4XbuEA" target="_blank" rel="noopener noreferrer">Ver na Amazon</a>
 <a class="btn" href="https://a.co/d/0g1sZhSJ" target="_blank" rel="noopener noreferrer">Outra edição</a>
 </div>
-</div>
 
 </div>
 
 </div>
+
+</div>
+
 </section>
 
 <section>
+
 <div class="container">
 
 <h2>Áreas de atuação</h2>
+
 <div class="divider"></div>
 
 <div class="grid">
@@ -483,12 +484,15 @@ acessíveis a diferentes públicos.
 </div>
 
 </div>
+
 </section>
 
 <section class="highlight">
+
 <div class="container">
 
 <h2>Mais que publicar livros</h2>
+
 <div class="divider" style="margin-left:auto;margin-right:auto;"></div>
 
 <p>
@@ -499,12 +503,15 @@ de conectar conhecimento e sociedade.
 </p>
 
 </div>
+
 </section>
 
 <section>
+
 <div class="container">
 
 <h2>Como trabalhamos</h2>
+
 <div class="divider"></div>
 
 <div class="timeline">
@@ -537,12 +544,15 @@ Estratégias para ampliar o alcance e o impacto das publicações.
 </div>
 
 </div>
+
 </section>
 
 <section>
+
 <div class="container">
 
 <h2>Projetos em construção</h2>
+
 <div class="divider"></div>
 
 <p>
@@ -553,29 +563,21 @@ voltadas às humanidades e à circulação pública do conhecimento.
 </p>
 
 </div>
+
 </section>
 
 <footer>
-<img src="selo-editorial.png" alt="Selo Fóscolo & Company">
+
+<img src="../selo-editorial.png" alt="Selo Fóscolo & Company">
 
 <strong>Fóscolo & Company Editora</strong>
+
 <p>Ideias acendem. Histórias permanecem.</p>
+
 <p>© 2026 Fóscolo & Company Editora. Todos os direitos reservados.</p>
+
 </footer>
 
-<script>
-function toggleLanguageMenu(){
-document.getElementById("languageMenu").classList.toggle("show");
-}
-
-window.addEventListener("click", function(event){
-const selector = document.querySelector(".language-selector");
-
-if(!selector.contains(event.target)){
-document.getElementById("languageMenu").classList.remove("show");
-}
-});
-</script>
-
 </body>
+
 </html>
