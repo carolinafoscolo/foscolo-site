@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Sobre | Fóscolo & Company Editora</title>
+
 <meta name="description" content="Sobre a Fóscolo & Company Editora, casa editorial independente dedicada à memória, à pesquisa e à circulação pública do conhecimento.">
+
 <link rel="icon" href="favicon.png">
 
 <style>
@@ -66,47 +70,27 @@ nav a{
 
 nav a:hover{color:var(--dourado)}
 
-.language-selector{position:relative}
-
-.language-button{
-  background:none;
-  border:1px solid rgba(17,17,17,.22);
-  border-radius:999px;
-  font-size:18px;
-  cursor:pointer;
-  padding:7px 10px;
+.languages{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:.82rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
 }
 
-.language-button:hover{border-color:var(--dourado)}
-
-.language-menu{
-  display:none;
-  position:absolute;
-  right:0;
-  top:44px;
-  background:var(--branco);
-  border:1px solid rgba(17,17,17,.12);
-  border-radius:16px;
-  box-shadow:0 15px 40px rgba(0,0,0,.14);
-  min-width:190px;
-  overflow:hidden;
-  z-index:999;
+.languages a{
+  color:#555;
+  transition:.2s;
 }
 
-.language-menu a{
-  display:block;
-  padding:13px 18px;
-  font-size:.92rem;
-  text-transform:none;
-  letter-spacing:0;
-}
-
-.language-menu a:hover{
-  background:var(--marfim);
+.languages a:hover{
   color:var(--dourado);
 }
 
-.language-menu.show{display:block}
+.languages strong{
+  color:var(--preto);
+}
 
 .page-hero{
   max-width:1100px;
@@ -292,9 +276,10 @@ footer strong{
 
   nav a{font-size:.74rem}
 
-  .language-menu{
-    right:50%;
-    transform:translateX(50%);
+  .languages{
+    justify-content:center;
+    width:100%;
+    font-size:.76rem;
   }
 
   .page-hero{
@@ -320,12 +305,15 @@ footer strong{
   .closing p{font-size:1.12rem}
 }
 </style>
+
 </head>
 
 <body>
 
 <header>
+
   <div class="topbar">
+
     <a href="index.html">
       <img src="logo-horizontal.png" alt="Fóscolo & Company Editora" class="logo">
     </a>
@@ -337,33 +325,38 @@ footer strong{
       <a href="manifesto.html">Manifesto</a>
       <a href="contato.html">Contato</a>
 
-      <div class="language-selector">
-        <button class="language-button" onclick="toggleLanguageMenu()" aria-label="Selecionar idioma">🌐</button>
-
-        <div class="language-menu" id="languageMenu">
-          <a href="sobre.html">Português</a>
-          <a href="en/about.html">English</a>
-          <a href="es/sobre.html">Español</a>
-          <a href="fr/a-propos.html">Français</a>
-          <a href="zh/about.html">简体中文</a>
-        </div>
+      <div class="languages" aria-label="Selecionar idioma">
+        <a href="sobre.html"><strong>PT</strong></a>
+        <span>|</span>
+        <a href="en/about.html">EN</a>
+        <span>|</span>
+        <a href="es/sobre.html">ES</a>
+        <span>|</span>
+        <a href="fr/a-propos.html">FR</a>
+        <span>|</span>
+        <a href="zh/about.html">中文</a>
       </div>
     </nav>
+
   </div>
 
   <div class="page-hero">
     <div class="kicker">Sobre a editora</div>
+
     <h1>Uma casa editorial dedicada à memória, à pesquisa e à permanência.</h1>
+
     <p class="lead">
       A Fóscolo & Company Editora nasce do encontro entre história, cultura,
       escrita e compromisso público com a circulação do conhecimento.
     </p>
   </div>
+
 </header>
 
 <section>
   <div class="container">
     <div class="text-block">
+
       <p>
         A Fóscolo & Company Editora é uma casa editorial independente dedicada à publicação
         de obras que preservam experiências, ampliam debates e contribuem para a construção
@@ -413,16 +406,19 @@ footer strong{
       <p>
         <strong>Acreditamos que algumas ideias merecem permanecer. É para elas que trabalhamos.</strong>
       </p>
+
     </div>
   </div>
 </section>
 
 <section>
   <div class="container">
+
     <h2>Missão e visão</h2>
     <div class="divider"></div>
 
     <div class="grid">
+
       <div class="card">
         <h3>Nossa missão</h3>
         <p>
@@ -449,16 +445,20 @@ footer strong{
           do conhecimento.
         </p>
       </div>
+
     </div>
+
   </div>
 </section>
 
 <section class="dark">
   <div class="container">
+
     <h2>Nossos valores</h2>
     <div class="divider"></div>
 
     <div class="values">
+
       <div class="value">
         <strong>Permanência</strong>
         <p>Publicar é preservar experiências, conhecimentos e reflexões para além do tempo imediato.</p>
@@ -488,12 +488,15 @@ footer strong{
         <strong>Cuidado</strong>
         <p>Editamos com atenção aos autores, aos leitores, às fontes e às histórias que nos são confiadas.</p>
       </div>
+
     </div>
+
   </div>
 </section>
 
 <section class="closing">
   <div class="container">
+
     <h2>O que nos move</h2>
     <div class="divider" style="margin-left:auto;margin-right:auto;"></div>
 
@@ -503,6 +506,7 @@ footer strong{
     <p><strong>Publicamos porque algumas ideias merecem permanecer.</strong></p>
 
     <a href="manifesto.html" class="btn primary">Ler manifesto editorial</a>
+
   </div>
 </section>
 
@@ -513,19 +517,6 @@ footer strong{
   <p>© 2026 Fóscolo & Company Editora. Todos os direitos reservados.</p>
 </footer>
 
-<script>
-function toggleLanguageMenu(){
-  document.getElementById("languageMenu").classList.toggle("show");
-}
-
-window.addEventListener("click", function(event){
-  const selector = document.querySelector(".language-selector");
-
-  if(!selector.contains(event.target)){
-    document.getElementById("languageMenu").classList.remove("show");
-  }
-});
-</script>
-
 </body>
+
 </html>
