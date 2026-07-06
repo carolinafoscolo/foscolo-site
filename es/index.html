@@ -14,6 +14,38 @@
 
 <link rel="stylesheet" href="style.css">
 
+<style>
+.languages{
+display:flex;
+align-items:center;
+gap:8px;
+font-size:.82rem;
+letter-spacing:.08em;
+text-transform:uppercase;
+}
+
+.languages a{
+color:#555;
+transition:.2s;
+}
+
+.languages a:hover{
+color:#D9A441;
+}
+
+.languages strong{
+color:#111111;
+}
+
+@media(max-width:900px){
+.languages{
+justify-content:center;
+width:100%;
+font-size:.76rem;
+}
+}
+</style>
+
 </head>
 
 <body>
@@ -28,17 +60,23 @@
 
 <nav>
 
-<a href="sobre.html">Sobre</a>
-
+<a href="sobre.html">Acerca de</a>
 <a href="publicaciones.html">Publicaciones</a>
-
 <a href="proyectos.html">Proyectos</a>
-
 <a href="manifiesto.html">Manifiesto</a>
-
 <a href="contacto.html">Contacto</a>
 
-<a href="../index.html"><strong>PT</strong></a>
+<div class="languages" aria-label="Seleccionar idioma">
+<a href="../pt/index.html">PT</a>
+<span>|</span>
+<a href="../en/index.html">EN</a>
+<span>|</span>
+<a href="index.html"><strong>ES</strong></a>
+<span>|</span>
+<a href="../fr/index.html">FR</a>
+<span>|</span>
+<a href="../zh/index.html">中文</a>
+</div>
 
 </nav>
 
@@ -47,36 +85,26 @@
 <div class="hero">
 
 <div class="kicker">
-
-Editorial Independiente • Belo Horizonte • Brasil
-
+Editorial independiente · Belo Horizonte · Brasil
 </div>
 
 <h1>
-
 Las ideas encienden.<br>
 Las historias permanecen.
-
 </h1>
 
 <p>
-
 Fóscolo & Company Editorial es una editorial independiente dedicada a la preservación de la memoria, la publicación de investigaciones y la construcción de puentes entre la academia, la cultura y la sociedad.
-
 </p>
 
 <div class="buttons">
 
 <a class="btn primary" href="sobre.html">
-
 Conozca la editorial
-
 </a>
 
 <a class="btn" href="contacto.html">
-
 Contáctenos
-
 </a>
 
 </div>
@@ -94,25 +122,17 @@ Contáctenos
 <div class="divider"></div>
 
 <p>
-
 Los libros hacen mucho más que preservar información.
-
 Preservan experiencias.
-
 Organizan ideas.
-
 Conectan generaciones.
-
 Construyen puentes entre la investigación y la sociedad.
-
 </p>
 
 <br>
 
 <p>
-
 En Fóscolo & Company Editorial entendemos la publicación como una forma de transformar el conocimiento en un legado duradero.
-
 </p>
 
 </div>
@@ -134,9 +154,7 @@ En Fóscolo & Company Editorial entendemos la publicación como una forma de tra
 <h3>Historia y Memoria</h3>
 
 <p>
-
 Libros y proyectos dedicados a la investigación histórica y a la preservación de la memoria.
-
 </p>
 
 </div>
@@ -146,9 +164,7 @@ Libros y proyectos dedicados a la investigación histórica y a la preservación
 <h3>Patrimonio Cultural</h3>
 
 <p>
-
 Museos, archivos, arquitectura, ciudades y patrimonio cultural.
-
 </p>
 
 </div>
@@ -158,9 +174,7 @@ Museos, archivos, arquitectura, ciudades y patrimonio cultural.
 <h3>Salud y Sociedad</h3>
 
 <p>
-
 Investigaciones sobre instituciones sanitarias, salud pública y cuidado.
-
 </p>
 
 </div>
@@ -170,9 +184,7 @@ Investigaciones sobre instituciones sanitarias, salud pública y cuidado.
 <h3>Humanidades</h3>
 
 <p>
-
 Ensayos e investigaciones sobre cultura, educación y sociedad.
-
 </p>
 
 </div>
@@ -182,9 +194,7 @@ Ensayos e investigaciones sobre cultura, educación y sociedad.
 <h3>Historia Oral</h3>
 
 <p>
-
 Entrevistas, testimonios y proyectos de memoria institucional.
-
 </p>
 
 </div>
@@ -194,9 +204,7 @@ Entrevistas, testimonios y proyectos de memoria institucional.
 <h3>Divulgación Científica</h3>
 
 <p>
-
 Conocimiento académico presentado de manera accesible sin perder el rigor intelectual.
-
 </p>
 
 </div>
@@ -216,17 +224,13 @@ Conocimiento académico presentado de manera accesible sin perder el rigor intel
 <div class="divider"></div>
 
 <p>
-
 Nuestro catálogo editorial está en construcción y reunirá publicaciones sobre historia, memoria, patrimonio, salud pública, historia oral y humanidades.
-
 </p>
 
 <br>
 
 <a class="btn primary" href="publicaciones.html">
-
 Ver publicaciones
-
 </a>
 
 </div>
@@ -242,17 +246,13 @@ Ver publicaciones
 <div class="divider"></div>
 
 <p>
-
 En una época marcada por la velocidad y el exceso de información, creemos que publicar sigue siendo una de las formas más poderosas de permanencia.
-
 </p>
 
 <br>
 
 <a class="btn" href="manifiesto.html">
-
 Leer el manifiesto
-
 </a>
 
 </div>
@@ -268,23 +268,16 @@ Leer el manifiesto
 <div class="divider"></div>
 
 <p>
-
 Recibimos propuestas editoriales, colaboraciones institucionales y proyectos relacionados con la historia, la memoria, el patrimonio cultural y la circulación pública del conocimiento.
-
 </p>
 
 <br>
 
 <p>
-
 <strong>Correo electrónico:</strong>
-
 <a href="mailto:contato@foscolo.com.br">
-
 contato@foscolo.com.br
-
 </a>
-
 </p>
 
 </div>
@@ -296,21 +289,15 @@ contato@foscolo.com.br
 <img src="../selo-editorial.png" alt="Sello Editorial">
 
 <p>
-
 <strong>Fóscolo & Company Editorial</strong>
-
 </p>
 
 <p>
-
 Las ideas encienden. Las historias permanecen.
-
 </p>
 
 <p>
-
 © 2026 Fóscolo & Company Editorial. Todos los derechos reservados.
-
 </p>
 
 </footer>
