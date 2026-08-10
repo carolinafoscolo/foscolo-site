@@ -13,104 +13,26 @@
 <link rel="icon" href="favicon.png">
 <link rel="stylesheet" href="style.css">
 
-<style>
-.languages{
-display:flex;
-align-items:center;
-gap:8px;
-font-size:.82rem;
-letter-spacing:.08em;
-text-transform:uppercase;
-}
 
-.languages a{
-color:#555;
-transition:.2s;
-}
 
-.languages a:hover{
-color:#D9A441;
-}
-
-.languages strong{
-color:#111111;
-}
-
-.featured{
-background:#FFFDF8;
-border:1px solid rgba(17,17,17,.12);
-border-radius:30px;
-padding:42px;
-display:grid;
-grid-template-columns:1fr 1.2fr;
-gap:38px;
-align-items:center;
-}
-
-.book-mark{
-background:#111111;
-color:#F5F2EB;
-border-radius:24px;
-padding:42px 28px;
-text-align:center;
-min-height:320px;
-display:flex;
-flex-direction:column;
-justify-content:center;
-}
-
-.book-mark span{
-color:#D9A441;
-text-transform:uppercase;
-letter-spacing:.12em;
-font-size:.78rem;
-margin-bottom:18px;
-}
-
-.book-mark h3{
-font-size:2rem;
-line-height:1.2;
-}
-
-.book-cover{width:100%;max-width:320px;margin:auto;box-shadow:0 22px 50px rgba(0,0,0,.18)}
-
-.book-info p{
-color:#433c35;
-margin-bottom:18px;
-}
-
-.buttons{
-display:flex;
-gap:14px;
-flex-wrap:wrap;
-margin-top:25px;
-}
-
-@media(max-width:900px){
-.languages{
-justify-content:center;
-width:100%;
-font-size:.76rem;
-}
-
-.featured{
-grid-template-columns:1fr;
-padding:30px;
-}
-
-.book-mark{
-min-height:250px;
-}
-
-.buttons{
-justify-content:center;
-}
-}
-</style>
-
+<link rel="canonical" href="https://www.foscolo.com.br/en/publications.html">
+<link rel="alternate" hreflang="pt" href="https://www.foscolo.com.br/pt/publicacoes.html">
+<link rel="alternate" hreflang="en" href="https://www.foscolo.com.br/en/publications.html">
+<link rel="alternate" hreflang="es" href="https://www.foscolo.com.br/es/publicaciones.html">
+<link rel="alternate" hreflang="fr" href="https://www.foscolo.com.br/fr/publications.html">
+<link rel="alternate" hreflang="zh-CN" href="https://www.foscolo.com.br/zh/publications.html">
+<link rel="alternate" hreflang="x-default" href="https://www.foscolo.com.br/en/publications.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fóscolo & Company">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Publications | Fóscolo & Company">
+<meta property="og:description" content="Publications and editorial collections by Fóscolo & Company, an independent publishing imprint dedicated to history, essays, literature, research, memory and the long-term circulation of ideas.">
+<meta property="og:url" content="https://www.foscolo.com.br/en/publications.html">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
 <header>
 
@@ -123,7 +45,7 @@ justify-content:center;
 <nav>
 
 <a href="about.html">About</a>
-<a href="publications.html">Publications</a>
+<a href="publications.html" aria-current="page">Publications</a>
 <a href="projects.html">Projects</a>
 <a href="manifesto.html">Manifesto</a>
 <a href="contact.html">Contact</a>
@@ -131,7 +53,7 @@ justify-content:center;
 <div class="languages" aria-label="Select language">
 <a href="../pt/publicacoes.html">PT</a>
 <span>|</span>
-<a href="publications.html"><strong>EN</strong></a>
+<a href="publications.html" aria-current="page"><strong>EN</strong></a>
 <span>|</span>
 <a href="../es/publicaciones.html">ES</a>
 <span>|</span>
@@ -158,7 +80,7 @@ Our catalogue brings together works dedicated to history, essays, literature, re
 
 </header>
 
-<section>
+<main id="main"><section>
 
 <div class="container">
 
@@ -168,7 +90,7 @@ Our catalogue brings together works dedicated to history, essays, literature, re
 
 <div class="featured">
 
-<div><img class="book-cover" src="notes-on-care-cover.jpg" alt="Cover of Notes on Care, Risk &amp; Knowledge"></div>
+<div><img loading="lazy" decoding="async" class="book-cover" src="notes-on-care-cover.jpg" alt="Cover of Notes on Care, Risk &amp; Knowledge"></div>
 
 <div class="book-info">
 
@@ -342,9 +264,9 @@ New titles and editorial collections will be announced through our website and o
 
 </section>
 
-<footer>
+</main><footer>
 
-<img src="selo-editorial.png" alt="Fóscolo & Company editorial seal">
+<img loading="lazy" decoding="async" src="selo-editorial.png" alt="Fóscolo & Company editorial seal">
 
 <p><strong>Fóscolo & Company</strong></p>
 

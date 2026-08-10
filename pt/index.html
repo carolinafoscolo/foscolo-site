@@ -12,447 +12,33 @@
 
 <link rel="icon" href="favicon.png">
 
-<style>
-:root{
-  --preto:#111111;
-  --marfim:#F5F2EB;
-  --branco:#FFFDF8;
-  --dourado:#D9A441;
-  --cinza:#6f665d;
-}
 
-*{margin:0;padding:0;box-sizing:border-box}
 
-html{scroll-behavior:smooth}
-
-body{
-  font-family:Georgia,"Times New Roman",serif;
-  background:var(--marfim);
-  color:var(--preto);
-  line-height:1.7;
-}
-
-a{text-decoration:none;color:inherit}
-
-header{
-  background:var(--branco);
-  border-bottom:1px solid rgba(17,17,17,.12);
-}
-
-.topbar{
-  max-width:1200px;
-  margin:auto;
-  padding:22px 28px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:30px;
-}
-
-.logo{
-  max-width:330px;
-  width:75%;
-}
-
-nav{
-  display:flex;
-  align-items:center;
-  gap:22px;
-  flex-wrap:wrap;
-  justify-content:flex-end;
-}
-
-nav a{
-  font-size:.84rem;
-  text-transform:uppercase;
-  letter-spacing:.09em;
-}
-
-nav a:hover{color:var(--dourado)}
-
-.languages{
-  display:flex;
-  align-items:center;
-  gap:8px;
-  font-size:.82rem;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-}
-
-.languages a{
-  color:#555;
-  transition:.2s;
-}
-
-.languages a:hover{
-  color:var(--dourado);
-}
-
-.languages strong{
-  color:var(--preto);
-}
-
-.hero{
-  max-width:1200px;
-  margin:auto;
-  padding:95px 28px 110px;
-  display:grid;
-  grid-template-columns:1.15fr .85fr;
-  gap:60px;
-  align-items:center;
-}
-
-.kicker{
-  color:var(--dourado);
-  text-transform:uppercase;
-  letter-spacing:.18em;
-  font-size:.82rem;
-  margin-bottom:24px;
-}
-
-.hero h1{
-  font-size:4.4rem;
-  line-height:1.03;
-  margin-bottom:28px;
-}
-
-.hero p{
-  font-size:1.22rem;
-  color:#423b34;
-  max-width:750px;
-}
-
-.buttons{
-  margin-top:36px;
-  display:flex;
-  gap:16px;
-  flex-wrap:wrap;
-}
-
-.btn{
-  display:inline-block;
-  padding:14px 25px;
-  border-radius:999px;
-  border:1px solid var(--preto);
-  font-size:.95rem;
-  transition:.2s;
-}
-
-.btn.primary{
-  background:var(--preto);
-  color:var(--marfim);
-}
-
-.btn:hover{
-  transform:translateY(-2px);
-  border-color:var(--dourado);
-}
-
-.seal-card{
-  background:var(--marfim);
-  border:1px solid rgba(17,17,17,.12);
-  border-radius:30px;
-  padding:38px;
-  text-align:center;
-  box-shadow:0 18px 55px rgba(0,0,0,.08);
-}
-
-.seal-card img{
-  width:100%;
-  max-width:360px;
-}
-
-section{
-  padding:85px 28px;
-}
-
-.container{
-  max-width:1120px;
-  margin:auto;
-}
-
-h2{
-  font-size:2.65rem;
-  line-height:1.15;
-  margin-bottom:20px;
-}
-
-.divider{
-  width:90px;
-  height:2px;
-  background:var(--dourado);
-  margin:22px 0 32px;
-}
-
-.lead{
-  font-size:1.14rem;
-  color:#4a433c;
-  max-width:880px;
-}
-
-.split{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:44px;
-  align-items:start;
-}
-
-.panel{
-  background:var(--branco);
-  border:1px solid rgba(17,17,17,.12);
-  border-radius:24px;
-  padding:34px;
-}
-
-.panel.gold{
-  border-left:6px solid var(--dourado);
-}
-
-.dark{
-  background:var(--preto);
-  color:var(--marfim);
-}
-
-.dark p,
-.dark .lead{
-  color:#d8d0c4;
-}
-
-.grid{
-  margin-top:38px;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
-}
-
-.card{
-  background:var(--branco);
-  border:1px solid rgba(17,17,17,.12);
-  border-radius:22px;
-  padding:28px;
-  min-height:220px;
-  transition:.2s;
-}
-
-.dark .card{
-  background:#1b1b1b;
-  border-color:#333;
-  color:var(--marfim);
-}
-
-.card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 14px 40px rgba(0,0,0,.09);
-}
-
-.card h3{
-  font-size:1.25rem;
-  margin-bottom:12px;
-}
-
-.card p{
-  color:#4a433c;
-}
-
-.dark .card p{
-  color:#d8d0c4;
-}
-
-.manifesto{
-  background:var(--branco);
-  text-align:center;
-  border-top:1px solid rgba(17,17,17,.12);
-  border-bottom:1px solid rgba(17,17,17,.12);
-}
-
-.manifesto p{
-  max-width:850px;
-  margin:0 auto 18px;
-  font-size:1.25rem;
-}
-
-.featured{
-  background:var(--branco);
-  border:1px solid rgba(17,17,17,.12);
-  border-radius:28px;
-  padding:38px;
-  display:grid;
-  grid-template-columns:1fr 1.3fr;
-  gap:36px;
-  align-items:center;
-  margin-top:34px;
-}
-
-.book-mark{
-  background:var(--preto);
-  color:var(--marfim);
-  border-radius:24px;
-  min-height:300px;
-  padding:36px 28px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  text-align:center;
-}
-
-.book-mark span{
-  display:block;
-  color:var(--dourado);
-  text-transform:uppercase;
-  letter-spacing:.12em;
-  font-size:.78rem;
-  margin-bottom:16px;
-}
-
-.book-mark h3{
-  font-size:2rem;
-  line-height:1.2;
-}
-
-.book-info p{
-  color:#4a433c;
-  margin-bottom:16px;
-}
-
-.catalogo{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
-  margin-top:34px;
-}
-
-.book{
-  background:var(--branco);
-  border:1px solid rgba(17,17,17,.12);
-  padding:24px;
-  border-radius:18px;
-}
-
-.book span{
-  display:block;
-  font-size:.78rem;
-  color:var(--dourado);
-  text-transform:uppercase;
-  letter-spacing:.1em;
-  margin-bottom:8px;
-}
-
-.contact{
-  background:var(--preto);
-  color:var(--marfim);
-}
-
-.contact-box{
-  background:#1b1b1b;
-  border:1px solid #333;
-  border-radius:26px;
-  padding:38px;
-}
-
-.contact-box a{
-  color:var(--dourado);
-  font-size:1.1rem;
-}
-
-footer{
-  background:#0b0b0b;
-  color:#d8d0c4;
-  text-align:center;
-  padding:48px 28px;
-}
-
-footer img{
-  width:105px;
-  margin-bottom:18px;
-}
-
-footer strong{
-  display:block;
-  color:var(--marfim);
-  margin-bottom:8px;
-}
-
-@media(max-width:900px){
-  .topbar{
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-  }
-
-  .logo{
-    max-width:260px;
-  }
-
-  nav{
-    justify-content:center;
-    gap:14px;
-  }
-
-  nav a{
-    font-size:.74rem;
-  }
-
-  .languages{
-    justify-content:center;
-    width:100%;
-    font-size:.76rem;
-  }
-
-  .hero,
-  .split,
-  .featured{
-    grid-template-columns:1fr;
-  }
-
-  .hero{
-    padding:65px 24px 80px;
-    text-align:center;
-  }
-
-  .hero h1{
-    font-size:2.75rem;
-  }
-
-  .hero p{
-    font-size:1.1rem;
-  }
-
-  .buttons{
-    justify-content:center;
-  }
-
-  .grid,
-  .catalogo{
-    grid-template-columns:1fr;
-  }
-
-  .featured{
-    padding:30px;
-  }
-
-  .book-mark{
-    min-height:240px;
-  }
-
-  section{
-    padding:65px 24px;
-  }
-
-  h2{
-    font-size:2.15rem;
-  }
-}
-</style>
-
+<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://www.foscolo.com.br/pt/index.html">
+<link rel="alternate" hreflang="pt" href="https://www.foscolo.com.br/pt/index.html">
+<link rel="alternate" hreflang="en" href="https://www.foscolo.com.br/en/index.html">
+<link rel="alternate" hreflang="es" href="https://www.foscolo.com.br/es/index.html">
+<link rel="alternate" hreflang="fr" href="https://www.foscolo.com.br/fr/index.html">
+<link rel="alternate" hreflang="zh-CN" href="https://www.foscolo.com.br/zh/index.html">
+<link rel="alternate" hreflang="x-default" href="https://www.foscolo.com.br/en/index.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fóscolo & Company">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Fóscolo & Company Editora">
+<meta property="og:description" content="Editora independente dedicada à memória, à história, ao patrimônio cultural e à circulação pública do conhecimento.">
+<meta property="og:url" content="https://www.foscolo.com.br/pt/index.html">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body>
+<a class="skip-link" href="#main">Ir para o conteúdo</a>
 
 <header>
 
   <div class="topbar">
 
-    <a href="index.html">
+    <a href="index.html" aria-current="page">
       <img src="logo-horizontal.png" alt="Fóscolo & Company Editora" class="logo">
     </a>
 
@@ -464,7 +50,7 @@ footer strong{
       <a href="contato.html">Contato</a>
 
       <div class="languages" aria-label="Selecionar idioma">
-        <a href="index.html"><strong>PT</strong></a>
+        <a href="index.html" aria-current="page"><strong>PT</strong></a>
         <span>|</span>
         <a href="../en/index.html">EN</a>
         <span>|</span>
@@ -499,14 +85,14 @@ footer strong{
     </div>
 
     <div class="seal-card">
-      <img src="selo-editorial.png" alt="Selo editorial Fóscolo & Company">
+      <img loading="lazy" decoding="async" src="selo-editorial.png" alt="Selo editorial Fóscolo & Company">
     </div>
 
   </div>
 
 </header>
 
-<section>
+<main id="main"><section>
 
   <div class="container split">
 
@@ -589,10 +175,7 @@ footer strong{
 
     <div class="featured">
 
-      <div class="book-mark">
-        <span>Primeiro título</span>
-        <h3>Notes on Care, Risk and Knowledge</h3>
-      </div>
+      <img class="book-cover" src="notes-on-care-cover.jpg" alt="Notes on Care, Risk & Knowledge" loading="lazy" decoding="async">
 
       <div class="book-info">
 
@@ -740,9 +323,9 @@ footer strong{
 
 </section>
 
-<footer>
+</main><footer>
 
-  <img src="selo-editorial.png" alt="Selo Fóscolo & Company">
+  <img loading="lazy" decoding="async" src="selo-editorial.png" alt="Selo Fóscolo & Company">
 
   <strong>Fóscolo & Company Editora</strong>
 

@@ -10,120 +10,42 @@
 
 <meta name="description" content="Publicaciones y colecciones editoriales de Fóscolo & Company Editorial.">
 
-<link rel="icon" href="../favicon.png">
+<link rel="icon" href="favicon.png">
 <link rel="stylesheet" href="style.css">
 
-<style>
-.languages{
-display:flex;
-align-items:center;
-gap:8px;
-font-size:.82rem;
-letter-spacing:.08em;
-text-transform:uppercase;
-}
 
-.languages a{
-color:#555;
-transition:.2s;
-}
 
-.languages a:hover{
-color:#D9A441;
-}
-
-.languages strong{
-color:#111111;
-}
-
-.featured{
-background:#FFFDF8;
-border:1px solid rgba(17,17,17,.12);
-border-radius:30px;
-padding:42px;
-display:grid;
-grid-template-columns:1fr 1.2fr;
-gap:40px;
-align-items:center;
-}
-
-.book-mark{
-background:#111111;
-color:#F5F2EB;
-border-radius:24px;
-padding:42px 30px;
-text-align:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-min-height:320px;
-}
-
-.book-mark span{
-color:#D9A441;
-text-transform:uppercase;
-letter-spacing:.12em;
-font-size:.78rem;
-margin-bottom:18px;
-}
-
-.book-mark h3{
-font-size:2rem;
-line-height:1.2;
-}
-
-.book-info p{
-margin-bottom:18px;
-color:#433c35;
-}
-
-.buttons{
-display:flex;
-gap:14px;
-flex-wrap:wrap;
-margin-top:24px;
-}
-
-@media(max-width:900px){
-
-.languages{
-justify-content:center;
-width:100%;
-font-size:.76rem;
-}
-
-.featured{
-grid-template-columns:1fr;
-padding:30px;
-}
-
-.book-mark{
-min-height:240px;
-}
-
-.buttons{
-justify-content:center;
-}
-
-}
-</style>
-
+<link rel="canonical" href="https://www.foscolo.com.br/es/publicaciones.html">
+<link rel="alternate" hreflang="pt" href="https://www.foscolo.com.br/pt/publicacoes.html">
+<link rel="alternate" hreflang="en" href="https://www.foscolo.com.br/en/publications.html">
+<link rel="alternate" hreflang="es" href="https://www.foscolo.com.br/es/publicaciones.html">
+<link rel="alternate" hreflang="fr" href="https://www.foscolo.com.br/fr/publications.html">
+<link rel="alternate" hreflang="zh-CN" href="https://www.foscolo.com.br/zh/publications.html">
+<link rel="alternate" hreflang="x-default" href="https://www.foscolo.com.br/en/publications.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fóscolo & Company">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Publicaciones | Fóscolo & Company Editorial">
+<meta property="og:description" content="Publicaciones y colecciones editoriales de Fóscolo & Company Editorial.">
+<meta property="og:url" content="https://www.foscolo.com.br/es/publicaciones.html">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body>
+<a class="skip-link" href="#main">Ir al contenido</a>
 
 <header>
 
 <div class="topbar">
 
 <a href="index.html">
-<img src="../logo-horizontal.png" class="logo" alt="Fóscolo & Company Editorial">
+<img src="logo-horizontal.png" class="logo" alt="Fóscolo & Company Editorial">
 </a>
 
 <nav>
 
 <a href="sobre.html">Acerca de</a>
-<a href="publicaciones.html">Publicaciones</a>
+<a href="publicaciones.html" aria-current="page">Publicaciones</a>
 <a href="proyectos.html">Proyectos</a>
 <a href="manifiesto.html">Manifiesto</a>
 <a href="contacto.html">Contacto</a>
@@ -133,7 +55,7 @@ justify-content:center;
 <span>|</span>
 <a href="../en/publications.html">EN</a>
 <span>|</span>
-<a href="publicaciones.html"><strong>ES</strong></a>
+<a href="publicaciones.html" aria-current="page"><strong>ES</strong></a>
 <span>|</span>
 <a href="../fr/publications.html">FR</a>
 <span>|</span>
@@ -159,7 +81,7 @@ el patrimonio cultural, la salud, las humanidades y la circulación pública del
 
 </header>
 
-<section>
+<main id="main"><section>
 
 <div class="container">
 
@@ -169,13 +91,7 @@ el patrimonio cultural, la salud, las humanidades y la circulación pública del
 
 <div class="featured">
 
-<div class="book-mark">
-
-<span>Disponible en Amazon</span>
-
-<h3>Notes on Care, Risk and Knowledge</h3>
-
-</div>
+<img class="book-cover" src="notes-on-care-cover.jpg" alt="Notes on Care, Risk & Knowledge" loading="lazy" decoding="async">
 
 <div class="book-info">
 
@@ -193,6 +109,7 @@ Disponible en Amazon en formato digital y en edición impresa.
 
 <div class="buttons">
 
+<a class="btn primary" href="notes-on-care.html">Conocer el libro</a>
 <a class="btn primary" href="https://a.co/d/0g4XbuEA" target="_blank" rel="noopener noreferrer">
 Ver en Amazon
 </a>
@@ -346,9 +263,9 @@ Estamos desarrollando nuestras primeras publicaciones y consolidando colaboracio
 
 </section>
 
-<footer>
+</main><footer>
 
-<img src="../selo-editorial.png" alt="Sello Editorial">
+<img loading="lazy" decoding="async" src="selo-editorial.png" alt="Sello Editorial">
 
 <p><strong>Fóscolo & Company Editorial</strong></p>
 <p>Las ideas encienden. Las historias permanecen.</p>

@@ -12,334 +12,27 @@
 
 <link rel="icon" href="favicon.png">
 
-<style>
-:root{
---preto:#111111;
---marfim:#F5F2EB;
---branco:#FFFDF8;
---dourado:#D9A441;
---cinza:#6f665d;
-}
 
-*{margin:0;padding:0;box-sizing:border-box}
 
-html{scroll-behavior:smooth}
-
-body{
-font-family:Georgia,"Times New Roman",serif;
-background:var(--marfim);
-color:var(--preto);
-line-height:1.7;
-}
-
-a{text-decoration:none;color:inherit}
-
-header{
-background:var(--branco);
-border-bottom:1px solid rgba(17,17,17,.12);
-}
-
-.topbar{
-max-width:1200px;
-margin:auto;
-padding:22px 28px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-gap:30px;
-}
-
-.logo{
-max-width:330px;
-width:75%;
-}
-
-nav{
-display:flex;
-align-items:center;
-gap:22px;
-flex-wrap:wrap;
-justify-content:flex-end;
-}
-
-nav a{
-font-size:.84rem;
-text-transform:uppercase;
-letter-spacing:.09em;
-}
-
-nav a:hover{color:var(--dourado)}
-
-.languages{
-display:flex;
-align-items:center;
-gap:8px;
-font-size:.82rem;
-letter-spacing:.08em;
-text-transform:uppercase;
-}
-
-.languages a{
-color:#555;
-transition:.2s;
-}
-
-.languages a:hover{
-color:var(--dourado);
-}
-
-.languages strong{
-color:var(--preto);
-}
-
-.hero{
-max-width:1100px;
-margin:auto;
-padding:90px 28px;
-}
-
-.kicker{
-color:var(--dourado);
-text-transform:uppercase;
-letter-spacing:.18em;
-font-size:.82rem;
-margin-bottom:22px;
-}
-
-.hero h1{
-font-size:4rem;
-margin-bottom:20px;
-line-height:1.1;
-}
-
-.hero p{
-font-size:1.2rem;
-max-width:850px;
-color:#433c35;
-}
-
-section{padding:80px 28px}
-
-.container{
-max-width:1100px;
-margin:auto;
-}
-
-h2{
-font-size:2.4rem;
-margin-bottom:18px;
-line-height:1.15;
-}
-
-.divider{
-width:90px;
-height:2px;
-background:var(--dourado);
-margin:20px 0 35px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:24px;
-margin-top:35px;
-}
-
-.card{
-background:var(--branco);
-border:1px solid rgba(17,17,17,.12);
-border-radius:24px;
-padding:32px;
-transition:.2s;
-}
-
-.card:hover{
-transform:translateY(-4px);
-box-shadow:0 12px 35px rgba(0,0,0,.08);
-}
-
-.card h3{
-margin-bottom:12px;
-color:var(--dourado);
-}
-
-.card p{color:#433c35}
-
-.featured{
-background:var(--branco);
-border:1px solid rgba(17,17,17,.12);
-border-radius:30px;
-padding:42px;
-display:grid;
-grid-template-columns:1fr 1.2fr;
-gap:38px;
-align-items:center;
-}
-
-.book-mark{
-background:var(--preto);
-color:var(--marfim);
-border-radius:24px;
-padding:42px 28px;
-text-align:center;
-min-height:340px;
-display:flex;
-flex-direction:column;
-justify-content:center;
-}
-
-.book-mark span{
-color:var(--dourado);
-text-transform:uppercase;
-letter-spacing:.12em;
-font-size:.78rem;
-margin-bottom:18px;
-}
-
-.book-mark h3{
-font-size:2rem;
-line-height:1.2;
-}
-
-.book-cover{width:100%;max-width:320px;margin:auto;box-shadow:0 22px 50px rgba(0,0,0,.18)}
-
-.book-info p{
-color:#433c35;
-margin-bottom:18px;
-}
-
-.buttons{
-display:flex;
-gap:14px;
-flex-wrap:wrap;
-margin-top:25px;
-}
-
-.btn{
-display:inline-block;
-padding:14px 25px;
-border-radius:999px;
-border:1px solid var(--preto);
-font-size:.95rem;
-transition:.2s;
-}
-
-.btn.primary{
-background:var(--preto);
-color:var(--marfim);
-}
-
-.btn:hover{
-transform:translateY(-2px);
-border-color:var(--dourado);
-}
-
-.catalogo{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:18px;
-margin-top:35px;
-}
-
-.book{
-background:var(--branco);
-border:1px solid rgba(17,17,17,.12);
-padding:22px;
-border-radius:18px;
-}
-
-.book span{
-display:block;
-font-size:.75rem;
-text-transform:uppercase;
-letter-spacing:.08em;
-color:var(--dourado);
-margin-bottom:8px;
-}
-
-.highlight{
-background:var(--preto);
-color:var(--marfim);
-text-align:center;
-}
-
-.highlight p{
-max-width:850px;
-margin:auto;
-font-size:1.2rem;
-color:#d8d0c4;
-}
-
-footer{
-background:#0b0b0b;
-color:#d8d0c4;
-text-align:center;
-padding:50px 28px;
-}
-
-footer img{
-width:105px;
-margin-bottom:18px;
-}
-
-footer strong{
-display:block;
-color:var(--marfim);
-margin-bottom:8px;
-}
-
-@media(max-width:900px){
-.topbar{
-flex-direction:column;
-align-items:center;
-text-align:center;
-}
-
-.logo{max-width:260px}
-
-nav{
-justify-content:center;
-gap:14px;
-}
-
-nav a{font-size:.74rem}
-
-.languages{
-justify-content:center;
-width:100%;
-font-size:.76rem;
-}
-
-.hero{
-padding:65px 24px;
-text-align:center;
-}
-
-.hero h1{font-size:2.7rem}
-
-.hero p{font-size:1.08rem}
-
-section{padding:65px 24px}
-
-.grid,
-.catalogo,
-.featured{
-grid-template-columns:1fr;
-}
-
-h2{font-size:2.05rem}
-
-.featured{padding:30px}
-
-.book-mark{min-height:260px}
-
-.buttons{justify-content:center}
-}
-</style>
-
+<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://www.foscolo.com.br/pt/publicacoes.html">
+<link rel="alternate" hreflang="pt" href="https://www.foscolo.com.br/pt/publicacoes.html">
+<link rel="alternate" hreflang="en" href="https://www.foscolo.com.br/en/publications.html">
+<link rel="alternate" hreflang="es" href="https://www.foscolo.com.br/es/publicaciones.html">
+<link rel="alternate" hreflang="fr" href="https://www.foscolo.com.br/fr/publications.html">
+<link rel="alternate" hreflang="zh-CN" href="https://www.foscolo.com.br/zh/publications.html">
+<link rel="alternate" hreflang="x-default" href="https://www.foscolo.com.br/en/publications.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fóscolo & Company">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Publicações | Fóscolo & Company Editora">
+<meta property="og:description" content="Publicações da Fóscolo & Company Editora: livros, e-books, coleções e projetos editoriais dedicados à memória, à história e à circulação pública do conhecimento.">
+<meta property="og:url" content="https://www.foscolo.com.br/pt/publicacoes.html">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body>
+<a class="skip-link" href="#main">Ir para o conteúdo</a>
 
 <header>
 
@@ -352,13 +45,13 @@ h2{font-size:2.05rem}
 <nav>
 
 <a href="sobre.html">Sobre</a>
-<a href="publicacoes.html">Publicações</a>
+<a href="publicacoes.html" aria-current="page">Publicações</a>
 <a href="projetos.html">Projetos</a>
 <a href="manifesto.html">Manifesto</a>
 <a href="contato.html">Contato</a>
 
 <div class="languages" aria-label="Selecionar idioma">
-<a href="publicacoes.html"><strong>PT</strong></a>
+<a href="publicacoes.html" aria-current="page"><strong>PT</strong></a>
 <span>|</span>
 <a href="../en/publications.html">EN</a>
 <span>|</span>
@@ -389,7 +82,7 @@ pública do conhecimento.
 
 </header>
 
-<section>
+<main id="main"><section>
 
 <div class="container">
 
@@ -399,7 +92,7 @@ pública do conhecimento.
 
 <div class="featured">
 
-<div><img class="book-cover" src="notes-on-care-cover.jpg" alt="Capa de Notes on Care, Risk &amp; Knowledge"></div>
+<div><img loading="lazy" decoding="async" class="book-cover" src="notes-on-care-cover.jpg" alt="Capa de Notes on Care, Risk &amp; Knowledge"></div>
 
 <div class="book-info">
 
@@ -567,9 +260,9 @@ arquivos e centros de memória.
 
 </section>
 
-<footer>
+</main><footer>
 
-<img src="selo-editorial.png" alt="Selo Fóscolo & Company">
+<img loading="lazy" decoding="async" src="selo-editorial.png" alt="Selo Fóscolo & Company">
 
 <strong>Fóscolo & Company Editora</strong>
 
