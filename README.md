@@ -18,4 +18,4 @@ https://www.foscolo.com.br
 
 ## Contato
 
-contato@foscolo.com.br
+contato@foscolo.com
