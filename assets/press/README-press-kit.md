@@ -45,6 +45,6 @@ Maria Carolina Fóscolo Gomes é historiadora, pesquisadora, autora e editora br
 
 ## Contact
 
-carolinafoscolo@gmail.com
+contato@foscolo.com
 
 Official pages: https://www.foscolo.com.br/en/notes-on-care.html
