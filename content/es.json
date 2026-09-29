@@ -65,7 +65,13 @@
     "saleTitle": "Un libro ya puede salir de esta mesa.",
     "saleIntro": "Notes on Care, Risk & Knowledge es la primera pieza disponible de un trabajo más amplio entre investigación histórica, imagen y escritura. La edición física brasileña está en inglés, con 64 páginas e impresión a color.",
     "researchTitle": "La investigación continúa fuera de los libros.",
-    "researchIntro": "Archivos, salud pública, ciencia, territorio e historia pública alimentan el catálogo. El sitio muestra preguntas y trayectorias sin publicar manuscritos todavía inéditos."
+    "researchIntro": "Archivos, salud pública, ciencia, territorio e historia pública alimentan el catálogo. El sitio muestra preguntas y trayectorias sin publicar manuscritos todavía inéditos.",
+    "latestTitle": "Novedades & próximos movimientos",
+    "latestIntro": "Lo que acaba de entrar en el archivo y lo que está a punto de circular.",
+    "latestCta": "Ver qué está ocurriendo ahora",
+    "topicsTitle": "Entre por un tema",
+    "topicsIntro": "El archivo también puede recorrerse por preguntas y asuntos recurrentes, no solamente por el tipo de página.",
+    "topicsCta": "Explorar todos los temas"
   },
   "notes": {
     "subtitle": "Investigación, fragmentos e imágenes de Brasil",
@@ -644,5 +650,73 @@
     "results": "resultados",
     "result": "resultado",
     "privacy": "La búsqueda ocurre en su navegador y consulta solamente el índice público del sitio."
+  },
+  "now": {
+    "nav": "Ahora",
+    "title": "Lo que está ocurriendo ahora.",
+    "intro": "Un retrato breve del trabajo en movimiento: qué ya puede leerse, qué está en la mesa de edición, qué preguntas siguen abiertas y hacia dónde circula la investigación.",
+    "availableTitle": "Disponible para leer",
+    "editingTitle": "En la mesa de edición",
+    "researchTitle": "Investigación en curso",
+    "circulationTitle": "Próximas circulaciones",
+    "latestTitle": "Última entrada del Cuaderno",
+    "updated": "Septiembre de 2026",
+    "bookCta": "Conocer el libro",
+    "processCta": "Acompañar el proceso",
+    "researchCta": "Ver investigación & circulación",
+    "journalCta": "Leer en el Cuaderno"
+  },
+  "topics": {
+    "nav": "Temas",
+    "title": "Entre por el asunto que se quedó en la cabeza.",
+    "intro": "Libros, investigación y textos editoriales se cruzan alrededor de temas recurrentes. Cada tema abre una búsqueda en el archivo público y reúne formatos diferentes.",
+    "prompt": "Elija un tema para atravesar el archivo.",
+    "items": [
+      {
+        "label": "Salud & cuidado",
+        "query": "salud cuidado",
+        "desc": "Crisis sanitarias, cuidado, riesgo, memoria y maneras de continuar."
+      },
+      {
+        "label": "Instituciones & conocimiento",
+        "query": "instituciones conocimiento",
+        "desc": "Cómo las organizaciones aprenden, registran, clasifican y hacen circular conocimiento."
+      },
+      {
+        "label": "Historia de la ciencia",
+        "query": "ciencia virus clasificación",
+        "desc": "Laboratorios, clasificación, evidencia y redes científicas."
+      },
+      {
+        "label": "Edición & forma",
+        "query": "edición forma",
+        "desc": "Secuencia, margen, imagen, paratexto, ritmo y decisiones de lectura."
+      },
+      {
+        "label": "Belo Horizonte & territorio",
+        "query": "Belo Horizonte Pampulha territorio",
+        "desc": "Lugar de edición, paisaje, ciudad y los puntos desde donde comienza una pregunta."
+      },
+      {
+        "label": "Literatura",
+        "query": "literatura poema crónica Machado",
+        "desc": "Poemas, crónicas, lecturas y ambigüedades que vuelven a la mesa."
+      },
+      {
+        "label": "Imagen & paisaje",
+        "query": "imagen fotografía paisaje",
+        "desc": "Fotografía, encuadre y relaciones que una leyenda no necesita resolver."
+      },
+      {
+        "label": "Archivo & memoria",
+        "query": "archivo memoria",
+        "desc": "Documentos, oralidad, huellas y lo que permanece después de una crisis."
+      },
+      {
+        "label": "Circulación",
+        "query": "circulación",
+        "desc": "Lo que ocurre cuando libros, ideas e investigaciones dejan su mesa de origen."
+      }
+    ]
   }
 }
