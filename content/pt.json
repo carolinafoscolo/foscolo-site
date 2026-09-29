@@ -178,7 +178,40 @@
     "newDesc": "Por dentro da edição de Todos ou nenhum?: a folha, o prólogo e o gesto de abrir.",
     "newMeta": "Por dentro da edição · setembro de 2026",
     "archiveTitle": "Leituras do Caderno",
-    "instagramText": "As séries Caderno Fóscolo e Repertório Fóscolo também circulam no Instagram da editora."
+    "instagramText": "As séries Caderno Fóscolo e Repertório Fóscolo também circulam no Instagram da editora.",
+    "archiveIntro": "O Caderno reúne textos que nascem do trabalho editorial cotidiano e ganham tempo fora do feed.",
+    "entries": [
+      {
+        "key": "circulation",
+        "meta": "Circulação · setembro de 2026",
+        "title": "Publicar não encerra.",
+        "desc": "O que muda quando um livro deixa de pertencer apenas à mesa onde foi feito."
+      },
+      {
+        "key": "place",
+        "meta": "Lugar de edição · setembro de 2026",
+        "title": "De que lugar esta mesa olha o mundo?",
+        "desc": "Belo Horizonte não é apenas o endereço no expediente. É também um ponto de observação."
+      },
+      {
+        "key": "space",
+        "meta": "Forma · setembro de 2026",
+        "title": "O vazio também é uma decisão editorial.",
+        "desc": "Margem, distância, pausa e hierarquia também organizam uma leitura."
+      },
+      {
+        "key": "article",
+        "meta": "Por dentro da edição · setembro de 2026",
+        "title": "Um livro começa antes da primeira frase.",
+        "desc": "A folha, o prólogo e o gesto de abrir em Todos ou nenhum?."
+      },
+      {
+        "key": "essay",
+        "meta": "Ensaio inaugural · agosto de 2026",
+        "title": "Não existe uma única maneira de entrar neste livro.",
+        "desc": "Pesquisa, fragmento, poema e imagem em Notes on Care."
+      }
+    ]
   },
   "article": {
     "title": "Um livro começa antes da primeira frase.",
@@ -383,5 +416,65 @@
     "bridgeText": "Notes on Care, Risk & Knowledge já transforma parte dessas perguntas em uma forma de leitura pública: pesquisa histórica, fragmentos, poemas e imagens colocados lado a lado.",
     "privateNote": "O site apresenta perguntas, contextos, métodos e trajetórias de circulação. Artigos submetidos, manuscritos e originais ainda não publicados permanecem fora daqui.",
     "cta": "Conhecer o livro"
+  },
+  "circulationArticle": {
+    "title": "Publicar não encerra.",
+    "intro": "O que muda quando um livro deixa de pertencer apenas à mesa onde foi feito?",
+    "meta": "Circulação · setembro de 2026",
+    "paragraphs": [
+      "Até certo ponto, um livro vive em um circuito pequeno: escrever, escolher, cortar, revisar, diagramar, imprimir. Quase tudo ainda pode ser recolhido para a mesa e alterado.",
+      "A publicação muda essa escala. O livro entra em um envelope, passa por outras mãos, chega a uma estante que a editora não conhece e encontra experiências que não estavam presentes durante a escrita. Uma passagem secundária para quem escreveu pode se tornar o centro da leitura de outra pessoa.",
+      "Por isso, circulação não é apenas deslocamento físico. Um livro circula quando produz relações que não estavam previstas: uma imagem encontra uma memória, um argumento encontra uma discordância, uma pergunta encontra outro campo de experiência.",
+      "Para uma editora independente, essa passagem faz parte da própria publicação. Não basta terminar um arquivo ou fabricar um objeto. Publicar também é construir condições para que a obra consiga sair do lugar em que nasceu sem controlar o que acontecerá depois.",
+      "Publicar, então, não encerra o trabalho. Encerra apenas uma etapa de controle. O resto começa quando o livro passa a ser lido por alguém que não estava à mesa."
+    ],
+    "cta": "Conhecer Notes on Care"
+  },
+  "placeArticle": {
+    "title": "De que lugar esta mesa olha o mundo?",
+    "intro": "Belo Horizonte não é apenas o endereço no expediente.",
+    "meta": "Lugar de edição · setembro de 2026",
+    "paragraphs": [
+      "Toda editora trabalha de algum lugar. Mesmo quando um livro fala de temas que atravessam países, instituições e épocas diferentes, as perguntas que parecem importantes começam em relações muito concretas.",
+      "A Fóscolo & Company é editada em Belo Horizonte. Arquivos, universidades, bibliotecas, deslocamentos pela cidade, a Pampulha e as conversas que acontecem aqui participam do repertório a partir do qual os livros são lidos e preparados.",
+      "Isso não significa transformar a cidade em cenário obrigatório nem publicar apenas sobre Minas Gerais. Significa abandonar a ficção de um ponto de vista neutro. Uma escolha editorial também tem geografia.",
+      "A circulação faz o movimento contrário: o livro parte de um lugar sem precisar permanecer preso a ele. Pode chegar a outra cidade, outra instituição, outra língua e encontrar perguntas que não existiam na mesa de origem.",
+      "Dizer de onde se trabalha não diminui o alcance de uma editora. Torna visível o ponto a partir do qual ela escolhe olhar."
+    ],
+    "cta": "Conhecer a editora"
+  },
+  "spaceArticle": {
+    "title": "O vazio também é uma decisão editorial.",
+    "intro": "Margem, distância e pausa também organizam uma leitura.",
+    "meta": "Forma · setembro de 2026",
+    "paragraphs": [
+      "Uma página não é feita apenas pelo que imprime. Antes mesmo de ler uma frase, o olhar encontra margens, distâncias, alinhamentos, blocos e interrupções.",
+      "Esses intervalos estabelecem hierarquias. Aproximar dois elementos pode fazer com que pareçam pertencer ao mesmo argumento; separá-los pode criar uma pausa ou impedir uma associação fácil demais.",
+      "Por isso, espaço em branco não é ausência de trabalho. Em um livro que reúne pesquisa, poesia, fotografia ou prosa ensaística, ele pode ser a diferença entre acumular materiais e permitir que cada forma mantenha sua própria presença.",
+      "Há também um limite. Vazio não deve funcionar como decoração de prestígio, nem como uma maneira de fazer pouco conteúdo parecer mais importante. A forma precisa responder ao ritmo e à função da página.",
+      "Editar também é decidir o que não ocupar. Às vezes, a melhor intervenção é deixar uma distância suficiente para que o leitor perceba que uma relação existe sem obrigá-lo a entendê-la de uma única maneira."
+    ],
+    "cta": "Voltar ao Caderno"
+  },
+  "repertoireArticle": {
+    "title": "A dúvida está na primeira frase.",
+    "intro": "Uma leitura da abertura de “Missa do Galo”, de Machado de Assis.",
+    "meta": "Repertório Fóscolo 002 · literatura",
+    "quote": "Nunca pude entender a conversação que tive com uma senhora, há muitos anos, contava eu dezessete, ela trinta.",
+    "paragraphs": [
+      "A primeira frase não promete esclarecer uma conversa. Ela começa justamente pela impossibilidade de entendê-la por completo.",
+      "O narrador olha para um episódio antigo sabendo mais do que sabia aos dezessete anos — e, ainda assim, não transforma essa distância em certeza. A memória oferece detalhes, mas não resolve automaticamente o sentido deles.",
+      "Essa abertura é uma boa lembrança de que ambiguidade não é o mesmo que falta de informação. Um texto pode oferecer muitos elementos e ainda preservar mais de uma relação possível entre eles.",
+      "Ler a frase de novo muda o peso de palavras simples: “nunca”, “entender”, “há muitos anos”. O tempo da lembrança entra no conto antes mesmo que saibamos o que foi dito naquela noite.",
+      "É esse tipo de retorno que o Repertório Fóscolo procura praticar: escolher um detalhe concreto, voltar a ele, contextualizar o que é possível afirmar e deixar visível o ponto em que a interpretação continua aberta."
+    ],
+    "source": "Machado de Assis, “Missa do Galo”.",
+    "back": "Voltar ao Repertório"
+  },
+  "repertoireFeature": {
+    "meta": "Repertório Fóscolo 002 · literatura",
+    "title": "A dúvida está na primeira frase.",
+    "desc": "Uma leitura da abertura de “Missa do Galo”: lembrar uma conversa não é o mesmo que compreender o que ela significou.",
+    "cta": "Ler a análise"
   }
 }
