@@ -649,7 +649,8 @@
     "noResults": "No public page matches this search.",
     "results": "results",
     "result": "result",
-    "privacy": "Search runs in your browser and consults only the website’s public index."
+    "privacy": "Search runs in your browser and consults only the website’s public index.",
+    "rssLabel": "RSS feed"
   },
   "now": {
     "nav": "Now",
