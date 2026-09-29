@@ -674,42 +674,42 @@
     "items": [
       {
         "label": "Santé & soin",
-        "query": "santé soin",
+        "query": "santé",
         "desc": "Crises sanitaires, soin, risque, mémoire et manières de continuer."
       },
       {
         "label": "Institutions & savoir",
-        "query": "institutions savoir",
+        "query": "institutions",
         "desc": "Comment les organisations apprennent, enregistrent, classent et font circuler le savoir."
       },
       {
         "label": "Histoire des sciences",
-        "query": "science virus classification",
+        "query": "science",
         "desc": "Laboratoires, classification, preuve et réseaux scientifiques."
       },
       {
         "label": "Édition & forme",
-        "query": "édition forme",
+        "query": "édition",
         "desc": "Séquence, marge, image, paratexte, rythme et décisions de lecture."
       },
       {
         "label": "Belo Horizonte & territoire",
-        "query": "Belo Horizonte Pampulha territoire",
+        "query": "Pampulha",
         "desc": "Lieu d’édition, paysage, ville et les points depuis lesquels une question commence."
       },
       {
         "label": "Littérature",
-        "query": "littérature poème chronique Machado",
+        "query": "Machado",
         "desc": "Poèmes, chroniques, lectures et ambiguïtés qui reviennent sur la table."
       },
       {
         "label": "Image & paysage",
-        "query": "image photographie paysage",
+        "query": "image",
         "desc": "Photographie, cadrage et relations qu’une légende n’a pas besoin de résoudre."
       },
       {
         "label": "Archives & mémoire",
-        "query": "archives mémoire",
+        "query": "archives",
         "desc": "Documents, histoire orale, traces et ce qui demeure après une crise."
       },
       {
