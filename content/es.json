@@ -685,5 +685,15 @@
       }
     ],
     "rssLabel": "Seguir Cuaderno & Repertorio por RSS"
+  },
+  "now": {
+    "title": "Ahora en Fóscolo",
+    "intro": "Qué ya puede leerse, qué está en preparación y dónde está circulando el trabajo ahora.",
+    "nav": "Ahora",
+    "booksTitle": "Libros ahora",
+    "journalTitle": "Últimas del Cuaderno",
+    "researchTitle": "En circulación",
+    "archiveText": "El resto del trabajo permanece disponible en el archivo consultable.",
+    "archiveCta": "Abrir archivo & búsqueda"
   }
 }
