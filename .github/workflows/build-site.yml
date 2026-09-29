@@ -3,8 +3,7 @@ name: Build static site
 on:
   push:
     branches:
-      - main
-      - caderno-repertorio-archive-2026-09-29
+      - "**"
     paths:
       - "content/**"
       - "scripts/**"
