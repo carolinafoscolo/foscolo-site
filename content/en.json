@@ -169,7 +169,31 @@
         "Status",
         "The manuscript is in editorial preparation. Final cover, release date and purchase details will be announced later."
       ]
-    ]
+    ],
+    "structureTitle": "The architecture without the text",
+    "structureIntro": "It is possible to show how the book is organised without giving away what the poems and chronicles still need to reserve for publication.",
+    "structureItems": [
+      [
+        "Entrance",
+        "A presentation and prologue shift attention toward the book as object, its materiality and the gesture of opening before the literary sequence begins."
+      ],
+      [
+        "Sequence",
+        "Thirteen poems and three essayistic chronicles are read as one continuous path rather than as rigid blocks separated by genre."
+      ],
+      [
+        "Interruptions and exit",
+        "Images, changes in the visual field, an epilogue and a source note alter the rhythm and make visible that form also carries an argument."
+      ]
+    ],
+    "reserveTitle": "What is not here — deliberately.",
+    "reserveText": "The website does not reproduce poems, chronicles or passages from the still-unpublished manuscript. Curiosity can begin with architecture, questions and editorial choices; the experience of the text remains reserved for the book.",
+    "reserveNote": "The final cover, publication date and sales conditions also remain open.",
+    "pathwaysTitle": "Follow the process without reading ahead",
+    "pathwaysText": "The Journal documents real editorial decisions — prologue, space, circulation and form — without turning the website into a pre-publication of the manuscript.",
+    "spaceCta": "Read about space on the page",
+    "journalCta": "Open the Journal",
+    "catalogCta": "Back to the catalogue"
   },
   "catalog": {
     "title": "Books with more\nthan one way in.",
