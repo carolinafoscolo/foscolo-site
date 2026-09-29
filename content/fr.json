@@ -178,7 +178,40 @@
     "newDesc": "Dans les coulisses de Todos ou nenhum? : la feuille, le prologue et le geste d’ouvrir.",
     "newMeta": "Dans les coulisses de l’édition · septembre 2026",
     "archiveTitle": "Lectures du Carnet",
-    "instagramText": "Caderno Fóscolo et Repertório Fóscolo circulent aussi sur l’Instagram de la maison."
+    "instagramText": "Caderno Fóscolo et Repertório Fóscolo circulent aussi sur l’Instagram de la maison.",
+    "archiveIntro": "Le Carnet rassemble des textes nés du travail éditorial quotidien et leur donne plus de temps qu’un fil d’actualité.",
+    "entries": [
+      {
+        "key": "circulation",
+        "meta": "Circulation · septembre 2026",
+        "title": "Publier ne clôt pas.",
+        "desc": "Ce qui change lorsqu’un livre n’appartient plus seulement à la table où il a été fabriqué."
+      },
+      {
+        "key": "place",
+        "meta": "Lieu d’édition · septembre 2026",
+        "title": "Depuis quel endroit cette table regarde-t-elle le monde ?",
+        "desc": "Belo Horizonte n’est pas seulement une adresse dans le colophon. C’est aussi un point de vue."
+      },
+      {
+        "key": "space",
+        "meta": "Forme · septembre 2026",
+        "title": "Le vide est aussi une décision éditoriale.",
+        "desc": "Marge, distance, pause et hiérarchie organisent aussi la lecture."
+      },
+      {
+        "key": "article",
+        "meta": "Dans les coulisses de l’édition · septembre 2026",
+        "title": "Un livre commence avant sa première phrase.",
+        "desc": "La feuille, le prologue et le geste d’ouvrir dans Todos ou nenhum?."
+      },
+      {
+        "key": "essay",
+        "meta": "Essai inaugural · août 2026",
+        "title": "Il n’existe pas une seule manière d’entrer dans ce livre.",
+        "desc": "Recherche, fragment, poème et image dans Notes on Care."
+      }
+    ]
   },
   "article": {
     "title": "Un livre commence avant sa première phrase.",
@@ -383,5 +416,65 @@
     "bridgeText": "Notes on Care, Risk & Knowledge transforme déjà une partie de ces questions en une forme de lecture publique : recherche historique, fragments, poèmes et images placés côte à côte.",
     "privateNote": "Le site présente des questions, des contextes, des méthodes et des trajectoires de circulation. Les articles soumis, manuscrits et originaux encore inédits restent hors ligne.",
     "cta": "Découvrir le livre"
+  },
+  "circulationArticle": {
+    "title": "Publier ne clôt pas.",
+    "intro": "Ce qui change lorsqu’un livre n’appartient plus seulement à la table où il a été fabriqué.",
+    "meta": "Circulation · septembre 2026",
+    "paragraphs": [
+      "Pendant un temps, un livre vit dans un petit circuit : écrire, choisir, couper, réviser, mettre en page et imprimer. Presque tout peut encore revenir sur la table et être modifié.",
+      "La publication change cette échelle. Le livre entre dans une enveloppe, passe par d’autres mains, rejoint une étagère inconnue de l’éditeur et rencontre des expériences absentes pendant l’écriture. Un passage secondaire pour l’auteur peut devenir le centre de la lecture de quelqu’un d’autre.",
+      "La circulation n’est donc pas seulement un déplacement physique. Un livre circule lorsqu’il produit des relations imprévues : une image rencontre une mémoire, un argument rencontre un désaccord, une question atteint un autre champ d’expérience.",
+      "Pour une maison indépendante, ce passage appartient à la publication elle-même. Terminer un fichier ou fabriquer un objet ne suffit pas. Publier consiste aussi à créer les conditions pour que l’œuvre quitte son lieu d’origine sans contrôler ce qui arrivera ensuite.",
+      "Publier ne ferme donc pas le travail. Cela ferme seulement une étape de contrôle. Le reste commence lorsque le livre est lu par quelqu’un qui n’était pas à la table."
+    ],
+    "cta": "Découvrir Notes on Care"
+  },
+  "placeArticle": {
+    "title": "Depuis quel endroit cette table regarde-t-elle le monde ?",
+    "intro": "Belo Horizonte n’est pas seulement une adresse dans le colophon.",
+    "meta": "Lieu d’édition · septembre 2026",
+    "paragraphs": [
+      "Toute maison d’édition travaille depuis quelque part. Même lorsqu’un livre traverse des pays, des institutions et des époques, ce qui paraît d’abord important naît de relations très concrètes.",
+      "Fóscolo & Company est éditée à Belo Horizonte. Archives, universités, bibliothèques, déplacements dans la ville, Pampulha et conversations locales font partie du répertoire à partir duquel les livres sont lus et préparés.",
+      "Cela ne signifie pas transformer la ville en décor obligatoire ni publier uniquement sur le Minas Gerais. Cela signifie abandonner la fiction d’un point de vue neutre. Une décision éditoriale a aussi une géographie.",
+      "La circulation fait le mouvement inverse : un livre peut partir d’un lieu sans y rester enfermé. Il peut atteindre une autre ville, une autre institution ou une autre langue et rencontrer des questions qui n’existaient pas sur la table d’origine.",
+      "Dire d’où l’on travaille ne réduit pas la portée d’une maison d’édition. Cela rend visible le point depuis lequel elle choisit de regarder."
+    ],
+    "cta": "Découvrir la maison"
+  },
+  "spaceArticle": {
+    "title": "Le vide est aussi une décision éditoriale.",
+    "intro": "Marge, distance et pause organisent aussi la lecture.",
+    "meta": "Forme · septembre 2026",
+    "paragraphs": [
+      "Une page n’est pas faite uniquement de ce qu’elle imprime. Avant de lire une phrase, l’œil rencontre marges, distances, alignements, blocs et interruptions.",
+      "Ces intervalles établissent des hiérarchies. Rapprocher deux éléments peut donner l’impression qu’ils appartiennent au même argument ; les séparer peut créer une pause ou empêcher une association trop facile.",
+      "L’espace blanc n’est donc pas une absence de travail. Dans un livre qui réunit recherche, poésie, photographie ou prose essayistique, il peut faire la différence entre accumuler des matériaux et laisser chaque forme conserver sa propre présence.",
+      "Il existe aussi une limite. Le vide ne doit pas servir de décoration de prestige ni faire paraître un contenu mince plus important. La forme doit répondre au rythme et à la fonction de la page.",
+      "Éditer, c’est aussi décider de ce qui n’occupera pas l’espace. Parfois, la meilleure intervention consiste à laisser assez de distance pour qu’un lecteur perçoive une relation sans être obligé de l’interpréter d’une seule manière."
+    ],
+    "cta": "Retour au Carnet"
+  },
+  "repertoireArticle": {
+    "title": "Le doute est dans la première phrase.",
+    "intro": "Une lecture de l’ouverture de « Missa do Galo », de Machado de Assis.",
+    "meta": "Repertório Fóscolo 002 · littérature",
+    "quote": "Nunca pude entender a conversação que tive com uma senhora, há muitos anos, contava eu dezessete, ela trinta.",
+    "paragraphs": [
+      "La première phrase ne promet pas d’éclaircir une conversation. Elle commence précisément par l’impossibilité de la comprendre complètement.",
+      "Le narrateur revient sur un épisode ancien en sachant davantage qu’à dix-sept ans, mais cette distance ne devient pas certitude. La mémoire fournit des détails sans en résoudre automatiquement le sens.",
+      "Cette ouverture rappelle que l’ambiguïté n’est pas la même chose qu’un manque d’information. Un texte peut offrir de nombreux éléments tout en préservant plusieurs relations possibles entre eux.",
+      "Relire la phrase change le poids de mots simples : « jamais », « comprendre », « il y a de nombreuses années ». Le temps du souvenir entre dans le récit avant même que nous sachions ce qui a été dit cette nuit-là.",
+      "C’est ce type de retour que Repertório Fóscolo cherche à pratiquer : choisir un détail concret, y revenir, contextualiser ce qui peut être affirmé et rendre visible le point où l’interprétation reste ouverte."
+    ],
+    "source": "Machado de Assis, « Missa do Galo ».",
+    "back": "Retour au Répertoire"
+  },
+  "repertoireFeature": {
+    "meta": "Repertório Fóscolo 002 · littérature",
+    "title": "Le doute est dans la première phrase.",
+    "desc": "Une lecture de l’ouverture de « Missa do Galo » : se souvenir d’une conversation n’est pas la même chose que comprendre ce qu’elle signifiait.",
+    "cta": "Lire l’analyse"
   }
 }
