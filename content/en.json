@@ -632,5 +632,17 @@
     "title": "The uncertainty is in the first sentence.",
     "desc": "A reading of the opening of “Missa do Galo”: remembering a conversation is not the same as understanding what it meant.",
     "cta": "Read the analysis"
+  },
+  "search": {
+    "title": "Archive & search",
+    "intro": "Search books, research, Journal essays, Repertoire readings and publisher pages. The index contains only material already public on the website.",
+    "nav": "Archive & search",
+    "placeholder": "Search health, editing, Pampulha, Machado, circulation…",
+    "button": "Search",
+    "all": "Full archive",
+    "noResults": "No public page matches this search.",
+    "results": "results",
+    "result": "result",
+    "privacy": "Search runs in your browser and consults only the website’s public index."
   }
 }
