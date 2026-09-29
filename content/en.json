@@ -685,5 +685,15 @@
       }
     ],
     "rssLabel": "Follow Journal & Repertoire by RSS"
+  },
+  "now": {
+    "title": "Now at Fóscolo",
+    "intro": "What can already be read, what is in preparation and where the work is circulating now.",
+    "nav": "Now",
+    "booksTitle": "Books now",
+    "journalTitle": "Latest from the Journal",
+    "researchTitle": "In circulation",
+    "archiveText": "The rest of the work remains available in the searchable archive.",
+    "archiveCta": "Open archive & search"
   }
 }
