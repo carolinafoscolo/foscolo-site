@@ -649,7 +649,8 @@
     "noResults": "Ninguna página pública corresponde a esta búsqueda.",
     "results": "resultados",
     "result": "resultado",
-    "privacy": "La búsqueda ocurre en su navegador y consulta solamente el índice público del sitio."
+    "privacy": "La búsqueda ocurre en su navegador y consulta solamente el índice público del sitio.",
+    "rssLabel": "RSS del Cuaderno"
   },
   "now": {
     "nav": "Ahora",

@@ -649,7 +649,8 @@
     "noResults": "Aucune page publique ne correspond à cette recherche.",
     "results": "résultats",
     "result": "résultat",
-    "privacy": "La recherche s’effectue dans votre navigateur et consulte uniquement l’index public du site."
+    "privacy": "La recherche s’effectue dans votre navigateur et consulte uniquement l’index public du site.",
+    "rssLabel": "Flux RSS"
   },
   "now": {
     "nav": "Maintenant",
