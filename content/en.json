@@ -674,42 +674,42 @@
     "items": [
       {
         "label": "Health & care",
-        "query": "health care",
+        "query": "health",
         "desc": "Health crises, care, risk, memory and ways of continuing."
       },
       {
         "label": "Institutions & knowledge",
-        "query": "institutions knowledge",
+        "query": "institutions",
         "desc": "How organisations learn, record, classify and move knowledge."
       },
       {
         "label": "History of science",
-        "query": "science virus classification",
+        "query": "science",
         "desc": "Laboratories, classification, evidence and scientific networks."
       },
       {
         "label": "Editing & form",
-        "query": "editing form",
+        "query": "editing",
         "desc": "Sequence, margins, images, paratext, rhythm and reading decisions."
       },
       {
         "label": "Belo Horizonte & territory",
-        "query": "Belo Horizonte Pampulha territory",
+        "query": "Pampulha",
         "desc": "Place of publication, landscape, city and the points from which questions begin."
       },
       {
         "label": "Literature",
-        "query": "literature poem chronicle Machado",
+        "query": "Machado",
         "desc": "Poems, chronicles, readings and ambiguities that return to the table."
       },
       {
         "label": "Image & landscape",
-        "query": "image photography landscape",
+        "query": "image",
         "desc": "Photography, framing and relationships a caption does not need to resolve."
       },
       {
         "label": "Archive & memory",
-        "query": "archive memory",
+        "query": "archive",
         "desc": "Documents, oral histories, traces and what remains after a crisis."
       },
       {
