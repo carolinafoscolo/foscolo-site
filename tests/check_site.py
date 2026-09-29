@@ -51,7 +51,19 @@ def main():
  for lang,data in build.DATA.items():
   if fields(data)!=fields(build.DATA['pt']):errors.append(f'{lang}: translation schema differs')
   for key in build.ROUTES[lang]:
-   if not (ROOT/build.path(lang,key).lstrip('/')).is_file():errors.append(f'{lang}: missing {key}')
+   route_file=ROOT/build.path(lang,key).lstrip('/')
+   if not route_file.is_file():errors.append(f'{lang}: missing {key}')
+  for key in build.DISCOVERY_MAP:
+   route_file=ROOT/build.path(lang,key).lstrip('/')
+   if route_file.is_file():
+    html=route_file.read_text()
+    if html.count('class="discovery-card"')!=3:errors.append(f'{lang}/{key}: expected three discovery cards')
+    if data['ui']['continueExploring'] not in html:errors.append(f'{lang}/{key}: discovery heading missing')
+  todos=(ROOT/build.path(lang,'todos').lstrip('/')).read_text()
+  if 'Uma folha sozinha quase não oferece resistência.' in todos or 'class="excerpt"' in todos:
+   errors.append(f'{lang}: unpublished Todos excerpt returned')
+  notes=(ROOT/build.path(lang,'notes').lstrip('/')).read_text()
+  if build.BR not in notes:errors.append(f'{lang}: Brazilian Amazon link missing from Notes')
  if len(build.DATA)!=5:errors.append('Expected five languages')
  if errors:print('\n'.join(errors));raise SystemExit(1)
  print(f'PASS: {len(documents)} pages, five languages, local links, fragments, image labels and metadata.')
