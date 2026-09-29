@@ -644,5 +644,15 @@
     "results": "results",
     "result": "result",
     "privacy": "Search runs in your browser and consults only the website’s public index."
+  },
+  "now": {
+    "title": "Now at Fóscolo",
+    "intro": "What can already be read, what is in preparation and where the work is circulating now.",
+    "nav": "Now",
+    "booksTitle": "Books now",
+    "journalTitle": "Latest from the Journal",
+    "researchTitle": "In circulation",
+    "archiveText": "The rest of the work remains available in the searchable archive.",
+    "archiveCta": "Open archive & search"
   }
 }
