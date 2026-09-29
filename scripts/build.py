@@ -278,7 +278,7 @@ def rss_feed(lang,d):
  for meta,title,desc in d['research']['circulation']:
   url=ORIGIN+path(lang,'research')
   items.append(f'<item><title>{e(title)}</title><link>{e(url)}</link><guid isPermaLink="false">{e(url+"#"+title)}</guid><category>{e(meta)}</category><description>{e(desc)}</description></item>')
- items.append(f'<item><title>Notes on Care, Risk & Knowledge</title><link>{ORIGIN+path(lang,"notes")}</link><guid isPermaLink="true">{ORIGIN+path(lang,"notes")}</guid><category>{e(d["ui"]["published"])}</category><description>{e(d["notes"]["description"])}</description></item>')
+ items.append(f'<item><title>Notes on Care, Risk &amp; Knowledge</title><link>{ORIGIN+path(lang,"notes")}</link><guid isPermaLink="true">{ORIGIN+path(lang,"notes")}</guid><category>{e(d["ui"]["published"])}</category><description>{e(d["notes"]["description"])}</description></item>')
  return '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>Fóscolo &amp; Company — '+e(d['journal']['title'])+'</title><link>'+ORIGIN+path(lang,'home')+'</link><description>'+e(d['journal']['intro'])+'</description><language>'+e(d['lang'])+'</language><lastBuildDate>Tue, 29 Sep 2026 19:00:00 -0300</lastBuildDate>'+''.join(items)+'</channel></rss>\n'
 
 def build():
