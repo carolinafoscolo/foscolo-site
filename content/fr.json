@@ -632,5 +632,17 @@
     "title": "Le doute est dans la première phrase.",
     "desc": "Une lecture de l’ouverture de « Missa do Galo » : se souvenir d’une conversation n’est pas la même chose que comprendre ce qu’elle signifiait.",
     "cta": "Lire l’analyse"
+  },
+  "search": {
+    "title": "Archives & recherche",
+    "intro": "Recherchez des livres, des projets de recherche, des textes du Carnet, des lectures du Répertoire et des pages de la maison. L’index ne contient que ce qui est déjà public sur le site.",
+    "nav": "Archives & recherche",
+    "placeholder": "Rechercher santé, édition, Pampulha, Machado, circulation…",
+    "button": "Rechercher",
+    "all": "Toutes les archives",
+    "noResults": "Aucune page publique ne correspond à cette recherche.",
+    "results": "résultats",
+    "result": "résultat",
+    "privacy": "La recherche s’effectue dans votre navigateur et consulte uniquement l’index public du site."
   }
 }
