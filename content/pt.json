@@ -65,7 +65,13 @@
     "saleTitle": "Um livro já pode sair daqui.",
     "saleIntro": "Notes on Care, Risk & Knowledge é a primeira peça disponível de um trabalho que atravessa pesquisa histórica, imagem e escrita. A edição física brasileira está em inglês, com 64 páginas e impressão colorida.",
     "researchTitle": "A pesquisa continua fora dos livros.",
-    "researchIntro": "Arquivos, saúde pública, ciência, território e história pública alimentam o catálogo. O site mostra as perguntas e os caminhos de circulação sem abrir manuscritos ainda inéditos."
+    "researchIntro": "Arquivos, saúde pública, ciência, território e história pública alimentam o catálogo. O site mostra as perguntas e os caminhos de circulação sem abrir manuscritos ainda inéditos.",
+    "latestTitle": "Novidades & próximos movimentos",
+    "latestIntro": "O que acabou de entrar no arquivo e o que está prestes a circular.",
+    "latestCta": "Ver o que está acontecendo agora",
+    "topicsTitle": "Entre por um tema",
+    "topicsIntro": "O acervo também pode ser atravessado por perguntas e assuntos, não apenas pelo tipo de página.",
+    "topicsCta": "Explorar todos os temas"
   },
   "notes": {
     "subtitle": "Pesquisa, fragmentos e imagens do Brasil",
@@ -643,47 +649,74 @@
     "noResults": "Nenhuma página pública corresponde a esta busca.",
     "results": "resultados",
     "result": "resultado",
-    "privacy": "A busca acontece no seu navegador e consulta apenas o índice público do site.",
-    "pathsTitle": "Percursos para começar",
-    "pathsIntro": "Se você ainda não sabe o que procurar, entre por uma pergunta. Cada percurso reúne páginas que se iluminam mutuamente.",
-    "paths": [
+    "privacy": "A busca acontece no seu navegador e consulta apenas o índice público do site."
+  },
+  "now": {
+    "nav": "Agora",
+    "title": "O que está acontecendo agora.",
+    "intro": "Um retrato curto do trabalho em andamento: o que já pode ser lido, o que está em edição, quais perguntas continuam abertas e para onde a pesquisa circula a seguir.",
+    "availableTitle": "Disponível para leitura",
+    "editingTitle": "Na mesa de edição",
+    "researchTitle": "Pesquisa em andamento",
+    "circulationTitle": "Próximas circulações",
+    "latestTitle": "Última entrada do Caderno",
+    "updated": "Setembro de 2026",
+    "bookCta": "Conhecer o livro",
+    "processCta": "Acompanhar o processo",
+    "researchCta": "Ver pesquisa & circulação",
+    "journalCta": "Ler no Caderno"
+  },
+  "topics": {
+    "nav": "Temas",
+    "title": "Entre pelo assunto que ficou na cabeça.",
+    "intro": "Livros, pesquisa e textos editoriais se cruzam por temas recorrentes. Cada tema abre uma busca no arquivo público e reúne materiais de formatos diferentes.",
+    "prompt": "Escolha um tema para atravessar o arquivo.",
+    "items": [
       {
-        "title": "Cuidado, risco & conhecimento",
-        "desc": "Da experiência de instituições em crise ao livro que nasceu dessas perguntas.",
-        "keys": [
-          "notes",
-          "research",
-          "circulation"
-        ]
+        "label": "Saúde & cuidado",
+        "query": "saúde",
+        "desc": "Crises sanitárias, cuidado, risco, memória e maneiras de continuar."
       },
       {
-        "title": "Forma, matéria & edição",
-        "desc": "Como papel, espaço, sequência e imagem mudam o modo de ler um livro.",
-        "keys": [
-          "todos",
-          "article",
-          "space"
-        ]
+        "label": "Instituições & conhecimento",
+        "query": "instituições",
+        "desc": "Como organizações aprendem, registram, classificam e fazem conhecimento circular."
       },
       {
-        "title": "Lugar, circulação & história pública",
-        "desc": "Belo Horizonte como ponto de partida, sem transformar território em limite.",
-        "keys": [
-          "place",
-          "projects",
-          "research"
-        ]
+        "label": "História da ciência",
+        "query": "ciência",
+        "desc": "Laboratórios, classificação, evidência e redes científicas."
       },
       {
-        "title": "Ler de novo",
-        "desc": "Repertório como prática: voltar a uma frase, uma referência ou uma forma e encontrar outra relação.",
-        "keys": [
-          "repertoire2",
-          "repertoire",
-          "essay"
-        ]
+        "label": "Edição & forma",
+        "query": "edição",
+        "desc": "Sequência, margem, imagem, paratexto, ritmo e decisões de leitura."
+      },
+      {
+        "label": "Belo Horizonte & território",
+        "query": "Pampulha",
+        "desc": "Lugar de edição, paisagem, cidade e os pontos de onde uma pergunta começa."
+      },
+      {
+        "label": "Literatura",
+        "query": "Machado",
+        "desc": "Poemas, crônicas, leituras e ambiguidades que voltam à mesa."
+      },
+      {
+        "label": "Imagem & paisagem",
+        "query": "imagem",
+        "desc": "Fotografia, enquadramento e relações que não precisam ser resolvidas por uma legenda."
+      },
+      {
+        "label": "Arquivo & memória",
+        "query": "arquivo",
+        "desc": "Documentos, oralidade, vestígios e o que permanece depois de uma crise."
+      },
+      {
+        "label": "Circulação",
+        "query": "circulação",
+        "desc": "O que acontece quando livros, ideias e pesquisas deixam a mesa de origem."
       }
-    ],
-    "rssLabel": "Acompanhar Caderno & Repertório por RSS"
+    ]
   }
 }

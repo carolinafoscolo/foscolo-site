@@ -65,7 +65,13 @@
     "saleTitle": "Un livre peut déjà quitter cette table.",
     "saleIntro": "Notes on Care, Risk & Knowledge est la première pièce disponible d’un travail plus large entre recherche historique, image et écriture. L’édition imprimée brésilienne est en anglais, avec 64 pages et une impression en couleur.",
     "researchTitle": "La recherche continue au-delà des livres.",
-    "researchIntro": "Archives, santé publique, science, territoire et histoire publique nourrissent le catalogue. Le site montre les questions et les circulations sans publier les manuscrits encore inédits."
+    "researchIntro": "Archives, santé publique, science, territoire et histoire publique nourrissent le catalogue. Le site montre les questions et les circulations sans publier les manuscrits encore inédits.",
+    "latestTitle": "Nouveautés & prochains mouvements",
+    "latestIntro": "Ce qui vient d’entrer dans les archives et ce qui est sur le point de circuler.",
+    "latestCta": "Voir ce qui se passe maintenant",
+    "topicsTitle": "Entrez par un thème",
+    "topicsIntro": "Les archives peuvent aussi être traversées par des questions et des sujets récurrents, pas seulement par type de page.",
+    "topicsCta": "Explorer tous les thèmes"
   },
   "notes": {
     "subtitle": "Recherche, fragments et images du Brésil",
@@ -643,47 +649,74 @@
     "noResults": "Aucune page publique ne correspond à cette recherche.",
     "results": "résultats",
     "result": "résultat",
-    "privacy": "La recherche s’effectue dans votre navigateur et consulte uniquement l’index public du site.",
-    "pathsTitle": "Parcours pour commencer",
-    "pathsIntro": "Si vous ne savez pas encore quoi chercher, commencez par une question. Chaque parcours rassemble des pages qui s’éclairent mutuellement.",
-    "paths": [
+    "privacy": "La recherche s’effectue dans votre navigateur et consulte uniquement l’index public du site."
+  },
+  "now": {
+    "nav": "Maintenant",
+    "title": "Ce qui se passe maintenant.",
+    "intro": "Un aperçu bref du travail en mouvement : ce qui peut déjà être lu, ce qui est sur la table éditoriale, les questions encore ouvertes et les prochaines circulations de la recherche.",
+    "availableTitle": "Disponible à la lecture",
+    "editingTitle": "Sur la table éditoriale",
+    "researchTitle": "Recherche en cours",
+    "circulationTitle": "Prochaines circulations",
+    "latestTitle": "Dernière entrée du Carnet",
+    "updated": "Septembre 2026",
+    "bookCta": "Découvrir le livre",
+    "processCta": "Suivre le processus",
+    "researchCta": "Voir recherche & circulation",
+    "journalCta": "Lire dans le Carnet"
+  },
+  "topics": {
+    "nav": "Thèmes",
+    "title": "Entrez par le sujet qui vous est resté en tête.",
+    "intro": "Livres, recherche et textes éditoriaux se croisent autour de thèmes récurrents. Chaque thème ouvre une recherche dans les archives publiques et réunit plusieurs formats.",
+    "prompt": "Choisissez un thème pour traverser les archives.",
+    "items": [
       {
-        "title": "Soin, risque & savoir",
-        "desc": "De l’expérience des institutions en crise au livre né de ces questions.",
-        "keys": [
-          "notes",
-          "research",
-          "circulation"
-        ]
+        "label": "Santé & soin",
+        "query": "santé",
+        "desc": "Crises sanitaires, soin, risque, mémoire et manières de continuer."
       },
       {
-        "title": "Forme, matière & édition",
-        "desc": "Comment papier, espace, séquence et image changent la manière de lire un livre.",
-        "keys": [
-          "todos",
-          "article",
-          "space"
-        ]
+        "label": "Institutions & savoir",
+        "query": "institutions",
+        "desc": "Comment les organisations apprennent, enregistrent, classent et font circuler le savoir."
       },
       {
-        "title": "Lieu, circulation & histoire publique",
-        "desc": "Belo Horizonte comme point de départ sans faire du territoire une limite.",
-        "keys": [
-          "place",
-          "projects",
-          "research"
-        ]
+        "label": "Histoire des sciences",
+        "query": "science",
+        "desc": "Laboratoires, classification, preuve et réseaux scientifiques."
       },
       {
-        "title": "Relire",
-        "desc": "Le répertoire comme pratique : revenir à une phrase, une référence ou une forme et y trouver une autre relation.",
-        "keys": [
-          "repertoire2",
-          "repertoire",
-          "essay"
-        ]
+        "label": "Édition & forme",
+        "query": "édition",
+        "desc": "Séquence, marge, image, paratexte, rythme et décisions de lecture."
+      },
+      {
+        "label": "Belo Horizonte & territoire",
+        "query": "Pampulha",
+        "desc": "Lieu d’édition, paysage, ville et les points depuis lesquels une question commence."
+      },
+      {
+        "label": "Littérature",
+        "query": "Machado",
+        "desc": "Poèmes, chroniques, lectures et ambiguïtés qui reviennent sur la table."
+      },
+      {
+        "label": "Image & paysage",
+        "query": "image",
+        "desc": "Photographie, cadrage et relations qu’une légende n’a pas besoin de résoudre."
+      },
+      {
+        "label": "Archives & mémoire",
+        "query": "archives",
+        "desc": "Documents, histoire orale, traces et ce qui demeure après une crise."
+      },
+      {
+        "label": "Circulation",
+        "query": "circulation",
+        "desc": "Ce qui se passe lorsque livres, idées et recherches quittent leur table d’origine."
       }
-    ],
-    "rssLabel": "Suivre Carnet & Répertoire par RSS"
+    ]
   }
 }
