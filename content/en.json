@@ -65,7 +65,13 @@
     "saleTitle": "One book can already leave this table.",
     "saleIntro": "Notes on Care, Risk & Knowledge is the first available piece of a wider practice linking historical research, images and writing. The Brazilian print edition is in English, with 64 pages and colour printing.",
     "researchTitle": "The research continues beyond the books.",
-    "researchIntro": "Archives, public health, science, place and public history feed the catalogue. The site shows questions and routes of circulation without publishing manuscripts that are still unpublished."
+    "researchIntro": "Archives, public health, science, place and public history feed the catalogue. The site shows questions and routes of circulation without publishing manuscripts that are still unpublished.",
+    "latestTitle": "Latest & next movements",
+    "latestIntro": "What has just entered the archive and what is about to circulate.",
+    "latestCta": "See what is happening now",
+    "topicsTitle": "Enter through a theme",
+    "topicsIntro": "The archive can also be crossed through recurring questions and subjects, not only by page type.",
+    "topicsCta": "Explore all themes"
   },
   "notes": {
     "subtitle": "Research, fragments and images from Brazil",
@@ -644,5 +650,73 @@
     "results": "results",
     "result": "result",
     "privacy": "Search runs in your browser and consults only the website’s public index."
+  },
+  "now": {
+    "nav": "Now",
+    "title": "What is happening now.",
+    "intro": "A short view of the work in motion: what can already be read, what is on the editorial table, which questions remain open and where the research circulates next.",
+    "availableTitle": "Available to read",
+    "editingTitle": "On the editorial table",
+    "researchTitle": "Research in progress",
+    "circulationTitle": "Next circulation",
+    "latestTitle": "Latest Journal entry",
+    "updated": "September 2026",
+    "bookCta": "Explore the book",
+    "processCta": "Follow the process",
+    "researchCta": "Explore research & circulation",
+    "journalCta": "Read in the Journal"
+  },
+  "topics": {
+    "nav": "Themes",
+    "title": "Enter through the subject that stayed with you.",
+    "intro": "Books, research and editorial texts meet around recurring themes. Each theme opens a search in the public archive and brings different formats together.",
+    "prompt": "Choose a theme to cross the archive.",
+    "items": [
+      {
+        "label": "Health & care",
+        "query": "health care",
+        "desc": "Health crises, care, risk, memory and ways of continuing."
+      },
+      {
+        "label": "Institutions & knowledge",
+        "query": "institutions knowledge",
+        "desc": "How organisations learn, record, classify and move knowledge."
+      },
+      {
+        "label": "History of science",
+        "query": "science virus classification",
+        "desc": "Laboratories, classification, evidence and scientific networks."
+      },
+      {
+        "label": "Editing & form",
+        "query": "editing form",
+        "desc": "Sequence, margins, images, paratext, rhythm and reading decisions."
+      },
+      {
+        "label": "Belo Horizonte & territory",
+        "query": "Belo Horizonte Pampulha territory",
+        "desc": "Place of publication, landscape, city and the points from which questions begin."
+      },
+      {
+        "label": "Literature",
+        "query": "literature poem chronicle Machado",
+        "desc": "Poems, chronicles, readings and ambiguities that return to the table."
+      },
+      {
+        "label": "Image & landscape",
+        "query": "image photography landscape",
+        "desc": "Photography, framing and relationships a caption does not need to resolve."
+      },
+      {
+        "label": "Archive & memory",
+        "query": "archive memory",
+        "desc": "Documents, oral histories, traces and what remains after a crisis."
+      },
+      {
+        "label": "Circulation",
+        "query": "circulation",
+        "desc": "What happens when books, ideas and research leave their table of origin."
+      }
+    ]
   }
 }
