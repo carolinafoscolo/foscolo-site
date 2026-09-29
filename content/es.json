@@ -169,7 +169,31 @@
         "Estado",
         "Original en preparación editorial. La cubierta final, la fecha de lanzamiento y las condiciones de venta se anunciarán más adelante."
       ]
-    ]
+    ],
+    "structureTitle": "La arquitectura sin el texto",
+    "structureIntro": "Es posible mostrar cómo se organiza el libro sin entregar aquello que los poemas y las crónicas todavía necesitan reservar para la publicación.",
+    "structureItems": [
+      [
+        "Entrada",
+        "La presentación y el prólogo desplazan la atención hacia el libro como objeto, la materia y el gesto de abrir antes de la secuencia literaria."
+      ],
+      [
+        "Secuencia",
+        "Trece poemas y tres crónicas ensayísticas se leen como un recorrido único, sin separar el volumen en bloques rígidos por género."
+      ],
+      [
+        "Interrupciones y salida",
+        "Imágenes, cambios del campo visual, epílogo y nota de fuentes alteran el ritmo y hacen visible que la forma también argumenta."
+      ]
+    ],
+    "reserveTitle": "Lo que no está aquí — a propósito.",
+    "reserveText": "El sitio no reproduce poemas, crónicas ni fragmentos del manuscrito todavía inédito. La curiosidad puede nacer de la arquitectura, las preguntas y las decisiones editoriales; la experiencia del texto queda reservada para el libro.",
+    "reserveNote": "También siguen abiertos la portada final, la fecha de publicación y las condiciones de venta.",
+    "pathwaysTitle": "Acompañe el proceso sin anticipar la lectura",
+    "pathwaysText": "El Cuaderno muestra decisiones reales del proceso — prólogo, espacio, circulación y forma — sin convertir el sitio en una prepublicación del manuscrito.",
+    "spaceCta": "Leer sobre el espacio en la página",
+    "journalCta": "Ver el Cuaderno",
+    "catalogCta": "Volver al catálogo"
   },
   "catalog": {
     "title": "Libros con más\nde una entrada.",
