@@ -169,7 +169,31 @@
         "État",
         "Le manuscrit est en préparation éditoriale. La couverture finale, la date de parution et les conditions de vente seront annoncées plus tard."
       ]
-    ]
+    ],
+    "structureTitle": "L’architecture sans le texte",
+    "structureIntro": "Il est possible de montrer comment le livre s’organise sans livrer ce que les poèmes et les chroniques doivent encore réserver à la publication.",
+    "structureItems": [
+      [
+        "Entrée",
+        "La présentation et le prologue déplacent l’attention vers le livre comme objet, la matière et le geste d’ouvrir avant le début de la séquence littéraire."
+      ],
+      [
+        "Séquence",
+        "Treize poèmes et trois chroniques essayistiques se lisent comme un seul parcours, sans diviser le volume en blocs rigides par genre."
+      ],
+      [
+        "Interruptions et sortie",
+        "Images, changements du champ visuel, épilogue et note de sources modifient le rythme et rendent visible que la forme porte elle aussi un argument."
+      ]
+    ],
+    "reserveTitle": "Ce qui n’est pas ici — volontairement.",
+    "reserveText": "Le site ne reproduit ni poèmes, ni chroniques, ni passages du manuscrit encore inédit. La curiosité peut naître de l’architecture, des questions et des choix éditoriaux ; l’expérience du texte reste réservée au livre.",
+    "reserveNote": "La couverture finale, la date de parution et les conditions de vente restent elles aussi ouvertes.",
+    "pathwaysTitle": "Suivre le processus sans lire à l’avance",
+    "pathwaysText": "Le Carnet montre de véritables décisions éditoriales — prologue, espace, circulation et forme — sans transformer le site en prépublication du manuscrit.",
+    "spaceCta": "Lire sur l’espace de la page",
+    "journalCta": "Voir le Carnet",
+    "catalogCta": "Retour au catalogue"
   },
   "catalog": {
     "title": "Plus d’une manière\nd’entrer dans un livre.",
