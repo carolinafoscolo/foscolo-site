@@ -643,6 +643,47 @@
     "noResults": "没有公开页面符合这次搜索。",
     "results": "条结果",
     "result": "条结果",
-    "privacy": "搜索在您的浏览器中完成，只查询网站的公开索引。"
+    "privacy": "搜索在您的浏览器中完成，只查询网站的公开索引。",
+    "pathsTitle": "从这些路径开始",
+    "pathsIntro": "如果还不知道该搜索什么，可以先从一个问题进入。每条路径把彼此照亮的页面放在一起。",
+    "paths": [
+      {
+        "title": "照护、风险与知识",
+        "desc": "从危机中机构的经验，到由这些问题生长出来的书。",
+        "keys": [
+          "notes",
+          "research",
+          "circulation"
+        ]
+      },
+      {
+        "title": "形式、材料与编辑",
+        "desc": "纸张、留白、顺序与图像如何改变一本书被阅读的方式。",
+        "keys": [
+          "todos",
+          "article",
+          "space"
+        ]
+      },
+      {
+        "title": "地点、传播与公共史",
+        "desc": "把贝洛奥里藏特作为出发点，而不是把地域变成边界。",
+        "keys": [
+          "place",
+          "projects",
+          "research"
+        ]
+      },
+      {
+        "title": "重新阅读",
+        "desc": "把阅读积累当作一种实践：回到一句话、一条参考或一种形式，再发现新的关系。",
+        "keys": [
+          "repertoire2",
+          "repertoire",
+          "essay"
+        ]
+      }
+    ],
+    "rssLabel": "通过 RSS 关注编辑手记与阅读积累"
   }
 }
