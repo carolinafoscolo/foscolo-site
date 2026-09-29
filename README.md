@@ -8,10 +8,10 @@ Publicado em https://www.foscolo.com.br pelo GitHub Pages. A branch `main` cont�
 
 1. Edite os textos em `content/{pt,en,es,fr,zh}.json`.
 2. Edite a estrutura compartilhada em `scripts/build.py`, os estilos em `assets/site.css` e o menu em `assets/site.js`.
-3. Execute `python3 scripts/build.py` para gerar as páginas e o sitemap.
+3. Localmente, execute `python3 scripts/build.py` para gerar as páginas e o sitemap.
 4. Execute `python3 tests/check_site.py` para verificar destinos locais, idiomas, imagens e metadados.
 5. Confira o site com `python3 -m http.server 8080`.
-6. Envie o código-fonte e as páginas geradas juntos ao GitHub.
+6. Ao enviar mudanças de conteúdo/gerador, o workflow `Build static site` reconstrói, valida e grava automaticamente os HTMLs gerados.
 
 As URLs anteriores permanecem disponíveis. `content/legacy.json` preserva o ensaio inaugural e o manifesto nos cinco idiomas. Imagens antigas continuam nos endereços originais para não quebrar referências externas; o novo layout usa `assets/images/`.
 
@@ -21,8 +21,9 @@ As URLs anteriores permanecem disponíveis. `content/legacy.json` preserva o ens
 - Nova página **Pesquisa & circulação**, com perguntas de pesquisa, atividades acadêmicas selecionadas e uma política explícita de não publicar originais inéditos.
 - Notes: edição brasileira em inglês, miolo de 64 páginas e formato 10 × 15 cm; ofertas internacionais separadas. A homepage e a página do livro priorizam o caminho de compra na Amazon Brasil; preço e estoque continuam no anúncio.
 - Todos ou nenhum?: 13 poemas e 3 crônicas ensaísticas; obra em preparação, sem data ou venda inventada. O site apresenta processo, forma e perguntas sem publicar novos trechos do original.
-- Caderno: índice, ensaio inaugural preservado e novo texto sobre o prólogo de Todos ou nenhum?.
-- Repertório, projetos, autora, imprensa e contato.
+- Caderno: arquivo vivo com textos permanentes sobre circulação, lugar de edição, forma visual, Notes on Care e o processo editorial de Todos ou nenhum?.
+- Repertório: série de leitura e curadoria com análises concretas; o nº 002 lê a abertura de “Missa do Galo”, de Machado de Assis.
+- Projetos, autora, imprensa e contato.
 - Sem inscrição de newsletter enquanto não houver serviço configurado.
 
 ## Decisões técnicas
@@ -38,4 +39,4 @@ Contato: contato@foscolo.com — endereço mantido conforme a atualização inst
 
 ## Verificação no navegador
 
-Com Playwright instalado, execute `CHROMIUM_PATH=/caminho/do/chromium node tests/browser.cjs`. O teste percorre as 71 rotas do sitemap em 390 e 1440 pixels e verifica menu, Escape e navegação sem JavaScript. A fonte chinesa inclui os caracteres usados no conteúdo de setembro; amplie o subconjunto local ao adicionar novos caracteres.
+Com Playwright instalado, execute `CHROMIUM_PATH=/caminho/do/chromium node tests/browser.cjs`. O teste percorre as 96 rotas do sitemap em 390 e 1440 pixels e verifica menu, Escape e navegação sem JavaScript. A fonte chinesa inclui os caracteres usados no conteúdo de setembro; amplie o subconjunto local ao adicionar novos caracteres.
