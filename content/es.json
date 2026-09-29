@@ -643,47 +643,16 @@
     "noResults": "Ninguna página pública corresponde a esta búsqueda.",
     "results": "resultados",
     "result": "resultado",
-    "privacy": "La búsqueda ocurre en su navegador y consulta solamente el índice público del sitio.",
-    "pathsTitle": "Recorridos para empezar",
-    "pathsIntro": "Si todavía no sabe qué buscar, empiece por una pregunta. Cada recorrido reúne páginas que se iluminan entre sí.",
-    "paths": [
-      {
-        "title": "Cuidado, riesgo & conocimiento",
-        "desc": "De la experiencia de instituciones en crisis al libro que nació de esas preguntas.",
-        "keys": [
-          "notes",
-          "research",
-          "circulation"
-        ]
-      },
-      {
-        "title": "Forma, materia & edición",
-        "desc": "Cómo papel, espacio, secuencia e imagen cambian la manera de leer un libro.",
-        "keys": [
-          "todos",
-          "article",
-          "space"
-        ]
-      },
-      {
-        "title": "Lugar, circulación & historia pública",
-        "desc": "Belo Horizonte como punto de partida sin convertir el territorio en límite.",
-        "keys": [
-          "place",
-          "projects",
-          "research"
-        ]
-      },
-      {
-        "title": "Volver a leer",
-        "desc": "El repertorio como práctica: regresar a una frase, una referencia o una forma y encontrar otra relación.",
-        "keys": [
-          "repertoire2",
-          "repertoire",
-          "essay"
-        ]
-      }
-    ],
-    "rssLabel": "Seguir Cuaderno & Repertorio por RSS"
+    "privacy": "La búsqueda ocurre en su navegador y consulta solamente el índice público del sitio."
+  },
+  "now": {
+    "title": "Ahora en Fóscolo",
+    "intro": "Qué ya puede leerse, qué está en preparación y dónde está circulando el trabajo ahora.",
+    "nav": "Ahora",
+    "booksTitle": "Libros ahora",
+    "journalTitle": "Últimas del Cuaderno",
+    "researchTitle": "En circulación",
+    "archiveText": "El resto del trabajo permanece disponible en el archivo consultable.",
+    "archiveCta": "Abrir archivo & búsqueda"
   }
 }
