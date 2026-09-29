@@ -112,7 +112,28 @@
       ]
     ],
     "buyTitle": "Emportez le livre vers une autre lecture.",
-    "buyText": "L’édition imprimée brésilienne est disponible sur Amazon Brésil. Le prix, le stock et la livraison sont indiqués directement sur l’annonce."
+    "buyText": "L’édition imprimée brésilienne est disponible sur Amazon Brésil. Le prix, le stock et la livraison sont indiqués directement sur l’annonce.",
+    "formTitle": "Pourquoi ce livre prend-il cette forme ?",
+    "formIntro": "La recherche aurait pu devenir seulement un article. Le choix éditorial a été de maintenir visibles plusieurs façons de savoir dans une même publication.",
+    "formItems": [
+      [
+        "L’archive ne clôt pas l’expérience",
+        "Documents et entretiens apportent une précision historique, mais n’épuisent pas ce qu’une crise laisse dans les corps, la mémoire ou les paysages."
+      ],
+      [
+        "Le poème n’illustre pas la recherche",
+        "L’écriture littéraire ne traduit pas un argument déjà achevé. Elle met à l’épreuve rythme, distance et langage là où l’explication directe atteint ses limites."
+      ],
+      [
+        "L’image n’est pas une décoration",
+        "Photographies et paysages participent à la pensée. Ils laissent certaines relations ouvertes sans obliger une légende à les résoudre entièrement."
+      ]
+    ],
+    "continueTitle": "Continuez par une autre entrée",
+    "continueText": "Le livre ouvre sur un travail plus large de recherche, de circulation et de forme éditoriale. Le site garde ces couches accessibles sans transformer le livre en résumé de lui-même.",
+    "researchCta": "Voir recherche & circulation",
+    "journalCta": "Entrer dans le Carnet",
+    "pressCta": "Ouvrir le dossier de presse"
   },
   "todos": {
     "subtitle": "Livre I · A matéria aprende a respirar",
@@ -167,7 +188,16 @@
         "Image et territoire",
         "Photographie, paysage et relations entre lieux et expériences."
       ]
-    ]
+    ],
+    "availableLabel": "Disponible maintenant",
+    "featureTitle": "Commencez par le livre qui peut déjà circuler.",
+    "featureText": "Notes on Care, Risk & Knowledge est la première publication disponible de Fóscolo. Recherche historique, poèmes, fragments et photographies traversent une question commune : que faisons-nous lorsque soin, risque et savoir ne tiennent plus dans un seul langage ?",
+    "sampleCta": "Ouvrir l’extrait",
+    "nextLabel": "En préparation",
+    "nextTitle": "Le prochain livre prend déjà forme.",
+    "nextText": "Todos ou nenhum? — Livre I déplace le catalogue vers la poésie et la chronique essayistique. Le site suit les décisions de séquence, de matière et de forme sans publier le manuscrit encore inédit.",
+    "connectTitle": "Ce n’est pas une collection de genres. C’est une collection de questions.",
+    "connectText": "Les livres n’ont pas besoin de se ressembler pour appartenir au même catalogue. Leur lien tient à l’attention portée à la manière dont personnes, matériaux et institutions changent lorsque changent les conditions pour continuer."
   },
   "journal": {
     "title": "Caderno Fóscolo",
