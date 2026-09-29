@@ -166,7 +166,9 @@ def desc_for(key,d):
 
 def page(lang,key,body,d,root=False):
  u=d['ui'];nav=d['nav'];canonical=ORIGIN+('/' if root else path(lang,key));title=title_for(key,d);desc=desc_for(key,d)
- navhtml=''.join(f'<a href="{path(lang,k)}"'+(' aria-current="page"' if k==key else '')+f'>{e(nav[NAV_INDEX[k]])}</a>' for k in ['catalog','journal','repertoire','about','author','contact'])
+ active='journal' if key in {'journal','repertoire','essay','article','circulation','place','space','repertoire2'} else ('catalog' if key in {'catalog','notes','todos'} else key)
+ menu=[('catalog',nav[NAV_INDEX['catalog']]),('journal',nav[NAV_INDEX['journal']]),('research',d['research']['nav']),('about',nav[NAV_INDEX['about']]),('author',nav[NAV_INDEX['author']]),('contact',nav[NAV_INDEX['contact']])]
+ navhtml=''.join(f'<a href="{path(lang,k)}"'+(' aria-current="page"' if k==active else '')+f'>{e(label)}</a>' for k,label in menu)
  languages=''.join(f'<a href="{path(l,key)}" lang="{DATA[l]["lang"]}" hreflang="{DATA[l]["lang"]}"'+(' aria-current="true"' if l==lang else '')+f'>{e({"pt":"PT","en":"EN","es":"ES","fr":"FR","zh":"中文"}[l])}</a>' for l in DATA)
  alternates=''.join(f'<link rel="alternate" hreflang="{DATA[l]["lang"]}" href="{ORIGIN+path(l,key)}">' for l in DATA)
  ogimg=ORIGIN+'/assets/images/'+('todos-forest.webp' if key in ['todos','article'] else 'notes-brasil.webp')
