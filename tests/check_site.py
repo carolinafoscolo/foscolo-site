@@ -23,7 +23,7 @@ class Document(HTMLParser):
    if v:self.links.append(v)
   if tag=='img':self.images.append(a)
   if tag=='link' and a.get('rel')=='canonical':self.canonical.append(a['href'])
-  if tag=='link' and a.get('rel')=='alternate':self.alternates.append(a)
+  if tag=='link' and a.get('rel')=='alternate' and a.get('hreflang'):self.alternates.append(a)
 
 def fields(value,prefix=''):
  if isinstance(value,dict):
