@@ -64,6 +64,19 @@ def main():
    errors.append(f'{lang}: unpublished Todos excerpt returned')
   notes=(ROOT/build.path(lang,'notes').lstrip('/')).read_text()
   if build.BR not in notes:errors.append(f'{lang}: Brazilian Amazon link missing from Notes')
+  search_page=(ROOT/build.path(lang,'search').lstrip('/')).read_text()
+  if 'data-search-page' not in search_page:errors.append(f'{lang}: archive search UI missing')
+  index_file=ROOT/'assets'/'search'/f'{lang}.json'
+  if not index_file.is_file():errors.append(f'{lang}: search index missing')
+  else:
+   try: index=json.loads(index_file.read_text())
+   except Exception: errors.append(f'{lang}: invalid search index');index=[]
+   expected=len(build.ROUTES[lang])-2
+   if len(index)!=expected:errors.append(f'{lang}: search index has {len(index)} docs; expected {expected}')
+   serialized=json.dumps(index,ensure_ascii=False)
+   if 'Uma folha sozinha quase não oferece resistência.' in serialized:errors.append(f'{lang}: unpublished Todos excerpt leaked into search')
+   if not any('Machado' in item.get('text','') for item in index):errors.append(f'{lang}: public Repertoire content absent from search')
+   if not any('Pampulha' in item.get('text','') for item in index):errors.append(f'{lang}: public place content absent from search')
  if len(build.DATA)!=5:errors.append('Expected five languages')
  if errors:print('\n'.join(errors));raise SystemExit(1)
  print(f'PASS: {len(documents)} pages, five languages, local links, fragments, image labels and metadata.')
