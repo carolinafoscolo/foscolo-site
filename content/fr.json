@@ -685,5 +685,15 @@
       }
     ],
     "rssLabel": "Suivre Carnet & Répertoire par RSS"
+  },
+  "now": {
+    "title": "Maintenant chez Fóscolo",
+    "intro": "Ce qui peut déjà être lu, ce qui est en préparation et où le travail circule actuellement.",
+    "nav": "Maintenant",
+    "booksTitle": "Livres maintenant",
+    "journalTitle": "Derniers textes du Carnet",
+    "researchTitle": "En circulation",
+    "archiveText": "Le reste du travail reste disponible dans les archives consultables.",
+    "archiveCta": "Ouvrir les archives & la recherche"
   }
 }
