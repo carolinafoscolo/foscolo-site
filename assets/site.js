@@ -83,7 +83,7 @@
         '<p class="eyebrow">' + escapeHTML(doc.meta) + '</p>' +
         '<h2><a href="' + escapeHTML(doc.url) + '">' + escapeHTML(doc.title) + '</a></h2>' +
         '<p>' + escapeHTML(doc.desc) + '</p>' +
-        '<a class="text-link" href="' + escapeHTML(doc.url) + '">' + escapeHTML(doc.title) + '<span aria-hidden="true"> ↗</span></a>' +
+        '<a class="text-link" href="' + escapeHTML(doc.url) + '">' + escapeHTML(root.dataset.open) + '<span aria-hidden="true"> ↗</span></a>' +
       '</article>'
     ).join('');
 
