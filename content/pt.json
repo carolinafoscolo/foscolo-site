@@ -112,7 +112,28 @@
       ]
     ],
     "buyTitle": "Leve o livro para outra leitura.",
-    "buyText": "A edição física brasileira está disponível pela Amazon Brasil. Preço, estoque e entrega são informados diretamente no anúncio."
+    "buyText": "A edição física brasileira está disponível pela Amazon Brasil. Preço, estoque e entrega são informados diretamente no anúncio.",
+    "formTitle": "Por que este livro tem esta forma?",
+    "formIntro": "A pesquisa poderia ter virado apenas um artigo. A escolha foi manter diferentes modos de saber visíveis na mesma publicação.",
+    "formItems": [
+      [
+        "O arquivo não fecha a experiência",
+        "Documentos e entrevistas dão precisão histórica, mas não esgotam o que uma crise deixa no corpo, na memória ou na paisagem."
+      ],
+      [
+        "O poema não ilustra a pesquisa",
+        "A escrita literária não traduz um argumento já pronto. Ela testa ritmo, distância e linguagem onde a explicação direta encontra limites."
+      ],
+      [
+        "A imagem não é decoração",
+        "Fotografias e paisagens participam do pensamento. Elas deixam no livro relações que uma legenda não precisa resolver por completo."
+      ]
+    ],
+    "continueTitle": "Continue por outra entrada",
+    "continueText": "O livro é uma porta para um trabalho maior sobre pesquisa, circulação e forma editorial. O site mantém essas camadas abertas sem transformar o livro em resumo de si mesmo.",
+    "researchCta": "Ver pesquisa & circulação",
+    "journalCta": "Entrar no Caderno",
+    "pressCta": "Abrir o press kit"
   },
   "todos": {
     "subtitle": "Livro I · A matéria aprende a respirar",
@@ -167,7 +188,16 @@
         "Imagem e território",
         "Fotografia, paisagem e atenção às relações entre os lugares e as experiências."
       ]
-    ]
+    ],
+    "availableLabel": "Disponível agora",
+    "featureTitle": "Comece pelo livro que já pode circular.",
+    "featureText": "Notes on Care, Risk & Knowledge é a primeira publicação disponível da Fóscolo. Pesquisa histórica, poemas, fragmentos e fotografias atravessam uma pergunta comum: o que fazemos quando cuidado, risco e conhecimento deixam de caber em uma única linguagem?",
+    "sampleCta": "Abrir a amostra",
+    "nextLabel": "Em preparação",
+    "nextTitle": "O próximo livro já está tomando forma.",
+    "nextText": "Todos ou nenhum? — Livro I desloca o catálogo em direção à poesia e à crônica ensaística. O site acompanha decisões de edição e matéria sem publicar o original ainda inédito.",
+    "connectTitle": "Não é uma coleção de gêneros. É uma coleção de perguntas.",
+    "connectText": "Os livros não precisam se parecer para pertencer ao mesmo catálogo. O vínculo está na atenção a como pessoas, materiais e instituições mudam quando mudam as condições de continuar."
   },
   "journal": {
     "title": "Caderno Fóscolo",
