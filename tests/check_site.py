@@ -12,7 +12,7 @@ import build
 
 class Document(HTMLParser):
  def __init__(self, text):
-  super().__init__(); self.ids=set();self.links=[];self.images=[];self.h1=0;self.lang=None;self.canonical=[];self.alternates=[];self.feed(text)
+  super().__init__(); self.ids=set();self.links=[];self.images=[];self.h1=0;self.lang=None;self.canonical=[];self.alternates=[];self.feeds=[];self.feed(text)
  def handle_starttag(self,tag,attrs):
   a=dict(attrs)
   if 'id' in a: self.ids.add(a['id'])
@@ -23,7 +23,8 @@ class Document(HTMLParser):
    if v:self.links.append(v)
   if tag=='img':self.images.append(a)
   if tag=='link' and a.get('rel')=='canonical':self.canonical.append(a['href'])
-  if tag=='link' and a.get('rel')=='alternate':self.alternates.append(a)
+  if tag=='link' and a.get('rel')=='alternate' and a.get('hreflang'):self.alternates.append(a)
+  if tag=='link' and a.get('rel')=='alternate' and a.get('type')=='application/rss+xml':self.feeds.append(a)
 
 def fields(value,prefix=''):
  if isinstance(value,dict):
@@ -37,6 +38,7 @@ def main():
   if not d.lang:errors.append(f'{p}: missing language')
   if p.name!='404.html' and len(d.canonical)!=1:errors.append(f'{p}: canonical missing/duplicated')
   if p.name!='404.html' and len(d.alternates)!=6:errors.append(f'{p}: missing language alternates')
+  if p.name!='404.html' and len(d.feeds)!=1:errors.append(f'{p}: RSS alternate missing/duplicated')
   for a in d.images:
    if not a.get('alt'):errors.append(f'{p}: image lacks alternative text')
   for href in d.links:
@@ -66,6 +68,8 @@ def main():
   if build.BR not in notes:errors.append(f'{lang}: Brazilian Amazon link missing from Notes')
   search_page=(ROOT/build.path(lang,'search').lstrip('/')).read_text()
   if 'data-search-page' not in search_page:errors.append(f'{lang}: archive search UI missing')
+  if search_page.count('class="path-card"')!=4:errors.append(f'{lang}: expected four curated archive paths')
+  if '"@type": "CollectionPage"' not in search_page:errors.append(f'{lang}: archive CollectionPage schema missing')
   index_file=ROOT/'assets'/'search'/f'{lang}.json'
   if not index_file.is_file():errors.append(f'{lang}: search index missing')
   else:
@@ -77,6 +81,16 @@ def main():
    if 'Uma folha sozinha quase não oferece resistência.' in serialized:errors.append(f'{lang}: unpublished Todos excerpt leaked into search')
    if not any(item.get('key')=='repertoire2' for item in index):errors.append(f'{lang}: public Repertoire content absent from search')
    if not any(item.get('key')=='place' for item in index):errors.append(f'{lang}: public place content absent from search')
+  feed_file=ROOT/'feeds'/f'{lang}.xml'
+  if not feed_file.is_file():errors.append(f'{lang}: RSS feed missing')
+  else:
+   feed=feed_file.read_text()
+   if feed.count('<item>')!=6:errors.append(f'{lang}: RSS feed should contain six items')
+   if '<rss version="2.0">' not in feed:errors.append(f'{lang}: invalid RSS root')
+  article_page=(ROOT/build.path(lang,'circulation').lstrip('/')).read_text()
+  if '"@type": "Article"' not in article_page:errors.append(f'{lang}: Article schema missing')
+  notes_schema=(ROOT/build.path(lang,'notes').lstrip('/')).read_text()
+  if '"@type": "Book"' not in notes_schema or build.BR not in notes_schema:errors.append(f'{lang}: Book schema missing Amazon identity')
  if len(build.DATA)!=5:errors.append('Expected five languages')
  if errors:print('\n'.join(errors));raise SystemExit(1)
  print(f'PASS: {len(documents)} pages, five languages, local links, fragments, image labels and metadata.')
