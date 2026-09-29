@@ -58,7 +58,12 @@
     "journalTitle": "书页之间的工作",
     "journalIntro": "编辑选择、阅读笔记与影像之间的关系。在这里，关注一本书如何成形。",
     "aboutTitle": "从贝洛奥里藏特，\n走向新的阅读。",
-    "aboutText": "Fóscolo & Company Edições 将历史研究、随笔和文学创作联系起来。每部作品都有自己的形式：文本的次序、一幅图像、一页纸的节奏。"
+    "aboutText": "Fóscolo & Company Edições 将历史研究、随笔和文学创作联系起来。每部作品都有自己的形式：文本的次序、一幅图像、一页纸的节奏。",
+    "saleEyebrow": "现已出版",
+    "saleTitle": "一本书已经可以离开这张工作桌。",
+    "saleIntro": "Notes on Care, Risk & Knowledge 是这项持续工作中第一部已经可以被读者拿在手中的作品。巴西纸质版为英文，64页，彩色印刷。",
+    "researchTitle": "研究不会停在书页里。",
+    "researchIntro": "档案、公共卫生、科学、地域与公共史共同塑造出版社的目录。网站呈现问题与传播路径，但不公开尚未发表的手稿与原作。"
   },
   "notes": {
     "subtitle": "来自巴西的研究、片段与影像",
@@ -90,7 +95,24 @@
     "pagesValue": "64页",
     "sizeLabel": "巴西版开本",
     "sampleTitle": "翻开几页",
-    "sampleText": "研究、诗歌与摄影的选页提供一个阅读入口。试读内容来自国际版。"
+    "sampleText": "研究、诗歌与摄影的选页提供一个阅读入口。试读内容来自国际版。",
+    "readerTitle": "这本书可能为谁打开一扇门",
+    "readerItems": [
+      [
+        "历史与健康",
+        "适合关注机构、卫生危机、记忆与知识生产的读者。"
+      ],
+      [
+        "研究与写作",
+        "适合希望看到档案、随笔、片段、诗歌与摄影并置，而不被压缩成单一语言的读者。"
+      ],
+      [
+        "从巴西出发",
+        "适合寻找一部以英文写成、但从巴西的问题、景观与经验出发的作品的读者。"
+      ]
+    ],
+    "buyTitle": "让这本书进入另一场阅读。",
+    "buyText": "巴西纸质版可通过 Amazon Brazil 购买。当前价格、库存与配送信息以商品页面为准。"
   },
   "todos": {
     "subtitle": "第一卷 · A matéria aprende a respirar",
@@ -109,7 +131,24 @@
     "languageLabel": "书籍语言",
     "languageValue": "葡萄牙语",
     "formLabel": "构成",
-    "formValue": "13首诗 · 3篇文学随笔"
+    "formValue": "13首诗 · 3篇文学随笔",
+    "processCta": "跟随编辑过程",
+    "processTitle": "在不公开原作的前提下，我们已经可以说明什么",
+    "processIntro": "网站记录这本书的编辑过程、问题与形式。尚未发表的文本保留到正式出版时再与读者见面。",
+    "processItems": [
+      [
+        "形式",
+        "十三首诗与三篇随笔式短文，被组织为一条连续的阅读路径。"
+      ],
+      [
+        "材料",
+        "铁、水、玻璃、光、纸、飞行、压力与记忆作为具体对象出现，而不是现成的比喻。"
+      ],
+      [
+        "状态",
+        "原稿仍在编辑准备中。最终封面、出版日期与销售方式将在之后公布。"
+      ]
+    ]
   },
   "catalog": {
     "title": "走进一本书，\n不只有一种方式。",
@@ -230,7 +269,24 @@
     ],
     "researchTitle": "进行中的研究",
     "researchText": "From Isolate to Identity: Belém and the Making of Arbovirus Difference, 1954–1969 从历史角度研究分类、文献记录与科学知识传播。",
-    "orcid": "查看 ORCID"
+    "orcid": "查看 ORCID",
+    "workTitle": "工作方向",
+    "workItems": [
+      [
+        "健康与机构",
+        "健康史、机构记忆、危机、档案与口述史。"
+      ],
+      [
+        "科学与知识",
+        "分类、证据流通、实验室与科学基础设施。"
+      ],
+      [
+        "公共史与形式",
+        "文化导览、教学、编辑写作，以及让研究走出大学的方法。"
+      ]
+    ],
+    "circulationTitle": "正在传播的研究",
+    "circulationText": "近期报告与项目涉及 UCL Institute of the Americas、SHOT 与 ASEH，把健康、科学、环境与公共史联系起来。"
   },
   "press": {
     "title": "阅读、介绍，\n与分享。",
@@ -284,5 +340,48 @@
       "一个想法遇见了另一个",
       "“其余部分不在任何一个想法里。” 相遇的意象伴随 Todos ou nenhum?：生活与写作也在经历、问题和选择之间的关系中形成。诗歌与散文随笔以不同节奏展开这些相遇。"
     ]
-  ]
+  ],
+  "research": {
+    "eyebrow": "研究 · 传播",
+    "nav": "研究与传播",
+    "title": "仍在移动的问题。",
+    "intro": "Fóscolo & Company 的书籍来自更广阔的研究、写作与公共史实践。这里呈现问题、背景与传播轨迹，而不是尚未发表的原作。",
+    "questionsTitle": "三个研究方向",
+    "questions": [
+      [
+        "健康与机构",
+        "当卫生危机超出既有规程、日常惯例与现成分类时，机构如何学习？"
+      ],
+      [
+        "科学与分类",
+        "一个在亚马孙地区采集的病毒，如何在国际科学网络中变得可比较、可命名并被识别？"
+      ],
+      [
+        "环境与基础设施",
+        "当生态、监测与公共卫生基础设施共同生产证据时，森林的边界在哪里？"
+      ]
+    ],
+    "circulationTitle": "正在传播",
+    "circulation": [
+      [
+        "2026年5月 · UCL Institute of the Americas",
+        "寨卡、风险与医学知识",
+        "关于巴西寨卡疫情期间指南、风险与公共责任如何被生产出来的报告。"
+      ],
+      [
+        "2026年10月22–25日 · SHOT · Johns Hopkins",
+        "The Environments of Technology",
+        "已获接受的专题，由 Maria Carolina Fóscolo 共同组织并担任评论，讨论基础设施、物质性、证据与专业知识。"
+      ],
+      [
+        "2027年3月31日–4月3日 · ASEH · Richmond",
+        "Where Does the Forest End?",
+        "已获接受的报告，讨论黄热病、非人类哨兵与巴西公共卫生基础设施。"
+      ]
+    ],
+    "bridgeTitle": "从研究到读者",
+    "bridgeText": "Notes on Care, Risk & Knowledge 已经把其中一部分问题转化为公共阅读形式：历史研究、片段、诗歌与图像并置出现。",
+    "privateNote": "网站呈现问题、背景、方法与传播轨迹。已投稿论文、手稿与尚未出版的原作不会在这里公开。",
+    "cta": "了解这本书"
+  }
 }
