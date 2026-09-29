@@ -102,3 +102,13 @@
  .search-results{grid-template-columns:1fr}
  .search-result h2{font-size:2.4rem}
 }
+
+/* Curated archive paths */
+.path-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.path-card{background:var(--paper);border:1px solid var(--line);padding:30px}
+.path-card h3{font-size:clamp(2rem,3.2vw,3rem);margin-top:14px;max-width:14ch}
+.path-card>p:not(.eyebrow){font-size:13px;margin-top:18px;max-width:54ch}
+.path-links{list-style:none;padding:0;margin:26px 0 0;border-top:1px solid var(--line)}
+.path-links li{padding:10px 0;border-bottom:1px solid var(--line)}
+.path-links .text-link{margin:0}
+@media(max-width:760px){.path-grid{grid-template-columns:1fr}}
