@@ -20,7 +20,7 @@ ROUTES = {
 }
 KEYS = ['home','catalog','journal','repertoire','about','author','contact','projects','manifesto','press']
 for lang in ROUTES:
- ROUTES[lang] = dict(zip(KEYS, ROUTES[lang])) | {'notes':'notes-on-care', 'todos':'todos-ou-nenhum', 'essay':'caderno-01', 'article':'por-dentro-da-edicao'}
+ ROUTES[lang] = dict(zip(KEYS, ROUTES[lang])) | {'notes':'notes-on-care', 'todos':'todos-ou-nenhum', 'essay':'caderno-01', 'article':'por-dentro-da-edicao', 'research': {'pt':'pesquisa','en':'research','es':'investigacion','fr':'recherche','zh':'research'}[lang]}
 DATA = {lang:json.loads((ROOT/'content'/f'{lang}.json').read_text()) for lang in ROUTES if (ROOT/'content'/f'{lang}.json').exists()}
 LEGACY = json.loads((ROOT/'content/legacy.json').read_text())
 TITLES = ['A matéria aprende a respirar','Reconhecimentos emprestados','Tratado sobre a arte de não sangrar em vão','NICE AND EASY','Receituário de Morfina','Acolher não é ficar','Arquitetura da continuidade','O ar que a chama não via','A pressão não basta','Sobre permanecer em fusão','O tempo do recozimento','Entre o fogo e a colher','Como chegamos até aqui?','A largura das coisas','Não é só luminosidade','Recomeço em órbita própria']
@@ -39,6 +39,12 @@ def section_head(number,title,intro=''):
  return f'<div class="section-head"><span class="index-number" aria-hidden="true">{number}</span><div><h2>{nl(title)}</h2>'+ (f'<p>{e(intro)}</p>' if intro else '')+'</div></div>'
 def tiles(items):
  return '<div class="three-columns">'+''.join(f'<div class="text-card"><span class="eyebrow" aria-hidden="true">0{i+1}</span><h3>{e(a)}</h3><p>{e(b)}</p></div>' for i,(a,b) in enumerate(items))+'</div>'
+def researchcards(d):
+ r=d['research']
+ return '<div class="research-grid">'+''.join(f'<article class="research-card"><p class="eyebrow">0{i+1}</p><h3>{e(a)}</h3><p>{e(b)}</p></article>' for i,(a,b) in enumerate(r['questions']))+'</div>'
+def circulationlist(d):
+ r=d['research']
+ return '<div class="circulation-list">'+''.join(f'<article class="circulation-item"><p class="eyebrow">{e(meta)}</p><div><h3>{e(title)}</h3><p>{e(body)}</p></div></article>' for meta,title,body in r['circulation'])+'</div>'
 def hero(d,title,intro='',eyebrow='',small=False):
  return f'<section class="page-hero wrap {"compact" if small else ""}"><p class="eyebrow">{e(eyebrow or d["ui"]["edition"])}</p><h1>{nl(title)}</h1>'+ (f'<p class="lead">{e(intro)}</p>' if intro else '')+'</section>'
 def bookcards(lang,d):
@@ -50,36 +56,31 @@ def bookcards(lang,d):
 def editorial_section(lang,d,key):
  items=d['editorial']
  if key=='home':
-  title,body=items[0]
-  return '<section class="wrap section split top-line"><h2>'+e(title)+'</h2><div><p class="lead">'+e(body)+'</p>'+link(path(lang,'journal'),d['nav'][2])+'</div></section>'
- choices={'journal':[1,2], 'repertoire':[3,4], 'notes':[5], 'todos':[6]}
- return '<section class="wrap section top-line editorial-notes">'+''.join('<article class="split"><h2>'+e(items[i][0])+'</h2><p class="lead">'+e(items[i][1])+'</p></article>' for i in choices[key])+'</section>'
-def journalcards(lang,d):
- j=d['journal'];u=d['ui']
- return '<div class="journal-grid">'+f'<article class="journal-card"><a class="journal-art forest" href="{path(lang,"article")}">'+image('todos-prologue.webp',d['article']['caption'])+f'</a><p class="eyebrow">{e(j["newMeta"])}</p><h3><a href="{path(lang,"article")}">{e(j["newTitle"])}</a></h3><p>{e(j["newDesc"])}</p>'+link(path(lang,'article'),u['read'])+'</article>'+f'<article class="journal-card"><a class="journal-art notes-art" href="{path(lang,"essay")}">'+image('notes-brasil.webp','Notes on Care, Risk & Knowledge')+f'</a><p class="eyebrow">{e(u["previous"])}</p><h3><a href="{path(lang,"essay")}">{e(j["originalTitle"])}</a></h3><p>{e(j["originalDesc"])}</p>'+link(path(lang,'essay'),u['read'])+'</article></div>'
-def contactband(lang,d,text=None):
- return f'<section class="contact-band"><div class="wrap split"><h2>{e(d["ui"]["contact"])}</h2><div><p>{e(text or d["contact"]["intro"])}</p>'+link('mailto:'+EMAIL,EMAIL,'button gold')+'</div></div></section>'
-def content(lang,key,d):
- u=d['ui'];h=d['home'];n=d['notes'];t=d['todos']
- if key=='home':
-  return f'<section class="home-hero wrap"><div class="hero-copy"><p class="eyebrow">{e(h["eyebrow"])} · BH / BR</p><h1>{nl(h["title"])}</h1><p class="lead">{e(h["intro"])}</p><div class="actions">'+link(path(lang,'catalog'),u['catalog'],'button dark')+link(path(lang,'about'),d['nav'][4])+'</div></div><div class="hero-feature"><a class="hero-art" href="'+path(lang,'todos')+'">'+image('todos-forest.webp',u['proof'],'',True)+f'</a><div class="feature-caption"><p class="eyebrow">{e(h["feature"])}</p><h2><a href="{path(lang,"todos")}">Todos ou nenhum?</a></h2><p>{e(t["subtitle"])}</p></div></div></section><div class="ticker" aria-hidden="true"><span>FÓSCOLO & COMPANY</span><span>{e(h["eyebrow"])}</span><span>BELO HORIZONTE · BRASIL</span></div><section class="wrap section">'+section_head('01',h['catalogTitle'],h['catalogIntro'])+bookcards(lang,d)+'</section><section class="ink-section"><div class="wrap section">'+section_head('02',h['journalTitle'],h['journalIntro'])+journalcards(lang,d)+'</div></section>'+editorial_section(lang,d,key)+'<section class="wrap section split about-teaser"><div><p class="eyebrow">Fóscolo & Company Edições</p><h2>'+nl(h['aboutTitle'])+'</h2></div><div><p class="lead">'+e(h['aboutText'])+'</p>'+link(path(lang,'about'),u['more'])+'</div></section>'+contactband(lang,d)
+  r=d['research']
+  sale=f'<section class="wrap section home-sale">'+section_head('01',h['saleTitle'],h['saleIntro'])+f'<div class="home-sale-panel top-line"><div><p class="eyebrow">{e(h["saleEyebrow"])}</p><h2>Notes on Care, Risk & Knowledge</h2></div><div><p class="lead">{e(n["description"])}</p><div class="actions">'+link(BR,u['buyBR'],'button dark',True)+link('/assets/press/notes-on-care-sample.pdf',u['download'])+'</div></div></div></section>'
+  research=f'<section class="paper-deep"><div class="wrap section">'+section_head('02',h['researchTitle'],h['researchIntro'])+researchcards(d)+f'<div class="actions">'+link(path(lang,'research'),r['nav'],'button dark')+'</div></div></section>'
+  return f'<section class="home-hero wrap"><div class="hero-copy"><p class="eyebrow">{e(h["eyebrow"])} · BH / BR</p><h1>{nl(h["title"])}</h1><p class="lead">{e(h["intro"])}</p><div class="actions">'+link(BR,u['buyBR'],'button dark',True)+link(path(lang,'catalog'),u['catalog'])+'</div></div><div class="hero-feature"><a class="hero-art" href="'+path(lang,'notes')+'">'+image('notes-brasil.webp','Notes on Care, Risk & Knowledge','',True)+f'</a><div class="feature-caption"><p class="eyebrow">{e(u["published"])}</p><h2><a href="{path(lang,"notes")}">Notes on Care, Risk & Knowledge</a></h2><p>{e(n["subtitle"])}</p></div></div></section><div class="ticker" aria-hidden="true"><span>FÓSCOLO & COMPANY</span><span>{e(h["eyebrow"])}</span><span>BELO HORIZONTE · BRASIL</span></div>'+sale+research+'<section class="wrap section">'+section_head('03',h['catalogTitle'],h['catalogIntro'])+bookcards(lang,d)+'</section><section class="ink-section"><div class="wrap section">'+section_head('04',h['journalTitle'],h['journalIntro'])+journalcards(lang,d)+'</div></section>'+editorial_section(lang,d,key)+'<section class="wrap section split about-teaser"><div><p class="eyebrow">Fóscolo & Company Edições</p><h2>'+nl(h['aboutTitle'])+'</h2></div><div><p class="lead">'+e(h['aboutText'])+'</p>'+link(path(lang,'about'),u['more'])+'</div></section>'+contactband(lang,d)
  if key=='catalog':
   c=d['catalog'];return hero(d,c['title'],c['intro'],d['nav'][1])+f'<section class="wrap section top-line">{bookcards(lang,d)}</section><section class="wrap section">'+section_head('02',c['linesTitle'])+tiles(c['lines'])+'</section>'
  if key in ('notes','todos'):
   b=d[key];isnotes=key=='notes';title='Notes on Care, Risk & Knowledge' if isnotes else 'Todos ou nenhum?'
   art='notes-brasil.webp' if isnotes else 'todos-forest.webp'
-  body=f'<section class="wrap book-hero"><div class="book-hero-image {key}">'+image(art,title,'',True)+f'<p class="caption">{e(n["brTitle"] if isnotes else u["proof"])}</p></div><div><p class="eyebrow">{e(u["published"] if isnotes else u["forthcoming"])}</p><h1>{e(title)}</h1><p class="book-subtitle">{e(b["subtitle"])}</p><p class="byline">Maria Carolina Fóscolo'+(' Gomes' if isnotes else '')+f'</p><p class="lead">{e(b["description"])}</p><div class="actions">'+(link('#editions',u['formats'],'button dark')+link('/assets/press/notes-on-care-sample.pdf',u['download']) if isnotes else link('#excerpt',u['read'],'button dark'))+'</div>'
+  primary=(link(BR,u['buyBR'],'button dark',True)+link('/assets/press/notes-on-care-sample.pdf',u['download'])+link('#editions',u['formats'])) if isnotes else link('#process',t['processCta'],'button dark')
+  body=f'<section class="wrap book-hero"><div class="book-hero-image {key}">'+image(art,title,'',True)+f'<p class="caption">{e(n["brTitle"] if isnotes else u["proof"])}</p></div><div><p class="eyebrow">{e(u["published"] if isnotes else u["forthcoming"])}</p><h1>{e(title)}</h1><p class="book-subtitle">{e(b["subtitle"])}</p><p class="byline">Maria Carolina Fóscolo'+(' Gomes' if isnotes else '')+f'</p><p class="lead">{e(b["description"])}</p><div class="actions">'+primary+'</div>'
   if not isnotes: body+=f'<p class="status-note">{e(t["status"])}</p>'
   body+='</div></section>'
   if isnotes:
-   body+='<section class="wrap section top-line">'+tiles(n['sections'])+'</section><section class="paper-deep" id="editions"><div class="wrap section">'+section_head('02',u['formats'])+f'<div class="edition-grid"><article class="edition-card"><p class="eyebrow">BR</p><h3>{e(n["brTitle"])}</h3><p>{e(n["brText"])}</p><dl class="facts">'
+   body+='<section class="wrap section top-line">'+tiles(n['sections'])+'</section><section class="wrap section notes-reader">'+section_head('02',n['readerTitle'])+tiles(n['readerItems'])+'</section><section class="paper-deep" id="editions"><div class="wrap section">'+section_head('03',u['formats'])+f'<div class="edition-grid"><article class="edition-card"><p class="eyebrow">BR</p><h3>{e(n["brTitle"])}</h3><p>{e(n["brText"])}</p><dl class="facts">'
    for a,bv in [(n['languageLabel'],n['languageValue']),(n['pagesLabel'],n['pagesValue']),(n['sizeLabel'],'10 × 15 cm'),(n['publisherLabel'],'Fóscolo & Company Edições')]:body+=f'<div><dt>{e(a)}</dt><dd>{e(bv)}</dd></div>'
    body+='</dl>'+link(BR,u['buyBR'],'button dark',True)+f'</article><article class="edition-card"><p class="eyebrow">KDP</p><h3>{e(n["internationalTitle"])}</h3><p>{e(n["internationalText"])}</p><ul class="edition-links">'
    for label,asin in [('Kindle','B0H7L24BDH'),('Paperback','6502080553'),('Hardcover','6502203957')]:body+='<li>'+link('https://www.amazon.com/dp/'+asin,label,external=True)+'</li>'
-   body+=f'</ul><p class="caption">{e(u["availability"])}</p></article></div></div></section><section class="wrap section split"><h2>{e(n["sampleTitle"])}</h2><div><p>{e(n["sampleText"])}</p>'+link('/assets/press/notes-on-care-sample.pdf',u['download'],'button dark')+'</div></section>'
+   body+=f'</ul><p class="caption">{e(u["availability"])}</p></article></div></div></section><section class="wrap section split"><h2>{e(n["sampleTitle"])}</h2><div><p>{e(n["sampleText"])}</p>'+link('/assets/press/notes-on-care-sample.pdf',u['download'],'button dark')+f'</div></section><section class="buy-band"><div class="wrap split"><h2>{e(n["buyTitle"])}</h2><div><p>{e(n["buyText"])}</p>'+link(BR,u['buyBR'],'button gold',True)+'</div></div></section>'
   else:
-   body+=f'<section class="ink-section"><div class="wrap section split"><h2>{e(t["question"])}</h2><div><p class="lead">{e(t["body"])}</p><p>{e(t["body2"])}</p></div></div></section><section class="wrap section excerpt" id="excerpt"><p class="eyebrow">{e(u["original"])}</p><h2>{e(t["excerptTitle"])}</h2><p>{e(t["excerptIntro"])}</p><blockquote lang="pt-BR">{e(t["excerpt"])}</blockquote><blockquote class="excerpt-lines" lang="pt-BR">{nl(t["excerpt2"])}</blockquote><p class="caption">{e(t["excerptCredit"])}</p></section><section class="paper-deep"><div class="wrap section"><h2>{e(u["contents"])}</h2><ol class="contents" lang="pt-BR">'+''.join(f'<li>{e(v)}</li>' for v in TITLES)+f'</ol><p class="caption">{e(t["formValue"])} · {e(t["languageValue"])}</p></div></section><section class="wrap section split"><h2>{e(t["inside"])}</h2><div><p>{e(t["insideText"])}</p>'+link(path(lang,'article'),u['read'],'button dark')+'</div></section>'
+   body+=f'<section class="ink-section" id="process"><div class="wrap section split"><h2>{e(t["question"])}</h2><div><p class="lead">{e(t["body"])}</p><p>{e(t["body2"])}</p></div></div></section><section class="wrap section">'+section_head('02',t['processTitle'],t['processIntro'])+tiles(t['processItems'])+f'</section><section class="paper-deep"><div class="wrap section split"><h2>{e(t["inside"])}</h2><div><p class="lead">{e(t["insideText"])}</p>'+link(path(lang,'article'),u['read'],'button dark')+'</div></div></section>'
   return body+editorial_section(lang,d,key)
+ if key=='research':
+  r=d['research']
+  return hero(d,r['title'],r['intro'],r['eyebrow'])+'<section class="wrap section">'+section_head('01',r['questionsTitle'])+researchcards(d)+'</section><section class="paper-deep"><div class="wrap section">'+section_head('02',r['circulationTitle'])+circulationlist(d)+'</div></section><section class="wrap section split top-line"><h2>'+e(r['bridgeTitle'])+'</h2><div><p class="lead">'+e(r['bridgeText'])+'</p><p class="status-note">'+e(r['privateNote'])+'</p><div class="actions">'+link(path(lang,'notes'),r['cta'],'button dark')+link(path(lang,'catalog'),u['catalog'])+'</div></div></section>'
  if key=='journal':
   j=d['journal'];return hero(d,j['title'],j['intro'])+'<section class="wrap section top-line">'+journalcards(lang,d)+f'</section>'+editorial_section(lang,d,key)+f'<section class="wrap section split"><h2>{e(d["repertoire"]["title"])}</h2><div><p>{e(j["instagramText"])}</p>'+link(path(lang,'repertoire'),d['nav'][3],'button dark')+'</div></section>'
  if key=='article':
@@ -95,7 +96,7 @@ def content(lang,key,d):
  if key=='projects':
   p=d['projects'];return hero(d,p['title'],p['intro'])+'<section class="wrap section top-line">'+bookcards(lang,d)+'</section><section class="wrap section">'+tiles(p['steps'])+'</section>'+contactband(lang,d,p['contactText'])
  if key=='author':
-  a=d['author'];return hero(d,a['title'],a['intro'])+'<section class="wrap section split top-line"><div class="monogram" aria-hidden="true">MCF<span>Belo Horizonte / Brasil</span></div><div class="prose-inline">'+paragraphs(a['paragraphs'])+link('https://orcid.org/0009-0000-6000-2751',a['orcid'],'button dark',True)+f'</div></section><section class="paper-deep"><div class="wrap section split"><h2>{e(a["researchTitle"])}</h2><p class="lead">{e(a["researchText"])}</p></div></section><section class="wrap section">'+bookcards(lang,d)+'</section>'
+  a=d['author'];return hero(d,a['title'],a['intro'])+'<section class="wrap section split top-line"><div class="monogram" aria-hidden="true">MCF<span>Belo Horizonte / Brasil</span></div><div class="prose-inline">'+paragraphs(a['paragraphs'])+link('https://orcid.org/0009-0000-6000-2751',a['orcid'],'button dark',True)+f'</div></section><section class="wrap section">'+section_head('02',a['workTitle'])+tiles(a['workItems'])+f'</section><section class="paper-deep"><div class="wrap section split"><h2>{e(a["circulationTitle"])}</h2><div><p class="lead">{e(a["circulationText"])}</p>'+link(path(lang,'research'),d['research']['nav'],'button dark')+f'</div></div></section><section class="wrap section">'+bookcards(lang,d)+'</section>'
  if key=='press':
   p=d['press'];return hero(d,p['title'],p['intro'])+f'<section class="wrap section top-line"><div class="edition-grid"><article class="edition-card"><h2>Notes on Care, Risk & Knowledge</h2><p>{e(n["description"])}</p><div class="stack-links">'+link('/assets/press/notes-on-care-sample.pdf',u['download'])+link('/assets/images/notes-brasil.webp',u['cover'])+link(path(lang,'notes'),u['formats'])+f'</div><p class="caption">{e(u["sampleNote"])}</p></article><article class="edition-card"><p class="eyebrow">{e(u["forthcoming"])}</p><h2>Todos ou nenhum?</h2><p>{e(t["description"])}</p><p class="caption">{e(p["todosNote"])}</p>'+link('/assets/images/todos-title.webp',p['todosAsset'])+f'</article></div></section><section class="wrap section split"><h2>{e(p["bioTitle"])}</h2><p class="lead">{e(p["bio"])}</p></section>'+contactband(lang,d,p['request'])
  if key=='contact':
@@ -108,7 +109,7 @@ def content(lang,key,d):
 
 def page(lang,key,body,d,root=False):
  u=d['ui']; nav=d['nav']; canonical=ORIGIN+('/' if root else path(lang,key))
- titles={'home':'Fóscolo & Company Edições','notes':'Notes on Care, Risk & Knowledge','todos':'Todos ou nenhum? — Livro I','essay':d['journal']['originalTitle'],'article':d['article']['title']}
+ titles={'home':'Fóscolo & Company Edições','notes':'Notes on Care, Risk & Knowledge','todos':'Todos ou nenhum? — Livro I','essay':d['journal']['originalTitle'],'article':d['article']['title'],'research':d['research']['title']}
  title=titles.get(key,nav[KEYS.index(key)] if key in KEYS else key)
  desc=d[key].get('intro',d[key].get('description','')) if key in d and isinstance(d[key],dict) else d['home']['intro']
  desc=desc or d['home']['intro']

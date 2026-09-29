@@ -18,8 +18,9 @@ As URLs anteriores permanecem disponíveis. `content/legacy.json` preserva o ens
 ## Conteúdo de setembro de 2026
 
 - Catálogo e páginas próprias para **Notes on Care, Risk & Knowledge** e **Todos ou nenhum? — Livro I: A matéria aprende a respirar**.
-- Notes: edição brasileira em inglês, miolo de 64 páginas e formato 10 × 15 cm; ofertas internacionais separadas. Preço e estoque ficam no anúncio da Amazon.
-- Todos ou nenhum?: 13 poemas e 3 crônicas ensaísticas; obra em preparação, sem data ou venda inventada. As imagens são da prova editorial, não uma capa final.
+- Nova página **Pesquisa & circulação**, com perguntas de pesquisa, atividades acadêmicas selecionadas e uma política explícita de não publicar originais inéditos.
+- Notes: edição brasileira em inglês, miolo de 64 páginas e formato 10 × 15 cm; ofertas internacionais separadas. A homepage e a página do livro priorizam o caminho de compra na Amazon Brasil; preço e estoque continuam no anúncio.
+- Todos ou nenhum?: 13 poemas e 3 crônicas ensaísticas; obra em preparação, sem data ou venda inventada. O site apresenta processo, forma e perguntas sem publicar novos trechos do original.
 - Caderno: índice, ensaio inaugural preservado e novo texto sobre o prólogo de Todos ou nenhum?.
 - Repertório, projetos, autora, imprensa e contato.
 - Sem inscrição de newsletter enquanto não houver serviço configurado.

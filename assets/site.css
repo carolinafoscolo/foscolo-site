@@ -9,3 +9,6 @@
 
 .language-bar a[lang="zh-CN"]{font-family:"Noto Serif SC",serif}
 .editorial-notes article+article{margin-top:64px;padding-top:48px;border-top:1px solid var(--line)}
+
+/* Research, circulation and conversion layers — 29 Sep 2026 */
+.home-sale-panel{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(35px,7vw,90px);padding-top:36px}.home-sale-panel h2{font-size:clamp(2.8rem,5vw,5rem);max-width:12ch}.research-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}.research-card{border-top:2px solid var(--gold);padding-top:20px}.research-card h3{margin-top:12px;font-size:1.28rem}.research-card p:not(.eyebrow){margin-top:16px;font-size:13px}.circulation-list{border-top:1px solid var(--line)}.circulation-item{display:grid;grid-template-columns:minmax(170px,.7fr) 1.3fr;gap:45px;padding-block:28px;border-bottom:1px solid var(--line)}.circulation-item h3{font-size:1.3rem}.circulation-item p:not(.eyebrow){margin-top:10px;font-size:13px}.notes-reader{padding-top:20px}.buy-band{background:var(--ink);color:var(--paper);padding-block:60px}.buy-band p{color:#d3cbbf}.buy-band .button.gold{margin-top:24px}.home-sale .section-head{margin-bottom:34px}@media(max-width:650px){.home-sale-panel,.research-grid,.circulation-item{grid-template-columns:1fr}.home-sale-panel{gap:24px}.research-grid{gap:30px}.circulation-item{gap:10px}.buy-band{padding-block:44px}}

@@ -58,7 +58,12 @@
     "journalTitle": "Le travail entre les pages",
     "journalIntro": "Choix éditoriaux, notes de lecture et relations entre les images. Suivez la manière dont les livres prennent forme.",
     "aboutTitle": "De Belo Horizonte,\nvers d’autres lectures.",
-    "aboutText": "Fóscolo & Company Edições rapproche recherche historique, essai et création littéraire. Chaque publication appelle une forme : l’ordre des textes, une image, le rythme d’une page."
+    "aboutText": "Fóscolo & Company Edições rapproche recherche historique, essai et création littéraire. Chaque publication appelle une forme : l’ordre des textes, une image, le rythme d’une page.",
+    "saleEyebrow": "Disponible maintenant",
+    "saleTitle": "Un livre peut déjà quitter cette table.",
+    "saleIntro": "Notes on Care, Risk & Knowledge est la première pièce disponible d’un travail plus large entre recherche historique, image et écriture. L’édition imprimée brésilienne est en anglais, avec 64 pages et une impression en couleur.",
+    "researchTitle": "La recherche continue au-delà des livres.",
+    "researchIntro": "Archives, santé publique, science, territoire et histoire publique nourrissent le catalogue. Le site montre les questions et les circulations sans publier les manuscrits encore inédits."
   },
   "notes": {
     "subtitle": "Recherche, fragments et images du Brésil",
@@ -90,7 +95,24 @@
     "pagesValue": "64 pages",
     "sizeLabel": "Format brésilien",
     "sampleTitle": "Ouvrir quelques pages",
-    "sampleText": "Une sélection de recherche, poésie et photographie offre une entrée dans le livre. L’extrait provient de l’édition internationale."
+    "sampleText": "Une sélection de recherche, poésie et photographie offre une entrée dans le livre. L’extrait provient de l’édition internationale.",
+    "readerTitle": "À qui ce livre peut-il ouvrir une porte ?",
+    "readerItems": [
+      [
+        "Histoire et santé",
+        "Pour les lecteurs intéressés par les institutions, les crises sanitaires, la mémoire et la production des savoirs."
+      ],
+      [
+        "Recherche et écriture",
+        "Pour ceux qui souhaitent voir archives, essai, fragment, poème et photographie coexister sans devenir un seul langage."
+      ],
+      [
+        "Le Brésil en circulation",
+        "Pour ceux qui cherchent un ouvrage en anglais construit à partir de questions, de paysages et d’expériences brésiliennes."
+      ]
+    ],
+    "buyTitle": "Emportez le livre vers une autre lecture.",
+    "buyText": "L’édition imprimée brésilienne est disponible sur Amazon Brésil. Le prix, le stock et la livraison sont indiqués directement sur l’annonce."
   },
   "todos": {
     "subtitle": "Livre I · A matéria aprende a respirar",
@@ -109,7 +131,24 @@
     "languageLabel": "Langue du livre",
     "languageValue": "Portugais",
     "formLabel": "Composition",
-    "formValue": "13 poèmes · 3 chroniques littéraires"
+    "formValue": "13 poèmes · 3 chroniques littéraires",
+    "processCta": "Suivre l’édition",
+    "processTitle": "Ce qui peut déjà être dit sans ouvrir l’original",
+    "processIntro": "Le site suit le processus éditorial, les questions et la forme du livre. Les textes inédits restent réservés à la publication.",
+    "processItems": [
+      [
+        "Forme",
+        "Treize poèmes et trois chroniques essayistiques organisés comme une seule séquence de lecture."
+      ],
+      [
+        "Matière",
+        "Fer, eau, verre, lumière, papier, vol, pression et mémoire apparaissent comme des objets spécifiques — pas comme des métaphores prêtes à l’emploi."
+      ],
+      [
+        "État",
+        "Le manuscrit est en préparation éditoriale. La couverture finale, la date de parution et les conditions de vente seront annoncées plus tard."
+      ]
+    ]
   },
   "catalog": {
     "title": "Plus d’une manière\nd’entrer dans un livre.",
@@ -230,7 +269,24 @@
     ],
     "researchTitle": "Recherche en cours",
     "researchText": "From Isolate to Identity: Belém and the Making of Arbovirus Difference, 1954–1969 étudie l’histoire de la classification, de la documentation et de la circulation du savoir scientifique.",
-    "orcid": "Consulter ORCID"
+    "orcid": "Consulter ORCID",
+    "workTitle": "Axes de travail",
+    "workItems": [
+      [
+        "Santé et institutions",
+        "Histoire de la santé, mémoire institutionnelle, crises, archives et histoire orale."
+      ],
+      [
+        "Science et savoir",
+        "Classification, circulation des preuves, laboratoires et infrastructures scientifiques."
+      ],
+      [
+        "Histoire publique et forme",
+        "Médiation culturelle, enseignement, écriture éditoriale et circulation de la recherche hors de l’université."
+      ]
+    ],
+    "circulationTitle": "Recherche en circulation",
+    "circulationText": "Les présentations et projets récents passent par l’UCL Institute of the Americas, la SHOT et l’ASEH, reliant santé, science, environnement et histoire publique."
   },
   "press": {
     "title": "Pour lire, présenter\net partager.",
@@ -284,5 +340,48 @@
       "Une idée en a trouvé une autre",
       "« Le reste n’était dans aucune des deux. » La rencontre accompagne Todos ou nenhum? : une vie et une écriture naissent aussi des relations entre expériences, questions et choix. Poèmes et chroniques essayistiques offrent des rythmes différents pour suivre ces rencontres."
     ]
-  ]
+  ],
+  "research": {
+    "eyebrow": "Recherche · circulation",
+    "nav": "Recherche & circulation",
+    "title": "Des questions toujours en mouvement.",
+    "intro": "Les livres de Fóscolo & Company naissent d’un champ plus large de recherche, d’écriture et d’histoire publique. Cette page présente des questions, des contextes et des trajectoires — pas des originaux inédits.",
+    "questionsTitle": "Trois axes de recherche",
+    "questions": [
+      [
+        "Santé et institutions",
+        "Comment les institutions apprennent-elles lorsque les crises sanitaires dépassent les protocoles, les routines et les catégories disponibles ?"
+      ],
+      [
+        "Science et classification",
+        "Comment un virus collecté en Amazonie devient-il comparable, nommable et reconnaissable dans des réseaux scientifiques internationaux ?"
+      ],
+      [
+        "Environnement et infrastructure",
+        "Où finit la forêt lorsque l’écologie, la surveillance et les infrastructures de santé commencent à produire des preuves ensemble ?"
+      ]
+    ],
+    "circulationTitle": "En circulation",
+    "circulation": [
+      [
+        "Mai 2026 · UCL Institute of the Americas",
+        "Zika, risque et savoir médical",
+        "Présentation sur la production des recommandations, du risque et de la responsabilité publique pendant l’épidémie de Zika au Brésil."
+      ],
+      [
+        "22–25 oct. 2026 · SHOT · Johns Hopkins",
+        "The Environments of Technology",
+        "Session acceptée, coorganisée et commentée par Maria Carolina Fóscolo sur les infrastructures, la matérialité, la preuve et l’expertise."
+      ],
+      [
+        "31 mars–3 avr. 2027 · ASEH · Richmond",
+        "Where Does the Forest End?",
+        "Présentation acceptée sur la fièvre jaune, les sentinelles non humaines et les infrastructures de santé publique au Brésil."
+      ]
+    ],
+    "bridgeTitle": "De la recherche au lecteur",
+    "bridgeText": "Notes on Care, Risk & Knowledge transforme déjà une partie de ces questions en une forme de lecture publique : recherche historique, fragments, poèmes et images placés côte à côte.",
+    "privateNote": "Le site présente des questions, des contextes, des méthodes et des trajectoires de circulation. Les articles soumis, manuscrits et originaux encore inédits restent hors ligne.",
+    "cta": "Découvrir le livre"
+  }
 }
