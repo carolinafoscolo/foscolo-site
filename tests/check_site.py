@@ -5,6 +5,7 @@ import sys
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit, unquote
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT/'scripts'))
@@ -64,6 +65,18 @@ def main():
    errors.append(f'{lang}: unpublished Todos excerpt returned')
   notes=(ROOT/build.path(lang,'notes').lstrip('/')).read_text()
   if build.BR not in notes:errors.append(f'{lang}: Brazilian Amazon link missing from Notes')
+  now_page=(ROOT/build.path(lang,'now').lstrip('/')).read_text()
+  if data['now']['title'] not in now_page:errors.append(f'{lang}: Now page missing')
+  if 'BreadcrumbList' not in now_page or 'SearchAction' not in now_page:errors.append(f'{lang}: structured data missing on Now page')
+  feed_file=ROOT/lang/'feed.xml'
+  if not feed_file.is_file():errors.append(f'{lang}: RSS feed missing')
+  else:
+   try:
+    feed_root=ET.parse(feed_file).getroot()
+    items=feed_root.findall('./channel/item')
+    if len(items)<6:errors.append(f'{lang}: RSS feed too small')
+    if 'Uma folha sozinha quase não oferece resistência.' in feed_file.read_text():errors.append(f'{lang}: unpublished Todos excerpt leaked into RSS')
+   except Exception as exc:errors.append(f'{lang}: invalid RSS feed: {exc}')
   search_page=(ROOT/build.path(lang,'search').lstrip('/')).read_text()
   if 'data-search-page' not in search_page:errors.append(f'{lang}: archive search UI missing')
   index_file=ROOT/'assets'/'search'/f'{lang}.json'
