@@ -644,5 +644,15 @@
     "results": "resultados",
     "result": "resultado",
     "privacy": "A busca acontece no seu navegador e consulta apenas o índice público do site."
+  },
+  "now": {
+    "title": "Agora na Fóscolo",
+    "intro": "O que já pode ser lido, o que está em preparação e onde o trabalho está circulando neste momento.",
+    "nav": "Agora",
+    "booksTitle": "Livros agora",
+    "journalTitle": "Últimas do Caderno",
+    "researchTitle": "Em circulação",
+    "archiveText": "O restante do trabalho continua no arquivo pesquisável.",
+    "archiveCta": "Abrir arquivo & busca"
   }
 }
