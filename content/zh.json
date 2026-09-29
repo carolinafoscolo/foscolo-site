@@ -392,7 +392,43 @@
     "bio": "Maria Carolina Fóscolo 是作者、编辑及 UFMG 历史专业本科生，研究健康、机构、记忆与知识。她在贝洛奥里藏特创立 Fóscolo & Company Edições，著有 Notes on Care, Risk & Knowledge，以及筹备中的 Todos ou nenhum? 第一卷：A matéria aprende a respirar。",
     "request": "如需访谈、评论用书、高清图像或出版信息，请联系出版社。",
     "todosNote": "书籍筹备中。所提供图像为编辑校样的扉页，并非最终封面。",
-    "todosAsset": "查看校样扉页"
+    "todosAsset": "查看校样扉页",
+    "factsTitle": "快速信息",
+    "facts": [
+      [
+        "已出版作品",
+        "Notes on Care, Risk & Knowledge · Maria Carolina Fóscolo Gomes · 2026。"
+      ],
+      [
+        "巴西纸质版",
+        "英文 · 64页 · 10 × 15厘米 · 彩色印刷。"
+      ],
+      [
+        "出版社",
+        "Fóscolo & Company Edições · 独立出版品牌 · 巴西贝洛奥里藏特。"
+      ]
+    ],
+    "anglesTitle": "进入这场对话的几个角度",
+    "angles": [
+      [
+        "健康、记忆与机构",
+        "这本书从一个问题出发：人和机构如何识别风险、在危机中学习，并让知识在组织中流动。"
+      ],
+      [
+        "研究的另一种形式",
+        "档案、反思、诗歌、片段与摄影并置出现，但这本书并不是一篇学术论文的复制品。"
+      ],
+      [
+        "从巴西出发的出版",
+        "作品以英文写成，却从巴西的研究、景观与问题出发，希望抵达单一学术共同体之外的读者。"
+      ]
+    ],
+    "reviewTitle": "书评、采访与文化活动",
+    "reviewText": "如需询问评介用书、高清图片，或提议采访、朗读、讨论活动及文化项目，请联系出版社。",
+    "buyTitle": "读者购买",
+    "buyText": "Notes on Care, Risk & Knowledge 的巴西纸质版可通过 Amazon Brazil 了解与购买。价格、库存和配送信息以商品页面为准。",
+    "buyCta": "在 Amazon Brazil 查看本书",
+    "unpublishedNote": "Todos ou nenhum? — 第一卷仍在编辑准备中。媒体资料只提供已明确用于宣传的编辑信息和图像；未出版原稿不会在网站公开。"
   },
   "contact": {
     "title": "每一次对话，\n始于一次阅读。",

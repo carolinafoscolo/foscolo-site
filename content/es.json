@@ -392,7 +392,43 @@
     "bio": "Maria Carolina Fóscolo es autora, editora y estudiante de Historia en la UFMG. Investiga salud, instituciones, memoria y conocimiento. Fundó Fóscolo & Company Edições, en Belo Horizonte, y es autora de Notes on Care, Risk & Knowledge y del libro en preparación Todos ou nenhum? — Libro I: A matéria aprende a respirar.",
     "request": "Para entrevistas, ejemplares de reseña, imágenes en alta resolución o información sobre lanzamientos, escribe a la editorial.",
     "todosNote": "Libro en preparación. La imagen es la portada interior de la prueba editorial, no la cubierta final.",
-    "todosAsset": "Ver portada interior de la prueba"
+    "todosAsset": "Ver portada interior de la prueba",
+    "factsTitle": "Ficha rápida",
+    "facts": [
+      [
+        "Obra disponible",
+        "Notes on Care, Risk & Knowledge · Maria Carolina Fóscolo Gomes · 2026."
+      ],
+      [
+        "Edición impresa brasileña",
+        "Libro en inglés · 64 páginas · 10 × 15 cm · impresión a color."
+      ],
+      [
+        "Editorial",
+        "Fóscolo & Company Edições · sello independiente · Belo Horizonte, Brasil."
+      ]
+    ],
+    "anglesTitle": "Puntos de entrada para una conversación",
+    "angles": [
+      [
+        "Salud, memoria e instituciones",
+        "El libro nace de preguntas sobre cómo personas e instituciones reconocen riesgos, aprenden durante las crisis y hacen circular conocimiento."
+      ],
+      [
+        "La investigación en otra forma",
+        "Archivo, reflexión, poema, fragmento y fotografía aparecen juntos sin convertir el libro en la reproducción de un artículo académico."
+      ],
+      [
+        "Una edición desde Brasil",
+        "La obra está escrita en inglés a partir de investigaciones, paisajes y problemas brasileños y busca lectores más allá de una única comunidad académica."
+      ]
+    ],
+    "reviewTitle": "Reseñas, entrevistas y programación",
+    "reviewText": "Para consultar la disponibilidad de ejemplares de evaluación, solicitar imágenes en alta resolución o proponer entrevistas, lecturas, mesas o programación cultural, escriba a la editorial.",
+    "buyTitle": "Para lectores",
+    "buyText": "La edición física brasileña de Notes on Care, Risk & Knowledge puede conocerse y adquirirse en Amazon Brasil. El precio, las existencias y la entrega se informan en el anuncio.",
+    "buyCta": "Ver el libro en Amazon Brasil",
+    "unpublishedNote": "Todos ou nenhum? — Libro I permanece en preparación. Los materiales de prensa presentan solamente información editorial e imágenes ya destinadas a la divulgación; el manuscrito inédito no se publica en el sitio."
   },
   "contact": {
     "title": "Toda conversación\ncomienza con una lectura.",
