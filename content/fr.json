@@ -643,47 +643,16 @@
     "noResults": "Aucune page publique ne correspond à cette recherche.",
     "results": "résultats",
     "result": "résultat",
-    "privacy": "La recherche s’effectue dans votre navigateur et consulte uniquement l’index public du site.",
-    "pathsTitle": "Parcours pour commencer",
-    "pathsIntro": "Si vous ne savez pas encore quoi chercher, commencez par une question. Chaque parcours rassemble des pages qui s’éclairent mutuellement.",
-    "paths": [
-      {
-        "title": "Soin, risque & savoir",
-        "desc": "De l’expérience des institutions en crise au livre né de ces questions.",
-        "keys": [
-          "notes",
-          "research",
-          "circulation"
-        ]
-      },
-      {
-        "title": "Forme, matière & édition",
-        "desc": "Comment papier, espace, séquence et image changent la manière de lire un livre.",
-        "keys": [
-          "todos",
-          "article",
-          "space"
-        ]
-      },
-      {
-        "title": "Lieu, circulation & histoire publique",
-        "desc": "Belo Horizonte comme point de départ sans faire du territoire une limite.",
-        "keys": [
-          "place",
-          "projects",
-          "research"
-        ]
-      },
-      {
-        "title": "Relire",
-        "desc": "Le répertoire comme pratique : revenir à une phrase, une référence ou une forme et y trouver une autre relation.",
-        "keys": [
-          "repertoire2",
-          "repertoire",
-          "essay"
-        ]
-      }
-    ],
-    "rssLabel": "Suivre Carnet & Répertoire par RSS"
+    "privacy": "La recherche s’effectue dans votre navigateur et consulte uniquement l’index public du site."
+  },
+  "now": {
+    "title": "Maintenant chez Fóscolo",
+    "intro": "Ce qui peut déjà être lu, ce qui est en préparation et où le travail circule actuellement.",
+    "nav": "Maintenant",
+    "booksTitle": "Livres maintenant",
+    "journalTitle": "Derniers textes du Carnet",
+    "researchTitle": "En circulation",
+    "archiveText": "Le reste du travail reste disponible dans les archives consultables.",
+    "archiveCta": "Ouvrir les archives & la recherche"
   }
 }
