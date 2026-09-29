@@ -643,47 +643,16 @@
     "noResults": "No public page matches this search.",
     "results": "results",
     "result": "result",
-    "privacy": "Search runs in your browser and consults only the website’s public index.",
-    "pathsTitle": "Ways to begin",
-    "pathsIntro": "If you do not yet know what to search for, begin with a question. Each path brings together pages that illuminate one another.",
-    "paths": [
-      {
-        "title": "Care, risk & knowledge",
-        "desc": "From institutional experience in crisis to the book that grew from those questions.",
-        "keys": [
-          "notes",
-          "research",
-          "circulation"
-        ]
-      },
-      {
-        "title": "Form, matter & editing",
-        "desc": "How paper, space, sequence and images change the way a book is read.",
-        "keys": [
-          "todos",
-          "article",
-          "space"
-        ]
-      },
-      {
-        "title": "Place, circulation & public history",
-        "desc": "Belo Horizonte as a point of departure without turning territory into a limit.",
-        "keys": [
-          "place",
-          "projects",
-          "research"
-        ]
-      },
-      {
-        "title": "Read again",
-        "desc": "Repertoire as a practice: return to a sentence, reference or form and find another relationship.",
-        "keys": [
-          "repertoire2",
-          "repertoire",
-          "essay"
-        ]
-      }
-    ],
-    "rssLabel": "Follow Journal & Repertoire by RSS"
+    "privacy": "Search runs in your browser and consults only the website’s public index."
+  },
+  "now": {
+    "title": "Now at Fóscolo",
+    "intro": "What can already be read, what is in preparation and where the work is circulating now.",
+    "nav": "Now",
+    "booksTitle": "Books now",
+    "journalTitle": "Latest from the Journal",
+    "researchTitle": "In circulation",
+    "archiveText": "The rest of the work remains available in the searchable archive.",
+    "archiveCta": "Open archive & search"
   }
 }
