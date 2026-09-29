@@ -33,3 +33,29 @@
 .project-path .text-link{margin-top:auto;padding-top:22px}
 .project-note{max-width:80ch}
 @media(max-width:800px){.project-paths{grid-template-columns:1fr}}
+
+/* Catalogue hierarchy and Notes pathways — 29 Sep 2026 */
+.catalog-feature-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:clamp(42px,8vw,110px);align-items:center}
+.catalog-feature-art{display:flex;justify-content:center;align-items:center;min-height:520px;padding:42px;background:#e4e8e2}
+.catalog-feature-art img{height:440px;width:auto;max-width:100%;object-fit:contain;box-shadow:10px 16px 28px #1112;transition:transform .3s}
+.catalog-feature-art:hover img{transform:translateY(-6px)}
+.catalog-feature-copy h2{font-size:clamp(3rem,5.2vw,5.2rem);max-width:11ch;margin-top:18px}
+.catalog-feature-copy h3{margin-top:22px;font-size:1.35rem}
+.catalog-feature-copy .lead{margin-top:24px;max-width:52ch}
+.catalog-next{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(42px,8vw,110px);align-items:center}
+.catalog-next h2{font-size:clamp(3rem,5vw,5rem);max-width:11ch;margin-top:18px}
+.catalog-next .lead{margin-top:24px;max-width:52ch}
+.catalog-next-art{display:flex;justify-content:center;align-items:center;min-height:420px;padding:32px;background:#e9dfce}
+.catalog-next-art img{height:350px;width:auto;max-width:100%;object-fit:contain;box-shadow:8px 12px 22px #1112}
+.notes-continue{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(36px,7vw,100px);align-items:start}
+.notes-continue h2{font-size:clamp(2.8rem,4.8vw,4.8rem);max-width:11ch;margin-top:16px}
+@media(max-width:800px){
+  .catalog-feature-grid,.catalog-next,.notes-continue{grid-template-columns:1fr}
+  .catalog-feature-art{min-height:420px}.catalog-feature-art img{height:360px}
+  .catalog-next-art{min-height:350px}.catalog-next-art img{height:300px}
+}
+@media(max-width:650px){
+  .catalog-feature-art{min-height:360px;padding:24px}.catalog-feature-art img{height:320px}
+  .catalog-feature-copy h2,.catalog-next h2,.notes-continue h2{font-size:3.1rem}
+  .catalog-next-art{min-height:320px;padding:22px}.catalog-next-art img{height:280px}
+}
