@@ -679,37 +679,37 @@
       },
       {
         "label": "Instituições & conhecimento",
-        "query": "instituições conhecimento",
+        "query": "instituições",
         "desc": "Como organizações aprendem, registram, classificam e fazem conhecimento circular."
       },
       {
         "label": "História da ciência",
-        "query": "ciência vírus classificação",
+        "query": "ciência",
         "desc": "Laboratórios, classificação, evidência e redes científicas."
       },
       {
         "label": "Edição & forma",
-        "query": "edição forma",
+        "query": "edição",
         "desc": "Sequência, margem, imagem, paratexto, ritmo e decisões de leitura."
       },
       {
         "label": "Belo Horizonte & território",
-        "query": "Belo Horizonte Pampulha território",
+        "query": "Pampulha",
         "desc": "Lugar de edição, paisagem, cidade e os pontos de onde uma pergunta começa."
       },
       {
         "label": "Literatura",
-        "query": "literatura poema crônica Machado",
+        "query": "Machado",
         "desc": "Poemas, crônicas, leituras e ambiguidades que voltam à mesa."
       },
       {
         "label": "Imagem & paisagem",
-        "query": "imagem fotografia paisagem",
+        "query": "imagem",
         "desc": "Fotografia, enquadramento e relações que não precisam ser resolvidas por uma legenda."
       },
       {
         "label": "Arquivo & memória",
-        "query": "arquivo memória",
+        "query": "arquivo",
         "desc": "Documentos, oralidade, vestígios e o que permanece depois de uma crise."
       },
       {
