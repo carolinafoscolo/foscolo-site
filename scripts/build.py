@@ -16,27 +16,27 @@ ROUTES = {
  'pt': {
   'home':'index','catalog':'publicacoes','journal':'caderno','repertoire':'repertorio','about':'sobre','author':'autora','contact':'contato','projects':'projetos','manifesto':'manifesto','press':'imprensa',
   'notes':'notes-on-care','todos':'todos-ou-nenhum','essay':'caderno-01','article':'por-dentro-da-edicao','research':'pesquisa',
-  'circulation':'publicar-nao-encerra','place':'de-que-lugar-esta-mesa-olha-o-mundo','space':'o-vazio-tambem-e-uma-decisao-editorial','repertoire2':'repertorio-02-missa-do-galo','search':'arquivo'
+  'circulation':'publicar-nao-encerra','place':'de-que-lugar-esta-mesa-olha-o-mundo','space':'o-vazio-tambem-e-uma-decisao-editorial','repertoire2':'repertorio-02-missa-do-galo','search':'arquivo','now':'agora','topics':'temas'
  },
  'en': {
   'home':'index','catalog':'publications','journal':'journal','repertoire':'repertoire','about':'about','author':'author','contact':'contact','projects':'projects','manifesto':'manifesto','press':'press',
   'notes':'notes-on-care','todos':'todos-ou-nenhum','essay':'caderno-01','article':'por-dentro-da-edicao','research':'research',
-  'circulation':'publishing-does-not-end','place':'where-does-this-table-look-from','space':'empty-space-is-an-editorial-decision','repertoire2':'repertoire-02-missa-do-galo','search':'archive'
+  'circulation':'publishing-does-not-end','place':'where-does-this-table-look-from','space':'empty-space-is-an-editorial-decision','repertoire2':'repertoire-02-missa-do-galo','search':'archive','now':'now','topics':'themes'
  },
  'es': {
   'home':'index','catalog':'publicaciones','journal':'cuaderno','repertoire':'repertorio','about':'sobre','author':'autora','contact':'contacto','projects':'proyectos','manifesto':'manifiesto','press':'prensa',
   'notes':'notes-on-care','todos':'todos-ou-nenhum','essay':'caderno-01','article':'por-dentro-da-edicao','research':'investigacion',
-  'circulation':'publicar-no-termina','place':'desde-que-lugar-mira-el-mundo-esta-mesa','space':'el-vacio-tambien-es-una-decision-editorial','repertoire2':'repertorio-02-missa-do-galo','search':'archivo'
+  'circulation':'publicar-no-termina','place':'desde-que-lugar-mira-el-mundo-esta-mesa','space':'el-vacio-tambien-es-una-decision-editorial','repertoire2':'repertorio-02-missa-do-galo','search':'archivo','now':'ahora','topics':'temas'
  },
  'fr': {
   'home':'index','catalog':'publications','journal':'carnet','repertoire':'repertoire','about':'a-propos','author':'autrice','contact':'contact','projects':'projets','manifesto':'manifeste','press':'presse',
   'notes':'notes-on-care','todos':'todos-ou-nenhum','essay':'caderno-01','article':'por-dentro-da-edicao','research':'recherche',
-  'circulation':'publier-ne-clot-pas','place':'depuis-quel-endroit-cette-table-regarde-le-monde','space':'le-vide-est-aussi-une-decision-editoriale','repertoire2':'repertoire-02-missa-do-galo','search':'archives'
+  'circulation':'publier-ne-clot-pas','place':'depuis-quel-endroit-cette-table-regarde-le-monde','space':'le-vide-est-aussi-une-decision-editoriale','repertoire2':'repertoire-02-missa-do-galo','search':'archives','now':'maintenant','topics':'themes'
  },
  'zh': {
   'home':'index','catalog':'publications','journal':'journal','repertoire':'repertoire','about':'about','author':'author','contact':'contact','projects':'projects','manifesto':'manifesto','press':'press',
   'notes':'notes-on-care','todos':'todos-ou-nenhum','essay':'caderno-01','article':'por-dentro-da-edicao','research':'research',
-  'circulation':'publishing-does-not-end','place':'where-does-this-table-look-from','space':'empty-space-editorial-decision','repertoire2':'repertoire-02-missa-do-galo','search':'archive'
+  'circulation':'publishing-does-not-end','place':'where-does-this-table-look-from','space':'empty-space-editorial-decision','repertoire2':'repertoire-02-missa-do-galo','search':'archive','now':'now','topics':'topics'
  }
 }
 NAV_KEYS = ['home','catalog','journal','repertoire','about','author','contact','projects','manifesto','press']
@@ -88,6 +88,22 @@ def journalcards(lang,d,limit=None):
    visual=f'<a class="journal-art journal-text-art" href="{href}"><span class="journal-text-mark">F&amp;C</span><strong>{e(entry["title"])}</strong></a>'
   cards.append(f'<article class="journal-card">{visual}<p class="eyebrow">{e(entry["meta"])}</p><h3><a href="{href}">{e(entry["title"])}</a></h3><p>{e(entry["desc"])}</p>'+link(href,d['ui']['read'])+'</article>')
  return '<div class="journal-grid archive-grid">'+''.join(cards)+'</div>'
+def topic_url(lang,d,topic):
+ return path(lang,'search')+'?q='+quote(topic['query'])
+def topicchips(lang,d,limit=None):
+ items=d['topics']['items'][:limit] if limit else d['topics']['items']
+ return '<div class="topic-chips">'+''.join(f'<a class="topic-chip" href="{e(topic_url(lang,d,item))}">{e(item["label"])}</a>' for item in items)+'</div>'
+def topiccards(lang,d):
+ return '<div class="topic-grid">'+''.join(f'<article class="topic-card"><p class="eyebrow">{e(d["topics"]["nav"])}</p><h2>{e(item["label"])}</h2><p>{e(item["desc"])}</p>'+link(topic_url(lang,d,item),d['ui']['explore'])+'</article>' for item in d['topics']['items'])+'</div>'
+def latestcards(lang,d):
+ entries=d['journal']['entries'][:3]
+ cards=[]
+ for entry in entries:
+  cards.append(f'<article class="latest-card"><p class="eyebrow">{e(entry["meta"])}</p><h3><a href="{path(lang,entry["key"])}">{e(entry["title"])}</a></h3><p>{e(entry["desc"])}</p>'+link(path(lang,entry['key']),d['ui']['read'])+'</article>')
+ if len(d['research']['circulation'])>1:
+  meta,title,body=d['research']['circulation'][1]
+  cards.append(f'<article class="latest-card"><p class="eyebrow">{e(meta)}</p><h3><a href="{path(lang,"research")}">{e(title)}</a></h3><p>{e(body)}</p>'+link(path(lang,'research'),d['ui']['explore'])+'</article>')
+ return '<div class="latest-grid">'+''.join(cards)+'</div>'
 def contactband(lang,d,text=None):
  return f'<section class="contact-band"><div class="wrap split"><h2>{e(d["ui"]["contact"])}</h2><div><p>{e(text or d["contact"]["intro"])}</p>'+link('mailto:'+EMAIL,EMAIL,'button gold')+'</div></div></section>'
 DISCOVERY_MAP = {
@@ -105,7 +121,9 @@ DISCOVERY_MAP = {
  'author':['research','notes','journal'],
  'press':['notes','about','contact'],
  'contact':['catalog','press','about'],
- 'manifesto':['about','projects','catalog']
+ 'manifesto':['about','projects','catalog'],
+ 'now':['notes','research','journal'],
+ 'topics':['search','journal','research']
 }
 def route_meta(d,key):
  u=d['ui'];nav=d['nav']
@@ -121,6 +139,8 @@ def route_meta(d,key):
  if key=='press': return (nav[NAV_INDEX['press']],d['press']['title'],d['press']['intro'])
  if key=='contact': return (nav[NAV_INDEX['contact']],d['contact']['title'],d['contact']['intro'])
  if key=='manifesto': return (nav[NAV_INDEX['manifesto']],d['manifestoTitle'],d['home']['aboutText'])
+ if key=='now': return (d['now']['nav'],d['now']['title'],d['now']['intro'])
+ if key=='topics': return (d['topics']['nav'],d['topics']['title'],d['topics']['intro'])
  if key=='article': return (d['journal']['newMeta'],d['article']['title'],d['article']['intro'])
  if key=='essay': return (d['ui']['previous'],d['journal']['originalTitle'],d['journal']['originalDesc'])
  if key in ARTICLE_DATA:
@@ -134,21 +154,6 @@ def discovery(lang,d,current):
   meta,title,desc=route_meta(d,target)
   cards.append(f'<article class="discovery-card"><p class="eyebrow">{e(meta)}</p><h3>{e(title)}</h3><p>{e(desc)}</p>'+link(path(lang,target),d['ui']['explore'])+'</article>')
  return '<section class="discovery-band"><div class="wrap section"><div class="discovery-heading"><p class="eyebrow">Fóscolo & Company</p><h2>'+e(d['ui']['continueExploring'])+'</h2></div><div class="discovery-grid">'+''.join(cards)+'</div></div></section>'
-def curated_paths(lang,d):
- q=d['search'];cards=[]
- for item in q['paths']:
-  links=''.join('<li>'+link(path(lang,key),route_meta(d,key)[1])+'</li>' for key in item['keys'])
-  cards.append(f'<article class="path-card"><p class="eyebrow">Fóscolo & Company</p><h3>{e(item["title"])}</h3><p>{e(item["desc"])}</p><ul class="path-links">{links}</ul></article>')
- return '<section class="paper-deep"><div class="wrap section">'+section_head('01',q['pathsTitle'],q['pathsIntro'])+'<div class="path-grid">'+''.join(cards)+'</div></div></section>'
-def rss_feed(lang,d):
- items=list(d['journal']['entries'])+[{'key':'repertoire2','meta':d['repertoireFeature']['meta'],'title':d['repertoireFeature']['title'],'desc':d['repertoireFeature']['desc']}]
- feed_title=d['journal']['title']+' & '+d['repertoire']['title']
- xml=['<?xml version="1.0" encoding="UTF-8"?>','<rss version="2.0"><channel>',f'<title>{e(feed_title)}</title>',f'<link>{ORIGIN+path(lang,"journal")}</link>',f'<description>{e(d["journal"]["intro"])}</description>',f'<language>{e(d["lang"])}</language>']
- for item in items:
-  url=ORIGIN+path(lang,item['key'])
-  xml.extend(['<item>',f'<title>{e(item["title"])}</title>',f'<link>{url}</link>',f'<guid isPermaLink="true">{url}</guid>',f'<description>{e(item["desc"])}</description>',f'<category>{e(item["meta"])}</category>','</item>'])
- xml.append('</channel></rss>')
- return '\n'.join(xml)+'\n'
 def generic_article(lang,d,key):
  a=d[ARTICLE_DATA[key]]
  target={'circulation':'notes','place':'about','space':'journal'}[key]
@@ -160,9 +165,11 @@ def content(lang,key,d):
  u=d['ui'];h=d['home'];n=d['notes'];t=d['todos']
  if key=='home':
   sale=f'<section class="wrap section home-sale">'+section_head('01',h['saleTitle'],h['saleIntro'])+f'<div class="home-sale-panel top-line"><div><p class="eyebrow">{e(h["saleEyebrow"])}</p><h2>Notes on Care, Risk & Knowledge</h2></div><div><p class="lead">{e(n["description"])}</p><div class="actions">'+link(BR,u['buyBR'],'button dark',True)+link('/assets/press/notes-on-care-sample.pdf',u['download'])+'</div></div></div></section>'
-  research=f'<section class="paper-deep"><div class="wrap section">'+section_head('02',h['researchTitle'],h['researchIntro'])+researchcards(d)+f'<div class="actions">'+link(path(lang,'research'),d['research']['nav'],'button dark')+'</div></div></section>'
+  latest='<section class="wrap section home-latest">'+section_head('02',h['latestTitle'],h['latestIntro'])+latestcards(lang,d)+'<div class="actions">'+link(path(lang,'now'),h['latestCta'],'button dark')+'</div></section>'
+  research=f'<section class="paper-deep"><div class="wrap section">'+section_head('03',h['researchTitle'],h['researchIntro'])+researchcards(d)+f'<div class="actions">'+link(path(lang,'research'),d['research']['nav'],'button dark')+'</div></div></section>'
+  topics='<section class="wrap section home-topics">'+section_head('06',h['topicsTitle'],h['topicsIntro'])+topicchips(lang,d,6)+'<div class="actions">'+link(path(lang,'topics'),h['topicsCta'],'button dark')+'</div></section>'
   editorial=f'<section class="wrap section split top-line"><h2>{e(d["editorial"][0][0])}</h2><div><p class="lead">{e(d["editorial"][0][1])}</p>'+link(path(lang,'journal'),d['nav'][2])+'</div></section>'
-  return f'<section class="home-hero wrap"><div class="hero-copy"><p class="eyebrow">{e(h["eyebrow"])} · BH / BR</p><h1>{nl(h["title"])}</h1><p class="lead">{e(h["intro"])}</p><div class="actions">'+link(BR,u['buyBR'],'button dark',True)+link(path(lang,'catalog'),u['catalog'])+'</div></div><div class="hero-feature"><a class="hero-art" href="'+path(lang,'notes')+'">'+image('notes-brasil.webp','Notes on Care, Risk & Knowledge','',True)+f'</a><div class="feature-caption"><p class="eyebrow">{e(u["published"])}</p><h2><a href="{path(lang,"notes")}">Notes on Care, Risk & Knowledge</a></h2><p>{e(n["subtitle"])}</p></div></div></section><div class="ticker" aria-hidden="true"><span>FÓSCOLO & COMPANY</span><span>{e(h["eyebrow"])}</span><span>BELO HORIZONTE · BRASIL</span></div>'+sale+research+'<section class="wrap section">'+section_head('03',h['catalogTitle'],h['catalogIntro'])+bookcards(lang,d)+'</section><section class="ink-section"><div class="wrap section">'+section_head('04',h['journalTitle'],h['journalIntro'])+journalcards(lang,d,3)+'</div></section>'+editorial+'<section class="wrap section split about-teaser"><div><p class="eyebrow">Fóscolo & Company Edições</p><h2>'+nl(h['aboutTitle'])+'</h2></div><div><p class="lead">'+e(h['aboutText'])+'</p>'+link(path(lang,'about'),u['more'])+'</div></section>'+contactband(lang,d)
+  return f'<section class="home-hero wrap"><div class="hero-copy"><p class="eyebrow">{e(h["eyebrow"])} · BH / BR</p><h1>{nl(h["title"])}</h1><p class="lead">{e(h["intro"])}</p><div class="actions">'+link(BR,u['buyBR'],'button dark',True)+link(path(lang,'catalog'),u['catalog'])+'</div></div><div class="hero-feature"><a class="hero-art" href="'+path(lang,'notes')+'">'+image('notes-brasil.webp','Notes on Care, Risk & Knowledge','',True)+f'</a><div class="feature-caption"><p class="eyebrow">{e(u["published"])}</p><h2><a href="{path(lang,"notes")}">Notes on Care, Risk & Knowledge</a></h2><p>{e(n["subtitle"])}</p></div></div></section><div class="ticker" aria-hidden="true"><span>FÓSCOLO & COMPANY</span><span>{e(h["eyebrow"])}</span><span>BELO HORIZONTE · BRASIL</span></div>'+sale+latest+research+'<section class="wrap section">'+section_head('04',h['catalogTitle'],h['catalogIntro'])+bookcards(lang,d)+'</section><section class="ink-section"><div class="wrap section">'+section_head('05',h['journalTitle'],h['journalIntro'])+journalcards(lang,d,3)+'</div></section>'+topics+editorial+'<section class="wrap section split about-teaser"><div><p class="eyebrow">Fóscolo & Company Edições</p><h2>'+nl(h['aboutTitle'])+'</h2></div><div><p class="lead">'+e(h['aboutText'])+'</p>'+link(path(lang,'about'),u['more'])+'</div></section>'+contactband(lang,d)
  if key=='catalog':
   c=d['catalog']
   available='<section class="wrap section catalog-available top-line"><div class="catalog-feature-grid"><a class="catalog-feature-art" href="'+path(lang,'notes')+'">'+image('notes-brasil.webp','Notes on Care, Risk & Knowledge')+'</a><div class="catalog-feature-copy"><p class="eyebrow">'+e(c['availableLabel'])+'</p><h2>'+e(c['featureTitle'])+'</h2><h3>Notes on Care, Risk & Knowledge</h3><p class="lead">'+e(c['featureText'])+'</p><div class="actions">'+link(BR,u['buyBR'],'button dark',True)+link('/assets/press/notes-on-care-sample.pdf',c['sampleCta'])+link(path(lang,'notes'),u['discover'])+'</div></div></div></section>'
@@ -227,9 +234,20 @@ def content(lang,key,d):
   old=LEGACY[lang]['manifesto'].replace('Fóscolo & Company Editora','Fóscolo & Company Edições')
   blocks=re.findall(r'<(?:p|h2|blockquote)\b[^>]*>[\s\S]*?</(?:p|h2|blockquote)>',old)
   return hero(d,d['manifestoTitle'],'',d['nav'][8],True)+'<article class="prose wrap manifesto-prose">'+''.join(blocks)+'</article>'+discovery(lang,d,key)
+ if key=='now':
+  a=d['now'];r=d['research'];j=d['journal']
+  current=f'<section class="wrap section now-status"><div class="now-grid"><article class="now-card available"><p class="eyebrow">{e(a["availableTitle"])}</p><h2>Notes on Care, Risk & Knowledge</h2><p>{e(n["description"])}</p>'+link(path(lang,'notes'),a['bookCta'],'button dark')+f'</article><article class="now-card editing"><p class="eyebrow">{e(a["editingTitle"])}</p><h2>Todos ou nenhum?</h2><p>{e(t["description"])}</p>'+link(path(lang,'todos'),a['processCta'],'button dark')+'</article></div></section>'
+  research_now='<section class="paper-deep"><div class="wrap section">'+section_head('02',a['researchTitle'])+researchcards(d)+'<div class="actions">'+link(path(lang,'research'),a['researchCta'],'button dark')+'</div></div></section>'
+  upcoming='<section class="wrap section">'+section_head('03',a['circulationTitle'])+'<div class="circulation-list">'+''.join(f'<article class="circulation-item"><p class="eyebrow">{e(meta)}</p><div><h3>{e(title)}</h3><p>{e(body)}</p></div></article>' for meta,title,body in r['circulation'][1:])+'</div></section>'
+  entry=j['entries'][0]
+  latest='<section class="ink-section"><div class="wrap section split"><div><p class="eyebrow">'+e(a['latestTitle'])+f'</p><h2>{e(entry["title"])}</h2></div><div><p class="lead">{e(entry["desc"])}</p>'+link(path(lang,entry['key']),a['journalCta'],'button gold')+'</div></div></section>'
+  return hero(d,a['title'],a['intro'],a['updated'])+current+research_now+upcoming+latest+discovery(lang,d,key)
+ if key=='topics':
+  q=d['topics']
+  return hero(d,q['title'],q['intro'],q['nav'])+'<section class="wrap section"><p class="lead topic-prompt">'+e(q['prompt'])+'</p>'+topiccards(lang,d)+'</section>'+discovery(lang,d,key)
  if key=='search':
   q=d['search']
-  return hero(d,q['title'],q['intro'],q['nav'])+curated_paths(lang,d)+f'<section class="wrap section search-archive" data-search-page data-lang="{lang}" data-empty="{e(q["noResults"])}" data-one="{e(q["result"])}" data-many="{e(q["results"])}" data-all="{e(q["all"])}" data-open="{e(u["explore"])}"><form class="search-form" role="search"><label for="site-search" class="eyebrow">{e(q["nav"])}</label><div class="search-form-row"><input id="site-search" name="q" type="search" autocomplete="off" placeholder="{e(q["placeholder"])}"><button class="button dark" type="submit">{e(q["button"])}</button></div></form><p class="search-privacy">{e(q["privacy"])}</p><div class="search-status" aria-live="polite"></div><div class="search-results"></div></section>'
+  return hero(d,q['title'],q['intro'],q['nav'])+'<section class="wrap search-topics">'+topicchips(lang,d)+'</section>'+f'<section class="wrap section search-archive" data-search-page data-lang="{lang}" data-empty="{e(q["noResults"])}" data-one="{e(q["result"])}" data-many="{e(q["results"])}" data-all="{e(q["all"])}" data-open="{e(u["explore"])}"><form class="search-form" role="search"><label for="site-search" class="eyebrow">{e(q["nav"])}</label><div class="search-form-row"><input id="site-search" name="q" type="search" autocomplete="off" placeholder="{e(q["placeholder"])}"><button class="button dark" type="submit">{e(q["button"])}</button></div></form><p class="search-privacy">{e(q["privacy"])}</p><div class="search-status" aria-live="polite"></div><div class="search-results"></div></section>'
  raise ValueError(key)
 
 def title_for(key,d):
@@ -240,6 +258,8 @@ def title_for(key,d):
  if key=='article': return d['article']['title']
  if key=='research': return d['research']['title']
  if key=='search': return d['search']['title']
+ if key=='now': return d['now']['title']
+ if key=='topics': return d['topics']['title']
  if key in ARTICLE_DATA: return d[ARTICLE_DATA[key]]['title']
  return d['nav'][NAV_INDEX[key]]
 
@@ -249,6 +269,8 @@ def desc_for(key,d):
  if key=='article': return d['article']['intro']
  if key=='research': return d['research']['intro']
  if key=='search': return d['search']['intro']
+ if key=='now': return d['now']['intro']
+ if key=='topics': return d['topics']['intro']
  if key in d and isinstance(d[key],dict): return d[key].get('intro',d[key].get('description',d['home']['intro']))
  return d['home']['intro']
 
@@ -261,25 +283,18 @@ def page(lang,key,body,d,root=False):
  alternates=''.join(f'<link rel="alternate" hreflang="{DATA[l]["lang"]}" href="{ORIGIN+path(l,key)}">' for l in DATA)
  ogimg=ORIGIN+'/assets/images/'+('todos-forest.webp' if key in ['todos','article'] else 'notes-brasil.webp')
  schema={'@context':'https://schema.org','@type':'WebPage','name':title,'description':desc,'url':canonical,'inLanguage':d['lang'],'publisher':{'@type':'Organization','name':'Fóscolo & Company Edições','url':ORIGIN,'email':EMAIL,'sameAs':[INSTAGRAM]}}
- article_keys={'essay','article','circulation','place','space','repertoire2'}
- if key in article_keys:
-  schema={'@context':'https://schema.org','@type':'Article','headline':title,'description':desc,'url':canonical,'inLanguage':d['lang'],'mainEntityOfPage':canonical,'author':{'@type':'Person','name':'Maria Carolina Fóscolo'},'publisher':{'@type':'Organization','name':'Fóscolo & Company Edições','url':ORIGIN}}
- if key=='search':
-  schema['@type']='CollectionPage';schema['potentialAction']={'@type':'SearchAction','target':canonical+'?q={search_term_string}','query-input':'required name=search_term_string'}
  if key in ['notes','todos']:
-  schema['mainEntity']={'@type':'Book','name':title,'description':desc,'url':canonical,'author':{'@type':'Person','name':'Maria Carolina Fóscolo'},'inLanguage':'en' if key=='notes' else 'pt-BR','publisher':{'@type':'Organization','name':'Fóscolo & Company Edições'}}
-  if key=='notes':
-   schema['mainEntity']['bookFormat']='https://schema.org/Paperback';schema['mainEntity']['numberOfPages']=64;schema['mainEntity']['sameAs']=[BR,'https://www.amazon.com/dp/B0H7L24BDH','https://www.amazon.com/dp/6502080553','https://www.amazon.com/dp/6502203957']
- footerlinks=''.join(link(path(lang,k),nav[NAV_INDEX[k]],'footer-link') for k in ['catalog','projects','manifesto','press','contact'])+link(path(lang,'search'),d['search']['nav'],'footer-link')+link('/feeds/'+lang+'.xml',d['search']['rssLabel'],'footer-link')
+  schema['mainEntity']={'@type':'Book','name':title,'author':{'@type':'Person','name':'Maria Carolina Fóscolo'},'inLanguage':'en' if key=='notes' else 'pt-BR','publisher':{'@type':'Organization','name':'Fóscolo & Company Edições'}}
+  if key=='notes': schema['mainEntity']['bookFormat']='https://schema.org/Paperback';schema['mainEntity']['numberOfPages']=64
+ footerlinks=''.join(link(path(lang,k),nav[NAV_INDEX[k]],'footer-link') for k in ['catalog','projects','manifesto','press','contact'])+link(path(lang,'now'),d['now']['nav'],'footer-link')+link(path(lang,'topics'),d['topics']['nav'],'footer-link')+link(path(lang,'search'),d['search']['nav'],'footer-link')
  return f'''<!doctype html>
-<html lang="{d['lang']}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(title)}{' | Fóscolo & Company' if key!='home' else ''}</title><meta name="description" content="{e(desc)}"><meta name="theme-color" content="#F5F2EB"><link rel="icon" href="/favicon.png"><link rel="canonical" href="{canonical}">{alternates}<link rel="alternate" hreflang="x-default" href="{ORIGIN+path('pt',key)}"><link rel="alternate" type="application/rss+xml" title="{e(d['search']['rssLabel'])}" href="/feeds/{lang}.xml"><meta property="og:type" content="website"><meta property="og:site_name" content="Fóscolo & Company Edições"><meta property="og:locale" content="{d['locale']}"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{canonical}"><meta property="og:image" content="{ogimg}"><meta name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="/assets/fonts/fonts.css"><link rel="stylesheet" href="/assets/fonts/chinese.css"><link rel="stylesheet" href="/assets/site.css"><script src="/assets/site.js" defer></script><script type="application/ld+json">{json.dumps(schema,ensure_ascii=False).replace('</','<\\/')}</script></head>
-<body><a class="skip-link" href="#main">{e(u['skip'])}</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="{path(lang,'home')}" aria-label="Fóscolo & Company — {e(nav[0])}"><img src="/assets/images/logo.png" width="240" height="85" alt="Fóscolo & Company Edições"></a><button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" data-open="{e(u['open'])}" data-close="{e(u['close'])}" aria-label="{e(u['open'])}" hidden>{e(u['menu'])}<span aria-hidden="true"> +</span></button><nav id="main-nav" class="main-nav" aria-label="{e(u['menu'])}">{navhtml}</nav></div><div class="wrap language-bar"><div class="language-tools"><span>{e(u['edition'])}</span><a class="archive-link" href="{path(lang,'search')}"{(' aria-current="page"' if key=='search' else '')}>{e(d['search']['nav'])}</a></div><nav aria-label="{e(u['languages'])}">{languages}</nav></div></header>
+<html lang="{d['lang']}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(title)}{' | Fóscolo & Company' if key!='home' else ''}</title><meta name="description" content="{e(desc)}"><meta name="theme-color" content="#F5F2EB"><link rel="icon" href="/favicon.png"><link rel="canonical" href="{canonical}">{alternates}<link rel="alternate" hreflang="x-default" href="{ORIGIN+path('pt',key)}"><meta property="og:type" content="website"><meta property="og:site_name" content="Fóscolo & Company Edições"><meta property="og:locale" content="{d['locale']}"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{canonical}"><meta property="og:image" content="{ogimg}"><meta name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="/assets/fonts/fonts.css"><link rel="stylesheet" href="/assets/fonts/chinese.css"><link rel="stylesheet" href="/assets/site.css"><script src="/assets/site.js" defer></script><script type="application/ld+json">{json.dumps(schema,ensure_ascii=False).replace('</','<\\/')}</script></head>
+<body><a class="skip-link" href="#main">{e(u['skip'])}</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="{path(lang,'home')}" aria-label="Fóscolo & Company — {e(nav[0])}"><img src="/assets/images/logo.png" width="240" height="85" alt="Fóscolo & Company Edições"></a><button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" data-open="{e(u['open'])}" data-close="{e(u['close'])}" aria-label="{e(u['open'])}" hidden>{e(u['menu'])}<span aria-hidden="true"> +</span></button><nav id="main-nav" class="main-nav" aria-label="{e(u['menu'])}">{navhtml}</nav></div><div class="wrap language-bar"><div class="language-tools"><span>{e(u['edition'])}</span><a class="utility-link" href="{path(lang,'now')}"{(' aria-current="page"' if key=='now' else '')}>{e(d['now']['nav'])}</a><a class="utility-link" href="{path(lang,'topics')}"{(' aria-current="page"' if key=='topics' else '')}>{e(d['topics']['nav'])}</a><a class="archive-link" href="{path(lang,'search')}"{(' aria-current="page"' if key=='search' else '')}>{e(d['search']['nav'])}</a></div><nav aria-label="{e(u['languages'])}">{languages}</nav></div></header>
 <main id="main">{body}</main><footer class="site-footer"><div class="wrap footer-grid"><div><p class="footer-wordmark">FÓSCOLO<br>& COMPANY<span>EDIÇÕES</span></p><p>{nl(d['home']['title'])}</p></div><nav aria-label="{e(u['more'])}">{footerlinks}</nav><div><p class="eyebrow">{e(d['contact']['location'])}</p><p><a href="mailto:{EMAIL}">{EMAIL}</a></p>{link(INSTAGRAM,'Instagram','footer-link',True)}</div></div><div class="wrap footer-bottom"><span>© 2026 Fóscolo & Company Edições. {e(u['rights'])}</span><span>{e(u['updated'])}</span></div></footer></body></html>'''
 
 def build():
  outputs=[]
  search_dir=ROOT/'assets'/'search';search_dir.mkdir(parents=True,exist_ok=True)
- feed_dir=ROOT/'feeds';feed_dir.mkdir(parents=True,exist_ok=True)
  for lang,d in DATA.items():
   docs=[]
   for key,slug in ROUTES[lang].items():
@@ -289,7 +304,6 @@ def build():
     meta,title,desc=route_meta(d,key)
     docs.append({'key':key,'meta':plain(meta),'title':plain(title),'desc':plain(desc),'url':path(lang,key),'text':plain(body)})
   (search_dir/f'{lang}.json').write_text(json.dumps(docs,ensure_ascii=False,separators=(',',':')))
-  (feed_dir/f'{lang}.xml').write_text(rss_feed(lang,d))
  (ROOT/'index.html').write_text(page('pt','home',content('pt','home',DATA['pt']),DATA['pt'],root=True))
  (ROOT/'404.html').write_text('<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Página não encontrada | Fóscolo & Company</title><link rel="stylesheet" href="/assets/fonts/chinese.css"><link rel="stylesheet" href="/assets/site.css"></head><body><main class="wrap page-hero"><p class="eyebrow">404</p><h1>Esta página mudou de lugar.</h1><p>Encontre livros, leituras e informações da editora a partir da página inicial.</p><a class="button dark" href="/pt/index.html">Ir para o início</a></main></body></html>')
  sitemap='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{ORIGIN+p}</loc><lastmod>2026-09-29</lastmod></url>\n' for p in ['/']+outputs)+'</urlset>\n'
