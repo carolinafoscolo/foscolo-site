@@ -643,47 +643,16 @@
     "noResults": "Nenhuma página pública corresponde a esta busca.",
     "results": "resultados",
     "result": "resultado",
-    "privacy": "A busca acontece no seu navegador e consulta apenas o índice público do site.",
-    "pathsTitle": "Percursos para começar",
-    "pathsIntro": "Se você ainda não sabe o que procurar, entre por uma pergunta. Cada percurso reúne páginas que se iluminam mutuamente.",
-    "paths": [
-      {
-        "title": "Cuidado, risco & conhecimento",
-        "desc": "Da experiência de instituições em crise ao livro que nasceu dessas perguntas.",
-        "keys": [
-          "notes",
-          "research",
-          "circulation"
-        ]
-      },
-      {
-        "title": "Forma, matéria & edição",
-        "desc": "Como papel, espaço, sequência e imagem mudam o modo de ler um livro.",
-        "keys": [
-          "todos",
-          "article",
-          "space"
-        ]
-      },
-      {
-        "title": "Lugar, circulação & história pública",
-        "desc": "Belo Horizonte como ponto de partida, sem transformar território em limite.",
-        "keys": [
-          "place",
-          "projects",
-          "research"
-        ]
-      },
-      {
-        "title": "Ler de novo",
-        "desc": "Repertório como prática: voltar a uma frase, uma referência ou uma forma e encontrar outra relação.",
-        "keys": [
-          "repertoire2",
-          "repertoire",
-          "essay"
-        ]
-      }
-    ],
-    "rssLabel": "Acompanhar Caderno & Repertório por RSS"
+    "privacy": "A busca acontece no seu navegador e consulta apenas o índice público do site."
+  },
+  "now": {
+    "title": "Agora na Fóscolo",
+    "intro": "O que já pode ser lido, o que está em preparação e onde o trabalho está circulando neste momento.",
+    "nav": "Agora",
+    "booksTitle": "Livros agora",
+    "journalTitle": "Últimas do Caderno",
+    "researchTitle": "Em circulação",
+    "archiveText": "O restante do trabalho continua no arquivo pesquisável.",
+    "archiveCta": "Abrir arquivo & busca"
   }
 }
