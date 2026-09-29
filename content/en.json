@@ -178,7 +178,40 @@
     "newDesc": "Inside Todos ou nenhum?: paper, the prologue and the gesture of opening.",
     "newMeta": "Inside the editorial process · September 2026",
     "archiveTitle": "Read the Journal",
-    "instagramText": "Caderno Fóscolo and Repertório Fóscolo also appear on the publisher’s Instagram."
+    "instagramText": "Caderno Fóscolo and Repertório Fóscolo also appear on the publisher’s Instagram.",
+    "archiveIntro": "The Journal gathers texts born from everyday editorial work and gives them more time than a feed can.",
+    "entries": [
+      {
+        "key": "circulation",
+        "meta": "Circulation · September 2026",
+        "title": "Publishing does not bring things to an end.",
+        "desc": "What changes when a book no longer belongs only to the table where it was made."
+      },
+      {
+        "key": "place",
+        "meta": "Place of publication · September 2026",
+        "title": "From where does this table look at the world?",
+        "desc": "Belo Horizonte is more than the address in the colophon. It is also a point of view."
+      },
+      {
+        "key": "space",
+        "meta": "Form · September 2026",
+        "title": "Empty space is also an editorial decision.",
+        "desc": "Margins, distance, pause and hierarchy also organise a reading."
+      },
+      {
+        "key": "article",
+        "meta": "Inside the editorial process · September 2026",
+        "title": "A book begins before its first sentence.",
+        "desc": "Paper, the prologue and the gesture of opening in Todos ou nenhum?."
+      },
+      {
+        "key": "essay",
+        "meta": "Inaugural essay · August 2026",
+        "title": "There is more than one way into this book.",
+        "desc": "Research, fragment, poem and image in Notes on Care."
+      }
+    ]
   },
   "article": {
     "title": "A book begins before its first sentence.",
@@ -383,5 +416,65 @@
     "bridgeText": "Notes on Care, Risk & Knowledge already turns part of these questions into a public reading form: historical research, fragments, poems and images placed side by side.",
     "privateNote": "The site presents questions, contexts, methods and routes of circulation. Submitted articles, manuscripts and unpublished originals remain off the site.",
     "cta": "Explore the book"
+  },
+  "circulationArticle": {
+    "title": "Publishing does not bring things to an end.",
+    "intro": "What changes when a book no longer belongs only to the table where it was made?",
+    "meta": "Circulation · September 2026",
+    "paragraphs": [
+      "For a while, a book lives inside a small circuit: writing, selecting, cutting, revising, designing and printing. Almost everything can still be brought back to the table and changed.",
+      "Publication changes that scale. The book enters an envelope, passes through other hands, reaches a shelf the publisher does not know and meets experiences that were absent while it was being written. A secondary passage for the writer can become the centre of somebody else’s reading.",
+      "Circulation is therefore more than physical movement. A book circulates when it creates unforeseen relationships: an image meets a memory, an argument meets disagreement, a question reaches another field of experience.",
+      "For an independent publisher, this passage belongs to publication itself. Finishing a file or producing an object is not enough. Publishing also means creating the conditions for a work to leave the place where it began without controlling what happens next.",
+      "Publication, then, does not close the work. It closes only one stage of control. The rest begins when the book is read by someone who was not at the table."
+    ],
+    "cta": "Explore Notes on Care"
+  },
+  "placeArticle": {
+    "title": "From where does this table look at the world?",
+    "intro": "Belo Horizonte is more than the address in the colophon.",
+    "meta": "Place of publication · September 2026",
+    "paragraphs": [
+      "Every publisher works from somewhere. Even when a book deals with questions that cross countries, institutions and historical periods, what first appears important begins in very concrete relationships.",
+      "Fóscolo & Company is edited in Belo Horizonte. Archives, universities, libraries, movement through the city, Pampulha and conversations taking place here form part of the repertoire through which books are read and prepared.",
+      "This does not mean turning the city into compulsory scenery or publishing only about Minas Gerais. It means giving up the fiction of a neutral point of view. Editorial choices have a geography too.",
+      "Circulation moves in the opposite direction: a book can leave a place without remaining trapped by it. It may reach another city, institution or language and meet questions that did not exist at the table where it began.",
+      "Saying where the work is made does not reduce a publisher’s reach. It makes visible the point from which it chooses to look."
+    ],
+    "cta": "About the publisher"
+  },
+  "spaceArticle": {
+    "title": "Empty space is also an editorial decision.",
+    "intro": "Margins, distance and pause also organise a reading.",
+    "meta": "Form · September 2026",
+    "paragraphs": [
+      "A page is made of more than what it prints. Before reading a sentence, the eye encounters margins, distances, alignments, blocks and interruptions.",
+      "These intervals establish hierarchies. Bringing two elements close together can make them appear to belong to the same argument; separating them can create a pause or prevent an easy association.",
+      "White space is therefore not an absence of work. In a book combining research, poetry, photography or essayistic prose, it can be the difference between piling materials together and allowing each form to retain its own presence.",
+      "There is also a limit. Emptiness should not operate as prestige decoration or as a way of making little content appear more important. Form must answer to the rhythm and function of the page.",
+      "Editing also means deciding what will not occupy space. Sometimes the best intervention is to leave enough distance for a reader to perceive a relationship without being forced to understand it in only one way."
+    ],
+    "cta": "Back to the Journal"
+  },
+  "repertoireArticle": {
+    "title": "The uncertainty is in the first sentence.",
+    "intro": "A reading of the opening of Machado de Assis’s “Missa do Galo”.",
+    "meta": "Repertório Fóscolo 002 · literature",
+    "quote": "Nunca pude entender a conversação que tive com uma senhora, há muitos anos, contava eu dezessete, ela trinta.",
+    "paragraphs": [
+      "The first sentence does not promise to clarify a conversation. It begins with the impossibility of understanding it completely.",
+      "The narrator looks back on an old episode knowing more than he knew at seventeen, yet distance does not become certainty. Memory supplies details without automatically resolving their meaning.",
+      "The opening is a useful reminder that ambiguity is not the same thing as missing information. A text can offer many elements while preserving more than one possible relationship between them.",
+      "Reading the sentence again changes the weight of simple words: “never”, “understand”, “many years ago”. The time of memory enters the story before we even know what was said that night.",
+      "This is the kind of return Repertório Fóscolo tries to practise: choose a concrete detail, return to it, contextualise what can be said and keep visible the point at which interpretation remains open."
+    ],
+    "source": "Machado de Assis, “Missa do Galo”.",
+    "back": "Back to Repertoire"
+  },
+  "repertoireFeature": {
+    "meta": "Repertório Fóscolo 002 · literature",
+    "title": "The uncertainty is in the first sentence.",
+    "desc": "A reading of the opening of “Missa do Galo”: remembering a conversation is not the same as understanding what it meant.",
+    "cta": "Read the analysis"
   }
 }
