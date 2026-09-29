@@ -58,7 +58,12 @@
     "journalTitle": "O trabalho entre as páginas",
     "journalIntro": "Escolhas de edição, notas de leitura e relações entre imagens. Um espaço para acompanhar como os livros tomam forma.",
     "aboutTitle": "De Belo Horizonte,\npara outras leituras.",
-    "aboutText": "A Fóscolo & Company Edições aproxima pesquisa histórica, escrita ensaística e criação literária. Cada publicação pede uma forma: a ordem dos textos, uma imagem, o ritmo de uma página."
+    "aboutText": "A Fóscolo & Company Edições aproxima pesquisa histórica, escrita ensaística e criação literária. Cada publicação pede uma forma: a ordem dos textos, uma imagem, o ritmo de uma página.",
+    "saleEyebrow": "Disponível agora",
+    "saleTitle": "Um livro já pode sair daqui.",
+    "saleIntro": "Notes on Care, Risk & Knowledge é a primeira peça disponível de um trabalho que atravessa pesquisa histórica, imagem e escrita. A edição física brasileira está em inglês, com 64 páginas e impressão colorida.",
+    "researchTitle": "A pesquisa continua fora dos livros.",
+    "researchIntro": "Arquivos, saúde pública, ciência, território e história pública alimentam o catálogo. O site mostra as perguntas e os caminhos de circulação sem abrir manuscritos ainda inéditos."
   },
   "notes": {
     "subtitle": "Pesquisa, fragmentos e imagens do Brasil",
@@ -90,7 +95,24 @@
     "pagesValue": "64 páginas",
     "sizeLabel": "Formato brasileiro",
     "sampleTitle": "Abra algumas páginas",
-    "sampleText": "Uma seleção de pesquisa, poesia e fotografia oferece uma entrada no livro. O conteúdo da amostra corresponde à edição internacional."
+    "sampleText": "Uma seleção de pesquisa, poesia e fotografia oferece uma entrada no livro. O conteúdo da amostra corresponde à edição internacional.",
+    "readerTitle": "Para quem este livro pode abrir uma porta",
+    "readerItems": [
+      [
+        "História e saúde",
+        "Para quem se interessa por instituições, crises sanitárias, memória e produção de conhecimento."
+      ],
+      [
+        "Pesquisa e escrita",
+        "Para leitores que gostam de ver arquivo, ensaio, fragmento, poema e fotografia coexistirem sem virar uma única linguagem."
+      ],
+      [
+        "Brasil em circulação",
+        "Para quem procura uma obra escrita em inglês a partir de perguntas, paisagens e experiências brasileiras."
+      ]
+    ],
+    "buyTitle": "Leve o livro para outra leitura.",
+    "buyText": "A edição física brasileira está disponível pela Amazon Brasil. Preço, estoque e entrega são informados diretamente no anúncio."
   },
   "todos": {
     "subtitle": "Livro I · A matéria aprende a respirar",
@@ -109,7 +131,24 @@
     "languageLabel": "Idioma do livro",
     "languageValue": "Português",
     "formLabel": "Composição",
-    "formValue": "13 poemas · 3 crônicas ensaísticas"
+    "formValue": "13 poemas · 3 crônicas ensaísticas",
+    "processCta": "Acompanhar a edição",
+    "processTitle": "O que já pode ser dito sem abrir o original",
+    "processIntro": "O site acompanha o processo editorial, as perguntas e a forma do livro. Os textos inéditos permanecem reservados para a publicação.",
+    "processItems": [
+      [
+        "Forma",
+        "Treze poemas e três crônicas ensaísticas organizados como uma sequência única de leitura."
+      ],
+      [
+        "Matéria",
+        "Ferro, água, vidro, luz, papel, voo, pressão e memória aparecem como objetos específicos — não como metáforas prontas."
+      ],
+      [
+        "Estado",
+        "Original em preparação editorial. Capa final, data de lançamento e condições de venda ainda serão anunciadas."
+      ]
+    ]
   },
   "catalog": {
     "title": "Livros para entrar\npor mais de um lugar.",
@@ -230,7 +269,24 @@
     ],
     "researchTitle": "Pesquisa em andamento",
     "researchText": "From Isolate to Identity: Belém and the Making of Arbovirus Difference, 1954–1969 investiga historicamente práticas de classificação, documentação e circulação do conhecimento científico.",
-    "orcid": "Consultar ORCID"
+    "orcid": "Consultar ORCID",
+    "workTitle": "Linhas de trabalho",
+    "workItems": [
+      [
+        "Saúde e instituições",
+        "História da saúde, memória institucional, crises, arquivos e história oral."
+      ],
+      [
+        "Ciência e conhecimento",
+        "Classificação, circulação de evidências, laboratórios e infraestruturas científicas."
+      ],
+      [
+        "História pública e forma",
+        "Mediação cultural, ensino, escrita editorial e maneiras de fazer pesquisa circular fora da universidade."
+      ]
+    ],
+    "circulationTitle": "Pesquisa em circulação",
+    "circulationText": "Apresentações e projetos recentes passam por UCL Institute of the Americas, SHOT e ASEH, conectando saúde, ciência, ambiente e história pública."
   },
   "press": {
     "title": "Para ler, apresentar\ne compartilhar.",
@@ -284,5 +340,48 @@
       "Uma ideia encontrou outra",
       "“O resto não estava em nenhuma delas.” A imagem do encontro acompanha Todos ou nenhum?: uma vida e uma escrita também se fazem nas relações entre experiências, perguntas e escolhas. No livro, poema e crônica ensaística oferecem tempos distintos para acompanhar essas aproximações."
     ]
-  ]
+  ],
+  "research": {
+    "eyebrow": "Pesquisa · circulação",
+    "nav": "Pesquisa & circulação",
+    "title": "Perguntas que continuam em movimento.",
+    "intro": "Os livros da Fóscolo & Company nascem de um campo maior de pesquisa, escrita e história pública. Aqui aparecem perguntas, contextos e trajetórias — não originais inéditos.",
+    "questionsTitle": "Três frentes de investigação",
+    "questions": [
+      [
+        "Saúde e instituições",
+        "Como instituições aprendem quando crises sanitárias ultrapassam protocolos, rotinas e categorias prontas?"
+      ],
+      [
+        "Ciência e classificação",
+        "Como um vírus coletado na Amazônia se torna comparável, nomeável e reconhecível em redes científicas internacionais?"
+      ],
+      [
+        "Ambiente e infraestrutura",
+        "Onde termina a floresta quando ecologia, vigilância e infraestrutura de saúde passam a produzir evidência juntas?"
+      ]
+    ],
+    "circulationTitle": "Em circulação",
+    "circulation": [
+      [
+        "Maio de 2026 · UCL Institute of the Americas",
+        "Zika, risco e conhecimento médico",
+        "Apresentação sobre como diretrizes, risco e responsabilidade pública foram produzidos durante a epidemia de Zika no Brasil."
+      ],
+      [
+        "22–25 out. 2026 · SHOT · Johns Hopkins",
+        "The Environments of Technology",
+        "Sessão aceita, co-organizada e comentada por Maria Carolina Fóscolo, sobre infraestrutura, materialidade, evidência e expertise."
+      ],
+      [
+        "31 mar.–3 abr. 2027 · ASEH · Richmond",
+        "Where Does the Forest End?",
+        "Apresentação aceita sobre febre amarela, sentinelas não humanas e infraestrutura de saúde pública no Brasil."
+      ]
+    ],
+    "bridgeTitle": "Da pesquisa ao leitor",
+    "bridgeText": "Notes on Care, Risk & Knowledge já transforma parte dessas perguntas em uma forma de leitura pública: pesquisa histórica, fragmentos, poemas e imagens colocados lado a lado.",
+    "privateNote": "O site apresenta perguntas, contextos, métodos e trajetórias de circulação. Artigos submetidos, manuscritos e originais ainda não publicados permanecem fora daqui.",
+    "cta": "Conhecer o livro"
+  }
 }
