@@ -169,7 +169,31 @@
         "Estado",
         "Original em preparação editorial. Capa final, data de lançamento e condições de venda ainda serão anunciadas."
       ]
-    ]
+    ],
+    "structureTitle": "A arquitetura sem o texto",
+    "structureIntro": "É possível mostrar como o livro se organiza sem entregar o que os poemas e as crônicas ainda precisam guardar para a publicação.",
+    "structureItems": [
+      [
+        "Entrada",
+        "Apresentação e prólogo deslocam a atenção para o objeto livro, a matéria e o gesto de abrir antes da sequência literária."
+      ],
+      [
+        "Sequência",
+        "Treze poemas e três crônicas ensaísticas são lidos como um percurso único, sem separar o volume em blocos rígidos por gênero."
+      ],
+      [
+        "Interrupções e saída",
+        "Imagens, mudanças de campo visual, epílogo e nota de fontes alteram o ritmo e tornam visível que a forma também argumenta."
+      ]
+    ],
+    "reserveTitle": "O que não está aqui — de propósito.",
+    "reserveText": "O site não reproduz poemas, crônicas ou trechos do original ainda inédito. A curiosidade pode nascer da arquitetura, das perguntas e das escolhas de edição; a experiência do texto fica reservada para o livro.",
+    "reserveNote": "Também permanecem em aberto a capa final, a data de lançamento e as condições de venda.",
+    "pathwaysTitle": "Acompanhe sem antecipar a leitura",
+    "pathwaysText": "O Caderno mostra decisões reais do processo — prólogo, espaço, circulação e forma — sem transformar o site em uma pré-publicação do manuscrito.",
+    "spaceCta": "Ler sobre o espaço na página",
+    "journalCta": "Ver o Caderno",
+    "catalogCta": "Voltar ao catálogo"
   },
   "catalog": {
     "title": "Livros para entrar\npor mais de um lugar.",
