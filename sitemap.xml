@@ -1,54 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.foscolo.com.br/</loc></url>
-  <url><loc>https://www.foscolo.com.br/pt/index.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/pt/sobre.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/pt/publicacoes.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/pt/projetos.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/pt/manifesto.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/pt/contato.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/pt/notes-on-care.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/en/index.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/en/about.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/en/publications.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/en/projects.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/en/manifesto.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/en/contact.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/en/notes-on-care.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/es/index.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/es/sobre.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/es/publicaciones.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/es/proyectos.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/es/manifiesto.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/es/contacto.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/es/notes-on-care.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/fr/index.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/fr/a-propos.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/fr/publications.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/fr/projets.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/fr/manifeste.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/fr/contact.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/fr/notes-on-care.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/zh/index.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/zh/about.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/zh/publications.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/zh/projects.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/zh/manifesto.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/zh/contact.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/zh/notes-on-care.html</loc></url>
-<url><loc>https://www.foscolo.com.br/pt/autora.html</loc></url>
-<url><loc>https://www.foscolo.com.br/pt/imprensa.html</loc></url>
-<url><loc>https://www.foscolo.com.br/en/author.html</loc></url>
-<url><loc>https://www.foscolo.com.br/en/press.html</loc></url>
-<url><loc>https://www.foscolo.com.br/es/autora.html</loc></url>
-<url><loc>https://www.foscolo.com.br/es/prensa.html</loc></url>
-<url><loc>https://www.foscolo.com.br/fr/autrice.html</loc></url>
-<url><loc>https://www.foscolo.com.br/fr/presse.html</loc></url>
-<url><loc>https://www.foscolo.com.br/zh/author.html</loc></url>
-<url><loc>https://www.foscolo.com.br/zh/press.html</loc></url>
-  <url><loc>https://www.foscolo.com.br/pt/caderno.html</loc><lastmod>2026-08-11</lastmod></url>
-  <url><loc>https://www.foscolo.com.br/en/journal.html</loc><lastmod>2026-08-11</lastmod></url>
-  <url><loc>https://www.foscolo.com.br/es/cuaderno.html</loc><lastmod>2026-08-11</lastmod></url>
-  <url><loc>https://www.foscolo.com.br/fr/carnet.html</loc><lastmod>2026-08-11</lastmod></url>
-  <url><loc>https://www.foscolo.com.br/zh/journal.html</loc><lastmod>2026-08-11</lastmod></url>
+<url><loc>https://www.foscolo.com.br/</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/pt/index.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/pt/publicacoes.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/pt/caderno.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/pt/repertorio.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/pt/sobre.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/pt/autora.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/pt/contato.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/pt/projetos.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/pt/manifesto.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/pt/imprensa.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/pt/notes-on-care.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/pt/todos-ou-nenhum.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/pt/caderno-01.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/pt/por-dentro-da-edicao.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/en/index.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/en/publications.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/en/journal.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/en/repertoire.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/en/about.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/en/author.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/en/contact.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/en/projects.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/en/manifesto.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/en/press.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/en/notes-on-care.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/en/todos-ou-nenhum.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/en/caderno-01.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/en/por-dentro-da-edicao.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/es/index.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/es/publicaciones.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/es/cuaderno.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/es/repertorio.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/es/sobre.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/es/autora.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/es/contacto.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/es/proyectos.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/es/manifiesto.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/es/prensa.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/es/notes-on-care.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/es/todos-ou-nenhum.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/es/caderno-01.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/es/por-dentro-da-edicao.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/fr/index.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/fr/publications.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/fr/carnet.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/fr/repertoire.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/fr/a-propos.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/fr/autrice.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/fr/contact.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/fr/projets.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/fr/manifeste.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/fr/presse.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/fr/notes-on-care.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/fr/todos-ou-nenhum.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/fr/caderno-01.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/fr/por-dentro-da-edicao.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/zh/index.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/zh/publications.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/zh/journal.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/zh/repertoire.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/zh/about.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/zh/author.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/zh/contact.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/zh/projects.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/zh/manifesto.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/zh/press.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/zh/notes-on-care.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/zh/todos-ou-nenhum.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/zh/caderno-01.html</loc><lastmod>2026-09-28</lastmod></url>
+<url><loc>https://www.foscolo.com.br/zh/por-dentro-da-edicao.html</loc><lastmod>2026-09-28</lastmod></url>
 </urlset>
