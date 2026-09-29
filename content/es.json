@@ -271,11 +271,33 @@
       ]
     ],
     "manifestoTitle": "Algunas historias no deben desaparecer.",
-    "manifestoText": "Lee el manifiesto que orienta nuestro trabajo."
+    "manifestoText": "Lee el manifiesto que orienta nuestro trabajo.",
+    "catalogTitle": "Un catálogo pequeño, construido para durar.",
+    "catalogText": "El catálogo actual empieza con dos obras autorales y crece despacio. La escala pequeña permite tratar investigación, texto, imagen, producción y circulación como partes de una misma edición, sin convertir la velocidad en criterio de valor.",
+    "methodTitle": "Lo que una edición necesita sostener",
+    "methodItems": [
+      [
+        "Fuentes",
+        "No inventar certeza donde la investigación todavía deja preguntas abiertas."
+      ],
+      [
+        "Forma",
+        "No elegir una apariencia antes de entender qué exige el material de la lectura."
+      ],
+      [
+        "Lector",
+        "Crear una entrada clara sin reducir la complejidad de la obra para volverla más vendible."
+      ]
+    ],
+    "placeTitle": "Editada en Belo Horizonte.",
+    "placeText": "La ciudad no limita los temas de Fóscolo; hace visible el punto desde donde empieza el trabajo. Archivos, universidad, Pampulha, bibliotecas y desplazamientos cotidianos forman parte del repertorio que llega a la mesa.",
+    "placeCta": "Leer sobre el lugar de edición",
+    "independenceTitle": "Independencia no significa aislamiento.",
+    "independenceText": "La editorial es independiente en sus decisiones, pero los libros circulan entre investigación académica, historia pública, instituciones culturales, librerías y lectores. En ese encuentro una obra deja de ser solamente un archivo terminado."
   },
   "projects": {
     "title": "De la investigación\na la página.",
-    "intro": "Lectura, organización, preparación del texto y diseño visual. Conoce los proyectos que dan forma a esta práctica editorial.",
+    "intro": "Libros, investigación, imagen e historia pública se encuentran aquí como etapas de un mismo trabajo: transformar preguntas en formas capaces de circular.",
     "steps": [
       [
         "Investigación y escucha",
@@ -290,7 +312,49 @@
         "Preparar el libro y sus materiales para encontrar lectores."
       ]
     ],
-    "contactText": "Para conversar sobre un proyecto, presenta el material, su estado actual y el objetivo de publicación."
+    "contactText": "Para librerías, programación cultural, entrevistas, reseñas, investigación, lecturas públicas u otras alianzas, escriba a Fóscolo & Company.",
+    "deskTitle": "Lo que atraviesa la mesa",
+    "deskIntro": "Fóscolo no empieza por la apariencia de un libro. Empieza por el material, la pregunta y el tipo de lectura que cada proyecto exige.",
+    "desk": [
+      [
+        "Investigación histórica",
+        "Archivos, historia oral, salud, ciencia e instituciones aportan problemas, vocabularios y límites para la escritura."
+      ],
+      [
+        "Edición autoral",
+        "Secuencia, corte, imagen, papel, ritmo y paratexto se tratan como decisiones de lectura, no como decoración posterior."
+      ],
+      [
+        "Historia pública",
+        "La experiencia en enseñanza y mediación cultural ayuda a pensar claridad, acceso y circulación más allá de la universidad."
+      ]
+    ],
+    "publicNote": "El trabajo de la fundadora en museos, enseñanza e historia pública pertenece a las instituciones donde se realiza; aparece aquí solamente como experiencia que informa el método editorial de Fóscolo.",
+    "pathsTitle": "Tres recorridos, tres estados",
+    "pathsIntro": "No todo necesita estar en la misma etapa para formar parte de un catálogo. Lo importante es dejar claro qué ya puede leerse, qué se está preparando y qué continúa como conversación editorial.",
+    "paths": [
+      {
+        "status": "Publicado",
+        "title": "Notes on Care, Risk & Knowledge",
+        "text": "Investigación histórica, fragmentos, poemas y fotografías transformados en una primera publicación disponible para leer y comprar.",
+        "target": "notes"
+      },
+      {
+        "status": "En preparación",
+        "title": "Todos ou nenhum? — Libro I",
+        "text": "Un original literario trabajado mediante secuencia, materia, imagen y ritmo sin publicar en el sitio el texto todavía inédito.",
+        "target": "todos"
+      },
+      {
+        "status": "En circulación",
+        "title": "Cuaderno & Repertorio",
+        "text": "Reflexiones, lecturas y decisiones editoriales que salen de la velocidad de las redes y ganan páginas permanentes para volver a ellas.",
+        "target": "journal"
+      }
+    ],
+    "boundaryTitle": "Trabajar en público no significa publicarlo todo.",
+    "boundaryText": "Los originales inéditos, las versiones integrales de manuscritos y los materiales de investigación todavía en evaluación quedan fuera del sitio. Aquí aparecen preguntas, decisiones de forma, contextos y materiales ya destinados a la circulación pública.",
+    "partnershipTitle": "Alianzas y circulación"
   },
   "author": {
     "title": "Maria Carolina\nFóscolo",
