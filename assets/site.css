@@ -59,3 +59,9 @@
   .catalog-feature-copy h2,.catalog-next h2,.notes-continue h2{font-size:3.1rem}
   .catalog-next-art{min-height:320px;padding:22px}.catalog-next-art img{height:280px}
 }
+
+/* Todos ou nenhum? — architecture without excerpts */
+.todos-pathways{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(36px,7vw,100px);align-items:start}
+.todos-pathways h2{font-size:clamp(3rem,5vw,5rem);max-width:11ch;margin-top:16px}
+.todos-pathways .lead{color:var(--paper)}
+@media(max-width:650px){.todos-pathways{grid-template-columns:1fr}.todos-pathways h2{font-size:3.2rem}}
