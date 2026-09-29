@@ -5,6 +5,7 @@ import sys
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit, unquote
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT/'scripts'))
@@ -81,16 +82,28 @@ def main():
    if 'Uma folha sozinha quase não oferece resistência.' in serialized:errors.append(f'{lang}: unpublished Todos excerpt leaked into search')
    if not any(item.get('key')=='repertoire2' for item in index):errors.append(f'{lang}: public Repertoire content absent from search')
    if not any(item.get('key')=='place' for item in index):errors.append(f'{lang}: public place content absent from search')
+  now_page=(ROOT/build.path(lang,'now').lstrip('/')).read_text()
+  if data['now']['title'] not in now_page:errors.append(f'{lang}: Now page missing')
+  if '"@type": "CollectionPage"' not in now_page:errors.append(f'{lang}: Now CollectionPage schema missing')
+  if 'BreadcrumbList' not in now_page or 'SearchAction' not in now_page:errors.append(f'{lang}: Now structured navigation missing')
   feed_file=ROOT/'feeds'/f'{lang}.xml'
   if not feed_file.is_file():errors.append(f'{lang}: RSS feed missing')
   else:
    feed=feed_file.read_text()
-   if feed.count('<item>')!=6:errors.append(f'{lang}: RSS feed should contain six items')
-   if '<rss version="2.0">' not in feed:errors.append(f'{lang}: invalid RSS root')
+   try:
+    feed_root=ET.fromstring(feed)
+    items=feed_root.findall('./channel/item')
+    if len(items)!=10:errors.append(f'{lang}: RSS feed should contain ten public items')
+   except Exception as exc:errors.append(f'{lang}: invalid RSS XML: {exc}')
+   if 'Uma folha sozinha quase não oferece resistência.' in feed:errors.append(f'{lang}: unpublished Todos excerpt leaked into RSS')
   article_page=(ROOT/build.path(lang,'circulation').lstrip('/')).read_text()
-  if '"@type": "Article"' not in article_page:errors.append(f'{lang}: Article schema missing')
+  if '"@type": "Article"' not in article_page or 'BreadcrumbList' not in article_page:errors.append(f'{lang}: Article schema missing')
   notes_schema=(ROOT/build.path(lang,'notes').lstrip('/')).read_text()
   if '"@type": "Book"' not in notes_schema or build.BR not in notes_schema:errors.append(f'{lang}: Book schema missing Amazon identity')
+  author_schema=(ROOT/build.path(lang,'author').lstrip('/')).read_text()
+  if '"@type": "Person"' not in author_schema:errors.append(f'{lang}: Person schema missing')
+  about_schema=(ROOT/build.path(lang,'about').lstrip('/')).read_text()
+  if '"@type": "Organization"' not in about_schema:errors.append(f'{lang}: Organization schema missing')
  if len(build.DATA)!=5:errors.append('Expected five languages')
  if errors:print('\n'.join(errors));raise SystemExit(1)
  print(f'PASS: {len(documents)} pages, five languages, local links, fragments, image labels and metadata.')
