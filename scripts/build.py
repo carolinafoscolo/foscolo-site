@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build the five-language static site. Python 3, standard library only."""
 from pathlib import Path
-from html import escape
+from html import escape, unescape
 import json
 import re
 from urllib.parse import quote
@@ -16,27 +16,27 @@ ROUTES = {
  'pt': {
   'home':'index','catalog':'publicacoes','journal':'caderno','repertoire':'repertorio','about':'sobre','author':'autora','contact':'contato','projects':'projetos','manifesto':'manifesto','press':'imprensa',
   'notes':'notes-on-care','todos':'todos-ou-nenhum','essay':'caderno-01','article':'por-dentro-da-edicao','research':'pesquisa',
-  'circulation':'publicar-nao-encerra','place':'de-que-lugar-esta-mesa-olha-o-mundo','space':'o-vazio-tambem-e-uma-decisao-editorial','repertoire2':'repertorio-02-missa-do-galo'
+  'circulation':'publicar-nao-encerra','place':'de-que-lugar-esta-mesa-olha-o-mundo','space':'o-vazio-tambem-e-uma-decisao-editorial','repertoire2':'repertorio-02-missa-do-galo','search':'arquivo'
  },
  'en': {
   'home':'index','catalog':'publications','journal':'journal','repertoire':'repertoire','about':'about','author':'author','contact':'contact','projects':'projects','manifesto':'manifesto','press':'press',
   'notes':'notes-on-care','todos':'todos-ou-nenhum','essay':'caderno-01','article':'por-dentro-da-edicao','research':'research',
-  'circulation':'publishing-does-not-end','place':'where-does-this-table-look-from','space':'empty-space-is-an-editorial-decision','repertoire2':'repertoire-02-missa-do-galo'
+  'circulation':'publishing-does-not-end','place':'where-does-this-table-look-from','space':'empty-space-is-an-editorial-decision','repertoire2':'repertoire-02-missa-do-galo','search':'archive'
  },
  'es': {
   'home':'index','catalog':'publicaciones','journal':'cuaderno','repertoire':'repertorio','about':'sobre','author':'autora','contact':'contacto','projects':'proyectos','manifesto':'manifiesto','press':'prensa',
   'notes':'notes-on-care','todos':'todos-ou-nenhum','essay':'caderno-01','article':'por-dentro-da-edicao','research':'investigacion',
-  'circulation':'publicar-no-termina','place':'desde-que-lugar-mira-el-mundo-esta-mesa','space':'el-vacio-tambien-es-una-decision-editorial','repertoire2':'repertorio-02-missa-do-galo'
+  'circulation':'publicar-no-termina','place':'desde-que-lugar-mira-el-mundo-esta-mesa','space':'el-vacio-tambien-es-una-decision-editorial','repertoire2':'repertorio-02-missa-do-galo','search':'archivo'
  },
  'fr': {
   'home':'index','catalog':'publications','journal':'carnet','repertoire':'repertoire','about':'a-propos','author':'autrice','contact':'contact','projects':'projets','manifesto':'manifeste','press':'presse',
   'notes':'notes-on-care','todos':'todos-ou-nenhum','essay':'caderno-01','article':'por-dentro-da-edicao','research':'recherche',
-  'circulation':'publier-ne-clot-pas','place':'depuis-quel-endroit-cette-table-regarde-le-monde','space':'le-vide-est-aussi-une-decision-editoriale','repertoire2':'repertoire-02-missa-do-galo'
+  'circulation':'publier-ne-clot-pas','place':'depuis-quel-endroit-cette-table-regarde-le-monde','space':'le-vide-est-aussi-une-decision-editoriale','repertoire2':'repertoire-02-missa-do-galo','search':'archives'
  },
  'zh': {
   'home':'index','catalog':'publications','journal':'journal','repertoire':'repertoire','about':'about','author':'author','contact':'contact','projects':'projects','manifesto':'manifesto','press':'press',
   'notes':'notes-on-care','todos':'todos-ou-nenhum','essay':'caderno-01','article':'por-dentro-da-edicao','research':'research',
-  'circulation':'publishing-does-not-end','place':'where-does-this-table-look-from','space':'empty-space-editorial-decision','repertoire2':'repertoire-02-missa-do-galo'
+  'circulation':'publishing-does-not-end','place':'where-does-this-table-look-from','space':'empty-space-editorial-decision','repertoire2':'repertoire-02-missa-do-galo','search':'archive'
  }
 }
 NAV_KEYS = ['home','catalog','journal','repertoire','about','author','contact','projects','manifesto','press']
@@ -49,6 +49,10 @@ def e(value): return escape(str(value), quote=True)
 def path(lang,key): return f'/{lang}/{ROUTES[lang][key]}.html'
 def nl(value): return e(value).replace('\n','<br>')
 def paragraphs(values): return ''.join(f'<p>{e(v)}</p>' for v in values)
+def plain(value):
+ value=re.sub(r'<script[\\s\\S]*?</script>|<style[\\s\\S]*?</style>',' ',value,flags=re.I)
+ value=re.sub(r'<[^>]+>',' ',value)
+ return re.sub(r'\\s+',' ',unescape(value)).strip()
 def link(href,label,cls='text-link',external=False):
  return f'<a class="{cls}" href="{e(href)}"'+(' rel="noopener noreferrer"' if external else '')+f'>{e(label)}<span aria-hidden="true"> ↗</span></a>'
 def image(name,alt,cls='',eager=False):
@@ -208,6 +212,9 @@ def content(lang,key,d):
   old=LEGACY[lang]['manifesto'].replace('Fóscolo & Company Editora','Fóscolo & Company Edições')
   blocks=re.findall(r'<(?:p|h2|blockquote)\b[^>]*>[\s\S]*?</(?:p|h2|blockquote)>',old)
   return hero(d,d['manifestoTitle'],'',d['nav'][8],True)+'<article class="prose wrap manifesto-prose">'+''.join(blocks)+'</article>'+discovery(lang,d,key)
+ if key=='search':
+  q=d['search']
+  return hero(d,q['title'],q['intro'],q['nav'])+f'<section class="wrap section search-archive" data-search-page data-lang="{lang}" data-empty="{e(q["noResults"])}" data-one="{e(q["result"])}" data-many="{e(q["results"])}" data-all="{e(q["all"])}" data-open="{e(u["explore"])}"><form class="search-form" role="search"><label for="site-search" class="eyebrow">{e(q["nav"])}</label><div class="search-form-row"><input id="site-search" name="q" type="search" autocomplete="off" placeholder="{e(q["placeholder"])}"><button class="button dark" type="submit">{e(q["button"])}</button></div></form><p class="search-privacy">{e(q["privacy"])}</p><div class="search-status" aria-live="polite"></div><div class="search-results"></div></section>'
  raise ValueError(key)
 
 def title_for(key,d):
@@ -217,6 +224,7 @@ def title_for(key,d):
  if key=='essay': return d['journal']['originalTitle']
  if key=='article': return d['article']['title']
  if key=='research': return d['research']['title']
+ if key=='search': return d['search']['title']
  if key in ARTICLE_DATA: return d[ARTICLE_DATA[key]]['title']
  return d['nav'][NAV_INDEX[key]]
 
@@ -225,6 +233,7 @@ def desc_for(key,d):
  if key=='essay': return d['journal']['originalDesc']
  if key=='article': return d['article']['intro']
  if key=='research': return d['research']['intro']
+ if key=='search': return d['search']['intro']
  if key in d and isinstance(d[key],dict): return d[key].get('intro',d[key].get('description',d['home']['intro']))
  return d['home']['intro']
 
@@ -240,17 +249,24 @@ def page(lang,key,body,d,root=False):
  if key in ['notes','todos']:
   schema['mainEntity']={'@type':'Book','name':title,'author':{'@type':'Person','name':'Maria Carolina Fóscolo'},'inLanguage':'en' if key=='notes' else 'pt-BR','publisher':{'@type':'Organization','name':'Fóscolo & Company Edições'}}
   if key=='notes': schema['mainEntity']['bookFormat']='https://schema.org/Paperback';schema['mainEntity']['numberOfPages']=64
- footerlinks=''.join(link(path(lang,k),nav[NAV_INDEX[k]],'footer-link') for k in ['catalog','projects','manifesto','press','contact'])
+ footerlinks=''.join(link(path(lang,k),nav[NAV_INDEX[k]],'footer-link') for k in ['catalog','projects','manifesto','press','contact'])+link(path(lang,'search'),d['search']['nav'],'footer-link')
  return f'''<!doctype html>
 <html lang="{d['lang']}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(title)}{' | Fóscolo & Company' if key!='home' else ''}</title><meta name="description" content="{e(desc)}"><meta name="theme-color" content="#F5F2EB"><link rel="icon" href="/favicon.png"><link rel="canonical" href="{canonical}">{alternates}<link rel="alternate" hreflang="x-default" href="{ORIGIN+path('pt',key)}"><meta property="og:type" content="website"><meta property="og:site_name" content="Fóscolo & Company Edições"><meta property="og:locale" content="{d['locale']}"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{canonical}"><meta property="og:image" content="{ogimg}"><meta name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="/assets/fonts/fonts.css"><link rel="stylesheet" href="/assets/fonts/chinese.css"><link rel="stylesheet" href="/assets/site.css"><script src="/assets/site.js" defer></script><script type="application/ld+json">{json.dumps(schema,ensure_ascii=False).replace('</','<\\/')}</script></head>
-<body><a class="skip-link" href="#main">{e(u['skip'])}</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="{path(lang,'home')}" aria-label="Fóscolo & Company — {e(nav[0])}"><img src="/assets/images/logo.png" width="240" height="85" alt="Fóscolo & Company Edições"></a><button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" data-open="{e(u['open'])}" data-close="{e(u['close'])}" aria-label="{e(u['open'])}" hidden>{e(u['menu'])}<span aria-hidden="true"> +</span></button><nav id="main-nav" class="main-nav" aria-label="{e(u['menu'])}">{navhtml}</nav></div><div class="wrap language-bar"><span>{e(u['edition'])}</span><nav aria-label="{e(u['languages'])}">{languages}</nav></div></header>
+<body><a class="skip-link" href="#main">{e(u['skip'])}</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="{path(lang,'home')}" aria-label="Fóscolo & Company — {e(nav[0])}"><img src="/assets/images/logo.png" width="240" height="85" alt="Fóscolo & Company Edições"></a><button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" data-open="{e(u['open'])}" data-close="{e(u['close'])}" aria-label="{e(u['open'])}" hidden>{e(u['menu'])}<span aria-hidden="true"> +</span></button><nav id="main-nav" class="main-nav" aria-label="{e(u['menu'])}">{navhtml}</nav></div><div class="wrap language-bar"><div class="language-tools"><span>{e(u['edition'])}</span><a class="archive-link" href="{path(lang,'search')}"{(' aria-current="page"' if key=='search' else '')}>{e(d['search']['nav'])}</a></div><nav aria-label="{e(u['languages'])}">{languages}</nav></div></header>
 <main id="main">{body}</main><footer class="site-footer"><div class="wrap footer-grid"><div><p class="footer-wordmark">FÓSCOLO<br>& COMPANY<span>EDIÇÕES</span></p><p>{nl(d['home']['title'])}</p></div><nav aria-label="{e(u['more'])}">{footerlinks}</nav><div><p class="eyebrow">{e(d['contact']['location'])}</p><p><a href="mailto:{EMAIL}">{EMAIL}</a></p>{link(INSTAGRAM,'Instagram','footer-link',True)}</div></div><div class="wrap footer-bottom"><span>© 2026 Fóscolo & Company Edições. {e(u['rights'])}</span><span>{e(u['updated'])}</span></div></footer></body></html>'''
 
 def build():
  outputs=[]
+ search_dir=ROOT/'assets'/'search';search_dir.mkdir(parents=True,exist_ok=True)
  for lang,d in DATA.items():
+  docs=[]
   for key,slug in ROUTES[lang].items():
-   dest=ROOT/lang/(slug+'.html');dest.parent.mkdir(exist_ok=True);dest.write_text(page(lang,key,content(lang,key,d),d));outputs.append(path(lang,key))
+   body=content(lang,key,d)
+   dest=ROOT/lang/(slug+'.html');dest.parent.mkdir(exist_ok=True);dest.write_text(page(lang,key,body,d));outputs.append(path(lang,key))
+   if key not in {'home','search'}:
+    meta,title,desc=route_meta(d,key)
+    docs.append({'key':key,'meta':plain(meta),'title':plain(title),'desc':plain(desc),'url':path(lang,key),'text':plain(body)})
+  (search_dir/f'{lang}.json').write_text(json.dumps(docs,ensure_ascii=False,separators=(',',':')))
  (ROOT/'index.html').write_text(page('pt','home',content('pt','home',DATA['pt']),DATA['pt'],root=True))
  (ROOT/'404.html').write_text('<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Página não encontrada | Fóscolo & Company</title><link rel="stylesheet" href="/assets/fonts/chinese.css"><link rel="stylesheet" href="/assets/site.css"></head><body><main class="wrap page-hero"><p class="eyebrow">404</p><h1>Esta página mudou de lugar.</h1><p>Encontre livros, leituras e informações da editora a partir da página inicial.</p><a class="button dark" href="/pt/index.html">Ir para o início</a></main></body></html>')
  sitemap='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{ORIGIN+p}</loc><lastmod>2026-09-29</lastmod></url>\n' for p in ['/']+outputs)+'</urlset>\n'

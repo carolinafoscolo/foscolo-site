@@ -23,6 +23,9 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Check JavaScript syntax
+        run: node --check assets/site.js
+
       - name: Build pages
         run: python3 scripts/build.py
 
