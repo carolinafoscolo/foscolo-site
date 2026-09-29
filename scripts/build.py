@@ -21,7 +21,7 @@ ROUTES = {
  'en': {
   'home':'index','catalog':'publications','journal':'journal','repertoire':'repertoire','about':'about','author':'author','contact':'contact','projects':'projects','manifesto':'manifesto','press':'press',
   'notes':'notes-on-care','todos':'todos-ou-nenhum','essay':'caderno-01','article':'por-dentro-da-edicao','research':'research',
-  'circulation':'publishing-does-not-end','place':'where-does-this-table-look-from','space':'empty-space-is-an-editorial-decision','repertoire2':'repertoire-02-missa-do-galo','search':'archive','now':'now','topics':'topics','now':'now','topics':'themes'
+  'circulation':'publishing-does-not-end','place':'where-does-this-table-look-from','space':'empty-space-is-an-editorial-decision','repertoire2':'repertoire-02-missa-do-galo','search':'archive','now':'now','topics':'themes'
  },
  'es': {
   'home':'index','catalog':'publicaciones','journal':'cuaderno','repertoire':'repertorio','about':'sobre','author':'autora','contact':'contacto','projects':'proyectos','manifesto':'manifiesto','press':'prensa',
@@ -36,7 +36,7 @@ ROUTES = {
  'zh': {
   'home':'index','catalog':'publications','journal':'journal','repertoire':'repertoire','about':'about','author':'author','contact':'contact','projects':'projects','manifesto':'manifesto','press':'press',
   'notes':'notes-on-care','todos':'todos-ou-nenhum','essay':'caderno-01','article':'por-dentro-da-edicao','research':'research',
-  'circulation':'publishing-does-not-end','place':'where-does-this-table-look-from','space':'empty-space-editorial-decision','repertoire2':'repertoire-02-missa-do-galo','search':'archive'
+  'circulation':'publishing-does-not-end','place':'where-does-this-table-look-from','space':'empty-space-editorial-decision','repertoire2':'repertoire-02-missa-do-galo','search':'archive','now':'now','topics':'topics'
  }
 }
 NAV_KEYS = ['home','catalog','journal','repertoire','about','author','contact','projects','manifesto','press']
