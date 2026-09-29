@@ -112,3 +112,15 @@
 .path-links li{padding:10px 0;border-bottom:1px solid var(--line)}
 .path-links .text-link{margin:0}
 @media(max-width:760px){.path-grid{grid-template-columns:1fr}}
+
+/* Current state / Now */
+.now-books{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.now-book{border:1px solid var(--line);padding:30px;background:var(--paper)}
+.now-book h3{font-size:1.5rem;margin-top:14px}
+.now-book>p:not(.eyebrow){font-size:13px;margin-top:18px}
+.now-book .button{margin-top:24px}
+.now-circulation{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.now-circulation article{border-top:2px solid var(--gold);padding-top:20px}
+.now-circulation h3{font-size:1.25rem;margin-top:12px}
+.now-circulation p:not(.eyebrow){font-size:13px;margin-top:15px}
+@media(max-width:800px){.now-books,.now-circulation{grid-template-columns:1fr}}
