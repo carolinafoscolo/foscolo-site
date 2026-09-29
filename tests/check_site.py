@@ -64,8 +64,18 @@ def main():
    errors.append(f'{lang}: unpublished Todos excerpt returned')
   notes=(ROOT/build.path(lang,'notes').lstrip('/')).read_text()
   if build.BR not in notes:errors.append(f'{lang}: Brazilian Amazon link missing from Notes')
+  home=(ROOT/build.path(lang,'home').lstrip('/')).read_text()
+  if home.count('class="latest-card"')!=4:errors.append(f'{lang}: homepage should show four latest cards')
+  if build.path(lang,'now') not in home:errors.append(f'{lang}: homepage missing Now link')
+  if build.path(lang,'topics') not in home:errors.append(f'{lang}: homepage missing Topics link')
+  now_page=(ROOT/build.path(lang,'now').lstrip('/')).read_text()
+  for target in ['notes','todos','research','journal']:
+   if build.path(lang,target) not in now_page:errors.append(f'{lang}: Now page missing {target} path')
+  topics_page=(ROOT/build.path(lang,'topics').lstrip('/')).read_text()
+  if topics_page.count('class="topic-card"')!=len(data['topics']['items']):errors.append(f'{lang}: topic page count mismatch')
   search_page=(ROOT/build.path(lang,'search').lstrip('/')).read_text()
   if 'data-search-page' not in search_page:errors.append(f'{lang}: archive search UI missing')
+  if search_page.count('class="topic-chip"')!=len(data['topics']['items']):errors.append(f'{lang}: search page topic chips missing')
   index_file=ROOT/'assets'/'search'/f'{lang}.json'
   if not index_file.is_file():errors.append(f'{lang}: search index missing')
   else:
