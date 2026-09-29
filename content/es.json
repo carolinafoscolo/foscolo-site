@@ -632,5 +632,17 @@
     "title": "La duda está en la primera frase.",
     "desc": "Una lectura de la apertura de “Missa do Galo”: recordar una conversación no es lo mismo que comprender lo que significó.",
     "cta": "Leer el análisis"
+  },
+  "search": {
+    "title": "Archivo & búsqueda",
+    "intro": "Busque libros, investigaciones, textos del Cuaderno, lecturas del Repertorio y páginas de la editorial. El índice reúne solamente lo que ya es público en el sitio.",
+    "nav": "Archivo & búsqueda",
+    "placeholder": "Busque salud, edición, Pampulha, Machado, circulación…",
+    "button": "Buscar",
+    "all": "Todo el archivo",
+    "noResults": "Ninguna página pública corresponde a esta búsqueda.",
+    "results": "resultados",
+    "result": "resultado",
+    "privacy": "La búsqueda ocurre en su navegador y consulta solamente el índice público del sitio."
   }
 }
