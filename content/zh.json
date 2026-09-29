@@ -644,5 +644,15 @@
     "results": "条结果",
     "result": "条结果",
     "privacy": "搜索在您的浏览器中完成，只查询网站的公开索引。"
+  },
+  "now": {
+    "title": "Fóscolo 现在",
+    "intro": "现在已经可以阅读什么、哪些作品仍在准备，以及这些工作正在何处流通。",
+    "nav": "现在",
+    "booksTitle": "现在的书籍",
+    "journalTitle": "编辑手记最新内容",
+    "researchTitle": "正在流通",
+    "archiveText": "其余公开内容仍可在可搜索档案中找到。",
+    "archiveCta": "打开档案与搜索"
   }
 }
