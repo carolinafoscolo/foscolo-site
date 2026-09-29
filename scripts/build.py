@@ -214,7 +214,7 @@ def content(lang,key,d):
   return hero(d,d['manifestoTitle'],'',d['nav'][8],True)+'<article class="prose wrap manifesto-prose">'+''.join(blocks)+'</article>'+discovery(lang,d,key)
  if key=='search':
   q=d['search']
-  return hero(d,q['title'],q['intro'],q['nav'])+f'<section class="wrap section search-archive" data-search-page data-lang="{lang}" data-empty="{e(q["noResults"])}" data-one="{e(q["result"])}" data-many="{e(q["results"])}" data-all="{e(q["all"])}"><form class="search-form" role="search"><label for="site-search" class="eyebrow">{e(q["nav"])}</label><div class="search-form-row"><input id="site-search" name="q" type="search" autocomplete="off" placeholder="{e(q["placeholder"])}"><button class="button dark" type="submit">{e(q["button"])}</button></div></form><p class="search-privacy">{e(q["privacy"])}</p><div class="search-status" aria-live="polite"></div><div class="search-results"></div></section>'
+  return hero(d,q['title'],q['intro'],q['nav'])+f'<section class="wrap section search-archive" data-search-page data-lang="{lang}" data-empty="{e(q["noResults"])}" data-one="{e(q["result"])}" data-many="{e(q["results"])}" data-all="{e(q["all"])}" data-open="{e(u["explore"])}"><form class="search-form" role="search"><label for="site-search" class="eyebrow">{e(q["nav"])}</label><div class="search-form-row"><input id="site-search" name="q" type="search" autocomplete="off" placeholder="{e(q["placeholder"])}"><button class="button dark" type="submit">{e(q["button"])}</button></div></form><p class="search-privacy">{e(q["privacy"])}</p><div class="search-status" aria-live="polite"></div><div class="search-results"></div></section>'
  raise ValueError(key)
 
 def title_for(key,d):
