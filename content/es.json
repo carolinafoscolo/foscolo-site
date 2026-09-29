@@ -1,18 +1,288 @@
 {
-"lang":"es","label":"Español","locale":"es_ES",
-"nav":["Inicio","Catálogo","Cuaderno","Repertorio","La editorial","Autora","Contacto","Proyectos","Manifiesto","Prensa"],
-"ui":{"menu":"Menú","skip":"Ir al contenido","languages":"Idiomas","close":"Cerrar menú","open":"Abrir menú","read":"Leer el texto","discover":"Conocer el libro","catalog":"Explorar el catálogo","published":"Publicado","forthcoming":"En preparación","back":"Volver al Cuaderno","contact":"Hablemos","download":"Leer muestra en PDF","cover":"Descargar cubierta","press":"Materiales de prensa","instagram":"Seguir en Instagram","edition":"Editorial independiente · Belo Horizonte","updated":"Edición del sitio · septiembre de 2026","rights":"Todos los derechos reservados.","contents":"En este libro","original":"Texto original en portugués","proof":"Imagen del interior en preparación","buyBR":"Ver edición brasileña en Amazon","buyInternational":"Ver ediciones internacionales","availability":"Amazon informa los precios, las existencias y los plazos de entrega.","sampleNote":"Muestra de la edición internacional, en inglés.","formats":"Elige tu edición","email":"Escribir por correo","more":"Nuestro trabajo editorial","previous":"Ensayo inaugural · agosto de 2026","privacy":"Este sitio no tiene formularios de registro ni cookies propias de publicidad. Los servicios externos aplican sus propias políticas de privacidad."},
-"home":{"eyebrow":"Historia · Ensayo · Literatura","title":"Las ideas encienden.\nLas historias permanecen.","intro":"Una editorial independiente en Belo Horizonte, Brasil. Libros, imágenes e investigaciones que encuentran otras maneras de llegar al lector.","feature":"Un nuevo libro en preparación","featureText":"Trece poemas y tres crónicas ensayísticas sobre materia, cuerpo, conocimiento y transformación.","catalogTitle":"Dos obras. Muchas entradas.","catalogIntro":"Investigación, poesía, ensayo e imagen: conoce nuestros libros y el trabajo en preparación.","journalTitle":"El trabajo entre las páginas","journalIntro":"Decisiones editoriales, notas de lectura y relaciones entre imágenes. Sigue cómo toman forma los libros.","aboutTitle":"Desde Belo Horizonte,\nhacia otras lecturas.","aboutText":"Fóscolo & Company Edições reúne investigación histórica, escritura ensayística y creación literaria. Cada publicación necesita una forma: el orden de los textos, una imagen, el ritmo de una página."},
-"notes":{"subtitle":"Investigación, fragmentos e imágenes de Brasil","description":"Investigación histórica, poemas e imágenes en un libro sobre cuidado, riesgo y conocimiento. ¿Cómo continúan las personas y las instituciones cuando los protocolos ya no abarcan la experiencia?","sections":[["Investigación","Archivos, historia oral e instituciones sanitarias brasileñas abren preguntas sobre memoria, incertidumbre y responsabilidad pública."],["Escritura","Poemas, ensayos y fragmentos cambian el ritmo y acercan el pensamiento a la experiencia cotidiana."],["Imagen","Paisajes y registros visuales participan en la investigación y atienden a lo que permanece en los márgenes."]],"brTitle":"Edición impresa brasileña","brText":"Libro en inglés, con 64 páginas interiores, formato de 10 × 15 cm e impresión a color. La cubierta presenta un paisaje de Pampulha.","internationalTitle":"Ediciones internacionales","internationalText":"Kindle, tapa blanda y tapa dura tienen anuncios propios. Paginación, acabado, ISBN y disponibilidad dependen de la edición.","languageLabel":"Idioma del libro","languageValue":"Inglés","authorLabel":"Autora","publisherLabel":"Editorial","yearLabel":"Año","pagesLabel":"Interior brasileño","pagesValue":"64 páginas","sizeLabel":"Formato brasileño","sampleTitle":"Abre algunas páginas","sampleText":"Una selección de investigación, poesía y fotografía ofrece una entrada al libro. La muestra corresponde a la edición internacional."},
-"todos":{"subtitle":"Libro I · A matéria aprende a respirar","description":"Un avión interrumpe el aterrizaje. El vidrio conserva tensiones después del fuego. Una hoja se curva antes de ser libro. Trece poemas y tres crónicas ensayísticas observan cómo cambian las condiciones para continuar.","status":"En preparación editorial. La editorial anunciará la fecha de lanzamiento y las condiciones de venta.","question":"¿Cómo cambiar sin desaparecer?","body":"Materia, cuerpo y conocimiento se acercan sin perder sus diferencias. Hierro, agua, luz, presión y memoria se resisten a las comparaciones fáciles.","body2":"Las imágenes interrumpen el recorrido y alteran el ritmo. El libro reúne presentación, prólogo, dieciséis textos, epílogo y nota de fuentes.","excerptTitle":"Antes de la primera frase","excerptIntro":"El prólogo comienza con una hoja de papel. Abrir un libro ya forma parte de la lectura.","excerpt":"Uma folha sozinha quase não oferece resistência.","excerpt2":"Antes da primeira frase, existe esse gesto mínimo.\nSeparar duas superfícies que estavam encostadas.\nSustentar a abertura.\nO resto começa depois.","excerptCredit":"Del prólogo de Todos ou nenhum? — Libro I","inside":"Por dentro de la edición","insideText":"Conoce cómo el prólogo conecta el objeto físico con el inicio de la lectura.","languageLabel":"Idioma del libro","languageValue":"Portugués","formLabel":"Composición","formValue":"13 poemas · 3 crónicas ensayísticas"},
-"catalog":{"title":"Libros con más\nde una entrada.","intro":"Investigación, literatura e imagen. Cada obra tiene su presentación, materiales de lectura y estado de publicación.","linesTitle":"Líneas que se encuentran","lines":[["Historia e investigación","Salud, instituciones, archivos, memoria y circulación pública del conocimiento."],["Ensayo y literatura","Poemas, crónicas y escrituras que mantienen abiertas las preguntas."],["Imagen y territorio","Fotografía, paisaje y relaciones entre lugares y experiencias."]]},
-"journal":{"title":"Caderno Fóscolo","intro":"Ensayos, notas y decisiones editoriales. Un espacio para lo que ocurre entre la investigación, la escritura y la página.","originalTitle":"No existe una única manera de entrar en este libro.","originalDesc":"El ensayo inaugural sobre investigación, fragmento, poema e imagen en Notes on Care.","newTitle":"Un libro comienza antes de la primera frase.","newDesc":"Por dentro de Todos ou nenhum?: la hoja, el prólogo y el gesto de abrir.","newMeta":"Por dentro de la edición · septiembre de 2026","archiveTitle":"Lecturas del Cuaderno","instagramText":"Caderno Fóscolo y Repertório Fóscolo también circulan en el Instagram de la editorial."},
-"article":{"title":"Un libro comienza antes de la primera frase.","intro":"Una decisión editorial en Todos ou nenhum? — Libro I: comenzar con una hoja.","paragraphs":["Una hoja se curva con su propio peso. Reunida con otras, forma una estructura: páginas, costura, pegamento y lomo. El prólogo sigue esa transformación antes del primer poema.","Esta entrada acerca el libro que leemos y el objeto que sostenemos. Dirige la atención al intervalo que debe abrirse entre dos páginas para que una frase sea visible.","La relación atraviesa el volumen. Hierro, vidrio, luz y papel conservan comportamientos y límites propios. Acercarlos a la experiencia humana exige reconocer dónde termina la comparación.","Los grabados interrumpen la secuencia verbal. Las páginas de color cambian el campo de atención antes de una prosa más larga. La forma participa en el ritmo sin explicar el texto.","El prólogo ofrece una puerta de entrada. Sostener una apertura precede a la lectura; las relaciones que siguen pertenecen a cada lector."],"caption":"Página del prólogo en la prueba editorial. Libro en preparación."},
-"repertoire":{"title":"Repertório Fóscolo","intro":"Referencias que vuelven a la mesa. Lecturas, fotografías y decisiones editoriales adquieren sentido en las relaciones que construimos entre ellas.","heading":"Guardar no es construir repertorio.","paragraphs":["Una imagen guardada aún espera una pregunta. El trabajo comienza al volver a ella: ¿qué llamó la atención, en qué contexto se produjo y qué cambia junto a otra imagen?","Repertório Fóscolo es una serie sobre ese regreso. Un detalle de un libro, un paisaje o un encuadre pueden abrir una relación. Identificar la fuente y probar la conexión forman parte de la lectura."],"lenses":[["Volver","Mirar de nuevo lo conocido y advertir un detalle antes ignorado."],["Relacionar","Acercar textos e imágenes sin borrar sus diferencias."],["Contextualizar","Reconocer autoría, circunstancias y límites de interpretación."]],"closing":"Sigue la serie en Instagram y descubre los libros que alimentan estas conversaciones."},
-"about":{"title":"Una editorial hecha\nde decisiones.","intro":"Fóscolo & Company Edições es un sello independiente de Belo Horizonte, Brasil, dedicado a historia, ensayo, literatura e investigación.","paragraphs":["El catálogo nace del encuentro entre investigación histórica, escritura y forma visual. Publicar implica seleccionar, organizar, revisar y encontrar maneras de hacer circular el trabajo.","Notes on Care, Risk & Knowledge abrió este recorrido. Todos ou nenhum? — Libro I amplía la presencia de poesía y crónica. El Cuaderno y el Repertorio acompañan preguntas que continúan fuera de los libros."],"values":[["Rigor","Cuidar las fuentes, los argumentos y la precisión de las palabras."],["Autonomía","Construir un catálogo autoral con independencia intelectual."],["Circulación","Crear oportunidades de encuentro entre obras y lectores."]],"manifestoTitle":"Algunas historias no deben desaparecer.","manifestoText":"Lee el manifiesto que orienta nuestro trabajo."},
-"projects":{"title":"De la investigación\na la página.","intro":"Lectura, organización, preparación del texto y diseño visual. Conoce los proyectos que dan forma a esta práctica editorial.","steps":[["Investigación y escucha","Comprender el material, sus fuentes y sus preguntas."],["Edición y forma","Trabajar la secuencia, el texto, las imágenes y los intervalos de lectura."],["Publicación y circulación","Preparar el libro y sus materiales para encontrar lectores."]],"contactText":"Para conversar sobre un proyecto, presenta el material, su estado actual y el objetivo de publicación."},
-"author":{"title":"Maria Carolina\nFóscolo","intro":"Autora, editora y estudiante de Historia en la Universidad Federal de Minas Gerais. Vive y trabaja en Belo Horizonte, Brasil.","paragraphs":["Su investigación reúne historia de la salud, estudios organizacionales, memoria e historia oral. Entre 2023 y 2026 realizó investigación de grado en FACE/UFMG sobre el Hospital Eduardo de Menezes y las respuestas institucionales a crisis sanitarias.","Fundó Fóscolo & Company Edições y es autora de Notes on Care, Risk & Knowledge. En Todos ou nenhum? — Libro I, la poesía y la crónica acercan materia, cuerpo y conocimiento.","Su trabajo también incluye formación docente, mediación cultural y comunicación pública de la investigación."],"researchTitle":"Investigación en curso","researchText":"From Isolate to Identity: Belém and the Making of Arbovirus Difference, 1954–1969 investiga históricamente la clasificación, la documentación y la circulación del conocimiento científico.","orcid":"Consultar ORCID"},
-"press":{"title":"Para leer, presentar\ny compartir.","intro":"Información editorial, cubiertas y muestras para reseñas, entrevistas, programación cultural y librerías.","bioTitle":"Biografía breve","bio":"Maria Carolina Fóscolo es autora, editora y estudiante de Historia en la UFMG. Investiga salud, instituciones, memoria y conocimiento. Fundó Fóscolo & Company Edições, en Belo Horizonte, y es autora de Notes on Care, Risk & Knowledge y del libro en preparación Todos ou nenhum? — Libro I: A matéria aprende a respirar.","request":"Para entrevistas, ejemplares de reseña, imágenes en alta resolución o información sobre lanzamientos, escribe a la editorial.","todosNote":"Libro en preparación. La imagen es la portada interior de la prueba editorial, no la cubierta final.","todosAsset":"Ver portada interior de la prueba"},
-"contact":{"title":"Toda conversación\ncomienza con una lectura.","intro":"Para libros, prensa, proyectos editoriales o colaboraciones, escribe a Fóscolo & Company.","subject":"Contacto desde el sitio Fóscolo & Company","tipsTitle":"Al presentar un proyecto","tips":["Describe brevemente el material.","Indica su estado actual y el objetivo de publicación.","Incluye el plazo deseado, cuando corresponda."],"location":"Belo Horizonte · Minas Gerais · Brasil","socialText":"Libros, procesos de edición y series editoriales en @foscolocompany."},
-"manifestoTitle":"Algunas historias\nno deben desaparecer."
+  "lang": "es",
+  "label": "Español",
+  "locale": "es_ES",
+  "nav": [
+    "Inicio",
+    "Catálogo",
+    "Cuaderno",
+    "Repertorio",
+    "La editorial",
+    "Autora",
+    "Contacto",
+    "Proyectos",
+    "Manifiesto",
+    "Prensa"
+  ],
+  "ui": {
+    "menu": "Menú",
+    "skip": "Ir al contenido",
+    "languages": "Idiomas",
+    "close": "Cerrar menú",
+    "open": "Abrir menú",
+    "read": "Leer el texto",
+    "discover": "Conocer el libro",
+    "catalog": "Explorar el catálogo",
+    "published": "Publicado",
+    "forthcoming": "En preparación",
+    "back": "Volver al Cuaderno",
+    "contact": "Hablemos",
+    "download": "Leer muestra en PDF",
+    "cover": "Descargar cubierta",
+    "press": "Materiales de prensa",
+    "instagram": "Seguir en Instagram",
+    "edition": "Editorial independiente · Belo Horizonte",
+    "updated": "Edición del sitio · septiembre de 2026",
+    "rights": "Todos los derechos reservados.",
+    "contents": "En este libro",
+    "original": "Texto original en portugués",
+    "proof": "Imagen del interior en preparación",
+    "buyBR": "Ver edición brasileña en Amazon",
+    "buyInternational": "Ver ediciones internacionales",
+    "availability": "Amazon informa los precios, las existencias y los plazos de entrega.",
+    "sampleNote": "Muestra de la edición internacional, en inglés.",
+    "formats": "Elige tu edición",
+    "email": "Escribir por correo",
+    "more": "Nuestro trabajo editorial",
+    "previous": "Ensayo inaugural · agosto de 2026",
+    "privacy": "Este sitio no tiene formularios de registro ni cookies propias de publicidad. Los servicios externos aplican sus propias políticas de privacidad."
+  },
+  "home": {
+    "eyebrow": "Historia · Ensayo · Literatura",
+    "title": "Las ideas encienden.\nLas historias permanecen.",
+    "intro": "Una editorial independiente en Belo Horizonte, Brasil. Libros, imágenes e investigaciones que encuentran otras maneras de llegar al lector.",
+    "feature": "Un nuevo libro en preparación",
+    "featureText": "Trece poemas y tres crónicas ensayísticas sobre materia, cuerpo, conocimiento y transformación.",
+    "catalogTitle": "Dos obras. Muchas entradas.",
+    "catalogIntro": "Investigación, poesía, ensayo e imagen: conoce nuestros libros y el trabajo en preparación.",
+    "journalTitle": "El trabajo entre las páginas",
+    "journalIntro": "Decisiones editoriales, notas de lectura y relaciones entre imágenes. Sigue cómo toman forma los libros.",
+    "aboutTitle": "Desde Belo Horizonte,\nhacia otras lecturas.",
+    "aboutText": "Fóscolo & Company Edições reúne investigación histórica, escritura ensayística y creación literaria. Cada publicación necesita una forma: el orden de los textos, una imagen, el ritmo de una página."
+  },
+  "notes": {
+    "subtitle": "Investigación, fragmentos e imágenes de Brasil",
+    "description": "Investigación histórica, poemas e imágenes en un libro sobre cuidado, riesgo y conocimiento. ¿Cómo continúan las personas y las instituciones cuando los protocolos ya no abarcan la experiencia?",
+    "sections": [
+      [
+        "Investigación",
+        "Archivos, historia oral e instituciones sanitarias brasileñas abren preguntas sobre memoria, incertidumbre y responsabilidad pública."
+      ],
+      [
+        "Escritura",
+        "Poemas, ensayos y fragmentos cambian el ritmo y acercan el pensamiento a la experiencia cotidiana."
+      ],
+      [
+        "Imagen",
+        "Paisajes y registros visuales participan en la investigación y atienden a lo que permanece en los márgenes."
+      ]
+    ],
+    "brTitle": "Edición impresa brasileña",
+    "brText": "Libro en inglés, con 64 páginas interiores, formato de 10 × 15 cm e impresión a color. La cubierta presenta un paisaje de Pampulha.",
+    "internationalTitle": "Ediciones internacionales",
+    "internationalText": "Kindle, tapa blanda y tapa dura tienen anuncios propios. Paginación, acabado, ISBN y disponibilidad dependen de la edición.",
+    "languageLabel": "Idioma del libro",
+    "languageValue": "Inglés",
+    "authorLabel": "Autora",
+    "publisherLabel": "Editorial",
+    "yearLabel": "Año",
+    "pagesLabel": "Interior brasileño",
+    "pagesValue": "64 páginas",
+    "sizeLabel": "Formato brasileño",
+    "sampleTitle": "Abre algunas páginas",
+    "sampleText": "Una selección de investigación, poesía y fotografía ofrece una entrada al libro. La muestra corresponde a la edición internacional."
+  },
+  "todos": {
+    "subtitle": "Libro I · A matéria aprende a respirar",
+    "description": "Un avión interrumpe el aterrizaje. El vidrio conserva tensiones después del fuego. Una hoja se curva antes de ser libro. Trece poemas y tres crónicas ensayísticas observan cómo cambian las condiciones para continuar.",
+    "status": "En preparación editorial. La editorial anunciará la fecha de lanzamiento y las condiciones de venta.",
+    "question": "¿Cómo cambiar sin desaparecer?",
+    "body": "Materia, cuerpo y conocimiento se acercan sin perder sus diferencias. Hierro, agua, luz, presión y memoria se resisten a las comparaciones fáciles.",
+    "body2": "Las imágenes interrumpen el recorrido y alteran el ritmo. El libro reúne presentación, prólogo, dieciséis textos, epílogo y nota de fuentes.",
+    "excerptTitle": "Antes de la primera frase",
+    "excerptIntro": "El prólogo comienza con una hoja de papel. Abrir un libro ya forma parte de la lectura.",
+    "excerpt": "Uma folha sozinha quase não oferece resistência.",
+    "excerpt2": "Antes da primeira frase, existe esse gesto mínimo.\nSeparar duas superfícies que estavam encostadas.\nSustentar a abertura.\nO resto começa depois.",
+    "excerptCredit": "Del prólogo de Todos ou nenhum? — Libro I",
+    "inside": "Por dentro de la edición",
+    "insideText": "Conoce cómo el prólogo conecta el objeto físico con el inicio de la lectura.",
+    "languageLabel": "Idioma del libro",
+    "languageValue": "Portugués",
+    "formLabel": "Composición",
+    "formValue": "13 poemas · 3 crónicas ensayísticas"
+  },
+  "catalog": {
+    "title": "Libros con más\nde una entrada.",
+    "intro": "Investigación, literatura e imagen. Cada obra tiene su presentación, materiales de lectura y estado de publicación.",
+    "linesTitle": "Líneas que se encuentran",
+    "lines": [
+      [
+        "Historia e investigación",
+        "Salud, instituciones, archivos, memoria y circulación pública del conocimiento."
+      ],
+      [
+        "Ensayo y literatura",
+        "Poemas, crónicas y escrituras que mantienen abiertas las preguntas."
+      ],
+      [
+        "Imagen y territorio",
+        "Fotografía, paisaje y relaciones entre lugares y experiencias."
+      ]
+    ]
+  },
+  "journal": {
+    "title": "Caderno Fóscolo",
+    "intro": "Ensayos, notas y decisiones editoriales. Un espacio para lo que ocurre entre la investigación, la escritura y la página.",
+    "originalTitle": "No existe una única manera de entrar en este libro.",
+    "originalDesc": "El ensayo inaugural sobre investigación, fragmento, poema e imagen en Notes on Care.",
+    "newTitle": "Un libro comienza antes de la primera frase.",
+    "newDesc": "Por dentro de Todos ou nenhum?: la hoja, el prólogo y el gesto de abrir.",
+    "newMeta": "Por dentro de la edición · septiembre de 2026",
+    "archiveTitle": "Lecturas del Cuaderno",
+    "instagramText": "Caderno Fóscolo y Repertório Fóscolo también circulan en el Instagram de la editorial."
+  },
+  "article": {
+    "title": "Un libro comienza antes de la primera frase.",
+    "intro": "Una decisión editorial en Todos ou nenhum? — Libro I: comenzar con una hoja.",
+    "paragraphs": [
+      "Una hoja se curva con su propio peso. Reunida con otras, forma una estructura: páginas, costura, pegamento y lomo. El prólogo sigue esa transformación antes del primer poema.",
+      "Esta entrada acerca el libro que leemos y el objeto que sostenemos. Dirige la atención al intervalo que debe abrirse entre dos páginas para que una frase sea visible.",
+      "La relación atraviesa el volumen. Hierro, vidrio, luz y papel conservan comportamientos y límites propios. Acercarlos a la experiencia humana exige reconocer dónde termina la comparación.",
+      "Los grabados interrumpen la secuencia verbal. Las páginas de color cambian el campo de atención antes de una prosa más larga. La forma participa en el ritmo sin explicar el texto.",
+      "El prólogo ofrece una puerta de entrada. Sostener una apertura precede a la lectura; las relaciones que siguen pertenecen a cada lector."
+    ],
+    "caption": "Página del prólogo en la prueba editorial. Libro en preparación."
+  },
+  "repertoire": {
+    "title": "Repertório Fóscolo",
+    "intro": "Referencias que vuelven a la mesa. Lecturas, fotografías y decisiones editoriales adquieren sentido en las relaciones que construimos entre ellas.",
+    "heading": "Guardar no es construir repertorio.",
+    "paragraphs": [
+      "Una imagen guardada aún espera una pregunta. El trabajo comienza al volver a ella: ¿qué llamó la atención, en qué contexto se produjo y qué cambia junto a otra imagen?",
+      "Repertório Fóscolo es una serie sobre ese regreso. Un detalle de un libro, un paisaje o un encuadre pueden abrir una relación. Identificar la fuente y probar la conexión forman parte de la lectura."
+    ],
+    "lenses": [
+      [
+        "Volver",
+        "Mirar de nuevo lo conocido y advertir un detalle antes ignorado."
+      ],
+      [
+        "Relacionar",
+        "Acercar textos e imágenes sin borrar sus diferencias."
+      ],
+      [
+        "Contextualizar",
+        "Reconocer autoría, circunstancias y límites de interpretación."
+      ]
+    ],
+    "closing": "Sigue la serie en Instagram y descubre los libros que alimentan estas conversaciones."
+  },
+  "about": {
+    "title": "Una editorial hecha\nde decisiones.",
+    "intro": "Fóscolo & Company Edições es un sello independiente de Belo Horizonte, Brasil, dedicado a historia, ensayo, literatura e investigación.",
+    "paragraphs": [
+      "El catálogo nace del encuentro entre investigación histórica, escritura y forma visual. Publicar implica seleccionar, organizar, revisar y encontrar maneras de hacer circular el trabajo.",
+      "Notes on Care, Risk & Knowledge abrió este recorrido. Todos ou nenhum? — Libro I amplía la presencia de poesía y crónica. El Cuaderno y el Repertorio acompañan preguntas que continúan fuera de los libros."
+    ],
+    "values": [
+      [
+        "Rigor",
+        "Cuidar las fuentes, los argumentos y la precisión de las palabras."
+      ],
+      [
+        "Autonomía",
+        "Construir un catálogo autoral con independencia intelectual."
+      ],
+      [
+        "Circulación",
+        "Crear oportunidades de encuentro entre obras y lectores."
+      ]
+    ],
+    "manifestoTitle": "Algunas historias no deben desaparecer.",
+    "manifestoText": "Lee el manifiesto que orienta nuestro trabajo."
+  },
+  "projects": {
+    "title": "De la investigación\na la página.",
+    "intro": "Lectura, organización, preparación del texto y diseño visual. Conoce los proyectos que dan forma a esta práctica editorial.",
+    "steps": [
+      [
+        "Investigación y escucha",
+        "Comprender el material, sus fuentes y sus preguntas."
+      ],
+      [
+        "Edición y forma",
+        "Trabajar la secuencia, el texto, las imágenes y los intervalos de lectura."
+      ],
+      [
+        "Publicación y circulación",
+        "Preparar el libro y sus materiales para encontrar lectores."
+      ]
+    ],
+    "contactText": "Para conversar sobre un proyecto, presenta el material, su estado actual y el objetivo de publicación."
+  },
+  "author": {
+    "title": "Maria Carolina\nFóscolo",
+    "intro": "Autora, editora y estudiante de Historia en la Universidad Federal de Minas Gerais. Vive y trabaja en Belo Horizonte, Brasil.",
+    "paragraphs": [
+      "Su investigación reúne historia de la salud, estudios organizacionales, memoria e historia oral. Entre 2023 y 2026 realizó investigación de grado en FACE/UFMG sobre el Hospital Eduardo de Menezes y las respuestas institucionales a crisis sanitarias.",
+      "Fundó Fóscolo & Company Edições y es autora de Notes on Care, Risk & Knowledge. En Todos ou nenhum? — Libro I, la poesía y la crónica acercan materia, cuerpo y conocimiento.",
+      "Su trabajo también incluye formación docente, mediación cultural y comunicación pública de la investigación."
+    ],
+    "researchTitle": "Investigación en curso",
+    "researchText": "From Isolate to Identity: Belém and the Making of Arbovirus Difference, 1954–1969 investiga históricamente la clasificación, la documentación y la circulación del conocimiento científico.",
+    "orcid": "Consultar ORCID"
+  },
+  "press": {
+    "title": "Para leer, presentar\ny compartir.",
+    "intro": "Información editorial, cubiertas y muestras para reseñas, entrevistas, programación cultural y librerías.",
+    "bioTitle": "Biografía breve",
+    "bio": "Maria Carolina Fóscolo es autora, editora y estudiante de Historia en la UFMG. Investiga salud, instituciones, memoria y conocimiento. Fundó Fóscolo & Company Edições, en Belo Horizonte, y es autora de Notes on Care, Risk & Knowledge y del libro en preparación Todos ou nenhum? — Libro I: A matéria aprende a respirar.",
+    "request": "Para entrevistas, ejemplares de reseña, imágenes en alta resolución o información sobre lanzamientos, escribe a la editorial.",
+    "todosNote": "Libro en preparación. La imagen es la portada interior de la prueba editorial, no la cubierta final.",
+    "todosAsset": "Ver portada interior de la prueba"
+  },
+  "contact": {
+    "title": "Toda conversación\ncomienza con una lectura.",
+    "intro": "Para libros, prensa, proyectos editoriales o colaboraciones, escribe a Fóscolo & Company.",
+    "subject": "Contacto desde el sitio Fóscolo & Company",
+    "tipsTitle": "Al presentar un proyecto",
+    "tips": [
+      "Describe brevemente el material.",
+      "Indica su estado actual y el objetivo de publicación.",
+      "Incluye el plazo deseado, cuando corresponda."
+    ],
+    "location": "Belo Horizonte · Minas Gerais · Brasil",
+    "socialText": "Libros, procesos de edición y series editoriales en @foscolocompany."
+  },
+  "manifestoTitle": "Algunas historias\nno deben desaparecer.",
+  "editorial": [
+    [
+      "Una idea encuentra otra",
+      "Los libros, las imágenes y las preguntas se transforman al encontrar un lector. Conozca las reflexiones que acompañan nuestro trabajo editorial."
+    ],
+    [
+      "Publicar abre otra conversación",
+      "La edición da forma a un trabajo; su circulación abre otras posibilidades. Un pasaje adquiere sentido al encontrar una experiencia y una imagen puede conducir a una pregunta que el texto todavía no había formulado. El libro continúa en esa conversación."
+    ],
+    [
+      "El feed pasa. Algunas cosas no deberían.",
+      "Reunir una reflexión en una página permite volver a ella, seguir sus relaciones y leer fuera del ritmo del feed. El Cuaderno ofrece más tiempo para acompañar decisiones editoriales y caminos de lectura."
+    ],
+    [
+      "El vacío también es una decisión editorial",
+      "Una página no se compone solo de lo impreso. Los márgenes, las distancias y la posición del texto orientan la mirada. El espacio alrededor de las palabras participa del ritmo: crea pausas, establece jerarquías y modifica la atención a cada pasaje."
+    ],
+    [
+      "Guardar no es construir repertorio",
+      "Guardar una referencia es un comienzo. Construir repertorio exige volver, comparar y preguntar por qué una forma funciona. Un margen, una secuencia de imágenes o una relación entre texto y paisaje se vuelve útil cuando podemos pensar con ella."
+    ],
+    [
+      "De la investigación al lector",
+      "Cuando la investigación toma forma de libro, sus preguntas circulan en otras situaciones de lectura. En Notes on Care, Risk & Knowledge, historia, fragmentos e imágenes ofrecen distintas entradas al cuidado, el riesgo y el conocimiento. El lector puede vincular estas cuestiones con experiencias que la investigación no podía anticipar."
+    ],
+    [
+      "Una idea encontró otra",
+      "«Lo demás no estaba en ninguna de las dos». El encuentro acompaña Todos ou nenhum?: una vida y una escritura también se forman mediante relaciones entre experiencias, preguntas y decisiones. Poemas y crónicas ensayísticas ofrecen ritmos distintos para seguir estos encuentros."
+    ]
+  ]
 }

@@ -8,3 +8,4 @@
 @media print{.site-header,.site-footer,.contact-band,.actions,.ticker,.menu-toggle{display:none!important}body{background:#fff;color:#000;font-size:11pt}.wrap{width:100%}.ink-section,.paper-deep{background:#fff;color:#000}.section,.page-hero,.book-hero{padding-block:20px}h1{font-size:36pt}h2{font-size:24pt}.book-art,.journal-art{height:200px}a{color:#000}.book-grid{gap:20px}.prose{max-width:none}img{break-inside:avoid}}
 
 .language-bar a[lang="zh-CN"]{font-family:"Noto Serif SC",serif}
+.editorial-notes article+article{margin-top:64px;padding-top:48px;border-top:1px solid var(--line)}

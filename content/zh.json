@@ -1,18 +1,288 @@
 {
-"lang":"zh-CN","label":"中文","locale":"zh_CN",
-"nav":["首页","书目","编辑手记","阅读视野","出版社","作者","联系","项目","宣言","媒体资料"],
-"ui":{"menu":"菜单","skip":"跳至正文","languages":"语言","close":"关闭菜单","open":"打开菜单","read":"阅读全文","discover":"了解本书","catalog":"浏览书目","published":"已出版","forthcoming":"筹备中","back":"返回编辑手记","contact":"与出版社联系","download":"阅读 PDF 试读","cover":"下载封面","press":"媒体资料","instagram":"关注 Instagram","edition":"独立出版 · 贝洛奥里藏特","updated":"网站版本 · 2026年9月","rights":"保留所有权利。","contents":"本书目录","original":"葡萄牙语原文","proof":"筹备中的书籍内页图像","buyBR":"在亚马逊查看巴西版","buyInternational":"查看国际版本","availability":"价格、库存和配送时间以亚马逊页面为准。","sampleNote":"国际版英文试读。","formats":"选择版本","email":"发送电子邮件","more":"了解编辑工作","previous":"创刊随笔 · 2026年8月","privacy":"本网站没有注册表单或自有广告 Cookie。外部服务适用各自的隐私政策。"},
-"home":{"eyebrow":"历史 · 随笔 · 文学","title":"思想点燃。\n故事长存。","intro":"一家位于巴西贝洛奥里藏特的独立出版社。让书籍、影像和研究以不同方式与读者相遇。","feature":"新书筹备中","featureText":"十三首诗与三篇文学随笔。铁、玻璃、飞行、光和纸，引出关于身体、知识与变化的问题。","catalogTitle":"两部作品，多种入口。","catalogIntro":"研究、诗歌、随笔与影像：了解已出版书籍和正在筹备的作品。","journalTitle":"书页之间的工作","journalIntro":"编辑选择、阅读笔记与影像之间的关系。在这里，关注一本书如何成形。","aboutTitle":"从贝洛奥里藏特，\n走向新的阅读。","aboutText":"Fóscolo & Company Edições 将历史研究、随笔和文学创作联系起来。每部作品都有自己的形式：文本的次序、一幅图像、一页纸的节奏。"},
-"notes":{"subtitle":"来自巴西的研究、片段与影像","description":"历史研究、诗歌和影像汇成一本关于照护、风险与知识的书。当规程不再足以涵盖经验，人们与机构如何继续前行？","sections":[["研究","档案、口述历史与巴西医疗机构，引出关于记忆、不确定性和公共责任的问题。"],["写作","诗歌、随笔与片段改变阅读节奏，让思考靠近日常经验。"],["影像","风景与视觉记录参与探究，关注那些留在边缘的事物。"]],"brTitle":"巴西纸质版","brText":"英文书籍，内页64页，开本10 × 15厘米，彩色印刷。封面呈现潘普利亚的风景。","internationalTitle":"国际版本","internationalText":"Kindle、平装和精装各有独立页面。页数、装帧、ISBN和库存因版本而异。","languageLabel":"书籍语言","languageValue":"英语","authorLabel":"作者","publisherLabel":"出版社","yearLabel":"年份","pagesLabel":"巴西版内页","pagesValue":"64页","sizeLabel":"巴西版开本","sampleTitle":"翻开几页","sampleText":"研究、诗歌与摄影的选页提供一个阅读入口。试读内容来自国际版。"},
-"todos":{"subtitle":"第一卷 · A matéria aprende a respirar","description":"飞机复飞。玻璃在火焰过后仍保存着应力。一张纸在成为书之前先弯曲。十三首诗与三篇文学随笔，观察当继续前行的条件改变时，会发生什么。","status":"编辑筹备中。出版日期及购买信息将由出版社公布。","question":"如何改变，而不消失？","body":"物质、身体与知识彼此靠近，同时保留各自的差异。铁、水、光、压力和记忆，拒绝轻易的类比。","body2":"图像打断阅读路径，改变书页的节奏。全书包含介绍、序言、十六篇作品、尾声与资料来源说明。","excerptTitle":"在第一句话之前","excerptIntro":"序言从一张纸开始。打开一本书的动作，本身已是阅读的一部分。","excerpt":"Uma folha sozinha quase não oferece resistência.","excerpt2":"Antes da primeira frase, existe esse gesto mínimo.\nSeparar duas superfícies que estavam encostadas.\nSustentar a abertura.\nO resto começa depois.","excerptCredit":"节选自 Todos ou nenhum? 第一卷序言","inside":"编辑工作的内部","insideText":"了解序言如何将书籍这一实物与阅读的起点联系起来。","languageLabel":"书籍语言","languageValue":"葡萄牙语","formLabel":"构成","formValue":"13首诗 · 3篇文学随笔"},
-"catalog":{"title":"走进一本书，\n不只有一种方式。","intro":"研究、文学与影像。每部作品都有介绍、阅读资料与出版状态说明。","linesTitle":"相遇的方向","lines":[["历史与研究","健康、机构、档案、记忆与知识的公共传播。"],["随笔与文学","诗歌、文学随笔，以及保持问题开放的写作方式。"],["影像与地方","摄影、风景，以及地方与经验之间的关系。"]]},
-"journal":{"title":"Caderno Fóscolo","intro":"随笔、笔记与编辑选择。关注研究、写作与书页之间发生的事。","originalTitle":"进入这本书，并不只有一种方式。","originalDesc":"关于 Notes on Care 中研究、片段、诗歌与影像的创刊随笔。","newTitle":"一本书在第一句话之前就已开始。","newDesc":"走进 Todos ou nenhum? 的编辑过程：纸张、序言与打开的动作。","newMeta":"编辑幕后 · 2026年9月","archiveTitle":"阅读编辑手记","instagramText":"Caderno Fóscolo 与 Repertório Fóscolo 系列也在出版社的 Instagram 上发布。"},
-"article":{"title":"一本书在第一句话之前就已开始。","intro":"Todos ou nenhum? 第一卷中的一个编辑选择：从一张纸开始。","paragraphs":["一张纸在自身重量下弯曲。与其他纸张结合后，它成为某种结构的一部分：书页、缝线、胶和书脊。序言在第一首诗之前跟随这一变化。","这个开端将我们阅读的书与手中握着的实物联系起来。它让人留意两页纸之间必须打开的间隙：只有这样，一句话才能被看见。","这一关系贯穿全书。铁、玻璃、光和纸各有特定的行为与边界。将它们与人的经验相联系，也需要承认类比在何处停止。","版画打断文字的连续。较长的散文之前，色彩页改变注意的范围。形式参与节奏，无须解释文本。","序言提供一个入口。保持一个开口的动作先于阅读；之后形成的联系属于每一位读者。"],"caption":"编辑校样中的序言页。书籍筹备中。"},
-"repertoire":{"title":"Repertório Fóscolo","intro":"重新放回桌面的参考。阅读、摄影与编辑选择，在彼此之间建立的联系中获得意义。","heading":"收藏，不等于建立阅读视野。","paragraphs":["一张收藏的图像仍在等待一个问题。工作始于重新看它：什么引起了注意？它产生于什么语境？与另一张图像并置时，会发生什么变化？","Repertório Fóscolo 是关于这种重访的系列。书中的细节、一处风景或一个取景选择，都可能开启联系。标明来源、尝试关联，也是阅读的一部分。"],"lenses":[["重访","再看熟悉之物，发现先前忽略的细节。"],["关联","让文本与影像相遇，同时保留它们的差异。"],["理解语境","认识作者、条件以及解释的边界。"]],"closing":"在 Instagram 关注这一系列，并探索滋养这些讨论的书籍。"},
-"about":{"title":"由选择构成的\n出版社。","intro":"Fóscolo & Company Edições 是位于巴西贝洛奥里藏特的独立出版品牌，关注历史、随笔、文学与研究。","paragraphs":["书目产生于历史探究、写作与视觉形式的相遇。出版包含选择、组织、修订，以及为作品寻找传播的途径。","Notes on Care, Risk & Knowledge 开启了这一历程。Todos ou nenhum? 第一卷进一步拓展诗歌与文学随笔。编辑手记与阅读视野关注书籍之外继续生长的问题。"],"values":[["严谨","认真对待资料来源、论证与词语的准确性。"],["自主","以独立思考构建具有作者特色的书目。"],["传播","为作品与读者创造相遇的机会。"]],"manifestoTitle":"有些故事不应消失。","manifestoText":"阅读引导我们编辑工作的宣言。"},
-"projects":{"title":"从研究，\n到书页。","intro":"阅读、组织、文本准备与视觉设计。了解构成这一编辑实践的项目。","steps":[["研究与倾听","理解材料、资料来源与问题。"],["编辑与形式","处理次序、文本、图像与阅读的间隔。"],["出版与传播","准备书籍及相关资料，让它们与读者相遇。"]],"contactText":"如需讨论项目，请介绍材料、当前进度与出版目标。"},
-"author":{"title":"Maria Carolina\nFóscolo","intro":"作者、编辑、米纳斯吉拉斯联邦大学历史专业本科生。在巴西贝洛奥里藏特生活与工作。","paragraphs":["她的研究联系健康史、组织研究、记忆与口述历史。2023至2026年，她在 FACE/UFMG 参与本科研究，考察 Hospital Eduardo de Menezes 及机构对公共卫生危机的应对。","她创立了 Fóscolo & Company Edições，并著有 Notes on Care, Risk & Knowledge。在 Todos ou nenhum? 第一卷中，诗歌与文学随笔将物质、身体与知识联系起来。","她的工作还涉及教师培养、文化导览与研究的公共传播。"],"researchTitle":"进行中的研究","researchText":"From Isolate to Identity: Belém and the Making of Arbovirus Difference, 1954–1969 从历史角度研究分类、文献记录与科学知识传播。","orcid":"查看 ORCID"},
-"press":{"title":"阅读、介绍，\n与分享。","intro":"供书评、访谈、文化活动及书店使用的出版信息、封面和试读。","bioTitle":"作者简介","bio":"Maria Carolina Fóscolo 是作者、编辑及 UFMG 历史专业本科生，研究健康、机构、记忆与知识。她在贝洛奥里藏特创立 Fóscolo & Company Edições，著有 Notes on Care, Risk & Knowledge，以及筹备中的 Todos ou nenhum? 第一卷：A matéria aprende a respirar。","request":"如需访谈、评论用书、高清图像或出版信息，请联系出版社。","todosNote":"书籍筹备中。所提供图像为编辑校样的扉页，并非最终封面。","todosAsset":"查看校样扉页"},
-"contact":{"title":"每一次对话，\n始于一次阅读。","intro":"关于书籍、媒体、编辑项目或合作，请联系 Fóscolo & Company。","subject":"来自 Fóscolo & Company 网站的联系","tipsTitle":"介绍项目时","tips":["简要说明材料的内容。","说明当前阶段与出版目标。","如有时间要求，请一并说明。"],"location":"贝洛奥里藏特 · 米纳斯吉拉斯 · 巴西","socialText":"在 @foscolocompany 关注书籍、幕后工作与编辑系列。"},
-"manifestoTitle":"有些故事，\n不应消失。"
+  "lang": "zh-CN",
+  "label": "中文",
+  "locale": "zh_CN",
+  "nav": [
+    "首页",
+    "书目",
+    "编辑手记",
+    "阅读视野",
+    "出版社",
+    "作者",
+    "联系",
+    "项目",
+    "宣言",
+    "媒体资料"
+  ],
+  "ui": {
+    "menu": "菜单",
+    "skip": "跳至正文",
+    "languages": "语言",
+    "close": "关闭菜单",
+    "open": "打开菜单",
+    "read": "阅读全文",
+    "discover": "了解本书",
+    "catalog": "浏览书目",
+    "published": "已出版",
+    "forthcoming": "筹备中",
+    "back": "返回编辑手记",
+    "contact": "与出版社联系",
+    "download": "阅读 PDF 试读",
+    "cover": "下载封面",
+    "press": "媒体资料",
+    "instagram": "关注 Instagram",
+    "edition": "独立出版 · 贝洛奥里藏特",
+    "updated": "网站版本 · 2026年9月",
+    "rights": "保留所有权利。",
+    "contents": "本书目录",
+    "original": "葡萄牙语原文",
+    "proof": "筹备中的书籍内页图像",
+    "buyBR": "在亚马逊查看巴西版",
+    "buyInternational": "查看国际版本",
+    "availability": "价格、库存和配送时间以亚马逊页面为准。",
+    "sampleNote": "国际版英文试读。",
+    "formats": "选择版本",
+    "email": "发送电子邮件",
+    "more": "了解编辑工作",
+    "previous": "创刊随笔 · 2026年8月",
+    "privacy": "本网站没有注册表单或自有广告 Cookie。外部服务适用各自的隐私政策。"
+  },
+  "home": {
+    "eyebrow": "历史 · 随笔 · 文学",
+    "title": "思想点燃。\n故事长存。",
+    "intro": "一家位于巴西贝洛奥里藏特的独立出版社。让书籍、影像和研究以不同方式与读者相遇。",
+    "feature": "新书筹备中",
+    "featureText": "十三首诗与三篇文学随笔。铁、玻璃、飞行、光和纸，引出关于身体、知识与变化的问题。",
+    "catalogTitle": "两部作品，多种入口。",
+    "catalogIntro": "研究、诗歌、随笔与影像：了解已出版书籍和正在筹备的作品。",
+    "journalTitle": "书页之间的工作",
+    "journalIntro": "编辑选择、阅读笔记与影像之间的关系。在这里，关注一本书如何成形。",
+    "aboutTitle": "从贝洛奥里藏特，\n走向新的阅读。",
+    "aboutText": "Fóscolo & Company Edições 将历史研究、随笔和文学创作联系起来。每部作品都有自己的形式：文本的次序、一幅图像、一页纸的节奏。"
+  },
+  "notes": {
+    "subtitle": "来自巴西的研究、片段与影像",
+    "description": "历史研究、诗歌和影像汇成一本关于照护、风险与知识的书。当规程不再足以涵盖经验，人们与机构如何继续前行？",
+    "sections": [
+      [
+        "研究",
+        "档案、口述历史与巴西医疗机构，引出关于记忆、不确定性和公共责任的问题。"
+      ],
+      [
+        "写作",
+        "诗歌、随笔与片段改变阅读节奏，让思考靠近日常经验。"
+      ],
+      [
+        "影像",
+        "风景与视觉记录参与探究，关注那些留在边缘的事物。"
+      ]
+    ],
+    "brTitle": "巴西纸质版",
+    "brText": "英文书籍，内页64页，开本10 × 15厘米，彩色印刷。封面呈现潘普利亚的风景。",
+    "internationalTitle": "国际版本",
+    "internationalText": "Kindle、平装和精装各有独立页面。页数、装帧、ISBN和库存因版本而异。",
+    "languageLabel": "书籍语言",
+    "languageValue": "英语",
+    "authorLabel": "作者",
+    "publisherLabel": "出版社",
+    "yearLabel": "年份",
+    "pagesLabel": "巴西版内页",
+    "pagesValue": "64页",
+    "sizeLabel": "巴西版开本",
+    "sampleTitle": "翻开几页",
+    "sampleText": "研究、诗歌与摄影的选页提供一个阅读入口。试读内容来自国际版。"
+  },
+  "todos": {
+    "subtitle": "第一卷 · A matéria aprende a respirar",
+    "description": "飞机复飞。玻璃在火焰过后仍保存着应力。一张纸在成为书之前先弯曲。十三首诗与三篇文学随笔，观察当继续前行的条件改变时，会发生什么。",
+    "status": "编辑筹备中。出版日期及购买信息将由出版社公布。",
+    "question": "如何改变，而不消失？",
+    "body": "物质、身体与知识彼此靠近，同时保留各自的差异。铁、水、光、压力和记忆，拒绝轻易的类比。",
+    "body2": "图像打断阅读路径，改变书页的节奏。全书包含介绍、序言、十六篇作品、尾声与资料来源说明。",
+    "excerptTitle": "在第一句话之前",
+    "excerptIntro": "序言从一张纸开始。打开一本书的动作，本身已是阅读的一部分。",
+    "excerpt": "Uma folha sozinha quase não oferece resistência.",
+    "excerpt2": "Antes da primeira frase, existe esse gesto mínimo.\nSeparar duas superfícies que estavam encostadas.\nSustentar a abertura.\nO resto começa depois.",
+    "excerptCredit": "节选自 Todos ou nenhum? 第一卷序言",
+    "inside": "编辑工作的内部",
+    "insideText": "了解序言如何将书籍这一实物与阅读的起点联系起来。",
+    "languageLabel": "书籍语言",
+    "languageValue": "葡萄牙语",
+    "formLabel": "构成",
+    "formValue": "13首诗 · 3篇文学随笔"
+  },
+  "catalog": {
+    "title": "走进一本书，\n不只有一种方式。",
+    "intro": "研究、文学与影像。每部作品都有介绍、阅读资料与出版状态说明。",
+    "linesTitle": "相遇的方向",
+    "lines": [
+      [
+        "历史与研究",
+        "健康、机构、档案、记忆与知识的公共传播。"
+      ],
+      [
+        "随笔与文学",
+        "诗歌、文学随笔，以及保持问题开放的写作方式。"
+      ],
+      [
+        "影像与地方",
+        "摄影、风景，以及地方与经验之间的关系。"
+      ]
+    ]
+  },
+  "journal": {
+    "title": "Caderno Fóscolo",
+    "intro": "随笔、笔记与编辑选择。关注研究、写作与书页之间发生的事。",
+    "originalTitle": "进入这本书，并不只有一种方式。",
+    "originalDesc": "关于 Notes on Care 中研究、片段、诗歌与影像的创刊随笔。",
+    "newTitle": "一本书在第一句话之前就已开始。",
+    "newDesc": "走进 Todos ou nenhum? 的编辑过程：纸张、序言与打开的动作。",
+    "newMeta": "编辑幕后 · 2026年9月",
+    "archiveTitle": "阅读编辑手记",
+    "instagramText": "Caderno Fóscolo 与 Repertório Fóscolo 系列也在出版社的 Instagram 上发布。"
+  },
+  "article": {
+    "title": "一本书在第一句话之前就已开始。",
+    "intro": "Todos ou nenhum? 第一卷中的一个编辑选择：从一张纸开始。",
+    "paragraphs": [
+      "一张纸在自身重量下弯曲。与其他纸张结合后，它成为某种结构的一部分：书页、缝线、胶和书脊。序言在第一首诗之前跟随这一变化。",
+      "这个开端将我们阅读的书与手中握着的实物联系起来。它让人留意两页纸之间必须打开的间隙：只有这样，一句话才能被看见。",
+      "这一关系贯穿全书。铁、玻璃、光和纸各有特定的行为与边界。将它们与人的经验相联系，也需要承认类比在何处停止。",
+      "版画打断文字的连续。较长的散文之前，色彩页改变注意的范围。形式参与节奏，无须解释文本。",
+      "序言提供一个入口。保持一个开口的动作先于阅读；之后形成的联系属于每一位读者。"
+    ],
+    "caption": "编辑校样中的序言页。书籍筹备中。"
+  },
+  "repertoire": {
+    "title": "Repertório Fóscolo",
+    "intro": "重新放回桌面的参考。阅读、摄影与编辑选择，在彼此之间建立的联系中获得意义。",
+    "heading": "收藏，不等于建立阅读视野。",
+    "paragraphs": [
+      "一张收藏的图像仍在等待一个问题。工作始于重新看它：什么引起了注意？它产生于什么语境？与另一张图像并置时，会发生什么变化？",
+      "Repertório Fóscolo 是关于这种重访的系列。书中的细节、一处风景或一个取景选择，都可能开启联系。标明来源、尝试关联，也是阅读的一部分。"
+    ],
+    "lenses": [
+      [
+        "重访",
+        "再看熟悉之物，发现先前忽略的细节。"
+      ],
+      [
+        "关联",
+        "让文本与影像相遇，同时保留它们的差异。"
+      ],
+      [
+        "理解语境",
+        "认识作者、条件以及解释的边界。"
+      ]
+    ],
+    "closing": "在 Instagram 关注这一系列，并探索滋养这些讨论的书籍。"
+  },
+  "about": {
+    "title": "由选择构成的\n出版社。",
+    "intro": "Fóscolo & Company Edições 是位于巴西贝洛奥里藏特的独立出版品牌，关注历史、随笔、文学与研究。",
+    "paragraphs": [
+      "书目产生于历史探究、写作与视觉形式的相遇。出版包含选择、组织、修订，以及为作品寻找传播的途径。",
+      "Notes on Care, Risk & Knowledge 开启了这一历程。Todos ou nenhum? 第一卷进一步拓展诗歌与文学随笔。编辑手记与阅读视野关注书籍之外继续生长的问题。"
+    ],
+    "values": [
+      [
+        "严谨",
+        "认真对待资料来源、论证与词语的准确性。"
+      ],
+      [
+        "自主",
+        "以独立思考构建具有作者特色的书目。"
+      ],
+      [
+        "传播",
+        "为作品与读者创造相遇的机会。"
+      ]
+    ],
+    "manifestoTitle": "有些故事不应消失。",
+    "manifestoText": "阅读引导我们编辑工作的宣言。"
+  },
+  "projects": {
+    "title": "从研究，\n到书页。",
+    "intro": "阅读、组织、文本准备与视觉设计。了解构成这一编辑实践的项目。",
+    "steps": [
+      [
+        "研究与倾听",
+        "理解材料、资料来源与问题。"
+      ],
+      [
+        "编辑与形式",
+        "处理次序、文本、图像与阅读的间隔。"
+      ],
+      [
+        "出版与传播",
+        "准备书籍及相关资料，让它们与读者相遇。"
+      ]
+    ],
+    "contactText": "如需讨论项目，请介绍材料、当前进度与出版目标。"
+  },
+  "author": {
+    "title": "Maria Carolina\nFóscolo",
+    "intro": "作者、编辑、米纳斯吉拉斯联邦大学历史专业本科生。在巴西贝洛奥里藏特生活与工作。",
+    "paragraphs": [
+      "她的研究联系健康史、组织研究、记忆与口述历史。2023至2026年，她在 FACE/UFMG 参与本科研究，考察 Hospital Eduardo de Menezes 及机构对公共卫生危机的应对。",
+      "她创立了 Fóscolo & Company Edições，并著有 Notes on Care, Risk & Knowledge。在 Todos ou nenhum? 第一卷中，诗歌与文学随笔将物质、身体与知识联系起来。",
+      "她的工作还涉及教师培养、文化导览与研究的公共传播。"
+    ],
+    "researchTitle": "进行中的研究",
+    "researchText": "From Isolate to Identity: Belém and the Making of Arbovirus Difference, 1954–1969 从历史角度研究分类、文献记录与科学知识传播。",
+    "orcid": "查看 ORCID"
+  },
+  "press": {
+    "title": "阅读、介绍，\n与分享。",
+    "intro": "供书评、访谈、文化活动及书店使用的出版信息、封面和试读。",
+    "bioTitle": "作者简介",
+    "bio": "Maria Carolina Fóscolo 是作者、编辑及 UFMG 历史专业本科生，研究健康、机构、记忆与知识。她在贝洛奥里藏特创立 Fóscolo & Company Edições，著有 Notes on Care, Risk & Knowledge，以及筹备中的 Todos ou nenhum? 第一卷：A matéria aprende a respirar。",
+    "request": "如需访谈、评论用书、高清图像或出版信息，请联系出版社。",
+    "todosNote": "书籍筹备中。所提供图像为编辑校样的扉页，并非最终封面。",
+    "todosAsset": "查看校样扉页"
+  },
+  "contact": {
+    "title": "每一次对话，\n始于一次阅读。",
+    "intro": "关于书籍、媒体、编辑项目或合作，请联系 Fóscolo & Company。",
+    "subject": "来自 Fóscolo & Company 网站的联系",
+    "tipsTitle": "介绍项目时",
+    "tips": [
+      "简要说明材料的内容。",
+      "说明当前阶段与出版目标。",
+      "如有时间要求，请一并说明。"
+    ],
+    "location": "贝洛奥里藏特 · 米纳斯吉拉斯 · 巴西",
+    "socialText": "在 @foscolocompany 关注书籍、幕后工作与编辑系列。"
+  },
+  "manifestoTitle": "有些故事，\n不应消失。",
+  "editorial": [
+    [
+      "一个想法遇见另一个",
+      "书籍、图像和问题在遇见读者时继续变化。这里收录伴随编辑工作的思考。"
+    ],
+    [
+      "出版开启另一场对话",
+      "编辑赋予作品形式，而传播带来新的可能。一个段落与某段经历相遇，会获得新的意义；一幅图像也可能引出文字尚未提出的问题。书籍在这场对话中继续存在。"
+    ],
+    [
+      "信息流会过去，有些东西值得留下",
+      "把思考整理在一个页面上，让读者能够回来重读、追踪联系，并在信息流的节奏之外阅读。编辑手记为编辑选择和阅读路径留出更多时间。"
+    ],
+    [
+      "空白也是一种编辑决定",
+      "页面不仅由印出的文字构成。页边、元素之间的距离和文字的位置引导视线。文字周围的空间参与阅读节奏：创造停顿、建立层次，也改变读者对每一段的注意力。"
+    ],
+    [
+      "收藏不等于建立阅读积累",
+      "保存参考资料只是开始。建立积累需要重访、比较，并追问一种形式为何有效。页边、图像序列或文字与风景之间的关系，在我们能够借助它们思考时才变得有用。"
+    ],
+    [
+      "从研究到读者",
+      "当研究成为书籍，它的问题进入新的阅读情境。在 Notes on Care, Risk & Knowledge 中，历史、片段与图像为思考照护、风险和知识提供不同入口。读者可以把这些问题与研究无法预见的经历联系起来。"
+    ],
+    [
+      "一个想法遇见了另一个",
+      "“其余部分不在任何一个想法里。” 相遇的意象伴随 Todos ou nenhum?：生活与写作也在经历、问题和选择之间的关系中形成。诗歌与散文随笔以不同节奏展开这些相遇。"
+    ]
+  ]
 }
