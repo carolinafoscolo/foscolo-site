@@ -24,3 +24,12 @@
 .quote-source{margin-top:-20px;margin-bottom:35px}
 @media(max-width:1000px){.archive-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:650px){.archive-grid{grid-template-columns:1fr}.journal-text-art{min-height:230px}.journal-text-art strong{font-size:2.7rem}.repertoire-feature h2{font-size:3.1rem}}
+
+/* Publisher and project narratives — 29 Sep 2026 */
+.project-paths{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.project-path{background:var(--paper);border:1px solid var(--line);padding:30px;display:flex;flex-direction:column;align-items:flex-start}
+.project-path h3{font-size:1.35rem;margin-top:16px}
+.project-path p:not(.eyebrow){font-size:13px;margin-top:18px}
+.project-path .text-link{margin-top:auto;padding-top:22px}
+.project-note{max-width:80ch}
+@media(max-width:800px){.project-paths{grid-template-columns:1fr}}
