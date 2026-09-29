@@ -134,6 +134,21 @@ def discovery(lang,d,current):
   meta,title,desc=route_meta(d,target)
   cards.append(f'<article class="discovery-card"><p class="eyebrow">{e(meta)}</p><h3>{e(title)}</h3><p>{e(desc)}</p>'+link(path(lang,target),d['ui']['explore'])+'</article>')
  return '<section class="discovery-band"><div class="wrap section"><div class="discovery-heading"><p class="eyebrow">Fóscolo & Company</p><h2>'+e(d['ui']['continueExploring'])+'</h2></div><div class="discovery-grid">'+''.join(cards)+'</div></div></section>'
+def curated_paths(lang,d):
+ q=d['search'];cards=[]
+ for item in q['paths']:
+  links=''.join('<li>'+link(path(lang,key),route_meta(d,key)[1])+'</li>' for key in item['keys'])
+  cards.append(f'<article class="path-card"><p class="eyebrow">Fóscolo & Company</p><h3>{e(item["title"])}</h3><p>{e(item["desc"])}</p><ul class="path-links">{links}</ul></article>')
+ return '<section class="paper-deep"><div class="wrap section">'+section_head('01',q['pathsTitle'],q['pathsIntro'])+'<div class="path-grid">'+''.join(cards)+'</div></div></section>'
+def rss_feed(lang,d):
+ items=list(d['journal']['entries'])+[{'key':'repertoire2','meta':d['repertoireFeature']['meta'],'title':d['repertoireFeature']['title'],'desc':d['repertoireFeature']['desc']}]
+ feed_title=d['journal']['title']+' & '+d['repertoire']['title']
+ xml=['<?xml version="1.0" encoding="UTF-8"?>','<rss version="2.0"><channel>',f'<title>{e(feed_title)}</title>',f'<link>{ORIGIN+path(lang,"journal")}</link>',f'<description>{e(d["journal"]["intro"])}</description>',f'<language>{e(d["lang"])}</language>']
+ for item in items:
+  url=ORIGIN+path(lang,item['key'])
+  xml.extend(['<item>',f'<title>{e(item["title"])}</title>',f'<link>{url}</link>',f'<guid isPermaLink="true">{url}</guid>',f'<description>{e(item["desc"])}</description>',f'<category>{e(item["meta"])}</category>','</item>'])
+ xml.append('</channel></rss>')
+ return '\n'.join(xml)+'\n'
 def generic_article(lang,d,key):
  a=d[ARTICLE_DATA[key]]
  target={'circulation':'notes','place':'about','space':'journal'}[key]
@@ -214,7 +229,7 @@ def content(lang,key,d):
   return hero(d,d['manifestoTitle'],'',d['nav'][8],True)+'<article class="prose wrap manifesto-prose">'+''.join(blocks)+'</article>'+discovery(lang,d,key)
  if key=='search':
   q=d['search']
-  return hero(d,q['title'],q['intro'],q['nav'])+f'<section class="wrap section search-archive" data-search-page data-lang="{lang}" data-empty="{e(q["noResults"])}" data-one="{e(q["result"])}" data-many="{e(q["results"])}" data-all="{e(q["all"])}" data-open="{e(u["explore"])}"><form class="search-form" role="search"><label for="site-search" class="eyebrow">{e(q["nav"])}</label><div class="search-form-row"><input id="site-search" name="q" type="search" autocomplete="off" placeholder="{e(q["placeholder"])}"><button class="button dark" type="submit">{e(q["button"])}</button></div></form><p class="search-privacy">{e(q["privacy"])}</p><div class="search-status" aria-live="polite"></div><div class="search-results"></div></section>'
+  return hero(d,q['title'],q['intro'],q['nav'])+curated_paths(lang,d)+f'<section class="wrap section search-archive" data-search-page data-lang="{lang}" data-empty="{e(q["noResults"])}" data-one="{e(q["result"])}" data-many="{e(q["results"])}" data-all="{e(q["all"])}" data-open="{e(u["explore"])}"><form class="search-form" role="search"><label for="site-search" class="eyebrow">{e(q["nav"])}</label><div class="search-form-row"><input id="site-search" name="q" type="search" autocomplete="off" placeholder="{e(q["placeholder"])}"><button class="button dark" type="submit">{e(q["button"])}</button></div></form><p class="search-privacy">{e(q["privacy"])}</p><div class="search-status" aria-live="polite"></div><div class="search-results"></div></section>'
  raise ValueError(key)
 
 def title_for(key,d):
@@ -246,18 +261,25 @@ def page(lang,key,body,d,root=False):
  alternates=''.join(f'<link rel="alternate" hreflang="{DATA[l]["lang"]}" href="{ORIGIN+path(l,key)}">' for l in DATA)
  ogimg=ORIGIN+'/assets/images/'+('todos-forest.webp' if key in ['todos','article'] else 'notes-brasil.webp')
  schema={'@context':'https://schema.org','@type':'WebPage','name':title,'description':desc,'url':canonical,'inLanguage':d['lang'],'publisher':{'@type':'Organization','name':'Fóscolo & Company Edições','url':ORIGIN,'email':EMAIL,'sameAs':[INSTAGRAM]}}
+ article_keys={'essay','article','circulation','place','space','repertoire2'}
+ if key in article_keys:
+  schema={'@context':'https://schema.org','@type':'Article','headline':title,'description':desc,'url':canonical,'inLanguage':d['lang'],'mainEntityOfPage':canonical,'author':{'@type':'Person','name':'Maria Carolina Fóscolo'},'publisher':{'@type':'Organization','name':'Fóscolo & Company Edições','url':ORIGIN}}
+ if key=='search':
+  schema['@type']='CollectionPage';schema['potentialAction']={'@type':'SearchAction','target':canonical+'?q={search_term_string}','query-input':'required name=search_term_string'}
  if key in ['notes','todos']:
-  schema['mainEntity']={'@type':'Book','name':title,'author':{'@type':'Person','name':'Maria Carolina Fóscolo'},'inLanguage':'en' if key=='notes' else 'pt-BR','publisher':{'@type':'Organization','name':'Fóscolo & Company Edições'}}
-  if key=='notes': schema['mainEntity']['bookFormat']='https://schema.org/Paperback';schema['mainEntity']['numberOfPages']=64
- footerlinks=''.join(link(path(lang,k),nav[NAV_INDEX[k]],'footer-link') for k in ['catalog','projects','manifesto','press','contact'])+link(path(lang,'search'),d['search']['nav'],'footer-link')
+  schema['mainEntity']={'@type':'Book','name':title,'description':desc,'url':canonical,'author':{'@type':'Person','name':'Maria Carolina Fóscolo'},'inLanguage':'en' if key=='notes' else 'pt-BR','publisher':{'@type':'Organization','name':'Fóscolo & Company Edições'}}
+  if key=='notes':
+   schema['mainEntity']['bookFormat']='https://schema.org/Paperback';schema['mainEntity']['numberOfPages']=64;schema['mainEntity']['sameAs']=[BR,'https://www.amazon.com/dp/B0H7L24BDH','https://www.amazon.com/dp/6502080553','https://www.amazon.com/dp/6502203957']
+ footerlinks=''.join(link(path(lang,k),nav[NAV_INDEX[k]],'footer-link') for k in ['catalog','projects','manifesto','press','contact'])+link(path(lang,'search'),d['search']['nav'],'footer-link')+link('/feeds/'+lang+'.xml',d['search']['rssLabel'],'footer-link')
  return f'''<!doctype html>
-<html lang="{d['lang']}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(title)}{' | Fóscolo & Company' if key!='home' else ''}</title><meta name="description" content="{e(desc)}"><meta name="theme-color" content="#F5F2EB"><link rel="icon" href="/favicon.png"><link rel="canonical" href="{canonical}">{alternates}<link rel="alternate" hreflang="x-default" href="{ORIGIN+path('pt',key)}"><meta property="og:type" content="website"><meta property="og:site_name" content="Fóscolo & Company Edições"><meta property="og:locale" content="{d['locale']}"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{canonical}"><meta property="og:image" content="{ogimg}"><meta name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="/assets/fonts/fonts.css"><link rel="stylesheet" href="/assets/fonts/chinese.css"><link rel="stylesheet" href="/assets/site.css"><script src="/assets/site.js" defer></script><script type="application/ld+json">{json.dumps(schema,ensure_ascii=False).replace('</','<\\/')}</script></head>
+<html lang="{d['lang']}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(title)}{' | Fóscolo & Company' if key!='home' else ''}</title><meta name="description" content="{e(desc)}"><meta name="theme-color" content="#F5F2EB"><link rel="icon" href="/favicon.png"><link rel="canonical" href="{canonical}">{alternates}<link rel="alternate" hreflang="x-default" href="{ORIGIN+path('pt',key)}"><link rel="alternate" type="application/rss+xml" title="{e(d['search']['rssLabel'])}" href="/feeds/{lang}.xml"><meta property="og:type" content="website"><meta property="og:site_name" content="Fóscolo & Company Edições"><meta property="og:locale" content="{d['locale']}"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{canonical}"><meta property="og:image" content="{ogimg}"><meta name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="/assets/fonts/fonts.css"><link rel="stylesheet" href="/assets/fonts/chinese.css"><link rel="stylesheet" href="/assets/site.css"><script src="/assets/site.js" defer></script><script type="application/ld+json">{json.dumps(schema,ensure_ascii=False).replace('</','<\\/')}</script></head>
 <body><a class="skip-link" href="#main">{e(u['skip'])}</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="{path(lang,'home')}" aria-label="Fóscolo & Company — {e(nav[0])}"><img src="/assets/images/logo.png" width="240" height="85" alt="Fóscolo & Company Edições"></a><button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" data-open="{e(u['open'])}" data-close="{e(u['close'])}" aria-label="{e(u['open'])}" hidden>{e(u['menu'])}<span aria-hidden="true"> +</span></button><nav id="main-nav" class="main-nav" aria-label="{e(u['menu'])}">{navhtml}</nav></div><div class="wrap language-bar"><div class="language-tools"><span>{e(u['edition'])}</span><a class="archive-link" href="{path(lang,'search')}"{(' aria-current="page"' if key=='search' else '')}>{e(d['search']['nav'])}</a></div><nav aria-label="{e(u['languages'])}">{languages}</nav></div></header>
 <main id="main">{body}</main><footer class="site-footer"><div class="wrap footer-grid"><div><p class="footer-wordmark">FÓSCOLO<br>& COMPANY<span>EDIÇÕES</span></p><p>{nl(d['home']['title'])}</p></div><nav aria-label="{e(u['more'])}">{footerlinks}</nav><div><p class="eyebrow">{e(d['contact']['location'])}</p><p><a href="mailto:{EMAIL}">{EMAIL}</a></p>{link(INSTAGRAM,'Instagram','footer-link',True)}</div></div><div class="wrap footer-bottom"><span>© 2026 Fóscolo & Company Edições. {e(u['rights'])}</span><span>{e(u['updated'])}</span></div></footer></body></html>'''
 
 def build():
  outputs=[]
  search_dir=ROOT/'assets'/'search';search_dir.mkdir(parents=True,exist_ok=True)
+ feed_dir=ROOT/'feeds';feed_dir.mkdir(parents=True,exist_ok=True)
  for lang,d in DATA.items():
   docs=[]
   for key,slug in ROUTES[lang].items():
@@ -267,6 +289,7 @@ def build():
     meta,title,desc=route_meta(d,key)
     docs.append({'key':key,'meta':plain(meta),'title':plain(title),'desc':plain(desc),'url':path(lang,key),'text':plain(body)})
   (search_dir/f'{lang}.json').write_text(json.dumps(docs,ensure_ascii=False,separators=(',',':')))
+  (feed_dir/f'{lang}.xml').write_text(rss_feed(lang,d))
  (ROOT/'index.html').write_text(page('pt','home',content('pt','home',DATA['pt']),DATA['pt'],root=True))
  (ROOT/'404.html').write_text('<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Página não encontrada | Fóscolo & Company</title><link rel="stylesheet" href="/assets/fonts/chinese.css"><link rel="stylesheet" href="/assets/site.css"></head><body><main class="wrap page-hero"><p class="eyebrow">404</p><h1>Esta página mudou de lugar.</h1><p>Encontre livros, leituras e informações da editora a partir da página inicial.</p><a class="button dark" href="/pt/index.html">Ir para o início</a></main></body></html>')
  sitemap='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{ORIGIN+p}</loc><lastmod>2026-09-29</lastmod></url>\n' for p in ['/']+outputs)+'</urlset>\n'
