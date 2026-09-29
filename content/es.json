@@ -674,42 +674,42 @@
     "items": [
       {
         "label": "Salud & cuidado",
-        "query": "salud cuidado",
+        "query": "salud",
         "desc": "Crisis sanitarias, cuidado, riesgo, memoria y maneras de continuar."
       },
       {
         "label": "Instituciones & conocimiento",
-        "query": "instituciones conocimiento",
+        "query": "instituciones",
         "desc": "Cómo las organizaciones aprenden, registran, clasifican y hacen circular conocimiento."
       },
       {
         "label": "Historia de la ciencia",
-        "query": "ciencia virus clasificación",
+        "query": "ciencia",
         "desc": "Laboratorios, clasificación, evidencia y redes científicas."
       },
       {
         "label": "Edición & forma",
-        "query": "edición forma",
+        "query": "edición",
         "desc": "Secuencia, margen, imagen, paratexto, ritmo y decisiones de lectura."
       },
       {
         "label": "Belo Horizonte & territorio",
-        "query": "Belo Horizonte Pampulha territorio",
+        "query": "Pampulha",
         "desc": "Lugar de edición, paisaje, ciudad y los puntos desde donde comienza una pregunta."
       },
       {
         "label": "Literatura",
-        "query": "literatura poema crónica Machado",
+        "query": "Machado",
         "desc": "Poemas, crónicas, lecturas y ambigüedades que vuelven a la mesa."
       },
       {
         "label": "Imagen & paisaje",
-        "query": "imagen fotografía paisaje",
+        "query": "imagen",
         "desc": "Fotografía, encuadre y relaciones que una leyenda no necesita resolver."
       },
       {
         "label": "Archivo & memoria",
-        "query": "archivo memoria",
+        "query": "archivo",
         "desc": "Documentos, oralidad, huellas y lo que permanece después de una crisis."
       },
       {
