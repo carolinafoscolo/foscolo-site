@@ -271,11 +271,33 @@
       ]
     ],
     "manifestoTitle": "Certaines histoires ne doivent pas disparaître.",
-    "manifestoText": "Lisez le manifeste qui guide notre travail."
+    "manifestoText": "Lisez le manifeste qui guide notre travail.",
+    "catalogTitle": "Un petit catalogue, construit pour durer.",
+    "catalogText": "Le catalogue actuel commence par deux œuvres d’auteur et grandit lentement. Cette petite échelle permet de traiter recherche, texte, image, fabrication et circulation comme les parties d’une même édition, sans faire de la vitesse un critère de valeur.",
+    "methodTitle": "Ce qu’une édition doit soutenir",
+    "methodItems": [
+      [
+        "Sources",
+        "Ne pas inventer de certitude là où la recherche laisse encore des questions ouvertes."
+      ],
+      [
+        "Forme",
+        "Ne pas choisir une apparence avant de comprendre ce que le matériau demande à la lecture."
+      ],
+      [
+        "Lecteur",
+        "Créer une entrée claire sans réduire la complexité de l’œuvre pour la rendre plus facile à vendre."
+      ]
+    ],
+    "placeTitle": "Éditée à Belo Horizonte.",
+    "placeText": "La ville ne limite pas les sujets de Fóscolo ; elle rend visible le point d’où le travail commence. Archives, université, Pampulha, bibliothèques et déplacements quotidiens font partie du répertoire qui arrive sur la table éditoriale.",
+    "placeCta": "Lire sur le lieu d’édition",
+    "independenceTitle": "L’indépendance n’est pas l’isolement.",
+    "independenceText": "La maison est indépendante dans ses décisions éditoriales, mais ses livres circulent entre recherche académique, histoire publique, institutions culturelles, librairies et lecteurs. C’est dans ces rencontres qu’une œuvre devient plus qu’un fichier terminé."
   },
   "projects": {
     "title": "De la recherche\nà la page.",
-    "intro": "Lecture, organisation, préparation du texte et conception visuelle. Découvrez les projets qui donnent forme à cette pratique éditoriale.",
+    "intro": "Livres, recherche, image et histoire publique se rencontrent ici comme les étapes d’un même travail : transformer des questions en formes capables de circuler.",
     "steps": [
       [
         "Recherche et écoute",
@@ -290,7 +312,49 @@
         "Préparer le livre et ses documents pour rencontrer les lecteurs."
       ]
     ],
-    "contactText": "Pour discuter d’un projet, présentez le matériau, son état actuel et votre objectif de publication."
+    "contactText": "Pour les librairies, la programmation culturelle, les entretiens, les recensions, la recherche, les lectures publiques ou d’autres partenariats, écrivez à Fóscolo & Company.",
+    "deskTitle": "Ce qui traverse la table",
+    "deskIntro": "Fóscolo ne commence pas par l’apparence d’un livre. Le travail commence par le matériau, la question et le type de lecture demandé par chaque projet.",
+    "desk": [
+      [
+        "Recherche historique",
+        "Archives, histoire orale, santé, science et institutions fournissent des problèmes, des vocabulaires et des limites à l’écriture."
+      ],
+      [
+        "Édition d’auteur",
+        "Séquence, coupe, image, papier, rythme et paratexte sont traités comme des décisions de lecture, non comme une décoration ajoutée ensuite."
+      ],
+      [
+        "Histoire publique",
+        "L’expérience de l’enseignement et de la médiation culturelle aide à penser la clarté, l’accès et la circulation au-delà de l’université."
+      ]
+    ],
+    "publicNote": "Le travail de la fondatrice dans les musées, l’enseignement et l’histoire publique appartient aux institutions où il est réalisé ; il apparaît ici uniquement comme une expérience qui informe la méthode éditoriale de Fóscolo.",
+    "pathsTitle": "Trois parcours, trois états",
+    "pathsIntro": "Tout n’a pas besoin d’être au même stade pour appartenir à un catalogue. L’important est de distinguer ce qui peut déjà être lu, ce qui est en préparation et ce qui demeure une conversation éditoriale.",
+    "paths": [
+      {
+        "status": "Publié",
+        "title": "Notes on Care, Risk & Knowledge",
+        "text": "Recherche historique, fragments, poèmes et photographies transformés en une première publication disponible à la lecture et à l’achat.",
+        "target": "notes"
+      },
+      {
+        "status": "En préparation",
+        "title": "Todos ou nenhum? — Livre I",
+        "text": "Un manuscrit littéraire travaillé par la séquence, la matière, l’image et le rythme sans mettre en ligne le texte encore inédit.",
+        "target": "todos"
+      },
+      {
+        "status": "En circulation",
+        "title": "Carnet & Répertoire",
+        "text": "Réflexions, lectures et décisions éditoriales qui quittent la vitesse des réseaux pour devenir des pages permanentes auxquelles revenir.",
+        "target": "journal"
+      }
+    ],
+    "boundaryTitle": "Travailler en public ne signifie pas tout publier.",
+    "boundaryText": "Les originaux inédits, les versions intégrales des manuscrits et les matériaux de recherche encore soumis à évaluation restent hors du site. Ici paraissent des questions, des décisions de forme, des contextes et des matériaux déjà destinés à la circulation publique.",
+    "partnershipTitle": "Partenariats et circulation"
   },
   "author": {
     "title": "Maria Carolina\nFóscolo",
